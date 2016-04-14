@@ -1,0 +1,33 @@
+
+# Help Card
+# Report: Advertising Campaigns History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report provides a historical analysis of paid advertising campaigns that you may be running on another organization's web site. Use this information to determine increasing or flagging interest in any external advertising campaigns. Declining interest should be acted upon quickly to ensure the best possible return on investment.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Number of times site visitors were brought to your site by the correponding campaign. Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Advertisements.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Advertisement Name:</b>
+Name given to the advertising campaign being analyzed.
+
+<b>Hits (%):</b>
+Number of times site visitors were brought to your site as a result of the advertising campaign. (Percentage as a proportion of site visitors brought to your site as a result of all advertising campaigns.)
+
+<b>Cost/Month:</b>
+The cost of the advertising campaign per month, as specified in <i>Settings > Advertising > Campaigns</i>. 
+
+<b>Cost/Click:</b>
+The cost per click of the advertising campaign.
+
+<b>Errors:</b>
+Number of times visitors encountered an error after following an external advertising link.

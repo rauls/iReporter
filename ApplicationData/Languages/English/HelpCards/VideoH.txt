@@ -1,0 +1,32 @@
+
+# Help Card
+# Report: Video Clips History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report highlights the most popular video clips being accessed on your site over time. This includes both streamed files and downloaded sound files. Use this information to assess any unusual trends in bandwidth consumption - video clips are generally quite large in size, and will apply greater pressure on your Internet connection than normal web pages.
+
+Note that for a file to be recognized as an video clip, its extension (such as .wma) must be specified in <i>Settings > Analysis > Extensions > Video</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Video Clips.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Files:</b>
+URL of the video clip being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the corresponding video clip. (Percentage as a proportion of hits to all video clips.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits to the corresponding video clip. (Percentage as a proportion of bytes transferred for all video clips.)
+
+<b>Errors:</b>
+Errors generated as a result of hits to the corresponding video clip.

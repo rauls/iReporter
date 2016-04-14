@@ -1,0 +1,32 @@
+
+#  Help Card
+# Report: File Downloads History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most frequently downloaded files on your website over time. Use this information to plan future site downloads, which could be similar in context or style to the most popular downloads. If the popularity of certain files peaked at certain times, the circumstances that gave rise to this behavior should be analyzed. Furthermore, if the popularity of certain files dwindles or increases, it can assist in the planning of future site content.
+
+If your files aren't appearing in this report, they may not be considered as valid file types. Proprietary file types must be defined in <i>Settings > Analysis > Extensions > Files</i> to appear in this report.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> File.
+Name of the file being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Attempted downloads of the corresponding file. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>File:</b>
+The name of the file being analyzed. The directory path shown is from the document root ("/") of your webserver. Click the hyperlink to download the corresponding file (note: for these links to work, you must specify your default hostname in <i>Settings > Analysis > Options > URL > Default host</i>.
+
+<b>Hits (%):</b>
+Number of download attempts for the corresponding file. (Percentage as a proportion of all attempted file downloads.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of download attempts for the corresponding file. (Percentage as a proportion of bytes transferred for all attempted file downloads.)
+
+<b>Errors:</b>
+Number of server errors generated as a result of download attempts for the corresponding file.

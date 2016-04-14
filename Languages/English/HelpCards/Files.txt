@@ -1,0 +1,30 @@
+
+#  Help Card
+# Report: URLs
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies the most accessed URLs (Universal Resource Locators, such as http://www.quest.com/funnel_web/) on your web site. Use this information to see if your most important files are receiving the appropriate number of hits. The information may be skewed if your site uses frames, since base frame pages tend to receive more hits than pages deeper within the actual frames. This report is most powerful when used in conjunction with filters, to include or exclude particular files, such as base frame pages or graphic files. If you are interested in the most accessed pages, rather than full URLs, see the Pages report.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Files.
+Name of the URL being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes and errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Files:</b>
+Name of the URL being analyzed. The directory path shown is from the document root ("/") of your webserver. Click the hyperlink to view the page (note: for these links to work, you must specify your default hostname in <i>Settings > Analysis > Options > URL > Default host</i>.
+
+<b>Hits (%):</b>
+Number of hits to the corresponding URL. (Percentage as a proportion of hits to all URLs.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits to the corresponding URL. (Percentage as a proportion of bytes transferred for all hits.)
+
+<b>Errors:</b>
+Errors generated as a result of hits to the corresponding URL.

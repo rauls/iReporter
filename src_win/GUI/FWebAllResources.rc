@@ -1,0 +1,8 @@
+// List of NOT currently included foreign languages
+#ifdef FOREIGN
+#include "AppChineseSimple.rc"
+#include "AppGerman.rc"
+#endif // DEBUG
+
+// List of currently included foreign languages
+#include "App.rc"

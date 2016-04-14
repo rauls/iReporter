@@ -1,0 +1,39 @@
+
+#  Help Card
+# Report: Pages
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most popular pages being viewed on your site, according to the page extensions defined in <i>Settings > Analysis > Extensions > Pages</i>. Use this information to see whether important content is being viewed by the majority of site visitors. If not, you may need to restructure your site to ensure that this critical information is easily located.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Pages.
+Name of the page being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, visitors or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Pages:</b>
+Name of the page being analyzed. The directory path shown is from the document root ("/") of your webserver. Click the hyperlink to view the page (note: for these links to work, you must specify your default hostname in <i>Settings > Analysis > Options > URL > Default host</i>.
+
+<b>Hits (%):</b>
+Number of hits to the corresponding page. (Percentage as a proportion of all hits to files regarded as pages.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the corresponding page. (Percentage as a proportion of all bytes transferred through page hits.)
+
+<b>Sessions:</b>
+Number of sessions in which the corresponding page was viewed. This value includes multiple views of the corresponding page by the same site visitor.
+
+<b>Mean Time:</b>
+The average amount of time spent on the corresponding page by all site visitors.
+
+<b>Visitors:</b>
+Number of unique visitors who viewed the corresponding page.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the corresponding page.  The total number of errors in this report will not necessarily reflect the total number of errors in the log files, as errors that are not for pages (eg gifs) will not be included in the report.

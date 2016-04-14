@@ -1,0 +1,36 @@
+
+# Help Card
+# Report: Unrecognized Agents
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows all the unrecognized agents in your log file. An "agent" essentially refers to the program being used to make hits to your web site. Examples of agents are Microsoft's Internet Explorer and Google's Googlebot. If you're seeing this report, your log file will contain an "agent" field, containing data that identifies the program being used to access your site. These agents are decoded by iReporter  into web browsers and search engine robots, according to entries specified in the <i>Settings</i> file. Where FWA cannot find a suitable match from the <i>Settings</i> file, it will place them in this report. Refer to the <i>Settings</i> for instructions on how to add new browsers and robots.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Unrecognized Agent.
+Name of the unrecognized agent being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits that were made by a visitor using the corresponding unrecongized agent. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors, pages or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Unrecognized Agent:</b>
+Name of the unrecognized agent being analyzed, along with its version number.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors using the corresponding unrecognized agent. (Percentage as a proportion of hits from all unrecognized agents.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors using the corresponding unrecognized agent. (Percentage as a proportion of bytes transferred from all unrecognized agents.)
+
+<b>Visitors:</b>
+Number of site visitors who used the corresponding unrecognized agent. This figure includes repeat visitors, so the total amount may appear higher than expected. 
+
+<b>Pages:</b>
+Number of pages viewed using the corresponding unrecognized agent.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the site by visitors using the corresponding  unrecognized agent.

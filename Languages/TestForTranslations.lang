@@ -1,0 +1,372 @@
+// German Language File
+//  4 code base
+// Version 4.0fc1, 12/09/00
+
+// Server Statistics = {ssNN}
+
+{ss01},&auml;Server Load Statistics
+{ss02},&auml;Detailed Reports
+{ss03},Anfragen
+{ss04},Daeur
+{ss05},&auml;Date Range from
+{ss06},&auml;To
+{ss07},Anfragen insgesamt
+{ss08},Zwischengespeicherte Anfragen insgesamt
+{ss09},Fehlerhafte Anfragen insgesamt
+{ss10},Fehlerhafte Protokolleintr&auml;ge
+{ss11},Durchschnittliche t&auml;gliche Anfragen
+{ss12},&auml;Average Requests/Hour
+{ss13},&auml;Sessions Info
+{ss14},&auml;Total Sessions
+{ss15},Anzahl Besucher insgesamt
+{ss16},Wiederkehrende Besucher insgesamt
+{ss17},&frac14;Total One Time Visitors
+{ss18},&frac34;Average Daily Sessions
+{ss19},&frac28;Average Session Length
+{ss20},&auml;Average Pages/Session
+{ss21},&auml;Average Requests/Session
+{ss22},&auml;Pages Info
+{ss23},Seiten insgesamt
+{ss24},&auml;Average Pages/Day
+{ss25},Dateien Download insgesamt
+{ss26},Download insgesamt (MB)
+{ss27},Bandbreite Out
+{ss28},Megabyte insgeasmt
+{ss29},Durchschnittlich &uuml;bermittelte Megabytes pro Tag
+{ss30},Durchschnittliche Bits/Sec (bps)
+{ss31},Prozentuale Auslastung einer Leitung mit
+{ss32},kbps
+{ss33},Bandbreite In
+{ss34},Kilobyte insgeasmt
+{ss35},Durchschnittlich &uuml;bermittelte Kilobytes pro Tag
+{ss36},&auml;Access Statistics for Period
+{ss37},Protokollverarbeitungszeit
+{ss38},&auml;lines/min
+
+// Report Categories = {rcNN}
+
+{rc01},&auml;Statistics
+{rc02},Verkehr
+{rc03},&auml;Diagnostic
+{rc04},Server
+{rc05},&auml;Demographics
+{rc06},Verweise
+{rc07},&auml;Streaming
+{rc08},&auml;Systems
+{rc09},Werbung
+{rc10},&auml;Marketing
+{rc11},&auml;Firewall
+
+// Report title (Long) = {rlNN}
+
+{rl01},&Uuml;bersicht
+{rl02},St&uuml;ndlich
+{rl03},&auml;Hourly History
+{rl04},T&auml;glich
+{rl05},&auml;Recent Days
+{rl06},W&ouml;chentlich
+{rl07},Monatlich
+{rl08},&auml;Server Errors
+{rl09},&auml;Server Errors History
+{rl10},&auml;Failed URLs
+{rl11},&auml;Failed URLs History
+{rl12},Seiten
+{rl13},Seitenchronik
+{rl14},&auml;Entry Pages
+{rl15},&auml;Entry Pages History
+{rl16},&auml;Exit Pages
+{rl17},&auml;Exit Pages History
+{rl18},Verzeichnisse
+{rl19},Hauptverzeichnisse
+{rl20},&auml;Top Level Directories History
+{rl21},&auml;URLs
+{rl22},&auml;Mean Paths
+{rl23},&auml;Content Groups
+{rl24},&auml;Content Groups History
+{rl25},&auml;File Downloads
+{rl26},&auml;File Downloads History
+{rl27},Dateitypen
+{rl28},Besucher
+{rl29},&auml;Clients Click Stream
+{rl30},Besucherchronik
+{rl31},&auml;Authenticated Users
+{rl32},&auml;Authenticated Users History
+{rl33},&auml;Domains
+{rl34},L&auml;nder
+{rl35},Welt Regionen
+{rl36},Organisationen
+{rl37},&auml;Session Distribution
+{rl38},Roboter
+{rl39},Verweise
+{rl40},Verweisende Web-Sites
+{rl41},&auml;Referral Sites History
+{rl42},Suchmaschinen
+{rl43},Suchbegriffe
+{rl44},Browser
+{rl45},Browser / Betriebssystem
+{rl46},Betriebssystem
+{rl47},&auml;Loyalty
+{rl48},Zeit Online
+{rl49},&auml;Impressions
+{rl50},&auml;Impressions History
+{rl51},&auml;Campaigns
+{rl52},&auml;Campaigns History
+{rl53},&auml;Circulation Frequency
+{rl54},&auml;Media Players
+{rl55},&auml;Audio Content
+{rl56},&auml;Video Content
+{rl57},&auml;Media Types
+{rl58},&auml;Source Addresses
+{rl59},&auml;Protocols
+{rl60},&auml;Sunday Transmission
+{rl61},&auml;Monday Transmission
+{rl62},&auml;Tuesday Transmission
+{rl63},&auml;Wednesday Transmission
+{rl64},&auml;Thursday Transmission
+{rl65},&auml;Friday Transmission
+{rl66},&auml;Saturday Transmission
+{rl67},&auml;Virtual Hosts
+{rl68},&auml;Virtual Hosts History
+{rl69},Protokoll - HTTP
+{rl70},Protokoll - HTTPS
+{rl71},Protokoll - Mail
+{rl72},Protokoll - FTP
+{rl73},Protokoll - Telnet
+{rl74},Protokoll - DNS
+{rl75},Protokoll - POP3
+{rl76},Protokoll - Real
+{rl77},&auml;Source Addresses
+{rl78},&auml; Report
+	
+// General Labels = {glNN}
+	
+{gl01},Anfragen
+{gl02},Sitzungen
+{gl03},Datei
+{gl04},Dateien
+{gl05},Verkehr
+{gl06},Durchschnitt
+{gl07},Fehler
+{gl08},Einheiten insgesamt
+{gl09},DM
+{gl10},K&uuml;rzlich
+{gl11},&auml;Recent Totals
+{gl12},&auml;Directory
+{gl13},Andere
+{gl14},&auml;File Not Found
+{gl15},Hoch
+{gl16},Niedrig
+{gl17},&auml;Client
+{gl18},Besucher
+{gl19},Besuchsfrequenz
+{gl20},Frequenz
+{gl21},&auml;Visit
+{gl22},Besuche
+{gl23},Besucher
+{gl24},&auml;Bytes
+{gl25},Seite
+{gl26},Seiten
+{gl27},Andere
+{gl28},Insgesamt
+{gl29},&auml;Subtotals
+{gl30},&auml;Referral
+{gl31},&auml;Country
+{gl32},&auml;Region
+{gl33},&auml;Path
+{gl34},Dom&auml;ne
+{gl35},&auml;Organization
+{gl36},&auml;Download File
+{gl37},&auml;Total Cost
+{gl38},Prozentuale Auslastung einer Leitung mit
+{gl39},Hauptverzeichnis
+{gl40},&auml;File Type
+{gl41},Serverfehler
+{gl42},&auml;Failed URL
+{gl43},Virtueller Host
+{gl44},&auml;URL
+{gl45},Browser
+{gl46},Betriebssystem
+{gl47},&auml;Mean Path
+{gl48},&auml;Robot
+{gl49},&auml;Search Term
+{gl50},&auml;Search Engine
+{gl51},&auml;Media Player
+{gl52},&auml;Audio Content
+{gl53},&auml;Video Content
+{gl54},&auml;Media Type
+{gl55},&auml;Total Sessions
+{gl56},&auml;Click-throughs
+{gl57},&auml;Cost/Month
+{gl58},&auml;First Sessions
+{gl59},&auml;Last Sessions
+{gl60},&auml;Clicks
+{gl61},&auml;Cost/Click
+{gl62},Kosten
+{gl63},&auml;Searches
+{gl64},&auml;Bytes Sent
+{gl65},&auml;Time Online
+{gl66},&auml;Content Group
+{gl67},&auml;Authenticated User
+{gl68},&auml;Advertisement Name
+{gl69},Protokoll - HTTP
+{gl70},Protokoll - HTTPS
+{gl71},Protokoll - Mail
+{gl72},Protokoll - FTP
+{gl73},Protokoll - Telnet
+{gl74},Protokoll - DNS
+{gl75},Protokoll - POP3
+{gl76},Protokoll - Real
+{gl77},&auml;Source Address
+{gl78},&auml;millions
+{gl79},kB
+{gl80},MB
+{gl81},GB
+{gl82},bps
+{gl83},kbps
+{gl84},Mbps
+{gl85},Gbps
+{gl86},%
+
+// Time-related = {tiNN}
+
+{ti01},Sonntag
+{ti02},Montag
+{ti03},Dienstag
+{ti04},Mittwoch
+{ti05},Donnerstag
+{ti06},Freitag
+{ti07},Samstag
+{ti08},&auml;Sun
+{ti09},&auml;Mon
+{ti10},&auml;Tue
+{ti11},&auml;Wed
+{ti12},&auml;Thu
+{ti13},&auml;Fri
+{ti14},&auml;Sat
+{ti15},&auml;January
+{ti16},&auml;February
+{ti17},&auml;March
+{ti18},&auml;April
+{ti19},Mai
+{ti20},&auml;June
+{ti21},&auml;July
+{ti22},&auml;August
+{ti23},&auml;September
+{ti24},&auml;October
+{ti25},&auml;November
+{ti26},&auml;December
+{ti27},GJan
+{ti28},GFeb
+{ti29},M&auml;r
+{ti30},GApr
+{ti31},Mai
+{ti32},GJun
+{ti33},GJul
+{ti34},GAug
+{ti35},GSep
+{ti36},Okt
+{ti37},GNov
+{ti38},Dez
+{ti39},Zeit
+{ti40},Dauer
+{ti41},&auml;sec
+{ti42},&auml;min
+{ti43},&auml;hour
+{ti44},Tag
+{ti45},Tag
+{ti46},Tage
+{ti47},Datum
+{ti48},Monat
+{ti49},&auml;Months
+{ti50},&auml;Hours of the Day
+{ti51},&auml;Days of the Week
+{ti52},&auml;Mean Time
+{ti53},&auml;Total Time
+{ti54},&auml;Duration (mins)
+{ti55},Mehrfach pro Tag
+{ti56},Zweimal pro Tag
+{ti57},Einmal pro Tag
+{ti58},Zweimal pro Woche
+{ti59},Einmal pro Woche
+{ti60},Alle 2 Wochen
+{ti61},Einmal pro Monat
+{ti62},Selten
+{ti63},Erster Besuch
+
+// Session Listing = {seNN}
+
+{se01},Sitzungsliste f&uuml;r
+{se02},Durchschnittliche Sitzungsdauer
+{se03},Sitzungsliste
+{se04},Tage insgesamt
+{se05},Datenbytes insgesamt
+{se06},Datenbyte gesendet insgesamt
+{se07},Durchschnittlich verwendete Datenbytes/Tag
+{se08},Online Zeit insgesamt
+{se09},Durchschnittliche online Zeit/Tag
+{se10},Gesch&auml;tzte Sitzungsdauer
+{se11},&auml;Session
+{se12},Verwendete Datenbytes
+{se13},&auml;Average Pages/Session
+
+// Comments = {cmNN}
+
+{cm01},HINWEIS: Bitte clicken Sie auf den Besucher um die jeweilige Sitzungshistorie anzuzeigen
+{cm02},HINWEIS: Bitte clicken Sie auf den Besucher um die jeweilige Benutzerhistorie anzuzeigen
+{cm03},Keine Seiten w&auml;hrend dieser Sitzung betrachtet
+{cm04},&auml;Unresolved IP
+{cm05},&auml;Invalid
+{cm06},&auml;Local Net
+{cm07},&auml;Server Errors
+{cm08},&auml;Unknown Host
+{cm09},&auml;OK
+{cm10},&auml;ERR
+{cm11},&auml;No Referrer
+{cm12},&auml;Bookmarked
+{cm13},Andere
+{cm14},&auml;Unknown
+{cm15},Continued on next page ...
+{cm16},... continued from previous page.
+
+// Server Errors = {erNN}
+
+{er01},&auml;Incomplete/Undefined (0)
+{er02},&auml;Created (201)
+{er03},&auml;Accepted (202)
+{er04},&auml;No content (204)
+{er05},&auml;Partial content (206)
+{er06},&auml;Moved permanently (301)
+{er07},&auml;Redirect (302)
+{er08},&auml;Not modified (304)
+{er09},&auml;Bad Request (400)
+{er10},&auml;Auth Required (401)
+{er11},&auml;Forbidden (403)
+{er12},&auml;File Not Found (404)
+{er13},&auml;Method Not Allowed (405)
+{er14},&auml;Not Acceptable (406)
+{er15},&auml;Proxy Authentication Required (407)
+{er16},&auml;Request timeout (408)
+{er17},&auml;Internal Server Error (500)
+{er18},&auml;Not Implemented (501)
+{er19},&auml;Bad Gateway (502)
+{er20},&auml;Service unavailable (503)
+{er21},&auml;Password Required (331)		// FTP errors
+{er22},&auml;Need account (332)
+{er23},&auml;Action pending (350)
+{er24},&auml;Service unavailable (421)
+{er25},&auml;Can't open connection (425)
+{er26},&auml;Connection closed (426)
+{er27},&auml;File Unavailable (450)
+{er28},&auml;Action aborted (451)
+{er29},&auml;Action not taken (452)
+{er30},&auml;Not Implemented (504)
+{er31},&auml;Not logged in (530)
+{er32},&auml;Need account (532)
+{er33},&auml;File unavailable (550)
+{er34},&auml;Action aborted (451)
+{er35},&auml;Storage Exceeded (552)
+{er36},&auml;Name not allowed (553)
+
+// System Information = {syNN}
+
+{sy01},ISO-8859-1		// charset for browser

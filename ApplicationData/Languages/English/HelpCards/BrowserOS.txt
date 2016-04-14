@@ -1,0 +1,47 @@
+
+# Help Card
+# Browsers / Operating Systems
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the web browsers (and their version number) being used by site visitors to make hits to your site, along with the operating system they are running on. By knowing the most popular browser types, you can determine the feasibility and appropriateness of using browser-specific features in your web content, such as frames, javascript or cascading style sheets. 
+
+Additionally, there may be operating system-specific issues that need to be taken into consideration. Furthermore, different operating systems tend to represent different types of visitors, which should be taken into consideration when planning future site content.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting).
+Hits that were made by a visitor using the corresponding browser / operating system combination. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors, pages or errors.
+
+<b>Horizontal axis:</b> Browser. 
+Name of the web browser being analyzed, along with its version number.
+
+<b>Colored bars:</b>
+Representative of the three main operating systems: Windows, Macintosh and Unix. The colors correspond with the key in the top-right corner of the graph.
+
+<!--TABLE-->
+<b>Browser:</b>
+Name of the web browser being analyzed, along with its version number.
+
+<b>Hits (%):</b>
+Total number of hits to the site by visitors using the corresponding browser. (Percentage as a proportion of hits from all browsers.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors using the corresponding browser. (Percentage as a proportion of bytes transferred from all browsers.)
+
+<b>Win:</b>
+Number of hits to the site by visitors using the corresponding web browser on a Windows operating system.
+
+<b>Mac:</b>
+Number of hits to the site by visitors using the corresponding web browser on a Macintosh operating system.
+
+<b>Unix:</b>
+Number of hits to the site by visitors using the corresponding web browser on a Unix operating system.
+
+<b>Visitors:</b>
+Number of site visitors who used the corresponding browser. This figure includes repeat visitors, so the total amount may appear higher than expected. 
+
+<b>Pages:</b>
+Number of pages viewed using the corresponding browser.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the site by visitors using the corresponding  browser.

@@ -1,0 +1,32 @@
+
+#  Help Card
+# Report: Video Clips
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report highlights the most popular video clips being accessed on your site. This includes both streamed files and downloaded video files. Use this information to assess your bandwidth requirements - video clips are generally quite large in size, and will apply greater pressure on your Internet connection than normal web pages.
+
+Note that for a file to be recognized as an video clip, its extension (such as .asf) must be specified in <i>Settings > Analysis > Extensions > Video</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Video Content.
+URL of the video clip being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits to the corresponding video clip. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Files:</b>
+URL of the video clip being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the corresponding video clip. (Percentage as a proportion of hits to all video clips.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits to the corresponding video clip. (Percentage as a proportion of bytes transferred for all video clips.)
+
+<b>Errors:</b>
+Errors generated as a result of hits to the corresponding video clip.

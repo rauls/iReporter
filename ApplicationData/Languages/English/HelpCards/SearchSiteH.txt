@@ -1,0 +1,30 @@
+
+# Help Card
+# Report: Search Engines History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report details which search engines are being used by visitors to find your site over time. Use this information to find trends in the performance of different search engines, and to ensure larger search engines aren't ignoring your site. The actual keywords used to find your site can be viewed by clicking the hyperlink on each Search Engine entry.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by visitors, bytes or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Search Engines.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Search Engine:</b>
+Name of the search engine being analyzed. Click the hyperlink to view the search terms (keywords) used from the corresponding search engine.
+
+<b>Visitors (%):</b>
+Number of visitors referred to your site by the corresponding search engine. (Percentage as a proportion of visitors referred to your site by all search engines.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of the hits referred by the correposnding search engine. For example, if an Internet user followed a link to your site from a search engine, the size of the resultant page and graphics on your site will be included in this figure. (Percentage as a proportion of bytes transferred through followed links from the corresponding search engine.)
+
+<b>Errors:</b>
+Number of broken links referred by the corresponding search engine.

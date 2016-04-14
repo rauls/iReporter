@@ -1,0 +1,147 @@
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "application.h"
+#include "winver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+FUNNELWEB MENU DISCARDABLE 
+BEGIN
+    POPUP "&Akte"
+    BEGIN
+        MENUITEM "&New Settings",               IDM_NEW
+        MENUITEM "&Open Settings...",           IDM_OPEN
+        POPUP "&Recent Settings"
+        BEGIN
+            MENUITEM "&1  Recent file",             ID_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings",              IDM_SAVE
+        MENUITEM "Save Settings &As...",        IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Process Log File...",        IDM_PROCESS
+        MENUITEM "&Process Remote Log via FTP...", IDM_FTPPROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Bearbeiten Sie"
+    BEGIN
+        MENUITEM "&Settings...",                IDM_PREFS
+        MENUITEM "Sch&edule...",                IDM_SCHEDULE
+    END
+    POPUP "&Sicht"
+    BEGIN
+        MENUITEM "&Clear Log List\tCtrl+L",     IDM_CLEARLIST
+        MENUITEM "&Show Logs",                  IDM_GROW
+        MENUITEM "&Hide Logs",                  IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Report ...",            IDM_VIEWHTML
+    END
+    POPUP "&Tool"
+    BEGIN
+        MENUITEM "&New Instance...",            IDM_NEWAPP
+        MENUITEM "&View Log File...",           IDM_MONITORFILE
+        MENUITEM "Schedule &Transcript...",     IDM_VIEWTRANSCRIPT
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Manual...",                  IDM_HELP
+        MENUITEM "&Online Manual...",           IDM_ONLINEMANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "&Periodically check for updates", IDM_UPDATEONOFF
+        MENUITEM "Check for &updates now...",   IDM_CHECKFORUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "&GemarmAbout Funnel Web",           IDM_ABOUT
+        MENUITEM "Active Concepts &Website",    IDM_ACWWW
+        MENUITEM "Active Concepts &Support Website", IDM_SUPPORTWWW
+    END
+END
+
+FUNNELWEBNT MENU DISCARDABLE 
+BEGIN
+    POPUP "&Akte"
+    BEGIN
+        MENUITEM "&New Settings",               IDM_NEW
+        MENUITEM "&Open Settings...",           IDM_OPEN
+        POPUP "&Recent Settings"
+        BEGIN
+            MENUITEM "&1  Recent file",             ID_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings",              IDM_SAVE
+        MENUITEM "Save Settings &As...",        IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Process Log File...",        IDM_PROCESS
+        MENUITEM "&Process Remote Log via FTP...", IDM_FTPPROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Settings...",                IDM_PREFS
+        MENUITEM "Sch&edule...",                IDM_SCHEDULE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Clear Log List\tCtrl+L",     IDM_CLEARLIST
+        MENUITEM "&Show Logs",                  IDM_GROW
+        MENUITEM "&Hide Logs",                  IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Report ...",            IDM_VIEWHTML
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&New Instance...",            IDM_NEWAPP
+        MENUITEM "&View Log File...",           IDM_MONITORFILE
+        MENUITEM "Schedule &Transcript...",     40046
+        MENUITEM SEPARATOR
+        MENUITEM "&Install NTService",          IDM_INSTALLNTS
+        MENUITEM "Install NTService with autostart", IDM_INSTALLNTSBOOT
+        MENUITEM "Remove &NTService",           IDM_REMOVENTS
+        MENUITEM "&Start NTService",            IDM_STARTUPSERVICE
+        MENUITEM "&End NTService",              IDM_ENDSERVICE
+        MENUITEM "&Control Panel Services...",  IDM_SHOWNTSERVICES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Manual...",                  IDM_HELP
+        MENUITEM "&Online Manual...",           IDM_ONLINEMANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "&Periodically check for updates", IDM_UPDATEONOFF
+        MENUITEM "Check for &updates now...",   IDM_CHECKFORUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "&About Funnel Web",           IDM_ABOUT
+        MENUITEM "Active Concepts &Website",    IDM_ACWWW
+        MENUITEM "Active Concepts &Support Website", IDM_SUPPORTWWW
+    END
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+

@@ -1,0 +1,37 @@
+/* XPM */
+static char *mkdir_icon[] = {
+/* width height num_colors chars_per_pixel */
+"    17    17       13            1",
+/* colors */
+". c #000000",
+"# c #313131",
+"a c #313163",
+"b c #31319c",
+"c c #63319c",
+"d c #636363",
+"e c #63639c",
+"f c #6363ce",
+"g c #9c9c9c",
+"h c #9c9cff",
+"i c #9cceff",
+"j s None c None",
+"k c #ceceff",
+/* pixels */
+"jjjjjjjjjjjjjjjjj",
+"jjjeejjjjj.jj.jj.",
+"jeahhfejjea.j.j.j",
+"jekfafhfehhf.j.jj",
+"jekkhfafhh..h.j..",
+"jekkkkhfafhh...jj",
+"jekkkkkkhfa.f.j.j",
+"jekkkkkkkk.af.jj.",
+"jekkkkkkkifabajjj",
+"jckkkkkkkhfab.jjj",
+"jbkkkkkihhfab.jjj",
+"jbfhkkihhhfabajjj",
+"jjabfhhhhhfabadgj",
+"jjjjabfhhhfabaddj",
+"jjjjjjabfffabadgj",
+"jjjjjjjjabfab#djj",
+"jjjjjjjjjja##djjj"
+};

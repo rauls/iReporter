@@ -1,0 +1,36 @@
+
+#  Help Card
+# Report: Advertising Impressions History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+
+This report helps to gauge the effectiveness over time of advertisements hosted on your web site. It first looks at the number of impressions, that is, the number of times visitors actually saw the advertisement on your site, and then goes on to report the number of times visitors followed the advertisement link. The act of following such a link is widely referred to as a "clickthrough". The number of impressions, versus the number of clickthroughs, gives you an immediate measure of advertising effectiveness on your site. 
+
+If the number of impressions for an advertisement is below expectations, you may need to place it elsewhere on the page, or to redesign it completely. Similarly, a lower then expected number of clickthroughs may indicate a need to redesign or move the advertisement. It may also indicate a lack of interest in the topic being advertised.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Number of times the corresponding advertisement was seen by site visitors. Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Advertisements.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Advertisement Name:</b>
+Name given to the advertisement being analyzed. 
+
+<b>Hits (%):</b>
+Number of times the corresponding advertisement was seen by site visitors. (Percentage as a proportion of hits to all advertisements hosted on your site.)
+
+<b>Clickthroughs:</b>
+The number of times visitors clicked the advertisement to find out more information.
+
+<b>% Clicks:</b>
+Percentage value of the number of clickthroughs vs. impressions. This gives an immediate effectiveness measure for the corresponding advertisement.
+
+<b>Errors:</b>
+Number of times the advertisement could not be viewed by site visitors.

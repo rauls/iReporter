@@ -1,0 +1,43 @@
+
+#  Help Card
+# Report: Visitors History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the IP addresses and/or hostnames of visitors to your site, along with their site usage statistics over time. Use this information to assess trends in site usage by certain known visitors, such as prospective customers who have showed interest in a certain product. Every session undertaken and all pages viewed by each of the visitors in this report can be seen in the Visitors Click Stream report.
+
+If only IP addresses (such as 192.77.210.55) are showing in the report, then you may need to enable DNS lookups, in <i>Settings > Analysis > Network > DNS</i>. Bear in mind that not all IP addresses on the Internet have a name associated with them.
+
+Note: one visitor address or hostname may actually represent multiple visitors, and at times, hundreds or even thousands of visitors. This is due to the widespread usage of proxy servers, which store web sites to enable faster and cheaper access for those utilizing it. This problem can be overcome through the use of authenticating procedures (visitors logging in to the site with a username and password), or, in part, through the use of cookies.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages and errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Visitors.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Visitor:</b>
+IP address or hostname of the visitor being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the site by the corresponding visitor. (Percentage as a proportion of hits to the site by all visitors.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits by the corresponding visitor. (Percentage as a proportion of the   bytes transferred as a result of hits by all visitors.)
+
+<b>Sessions:</b>
+Number of sessions undertaken by the corresponding visitor.
+
+<b>Mean time:</b>
+The average time spent on the website during each session undertaken by the corresponding visitor. It is represented in hours, minutes and seconds (HH:MM:SS).
+
+<b>Pages:</b>
+Number of pages viewed by the corresponding site visitor. 
+
+<b>Errors:</b>
+Errors generated as a result of hits to the site by the corresponding visitor.

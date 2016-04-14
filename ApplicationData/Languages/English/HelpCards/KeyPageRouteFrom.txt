@@ -1,0 +1,46 @@
+
+# Help Card
+# Report: Routes From Key Pages
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows the most common routes taken from key pages on your site.  Use this information to assess the nature of content being viewed after viewing key pages, which may help to better target different types of content.  It can also aid in the restructuring of your site, to make specific information more readily accessible from key pages.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Key Pages 
+Key Page, as specified in <i>Settings > Tracking > Routes From Key Pages</i>
+
+<b>Horizontal axis:</b> Hits  
+Hits (default sorting). This sorting (and resultant horizontal graph axis) can be changed in <i>Settings > Statistics > Options > Sorting</i>. This report may only be sorted by hits, bytes or errors.
+
+<b>Red lines (if present):</b> 
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b><u>Main Table: Key Page Summaries</b></u>
+
+<b>Key Pages:<b>
+Name of the key page being tracked, as specified in the Settings dialog.
+
+<b>Hits (%):<b>
+Total number of hits to the key page. (Percentage as a proportion of all hits to key pages.)
+
+<b>Bytes (%):<b>
+Megabytes transferred as a result of hits to the key page. (Percentage as a proportion of bytes transferred from all key pages.)
+
+<b>Errors:<b>
+Number of errors generated when attempting to view the key page.
+
+
+<b>Sub-tables: Routes Taken From Individual Key Pages</b>
+<i>Note: the maximum number of items shown will match the maximum rows selected for the main table.</i>
+
+<b>Route:</b>
+The route taken after viewing the key page. If the route is shorter than the "pages to trace forward" length specified in <i>Settings > Tracking > Routes To Key Pages<i>, the user left your site on the last page listed.
+
+<b>Times Accessed:</b>
+Number of times that the corresponding route was traversed.
+
+<b>% of Routes Taken:</b>
+The percentage of routes taken as a proportion of all routes taken to the corresponding key page.

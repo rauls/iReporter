@@ -1,0 +1,27 @@
+
+# Help Card
+# Report: Failed URLs History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies the files which are causing the most errors on your site over time. Use this information to identify error trends, and to gauge the success of any efforts to eradicate the files causing errors. Errors that are not corrected for a long time will heavily compromise your site's usability and reputation. The source of these errors can be found in the internal and external "Pages Containing Broken Links" reports.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting).
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits and bytes only.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Failed URLs.
+The numbers along this axis correspond to the failed URLs in the table.
+
+<!--TABLE-->
+<b>Failed URL:</b>
+The file on your site that is causing errors. Its associated error is shown in parentheses. See Chapter 3 <i>Exploring Settings > Diagnostic Statistics</i> in the User Guide for a listing of common error codes.
+
+<b>Hits (%):</b>
+Number of failed hits to the corresponding URL. (Percentage as a proportion of all hits to failed URLs.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of the failed URL. (Percentage as a proportion of all bytes transferred for failed hits to the corresponding URL.)

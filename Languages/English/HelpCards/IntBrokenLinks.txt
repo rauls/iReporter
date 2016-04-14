@@ -1,0 +1,46 @@
+
+#  Help Card
+# Report: Internal Pages Containing Broken Links
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows internal pages containing broken links to other pages your site.  These can be the result of structural changes, retiring of old web content, or an incorrect/misspelt hyperlink. Use this report to verify the integrity of your internal links and ensure your site's usability.
+
+<!--GRAPH-->
+<b>Vertical axis:</b>  Page
+Page containing broken link(s).
+
+<b>Horizontal axis:</b> Broken Links  
+Number of broken links referenced (default sorting).  You cannot change the sort order of this report.
+
+<!--TABLE-->
+<b>Main Table: Internal Pages Containing Broken Links</b>
+
+<b>Page:</b>
+URL of the page containing at least one broken link. A detailed list of broken links for the corresponding page can be viewed by clicking the page name.
+
+<b>Broken Links (%):</b>
+Number of broken links contained on the corresponding page. (Percentage of broken links on each page as a proportion of all broken links on the site.)
+
+<b>Broken Link Hits (%):</b>
+Number of times all broken links were hit from the corresponding page. (Percentage as a proportion of all broken link hits on the site.)
+
+<b>Total Hits (%):</b>
+The total number of hits to the corresponding page, including broken link hits. (Percentage of hits to the page as a proportion of all hits to pages containing broken links.)
+
+<b>Visitors:</b>
+Number of site visitors affected by broken links on the corresponding page.
+
+
+<b>Sub-tables: Internal Broken Link Referral Pages</b>
+<i>Note: the maximum number of items shown will match the maximum rows selected for the main table.</i>
+
+<b>Broken Link:</b>
+The actual link causing a "File Not Found" error.
+
+<b>Hits Referred (%):</b>
+Number of times the broken link was hit by site visitors. (Percentage as a proportion of all broken links referred from the corresponding page.)
+
+<b>Visitors:</b>
+Number of unique site visitors who hit the broken link.

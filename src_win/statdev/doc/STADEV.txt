@@ -1,0 +1,1815 @@
+STATISTICA DEVELOPMENT ENVIRONMENT
+1.	Overview
+1.1.	What it is
+General purpose libraries for reading/writing STATISTICA system data files.
+1.2.	Where it can be used
+Can be used in a variety of environments: STATISTICA BASIC, Visual C++, Visual Basic, Delphi, FORTRAN.  There are two versions: 16 and 32 bit.
+Sample applications:
+1. third party general-purpose programs for importing/exporting data, 
+2. front-ends for data mining applications,
+3. various applications that interface STATISTICA with other components of enterprise-wide computing environments (e.g., one can add a front-end to a database that transfers data to STATISTICA files or use STATISTICA data files to communicate selected data to a corporate data base (e.g., written in VB or C/C++)),
+4. STATISTICA BASIC programs that access data files that are currently 'not loaded' into STATISTICA (data array), such as custom applications that merge data from multiple (simultaneously open) STATISTICA data files.
+1.3.	What you can do with it
+STATISTICA Development Environment is a very powerful tool that allows the users to manipulate virtually all components of STATISTICA files including file headers, variable specifications, case names, value labels and data.
+1.4.	How to use it
+Operating on STATISTICA files is generally handle-based, just like Scrollsheet and graph operations in STATISTICA BASIC.  A handle to a file must be opened/created, operated on, and then closed.  Closing a file handle is very important :
+* it commits changes to the disk file;
+* a failure to close open handles will cause GPFs and memory leaks.
+Any modifications of specifications or data of an existing STATISTICA file are performed directly on that file.  It is the user's responsibility to create a backup if he/she wants to preserve the original.
+Operating on files currently loaded into STATISTICA is not allowed - it may cause sharing problems and data corruption.
+2.	Examples
+2.1.	STATISTICA BASIC
+To use it from STATISTICA BASIC one must do the following:
+i) put stadev.dll and stadev.inc files in the STATISTICA directory;
+ii) include the development environment include file at the beginning of the program:
+{$I:'stadev.inc'}
+or alternatively in the userlib.inc file and then it will be visible to all programs;
+iii) call appropriate functions from the list below.
+2.1.1.	Simple reading of data
+This example opens a STATISTICA data file, reads one data value and then closes it.
+
+{$I:'stadev.inc'}
+handle := StaOpenFile ("d:\data\file.sta");
+StaGetData (handle, 2, 3, d); {get value of second variable in third case }
+StaCloseFile (handle);
+
+2.1.2.	More sophisticated reading of data
+This example dumps to the STATISTICA text output window all information about the STATISTICA data file, including all variable specifications, labels, and data values:
+
+{$I:'stadev.inc'}
+
+if 0 = SelectOpenFileName (?Title$, fn$, ".sta") then Exit; 
+ 
+writeln ("STATISTICA file information"); 
+writeln; 
+h := StaOpenFile (fn$); 
+writeln ("File name:", fn$); 
+ 
+nv := StaGetNVars (h); 
+writeln ("Number of variables:", nv); 
+ 
+nc := StaGetNCases (h); 
+writeln ("Number of cases:", nc); 
+ 
+StaGetFileHeader (h, fh$, 80); 
+writeln ("File header:", fh$); 
+writeln; 
+ 
+writeln ("Variable specs:"); 
+for i:=1 to nv do 
+begin 
+	StaGetVarName (h, i, vn$); 
+	StaGetVarLongName (h, i, lvn$, 128); 
+	writeln ("Variable ", i, ": ", vn$, "     ", lvn$); 
+	StaGetVarFormat (h, i, wid, dec, type, subt); 
+	writeln ("Format: ", wid, ".", dec); 
+	StaGetVarMD (h, i, md); 
+	writeln ("Missing Data: ", md) 
+end; 
+writeln; 
+ 
+writeln ("Case names:"); 
+writeln; 
+cnl := StaGetCaseNameLength (h); 
+if cnl = 0 then 
+	writeln ("No case names in this file") 
+else 
+begin 
+	writeln ("CN Length: ", cnl); 
+	for i := 1 to nc do 
+	begin 
+		StaGetCaseName (h, i, cn$, 20);   
+		writeln ("Case # ", i, ": ", cn$) 
+	end 
+end; 
+ 
+for i := 1 to nc do 
+begin 
+	writeln ("Case # ", i, ":"); 
+	for j := 1 to nv do 
+	begin 
+		StaGetData (h, j, i, d); 
+		write (d); 
+		if 0 <> StaGetLabelForValue (h, j, d, lab$) then 
+		begin 
+			write ("(", lab$); 
+			if 0 <> StaGetLongLabelForValue (h, j, d, llab$, 128) then 
+				write (",", llab$); 
+			write (") ") 
+		end 
+	end; 
+	writeln; 
+end; 
+ 
+StaCloseFile (h); 
+
+2.1.3.	Creating a new file
+This example creates a new data file with 3 variables and 5 cases and fills it with random numbers:
+
+{$I:'stadev.inc'}
+handle := StaCreateFile (3, 5, "e:\myfiles\test.sta");
+
+StaSetVarName (handle, 1, "ABC");
+StaSetVarName (handle, 2, "MIDDLE");
+StaSetVarName (handle, 3, "XYZ");
+
+for i := 1 to 3 do
+  for j := 1 to 5 do
+    StaSetData (handle, i, j, rnd(10));
+
+StaCloseFile (han dle);
+
+2.1.4.	Modifying an existing file
+This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+
+{$I:'stadev.inc'}
+handle := StaOpenFile ("c:\data.sta");
+  {add variable number 5}
+StaAddVars (handle, 4, 1); 
+  {set new variable name}
+StaSetVarName (handle, 5, "BHPH");
+  {insert some values}
+NC := StaGetNCases (handle);
+for i := 1 to NC do
+  StaSetData (handle, 5, i, i * 10);
+  {add text labels}
+StaAddLabel (handle, 5, 10, "A", "long label for A");
+StaAddLabel (handle, 5, 20, "B", "long label for B");
+  {close the handle}
+StaCloseFile (handle);
+
+2.2.	C/C++
+To use it from C/C++:
+i)  include the Development Environment include file ( #include "stadev.h" ) into the source file where you will call the library functions;
+ii)  call desired functions, as shown in examples below; 
+iii)  link stadev.dll (for 16-bit programs) or stadev32.dll (for 32-bit programs) to your program.
+2.2.1.	Reading of data
+This example dumps to a text file all information about the STATISTICA data file, including variable specifications and data values with labels:
+
+   HSTAFILE hSta;
+   FILE * hOut;
+
+   hOut = fopen ("c:\\stat\\sdevout.txt", "w+");
+   if ( hOut == NULL ) {
+      MessageBox (NULL, "Cannot open text output file !!!", "Error", MB_OK);
+      return;
+   }
+   hSta = StaOpenFile ("c:\\stat\\examples\\adstudy.sta");
+   if ( hSta == 0 ) {
+      MessageBox (NULL, "Cannot open requested STATISTICA file !!!", "Error", MB_OK);
+      fclose (hOut);
+      return;
+   }
+   fputs ("STATISTICA file information\n\n", hOut);
+   fputs ("File name: ", hOut);
+   fputs (FileName, hOut);
+   fputc ('\n', hOut);
+    
+   short nv = StaGetNVars (hSta); 
+   fprintf (hOut, "Number of variables: %d\n", nv);
+    
+   long nc = StaGetNCases (hSta);
+   fprintf (hOut, "Number of cases: %ld\n", nc);
+
+   char fh[STAMAX_HEADERLEN+1];
+   StaGetFileHeader (hSta, fh, sizeof(fh));
+   fprintf (hOut, "File header: %s\n", fh); 
+    
+   char Varname[STAMAX_VARNAMELEN+1],
+        LongVN[STAMAX_LONGVARNAMELEN+1];
+   Varname[STAMAX_VARNAMELEN] = 0;
+   LongVN[STAMAX_LONGVARNAMELEN] = 0;
+   short wid, dec, type, subt;
+   double MD;
+   short i;
+   fprintf (hOut, "\nVariable specs:\n"); 
+   for (i=1; i <= nv; i++ ) {
+      StaGetVarName (hSta, i, Varname); 
+      if ( RES_ERR == StaGetVarLongName (hSta, i, LongVN, sizeof(LongVN)) )
+         *LongVN = 0;
+      fprintf (hOut, "Variable %d: %s, %s\n", i, Varname, LongVN); 
+      StaGetVarFormat (hSta, i, &wid, &dec, &type, &subt); 
+      fprintf (hOut, "Format: %d.%d; Type: %d, Subtype: %d\n", wid, dec, type, subt); 
+      StaGetVarMD (hSta, i, &MD); 
+      fprintf (hOut, "Missing Data: %f\n\n", MD);
+   }
+
+   fprintf (hOut, "Case names:\n");
+   short cnl = StaGetCaseNameLength (hSta);
+   long j;
+   char Casename[STAMAX_CASENAMELEN+1];
+   Casename[STAMAX_CASENAMELEN] = 0;
+   if ( cnl == 0 )
+      fputs ("No case names in this file", hOut);
+   else {
+      fprintf (hOut, "Case name length: %d\n", cnl); 
+      for (j=1; j <= nc; j++ ) {
+         StaGetCaseName (hSta, j, Casename, sizeof(Casename));
+         fprintf (hOut, "Case # %d: %s\n", j, Casename);
+      }
+   }
+   
+   double d;
+   char lab[STAMAX_SLABELLEN+1],
+        llab[STAMAX_LLABELLEN+1];
+   lab[STAMAX_SLABELLEN] = 0;
+   fputs ("\nData dump:\n\n", hOut);
+   for ( j=1; j <= nc; j++ ) {
+      fprintf (hOut, "\nCase # %d:\n", j); 
+      for ( i=1; i <= nv; i++ ) {
+         StaGetData (hSta, i, j, &d); 
+         fprintf (hOut, " %5.1f", d);
+         if ( 0 != StaGetLabelForValue (hSta, i, d, lab) ) {
+            fprintf (hOut, "(%s", lab);
+            memset (llab, 0, STAMAX_LLABELLEN+1);
+            if ( 0 != StaGetLongLabelForValue (hSta, i, d, llab, sizeof(llab)) )
+               fprintf (hOut, ", %s", llab); 
+            fputs (")   ", hOut);
+         }
+      }
+   }
+
+   StaCloseFile (hSta);
+   fclose (hOut);
+2.2.2.	Creating a new file
+This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+
+   HSTAFILE handle = StaCreateFile (10, 10, "c:\\stat\\files\\newdata.sta");
+   if ( handle == 0 ) {
+      MessageBox (NULL, "Cannot create STATISTICA file !!!", "Error", MB_OK);
+      return;
+   }
+   // change names of 3 first variables:
+   StaSetVarName (handle, 1, "ABC");
+   StaSetVarName (handle, 2, "MIDDLE");
+   StaSetVarName (handle, 3, "XYZ");
+   // fill the file with random numbers:
+   srand( (unsigned)time( NULL ) );
+   for ( short i=1; i <= 10; i++ )
+      for ( long j=1; j <= 10; j++ )
+         StaSetData (handle, i, j, rand());
+   StaCloseFile (handle);
+2.2.3.	Modifying existing file
+This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+
+   HSTAFILE handle = StaOpenFile ("c:\\stat\\files\\mydata.sta");
+   if ( handle == 0 ) {
+      MessageBox (NULL, "Cannot create STATISTICA file !!!", "Error", MB_OK);
+      return;
+   }
+   // add variable number 5:
+   StaAddVars (handle, 4, 1);
+   // set new variable name:
+   StaSetVarName (handle, 5, "BHPH");
+   // insert some values:
+   long NC = StaGetNCases (handle);
+   for ( long i=1; i <= NC; i++ )
+      StaSetData (handle, 5, i, i * 10);
+   // add text labels:
+   StaAddLabel (handle, 5, 10, "A", "long label for A");
+   StaAddLabel (handle, 5, 20, "B", "long label for B");
+   // close the handle:
+   StaCloseFile (handle);
+2.3.	Visual Basic (32 bit)
+To use it from 32-bit Visual Basic:
+i)  create a module containing STATISTICA Development Environment VB header file (sd_vb32.inc);
+ii)  call desired functions, as shown in examples below; 
+iii)  put stadev32.dll on the path or in VB directory (so it is visible for VB run time).
+
+2.3.1.	Reading of data
+This example dumps to a debug window all information about the STATISTICA data file, including variable specifications and data values with labels:
+
+Private Sub example1(fname$)
+
+Debug.Print ("STATISTICA file information")
+
+h = StaOpenFile(fname$)
+If h = 0 Then Exit Sub
+Debug.Print "File name:", fname$
+ 
+nv = StaGetNVars(h)
+Debug.Print "Number of variables:", nv
+ 
+nc = StaGetNCases(h)
+Debug.Print "Number of cases:", nc
+ 
+Dim fh(STAMAX_HEADERLEN + 1) As Byte
+res = StaGetFileHeader(h, fh(0), STAMAX_HEADERLEN + 1)
+Debug.Print "File header:", BytesToString(fh)
+
+Dim vn(STAMAX_VARNAMELEN + 1) As Byte
+Dim lvn(STAMAX_LONGVARNAMELEN + 1) As Byte
+Dim wid As Integer
+Dim dec As Integer
+Dim typ As Integer
+Dim subt As Integer
+Dim md As Double
+Debug.Print "Variable specs:"
+For i = 1 To nv
+    res = StaGetVarName(h, i, vn(0))
+    res = StaGetVarLongName(h, i, lvn(0), STAMAX_LONGVARNAMELEN + 1)
+    Debug.Print "Variable ", i, ": ", BytesToString(vn), "     ", BytesToString(lvn)
+    res = StaGetVarFormat(h, i, wid, dec, typ, subt)
+    Debug.Print "Format: ", wid, ".", dec
+    res = StaGetVarMD(h, i, md)
+    Debug.Print "Missing Data: ", md
+Next i
+ 
+Dim cn(STAMAX_CASENAMELEN + 1) As Byte
+Debug.Print "Case names:"
+cnl = StaGetCaseNameLength(h)
+If cnl = 0 Then
+    Debug.Print "No case names in this file"
+Else
+    Debug.Print "CN Length: ", cnl
+    For i = 1 To nc
+        res = StaGetCaseName(h, i, cn(0), 20)
+        Debug.Print "Case # ", i, ": ", BytesToString(cn)
+    Next i
+End If
+ 
+Dim d As Double
+Dim lab(STAMAX_SLABELLEN + 1) As Byte
+Dim llab(STAMAX_LLABELLEN + 1) As Byte
+For i = 1 To nc
+    Debug.Print "Case # ", i, ":"
+    For j = 1 To nv
+        res = StaGetData(h, j, i, d)
+        Debug.Print d
+        If 0 <> StaGetLabelForValue(h, j, d, lab(0)) Then
+            Debug.Print BytesToString(lab)
+            If 0 <> StaGetLongLabelForValue(h, j, d, llab(0), STAMAX_LLABELLEN + 1) Then
+                Debug.Print BytesToString(llab)
+            End If
+        End If
+    Next j
+Next i
+StaCloseFile (h)
+End Sub
+ 
+For this example you also need the following utility function in order to be able to pass string arguments by reference (they are actually passed as byte arrays and then converted to string):
+
+Private Function BytesToString(byte_array() As Byte) As String
+' convert byte array to string.
+Dim Data As String, StrLen As String
+Data = StrConv(byte_array(), vbUnicode)
+StrLen = InStr(Data, Chr(0)) - 1
+BytesToString = Left(Data, StrLen)
+End Function
+
+2.3.2.	Creating a new file
+This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+
+Private Sub example2(fname$)
+H = StaCreateFile(10, 10, fname$)
+If H = 0 Then Exit Sub
+'change names of 3 first variables:
+res = StaSetVarName(H, 1, "ABC")
+res = StaSetVarName(H, 2, "MIDDLE")
+res = StaSetVarName(H, 3, "XYZ")
+'fill the file with random numbers:
+For i = 1 To 10
+      For j = 1 To 10
+         res = StaSetData(H, i, j, Rnd)
+      Next j
+Next i
+StaCloseFile (H)
+Debug.Print "finished"
+End Sub
+2.3.3.	Modifying existing file
+This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+
+Private Sub example3(fname$)
+H = StaOpenFile(fname$)
+If H = 0 Then Exit Sub
+'add variable number 5:
+res = StaAddVars(H, 4, 1)
+'set new variable name:
+res = StaSetVarName(H, 5, "BHPH")
+'insert some values:
+NC = StaGetNCases(H)
+For i = 1 To NC
+   res = StaSetData(H, 5, i, i * 10)
+Next i
+'add text labels:
+res = StaAddLabel(H, 5, 10, "A", "long label for A")
+res = StaAddLabel(H, 5, 20, "B", "long label for B")
+'close the file handle:
+StaCloseFile (H)
+Debug.Print "finished"
+End Sub
+
+
+
+2.4.	Visual Basic (16 bit)
+To use it from 16-bit Visual Basic:
+i)  create a module containing STATISTICA Development Environment VB header file (sd_vb16.inc);
+ii)  call desired functions, as shown in examples below; 
+iii)  put stadev.dll on the path or in VB directory (so it is visible for VB run time).
+
+2.4.1.	Reading of data
+This example dumps to a debug window all information about the STATISTICA data file, including variable specifications and data values with labels:
+
+Private Sub example1(fname$)
+
+Debug.Print ("STATISTICA file information")
+
+H = StaOpenFile(fname$)
+If H = 0 Then Exit Sub
+Debug.Print "File name:", fname$
+ 
+nv = StaGetNVars(H)
+Debug.Print "Number of variables:", nv
+ 
+NC = StaGetNCases(H)
+Debug.Print "Number of cases:", NC
+ 
+res = StaGetFileHeader(H, fh$, STAMAX_HEADERLEN + 1)
+Debug.Print "File header:", fh$
+
+Dim wid As Integer
+Dim dec As Integer
+Dim typ As Integer
+Dim subt As Integer
+Dim md As Double
+Debug.Print "Variable specs:"
+For i = 1 To nv
+    res = StaGetVarName(H, i, vn$)
+    res = StaGetVarLongName(H, i, lvn$, STAMAX_LONGVARNAMELEN + 1)
+    Debug.Print "Variable ", i, ": ", vn$, "     ", lvn$
+    res = StaGetVarFormat(H, i, wid, dec, typ, subt)
+    Debug.Print "Format: ", wid, ".", dec
+    res = StaGetVarMD(H, i, md)
+    Debug.Print "Missing Data: ", md
+Next i
+ 
+Debug.Print "Case names:"
+cnl = StaGetCaseNameLength(H)
+If cnl = 0 Then
+    Debug.Print "No case names in this file"
+Else
+    Debug.Print "CN Length: ", cnl
+    For i = 1 To NC
+        res = StaGetCaseName(H, i, cn$, 20)
+        Debug.Print "Case # ", i, ": ", cn$
+    Next i
+End If
+ 
+Dim d As Double
+For i = 1 To NC
+    Debug.Print "Case # ", i, ":"
+    For j = 1 To nv
+        res = StaGetData(H, j, i, d)
+        Debug.Print d
+        If 0 <> StaGetLabelForValue(H, j, d, lab$) Then
+            Debug.Print "(", lab$
+            If 0 <> StaGetLongLabelForValue(H, j, d, llab$, STAMAX_LLABELLEN + 1) Then
+                Debug.Print ",", llab$
+            End If
+            Debug.Print ") "
+        End If
+    Next j
+Next i
+ 
+StaCloseFile (H)
+End Sub
+2.4.2.	Creating a new file
+This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+
+Private Sub example2(fname$)
+
+H = StaCreateFile(10, 10, fname$)
+If H = 0 Then Exit Sub
+'change names of 3 first variables:
+res = StaSetVarName(H, 1, "ABC")
+res = StaSetVarName(H, 2, "MIDDLE")
+res = StaSetVarName(H, 3, "XYZ")
+'fill the file with random numbers:
+For i = 1 To 10
+      For j = 1 To 10
+         res = StaSetData(H, i, j, Rnd)
+      Next j
+Next i
+StaCloseFile (H)
+Debug.Print "finished"
+
+End Sub
+2.4.3.	Modifying existing file
+This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+
+Private Sub example3(fname$)
+H = StaOpenFile(fname$)
+If H = 0 Then Exit Sub
+'add variable number 5:
+res = StaAddVars(H, 4, 1)
+'set new variable name:
+res = StaSetVarName(H, 5, "BHPH")
+'insert some values:
+NC = StaGetNCases(H)
+For i = 1 To NC
+   res = StaSetData(H, 5, i, i * 10)
+Next i
+'add text labels:
+res = StaAddLabel(H, 5, 10, "A", "long label for A")
+res = StaAddLabel(H, 5, 20, "B", "long label for B")
+'close the file handle:
+StaCloseFile (H)
+Debug.Print "finished"
+End Sub
+
+
+
+2.5.	Delphi
+To use it from Delphi:
+i)  include the stadev32 unit into your compilation:  uses StaDev32
+ii)  call desired functions, as shown in examples below; 
+iii)  put stadev32.dll in your path and in the Delphi search path
+
+2.5.1.	Reading of data
+This example dumps to a text file all information about the STATISTICA data file, including variable specifications and data values with labels:
+
+procedure TestReadData;
+const
+   StatFileName = 'c:\stat\examples\adstudy.sta';
+var
+   hSF: HSTAFILE;
+   Outfile: text;
+   NVars: smallint;
+   NCases: longint;
+   fh: array[0..STAMAX_HEADERLEN] of char;
+   VarName: array[0..STAMAX_VARNAMELEN] of char;
+   LongVN: array[0..STAMAX_LONGVARNAMELEN] of char;
+   Width, Decs, Typ, Subt: smallint;
+   MD: double;
+   i: integer;
+   CaseNameLen: smallint;
+   CaseName: array[0..STAMAX_CASENAMELEN] of char;
+   j: longint;
+   d: double;
+   lab: array[0..STAMAX_SLABELLEN] of char;
+   llab: array[0..STAMAX_LLABELLEN] of char;
+begin
+   AssignFile(OutFile, 'sdevout.txt');
+   Rewrite(Outfile);
+
+   hSF := StaOpenFile(StatFileName);
+   if (hSF = 0) then
+      begin
+      writeln('ERROR: Could not open STATISTICA file');
+      Close(Outfile);
+      exit;
+      end;
+
+   writeln(Outfile, 'STATISTICA file information'); writeln(Outfile);
+   writeln(Outfile, 'File name:', StatFileName);
+
+   NVars := StaGetNVars(hSF);
+   writeln(Outfile, 'Number of variables = ', NVars);
+
+   NCases := StaGetNCases(hSF);
+   writeln(Outfile, 'Number of cases = ', NCases);
+
+   StaGetFileHeader(hSF, fh, sizeof(fh));
+   writeln(Outfile, 'File Header: ', fh);
+
+   writeln(Outfile); writeln(Outfile, 'Variable specs:');
+   for i := 1 to NVars do
+      begin
+      StaGetVarName(hSF, i, VarName);
+      if (RES_ERR = StaGetVarLongName(hSF, i, LongVN, sizeof(LongVN))) then
+         LongVN[0] := chr(0);
+      writeln(Outfile, 'Variable ', i, ' ', VarName, ', ', LongVN);
+      StaGetVarFormat(hSF, i, @Width, @Decs, @Typ, @Subt);
+      writeln(Outfile, 'Format: ',Width,'.',Decs,'; Type: ', Typ, ', Subtype: ', Subt);
+      StaGetVarMD(hSF, i, @MD);
+      writeln(Outfile, 'Missing Data: ', MD); writeln(Outfile);
+      end;
+
+   writeln(Outfile, 'Case names:');
+   CaseNameLen := StaGetCaseNameLength(hSF);
+   CaseName[0] := chr(0);
+   if (CaseNameLen = 0) then
+      writeln(Outfile, 'No case names in this file')
+   else
+      begin
+      writeln(Outfile, 'Case name length: ', CaseNameLen);
+      for j := 1 to NCases do
+         begin
+         StaGetCaseName(hSF, j, CaseName, sizeof(CaseName));
+         writeln(Outfile, 'Case # ', j, ': ', CaseName);
+         end;
+      end;
+
+   lab[0] := chr(0);
+   writeln(Outfile);writeln(Outfile,'Data dump:'); writeln(Outfile);
+
+   for j:= 1 to NCases do
+      begin
+      writeln(Outfile,chr(13),chr(10), 'Case # ', j,':');
+      for i := 1 to NVars do
+         begin
+         StaGetData(hSF, i, j, @d);
+         write(Outfile, d:5:1);
+         FillChar(lab, sizeof(lab), 0);
+         if (0 <> StaGetLabelForValue(hSF, i, d, lab)) then
+            begin
+            write(Outfile, '(', lab);
+            FillChar(llab, sizeof(llab), 0);
+            if (0 <> StaGetLongLabelForValue(hSF, i, d, llab, sizeof(llab))) then
+               write(Outfile, ', ', llab);
+            write(Outfile, ')   ');
+            end;
+         end;
+      end;
+
+   StaCloseFile(hSF);
+   Close(Outfile);
+end;
+2.5.2.	Creating a new file
+This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+
+procedure TestCreateFile;
+const
+   CreateFileName = 'c:\stat\files\newdata.sta';
+var
+   hSF: HSTAFILE;
+   i: smallint;
+   j: longint;
+   d: double;
+begin
+   hSF := StaCreateFile(10, 10, CreateFileName);
+   if (0 = hSF) then
+      begin
+      writeln('Could not create STATISTICA file');
+      exit;
+      end;
+
+   { change the names of the first three variables}
+   StaSetVarName(hSF, 1, 'ABC');
+   StaSetVarName(hSF, 2, 'MIDDLE');
+   StaSetVarName(hSF, 3, 'XYZ');
+
+   { fill the file with random numbers}
+
+   Randomize;
+   for i := 1 to 10 do
+      for j := 1 to 10 do
+         begin
+         StaSetData(hSF, i, j, Random);
+         end;
+
+   StaCloseFile(hSF);
+end;
+2.5.3.	Modifying existing file
+This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+
+procedure TestModifyFile;
+const
+   FileName = 'c:\stat\files\newdata.sta';
+var
+   hSF: HSTAFILE;
+   NC: longint;
+   i: longint;
+begin
+   hSF := StaOpenFile(FileName);
+   if (hSF = 0) then
+      begin
+      writeln('Cannot open STATISTICA file !!!');
+      exit;
+      end;
+
+   { add variable number 5}
+   StaAddVars(hSF, 4, 1);
+
+   { set new variable name}
+   StaSetVarName(hSF, 5, 'BHPH');
+
+   {insert some values}
+   NC := StaGetNCases(hSF);
+   for i := 1 to NC do
+      StaSetData(hSF, 5, i, i*10);
+
+   { add text labels}
+   StaAddLabel(hSF, 5, 10, 'A', 'long label for A');
+   StaAddLabel(hSF, 5, 20, 'B', 'long label for B');
+   StaCloseFile(hSF);
+end;
+3.	Reference
+In this documentation, the term "1-based" means that indices for variables and cases start from 1 (rather than 0).
+The VB function prototypes are designed for use with 32-bit VB.  For 16-bit VB prototypes, please refer to section 4.2.1 ("16-bit VB Header").
+3.1.	Functions
+3.1.1.	StaOpenFile
+C/C++	HSTAFILE StaOpenFile (LPCSTR szFileName);
+VB	Declare Function StaOpenFile Lib "stadev32.dll" (ByVal szFileName As String) As Long
+ST Basic	Function StaOpenFile (szFileName) As Long
+Delphi 	function StaOpenFile(szFileName: LPCSTR): HSTAFILE;
+
+szFileName	input file name
+Return Value	STATISTICA file handle if file successfully opened, 0 otherwise
+
+Notes: this function opens a STATISTICA data file, returning a handle to it. This handle is used in subsequent calls, and must be closed when finished by the corresponding StaCloseFile call.
+
+C/C++ Example:
+HSTAFILE handle = StaOpenFile ("D:\\data\\adstudy.sta");
+if ( handle != 0 ) {
+  nbcases = StaGetNCases (handle);
+  StaCloseFile (handle);
+}
+
+3.1.2.	StaCreateFile
+C/C++	HSTAFILE StaCreateFile (short NVars, long NCases, LPCSTR szFileName); 
+VB	Declare Function StaCreateFile Lib "stadev32.dll" (ByVal NVars As Integer, ByVal NCases As Integer, ByVal szFileName As String) As Long
+ST Basic	FUNCTION StaCreateFile (NVars, NCases, szFileName) AS long;
+Delphi	function StaCreateFile(NVars: smallint; NCases: longint; szFileName: LPCSTR): HSTAFILE;
+
+NVars	number of variables
+NCases	number of cases
+szFileName	name of the file being created
+
+Return Value	STATISTICA handle if file successfully opened, 0 otherwise
+
+Notes: this function creates a STATISTICA data file and returns a handle to it. This handle is used in subsequent calls, and must be closed when finished by the corresponding StaCloseFile call.
+
+C/C++ Example:
+HSTAFILE handle = StaCreateFile (15, 17, "D:\\data\\new.sta");
+if ( handle != 0 ) {
+  StaSetVarName(handle, 1, "DF2");
+  StaCloseFile (handle);
+}
+
+3.1.3.	StaCloseFile
+C/C++	HRES StaCloseFile (HSTFILE hSF); 
+VB	Declare Function StaCloseFile Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+ST Basic	FUNCTION StaCloseFile (hSF) AS integer;
+Delphi	function StaCloseFile(hSF: HSTAFILE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: this function closes a previously opened/created STATISTICA data file; after this call is made no other calls using hSF will succeed.  Every file opened via StaCreateFile or StaOpenFile must be closed using StaCloseFile.
+
+C/C++ Example:
+HSTAFILE handle = StaCreateFile (15, 17, "D:\\data\\new.sta");
+if ( handle != 0 ) {
+  StaSetVarName(handle, 1, "DF2");
+  StaCloseFile (handle);
+}
+
+3.1.4.	StaGetNVars
+C/C++	short StaGetNVars (HSTAFILE hSF); 
+VB	Declare Function StaGetNVars Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+ST Basic	FUNCTION StaGetNVars (hSF) AS integer;
+Delphi	function StaGetNVars(hSF: HSTAFILE): smallint;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+
+Return Value	number of variables if successful, RES_ERR otherwise
+
+Notes: Function returns the number of variables in the STATISTICA data file.
+
+STATISTICA BASIC Example:
+handle := StaOpenFile ("D:\\data\\adstudy.sta");
+nv := StaGetNVars (handle);
+StaCloseFile (handle);
+
+
+3.1.5.	StaGetNCases
+C/C++	long StaGetNCases (HSTAFILE hSF);
+VB	Declare Function StaGetNCases Lib "stadev32.dll" (ByVal hSF As Long) As Long
+ST Basic	FUNCTION StaGetNCases (hSF) AS long;
+Delphi	function StaGetNCases(hSF: HSTAFILE): longint;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+
+Return Value	number of cases if successful, RES_ERR otherwise
+
+Notes: Function returns the number of cases in the STATISTICA data file.
+
+
+
+
+3.1.6.	StaSetFileHeader
+C/C++	HRES StaSetFileHeader (HSTAFILE hSF, LPCSTR szHeader);
+VB	Declare Function StaSetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+ST Basic	FUNCTION StaSetFileHeader (hSF, szHeader) AS integer;
+Delphi	function StaSetFileHeader(hSF: HSTAFILE; szHeader: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+szHeader	string containing new file Header
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Functions changes the STATISTICA data file header.
+
+
+
+
+3.1.7.	StaGetFileHeader
+C/C++	HRES StaGetFileHeader (HSTAFILE hSF, LPSTR szHeader, short BL);
+VB	Declare Function StaGetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByRef szHeader As Byte, ByVal BL As Integer) As Integer
+ST Basic	FUNCTION StaGetFileHeader (hSF, szHeader, BL) AS integer;
+Delphi	function StaGetFileHeader(hSF: HSTAFILE; szHeader: LPSTR; BL: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+szHeader	buffer to store header
+BL	maximum length of the buffer
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the STATISTICA data file header into the buffer szHeader. If the buffer is long enough, it terminates it with char 0.
+
+
+
+
+3.1.8.	StaSetVarName
+C/C++	HRES StaSetVarName (HSTAFILE hSF, short Var, LPCSTR szName);
+VB	Declare Function StaSetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+ST Basic	FUNCTION StaSetVarName (hSF, Var, szName) AS integer;
+Delphi	function StaSetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szName	new name for the variable
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes the name of the specified variable.
+
+
+
+
+3.1.9.	StaGetVarName
+C/C++	HRES StaGetVarName (HSTAFILE hSF, short Var, LPSTR szName);
+VB	Declare Function StaGetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szName As Byte) As Integer
+ST Basic	FUNCTION StaGetVarName (hSF, Var, szName) AS integer;
+Delphi	function StaGetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szName	buffer to store variable name
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the variable name for the specified variable. Buffer must be at least STAMAX_VARNAMELEN characters long.
+
+
+
+
+3.1.10.	StaSetVarLongName
+C/C++	HRES StaSetVarLongName (HSTAFILE hSF, short Var, LPCSTR szLongName);
+VB	Declare Function StaSetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+ST Basic	FUNCTION StaSetVarLongName (hSF, Var, szLongName) AS integer;
+Delphi	function StaSetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szLongName	long name
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes the long variable name for the specified variable.  If the new name is a formula, it will not be evaluated on assignment (i.e., values in the file will not be recalculated according to the formula).
+
+
+
+
+3.1.11.	StaGetVarLongName
+C/C++	HRES StaGetVarLongName (HSTAFILE hSF, short Var, LPSTR szLongName, short BL);
+VB	Declare Function StaGetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As Byte, ByVal BL As Integer) As Integer
+ST Basic	FUNCTION StaGetVarLongName (hSF, Var, szLongName, BL) AS integer;
+Delphi	function StaGetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPSTR; BL: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szLongName	buffer for long name
+BL	buffer length
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the long name for the specified variable.
+
+
+
+
+3.1.12.	StaSetVarFormat
+C/C++	HRES StaSetVarFormat (HSTAFILE hSF, short Var, short width, short dec, short categ, short display);
+VB	Declare Function StaSetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+ST Basic	FUNCTION StaSetVarFormat (hSF, Var, width, dec, categ, display) AS integer;
+Delphi	function StaSetVarFormat(hSF: HSTAFILE; VarNum, Width, Decs, Categ, Display: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+width	display width
+dec	number of decimals
+categ	display category (date, time, etc.); 0 is the default
+0	General numeric
+1	Date
+2 	Time (v5.0)
+3	Special numeric (v5.0)
+display	display subtype within category:
+'display' is unused for categ==0 (General numeric)
+
+'display' for categ==1 (date):
+0	m/d/yy	3/6/87
+1	mm/dd/yy	03/06/87
+2	d-mmm-yy	6-Mar-87
+3	d-mmm	6-Mar
+4	mmm-yyyy	Mar-1987
+5	dd/mm/yy	06/03/87
+6	yyyy/mm/dd	1987/03/06
+7	Windows Format (localized settings)
+
+'display' for categ==2 (time):
+0	m/d/yy h:mm AM	3/6/87 10:30 PM
+1	yy/mm/dd h:mm	87/03/06 22:30 
+2	h:mm AM	10:30 PM
+3	h:mm	22:30
+4	h:mm:ss am	10:30:23 PM		
+5	h:mm:ss	22:30:23		
+6 	Windows Format (localized settings)
+
+'display' for categ==3 (special numeric):
+0	Scientific notation (general)			
+1	Scientific notation (small values)
+2	Currency, negatives in ()'s
+3	Currency, negatives with '-'
+4	Percentages
+5	number; separated 
+6	number, not separated, negative in ()'s
+7	number, separated, negatives in ()'s
+
+Note: 'separated' refers to localized digit separator as defined by Windows; in US version this is a comma (i.e. 1,000).
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Functions changes the display format specification for the passed variable.
+
+
+
+
+3.1.13.	StaGetVarFormat
+C/C++	HRES StaGetVarFormat (HSTAFILE hSF, short Var, short FAR * lpWidth, short FAR * lpDec, short FAR * lpCateg, short FAR * lpDisplay);
+VB	Declare Function StaGetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+ST Basic	FUNCTION StaGetVarFormat (hSF, Var, lpWidth, lpDec, lpCateg, lpDisplay) AS integer;
+Delphi	function StaGetVarFormat(hSF: HSTAFILE; VarNum: smallint; Width, Decs, Categ, Display: PSHORT): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+lpWidth	returned width
+lpDec	returned number of decimals
+lpCateg	returned display category
+0	General numeric
+1	Date
+2 	Time (v5.0)
+3	Special numeric (v5.0)
+lpDisplay	returned display subtype within category
+'display' is unused for categ==0 (General numeric)
+
+'display' for categ==1 (date):
+0	m/d/yy	3/6/87
+1	mm/dd/yy	03/06/87
+2	d-mmm-yy	6-Mar-87
+3	d-mmm	6-Mar
+4	mmm-yyyy	Mar-1987
+5	dd/mm/yy	06/03/87
+6	yyyy/mm/dd	1987/03/06
+7	Windows Format (localized settings)
+
+'display' for categ==2 (time):
+0	m/d/yy h:mm AM	3/6/87 10:30 PM
+1	yy/mm/dd h:mm	87/03/06 22:30 
+2	h:mm AM	10:30 PM
+3	h:mm	22:30
+4	h:mm:ss am	10:30:23 PM		
+5	h:mm:ss	22:30:23		
+6 	Windows Format (localized settings)
+
+'display' for categ==3 (special numeric):
+0	Scientific notation (general)			
+1	Scientific notation (small values)
+2	Currency, negatives in ()'s
+3	Currency, negatives with '-'
+4	Percentages
+5	number; separated 
+6	number, not separated, negative in ()'s
+7	number, separated, negatives in ()'s
+
+Note: 'separated' refers to localized digit separator as defined by Windows; in US version this is a comma (i.e. 1,000).
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the display format specification for the passed variable.
+
+
+
+
+3.1.14.	StaSetVarMD
+C/C++	HRES StaSetVarMD (HSTAFILE hSF, short Var, double MDValue);
+VB	Declare Function StaSetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+ST Basic	FUNCTION StaSetVarMD (hSF, Var, MDValue) AS integer;
+Delphi	function StaSetVarMD(hSF: HSTAFILE; VarNum: smallint; MDValue: double): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+MDValue	new missing data value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes the missing data value for a given variable.
+
+
+
+
+3.1.15.	StaGetVarMD
+C/C++	HRES StaGetVarMD (HSTAFILE hSF, short Var, double FAR * lpMDVal);
+VB	Declare Function StaGetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+ST Basic	FUNCTION StaGetVarMD (hSF, Var, lpMDVal) AS integer;
+Delphi	function StaGetVarMD(hSF: HSTAFILE; VarNum: smallint; lpMDVal: PDOUBLE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+lpMDVal	buffer for missing data value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the missing data value for specified variable.
+
+
+
+
+3.1.16.	StaGetAllMD
+C/C++	HRES StaGetAllMD (HSTAFILE hSF, double FAR * lpMD);
+ST Basic	FUNCTION StaGetAllMD (hSF, lpMD) AS integer;
+Delphi	function StaGetAllMD(hSF: HSTAFILE; lpMD: PDOUBLE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+lpMD	buffer for missing data values
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the array of missing data values for all variables, lpMD must be big enough to keep them.
+
+
+
+
+3.1.17.	StaSetCaseNameLength
+C/C++	HRES StaSetCaseNameLength (HSTAFILE hSF, short CNLen);
+VB	Declare Function StaSetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+ST Basic	FUNCTION StaSetCaseNameLength (hSF, CNLen) AS integer;
+Delphi	function StaSetCaseNameLength(hSF: HSTAFILE; CNLen: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+CNLen	new length of case names
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes the length of the case names. If CNlen is less then the current length, case names will be truncated.
+
+
+
+
+3.1.18.	StaGetCaseNameLength
+C/C++	short StaGetCaseNameLength (HSTAFILE hSF);
+VB	Declare Function StaGetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+ST Basic	FUNCTION StaGetCaseNameLength (hSF) AS integer;
+Delphi	function StaGetCaseNameLength(hSF: HSTAFILE): smallint;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+
+Return Value	case names length if successful, RES_ERR otherwise
+
+Notes: Function returns the case name length.
+
+
+
+
+3.1.19.	StaSetCaseName
+C/C++	HRES StaSetCaseName (HSTAFILE hSF, long Case, LPCSTR szName);
+VB	Declare Function StaSetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+ST Basic	FUNCTION StaSetCaseName (hSF, Case, szName) AS integer;
+Delphi	function StaSetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Case	1-based case number
+szName	new case name
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes the case name for specified case.
+
+
+
+
+3.1.20.	StaGetCaseName
+C/C++	HRES StaGetCaseName (HSTAFILE hSF, long Case, LPSTR szName, short BL);
+VB	Declare Function StaGetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+ST Basic	FUNCTION StaGetCaseName (hSF, Case, szName, BL) AS integer;
+Delphi	function StaGetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPSTR; BL: short): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Case	case number
+szName	buffer to hold case name
+BL	buffer length
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves case name for specified case.
+
+
+
+
+3.1.21.	StaSetData
+C/C++	HRES StaSetData (HSTAFILE hSF, short Var, long Case, double Value);
+VB	Declare Function StaSetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+ST Basic	FUNCTION StaSetData (hSF, Var, Case, Value) AS integer;
+Delphi	function StaSetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; Value: double): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Case	1-based case number
+Value	new value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function changes a single cell at the specified location in the STATISTICA data file.
+
+
+
+
+3.1.22.	StaGetData
+C/C++	HRES StaGetData (HSTAFILE hSF, short Var, long Case, double FAR * lpValue);
+VB	Declare Function StaGetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+ST Basic	FUNCTION StaGetData (hSF, Var, Case, lpValue) AS integer;
+Delphi	function StaGetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; lpValue: PDOUBLE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable
+Case	1-based case
+lpValue	buffer for the value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves single cell of data at specified location.
+
+
+
+
+3.1.23.	StaSetCaseData
+C/C++	HRES StaSetCaseData (HSTAFILE hSF, long Case, const double FAR * lpCase);
+Delphi	function StaSetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Case	1-based case number
+lpCase	array of new values for case
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function sets new data values for all variables in the specified case; lpCase must contain values for all variables. (The case name must not be included in the lpCase; in order to assign a case name, use function StaSetCaseName)
+
+
+
+
+3.1.24.	StaGetCaseData
+C/C++	HRES StaGetCaseData (HSTAFILE hSF, long Case, double FAR * lpCase);
+Delphi	function StaGetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES;
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Case	1-based case number
+lpCase	array to store data values for all variables in a given case
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves data values for all variables in the specified case; lpCase must be large enough to contain values for all the variables.  (The case name is not included in the lpCase; in order to retrieve a case name, use function StaGetCaseName)
+
+
+
+
+3.1.25.	StaGetLabelForValue
+C/C++	HRES StaGetLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLabel);
+VB	Declare Function StaGetLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As Byte) As Integer
+ST Basic	FUNCTION StaGetLabelForValue (hSF, Var, Value, szLabel) AS integer;
+Delphi	function StaGetLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel: LPSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Value	data value
+szLabel	buffer for label
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the text label associated with specified value in a given variable.
+
+
+
+
+3.1.26.	StaGetLongLabelForValue
+C/C++	HRES StaGetLongLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLLabel, short BL);
+VB	Declare Function StaGetLongLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As Byte, ByVal BL As Integer) As Integer
+ST Basic	FUNCTION StaGetLongLabelForValue (hSF, Var, Value, szLLabel, BL) AS integer;
+Delphi	function StaGetLongLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLLabel: LPSTR; BL: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Value	data value
+szLLabel	buffer for long label
+BL	buffer length
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the long text label associated with specified value in a given variable.
+
+
+
+
+3.1.27.	StaGetValueForLabel
+C/C++	HRES StaGetValueForLabel (HSTAFILE hSF, short Var, LPCSTR szLabel, double FAR * lpValue);
+VB	Declare Function StaGetValueForLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+ST Basic	FUNCTION StaGetValueForLabel (hSF, Var, szLabel, lpValue) AS integer;
+Delphi	function StaGetValueForLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR; lpValue: PDOUBLE): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szLabel	text label
+lpValue	buffer for corresponding data value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function retrieves the numerical value associated with text label in a given variable.
+
+
+
+
+3.1.28.	StaAddLabel
+C/C++	HRES StaAddLabel (HSTAFILE hSF, short Var, double Value, LPCSTR szLabel, LPCSTR szLongLabel); 
+VB	Declare Function StaAddLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+ST Basic	FUNCTION StaAddLabel (hSF, Var, Value, szLabel, szLongLabel) AS integer;
+Delphi	function StaAddLabel(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel, szLongLabel: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Value	data value
+szLabel	text label
+szLongLabel	long text label
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function adds (value, text label, long label) association to labels for a given variable. Note that if Value equals missing data for this variable, the function will automatically assign new value.
+
+
+
+
+3.1.29.	StaDeleteLabelForValue
+C/C++	HRES StaDeleteLabelForValue (HSTAFILE hSF, short Var, double Value);
+VB	Declare Function StaDeleteLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+ST Basic	FUNCTION StaDeleteLabelForValue (hSF, Var, Value) AS integer;
+Delphi	function StaDeleteLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Value	data value
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function removes labels associated with a specified numeric value for a given variable.
+
+
+
+
+3.1.30.	StaDeleteLabel
+C/C++	HRES StaDeleteLabel (HSTAFILE hSF, short Var, LPCSTR szLabel);
+VB	Declare Function StaDeleteLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+ST Basic	FUNCTION StaDeleteLabel (hSF, Var, szLabel) AS integer;
+Delphi	function StaDeleteLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+szLabel	text label
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function removes labels associated with a specified text label for a given variable.
+
+
+
+
+3.1.31.	StaAddVars
+C/C++	HRES StaAddVars (HSTAFILE hSF, short After, short HowMany); 
+VB	Declare Function StaAddVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+ST Basic	FUNCTION StaAddVars (hSF, After, HowMany) AS integer;
+Delphi	function StaAddVars(hSF: HSTAFILE; After, HowMany: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+After	after this variable new variables will be added
+HowMany	number of variables to be added
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function adds new variables to the STATISTICA data file. The variables are assigned standard names for new variables (NEWVAR1, NEWVAR2,...), are formatted as numbers with 8.3 display, and receive standard Missing Data values of -9999.
+
+
+
+
+3.1.32.	StaAddCases
+C/C++	HRES StaAddCases (HSTAFILE hSF, long After, long HowMany);
+VB	Declare Function StaAddCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+ST Basic	FUNCTION StaAddCases (hSF, After, HowMany) AS integer;
+Delphi	function StaAddCases(hSF: HSTAFILE; After, HowMany: longint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+After	after this case new cases will be added
+HowMany	number of cases to be added
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function adds cases to the STATISTICA data file.
+
+
+
+
+3.1.33.	StaDeleteVars
+C/C++	HRES StaDeleteVars (HSTAFILE hSF, short FromVar, short ToVar);
+VB	Declare Function StaDeleteVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+ST Basic	FUNCTION StaDeleteVars (hSF, FromVar, ToVar) AS integer;
+Delphi	function StaDeleteVars(hSF: HSTAFILE; FromVar, ToVar: smallint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+FromVar	specifies first variable to be deleted
+ToVar	specifies last variable to be deleted
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function deletes variables in the specified range.
+
+
+
+
+3.1.34.	StaDeleteCases
+C/C++	HRES StaDeleteVars (HSTAFILE hSF, long FromCase, long ToCase);
+VB	Declare Function StaDeleteCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+ST Basic	FUNCTION StaDeleteCases (hSF, FromCase, ToCase) AS integer;
+Delphi	function StaDeleteCases(hSF: HSTAFILE; FromCase, ToCase: longint): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+FromCase	specifies first case to be deleted
+ToCase	specifies last case to be deleted
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function deletes cases in the specified range.
+
+
+
+
+3.1.35.	StaGetNumVarLabels
+C/C++	HRES API_EXP StaGetNumVarLabels (HSTAFILE hSF, short Var, short FAR * lpNumLabels);
+VB	Declare Function StaGetNumVarLabels Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+ST Basic	FUNCTION StaGetNumVarLabels (hSF, Var, NumLabels) AS integer;
+Delphi	function StaGetNumVarLabels(hSF: HSTAFILE; VarNum: smallint; lpNumLabels: PSHORT): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+NumLabels	(output) number of labels for specified variable
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function returns (on NbLabels parameter) the number of labels for a given variable.
+
+
+
+
+3.1.36.	StaGetVarLabelByIndex
+C/C++	HRES API_EXP StaGetVarLabelByIndex (HSTAFILE hSF, short Var, short Index,
+                                    double FAR * lpValue, LPSTR szLabel, LPSTR szLongLabel);
+VB	Declare Function StaGetVarLabelByIndex Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As Byte, ByRef szLongLabel As Byte) As Integer
+ST Basic	FUNCTION StaGetVarLabelByIndex (hSF, Var, Index, Value, szLabel, szLongLabel) AS integer;
+Delphi	function StaGetVarLabelByIndex (hSF: HSTAFILE; VarNum, index: smallint; lpValue: PDOUBLE; szLabel, szLongLabel: LPSTR): HRES;
+
+hSF	handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+Var	1-based variable number
+Index	1-based index of requested value/label/long label set
+Value	(output) numeric value
+szLabel	(output) text label
+szLongLabel	(output) long label
+
+Return Value	RES_OK if successful, RES_ERR otherwise
+
+Notes: Function returns the Index'th value/label/long label set (on Value/szLabel/szLongLabel parameters, respectively) for a given variable.  This function along with StaGetNumVarLabels is intended for use in situations when you need to find all labels for a specified variable. Note that indexes of labels can be affected by adding new labels, deleting them etc. Therefore, the recommended (and safe) way of using this function is: first, call StaGetNumVarLabels function to find out the number of labels for the variable, then retrieve them all in one loop.  
+
+
+
+
+3.2.	Constants
+3.2.1.	STAMAX_NVARS
+Maximum number of variables in STATISTICA data file.
+3.2.2.	STAMAX_VARNAMELEN
+Maximum length of a variable name.
+3.2.3.	STAMAX_LONGVARNAMELEN
+Maximum length of variable long name.
+3.2.4.	STAMAX_CASENAMELEN
+Maximum case name length.
+3.2.5.	STAMAX_SLABELLEN
+Maximum length of variable label.
+3.2.6.	STAMAX_LLABELLEN
+Maximum length of variable long label
+3.2.7.	STAMAX_HEADERLEN
+Maximum length of file header
+3.2.8.	STAMAX_NB_SLAB
+Maximum number of labels for a variable.
+3.2.9.	STAMAX_NB_LLAB
+Maximum number of long labels for a variable.
+
+3.3.	Types
+3.3.1.	HSTAFILE
+Handle to structure holding information about STATISTICA files. The type used to represent it in different environments:
+C/C++	HSTAFILE
+VB	long
+ST/B	number
+Delphi	longint
+3.3.2.	HRES
+Type denoting values returned by various library functions. Possible values: RES_OK, RES_ERR.
+
+4.	
+Headers
+4.1.	C/C++ Header
+/*****************************************************************************
+*   C/C++ Header File for STATISTICA Development Environment                 *
+*   Copyright (c) 1997 by StatSoft, Inc.                                     *
+*****************************************************************************/
+
+#ifndef _STADEV_H
+#define _STADEV_H
+
+#ifdef _WIN32
+#define     API_EXP  __declspec( dllimport )
+#else
+#define     API_EXP  FAR PASCAL
+#endif
+
+typedef		long  HSTAFILE;
+typedef		short HRES;
+
+#define     STAMAX_NVARS            4092
+#define     STAMAX_VARNAMELEN       8
+#define     STAMAX_LONGVARNAMELEN   128
+#define     STAMAX_CASENAMELEN      20
+#define     STAMAX_SLABELLEN        8
+#define     STAMAX_LLABELLEN        40
+#define     STAMAX_HEADERLEN        80
+#define     STAMAX_NB_SLAB          2200
+#define     STAMAX_NB_LLAB          720
+
+#define     RES_OK   1
+#define     RES_ERR  0
+
+extern "C" {
+HSTAFILE API_EXP StaOpenFile (LPCSTR szFileName);
+HSTAFILE API_EXP StaCreateFile (short NVars, long NCases, LPCSTR szFileName); 
+HRES API_EXP StaCloseFile (HSTAFILE hSF);
+
+short API_EXP StaGetNVars (HSTAFILE hSF);
+long API_EXP StaGetNCases (HSTAFILE hSF);
+HRES API_EXP StaAddVars (HSTAFILE hSF, short After, short HowMany);
+HRES API_EXP StaDeleteVars (HSTAFILE hSF, short From, short To);
+HRES API_EXP StaAddCases (HSTAFILE hSF, long After, long HowMany);
+HRES API_EXP StaDeleteCases (HSTAFILE hSF, long From, long To);
+
+HRES API_EXP StaSetFileHeader (HSTAFILE hSF, LPCSTR szHeader);
+HRES API_EXP StaGetFileHeader (HSTAFILE hSF, LPSTR szHeader, short BL);
+
+HRES API_EXP StaSetVarName (HSTAFILE hSF, short Var, LPCSTR szName);
+HRES API_EXP StaGetVarName (HSTAFILE hSF, short Var, LPSTR szName);
+HRES API_EXP StaSetVarLongName (HSTAFILE hSF, short Var, LPCSTR szLongName);
+HRES API_EXP StaGetVarLongName (HSTAFILE hSF, short Var, LPSTR szLongName, short BL);
+
+HRES API_EXP StaSetVarFormat (HSTAFILE hSF, short Var, short width, short dec, short categ, short display);
+HRES API_EXP StaGetVarFormat (HSTAFILE hSF, short Var, short FAR * lpWidth, short FAR * lpDec, short FAR * lpCateg, short FAR * lpDisplay);
+
+HRES API_EXP StaSetVarMD (HSTAFILE hSF, short Var, double MDValue);
+HRES API_EXP StaGetVarMD (HSTAFILE hSF, short Var, double FAR * lpMDVal);
+HRES API_EXP StaGetAllMD (HSTAFILE hSF, double FAR * lpMD);
+
+HRES API_EXP StaSetCaseNameLength (HSTAFILE hSF, short CNLen);
+short API_EXP StaGetCaseNameLength (HSTAFILE hSF);
+
+HRES API_EXP StaSetCaseName (HSTAFILE hSF, long Case, LPCSTR szName);
+HRES API_EXP StaGetCaseName (HSTAFILE hSF, long Case, LPSTR szName, short BL);
+
+HRES API_EXP StaSetData (HSTAFILE hSF, short Var, long Case, double Value);
+HRES API_EXP StaGetData (HSTAFILE hSF, short Var, long Case, double FAR * lpValue);
+HRES API_EXP StaSetCaseData (HSTAFILE hSF, long Case, const double FAR * lpCase);
+HRES API_EXP StaGetCaseData (HSTAFILE hSF, long Case, double FAR * lpCase);
+
+HRES API_EXP StaGetLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLabel);
+HRES API_EXP StaGetLongLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLLabel, short BL);
+HRES API_EXP StaGetValueForLabel (HSTAFILE hSF, short Var, LPCSTR szLabel, double FAR * lpValue);
+
+HRES API_EXP StaAddLabel (HSTAFILE hSF, short Var, double Value, LPCSTR szLabel, LPCSTR szLongLabel);
+HRES API_EXP StaDeleteLabelForValue (HSTAFILE hSF, short Var, double Value);
+HRES API_EXP StaDeleteLabel (HSTAFILE hSF, short Var, LPCSTR szLabel);
+HRES API_EXP StaGetNumVarLabels (HSTAFILE hSF, short Var, short FAR * lpNumLabels);
+HRES API_EXP StaGetVarLabelByIndex (HSTAFILE hSF, short Var, short index,
+                                    double FAR * lpValue, LPSTR szLabel,
+                                    LPSTR szLongLabel);
+}
+
+#endif
+
+4.2.	Visual Basic Header
+4.2.1.	For 16-bit Visual Basic:
+Rem     VB-16 Header File for STATISTICA Development Environment
+Rem     Copyright (c) 1997 by StatSoft, Inc.
+
+Public Const STAMAX_NVARS = 4092
+Public Const STAMAX_VARNAMELEN = 8
+Public Const STAMAX_LONGVARNAMELEN = 128
+Public Const STAMAX_CASENAMELEN = 20
+Public Const STAMAX_SLABELLEN = 8
+Public Const STAMAX_LLABELLEN = 40
+Public Const STAMAX_HEADERLEN = 80
+Public Const STAMAX_NB_SLAB = 2200
+Public Const STAMAX_NB_LLAB = 720
+
+Public Const RES_OK = 1
+Public Const RES_ERR = 0
+
+Declare Function StaDevVersion Lib "stadev.dll" () As Long
+Declare Function StaOpenFile Lib "stadev.dll" (ByVal szFileName As String) As Long
+Declare Function StaCreateFile Lib "stadev.dll" (ByVal NVars As Integer, ByVal NCases As Long, ByVal szFileName As String) As Long
+Declare Function StaCloseFile Lib "stadev.dll" (ByVal hSF As Long) As Integer
+Declare Function StaGetNVars Lib "stadev.dll" (ByVal hSF As Long) As Integer
+Declare Function StaGetNCases Lib "stadev.dll" (ByVal hSF As Long) As Long
+Declare Function StaAddVars Lib "stadev.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+Declare Function StaDeleteVars Lib "stadev.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+Declare Function StaAddCases Lib "stadev.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+Declare Function StaDeleteCases Lib "stadev.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+Declare Function StaSetFileHeader Lib "stadev.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+Declare Function StaGetFileHeader16 Lib "stadev.dll" Alias "StaGetFileHeader" (ByVal hSF As Long, ByVal szHeader As String, ByVal BL As Integer) As Integer
+Declare Function StaSetVarName Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+Declare Function StaGetVarName16 Lib "stadev.dll" Alias "StaGetVarName" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+Declare Function StaSetVarLongName Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+Declare Function StaGetVarLongName16 Lib "stadev.dll" Alias "StaGetVarLongName" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String, ByVal BL As Integer) As Integer
+Declare Function StaSetVarFormat Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+Declare Function StaGetVarFormat Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+Declare Function StaSetVarMD Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+Declare Function StaGetVarMD Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+Declare Function StaSetCaseNameLength Lib "stadev.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+Declare Function StaGetCaseNameLength Lib "stadev.dll" (ByVal hSF As Long) As Integer
+Declare Function StaSetCaseName Lib "stadev.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+Declare Function StaGetCaseName16 Lib "stadev.dll" Alias "StaGetCaseName" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+Declare Function StaSetData Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+Declare Function StaGetData Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+Declare Function StaGetLabelForValue16 Lib "stadev.dll" Alias "StaGetLabelForValue" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String) As Integer
+Declare Function StaGetLongLabelForValue16 Lib "stadev.dll" Alias "StaGetLongLabelForValue" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLLabel As String, ByVal BL As Integer) As Integer
+Declare Function StaGetValueForLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+Declare Function StaAddLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+Declare Function StaDeleteLabelForValue Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+Declare Function StaDeleteLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+Declare Function StaGetNumVarLabels Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+Declare Function StaGetVarLabelByIndex16 Lib "stadev.dll" Alias "StaGetVarLabelByIndex" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+
+Function StaGetFileHeader(ByVal hSF As Long, ByRef szHeader As String, ByVal BL As Integer) As Integer
+    Dim s As String
+    s = String(BL, Chr(0))
+    res = StaGetFileHeader16(hSF, s, BL)
+    szHeader = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetFileHeader = res
+End Function
+
+Function StaGetVarName(ByVal hSF As Long, ByVal Var As Integer, ByRef szName As String) As Integer
+    Dim s As String
+    s = String(STAMAX_VARNAMELEN + 1, Chr(0))
+    res = StaGetVarName16(hSF, Var, s)
+    szName = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetVarName = res
+End Function
+
+Function StaGetVarLongName(ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As String, ByVal BL As Integer) As Integer
+    Dim s As String
+    s = String(BL + 1, Chr(0))
+    res = StaGetVarLongName16(hSF, Var, s, BL)
+    szLongName = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetVarLongName = res
+End Function
+
+Function StaGetCaseName(ByVal hSF As Long, ByVal CaseNo As Long, ByRef szName As String, ByVal BL As Integer) As Integer
+    Dim s As String
+    s = String(BL + 1, Chr(0))
+    res = StaGetCaseName16(hSF, CaseNo, s, BL)
+    szName = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetCaseName = res
+End Function
+
+Function StaGetLabelForValue(ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As String) As Integer
+    Dim s As String
+    s = String(STAMAX_SLABELLEN + 1, Chr(0))
+    res = StaGetLabelForValue16(hSF, Var, Value, s)
+    szLabel = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetLabelForValue = res
+End Function
+
+Function StaGetLongLabelForValue(ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As String, ByVal BL As Integer) As Integer
+    Dim s As String
+    s = String(BL + 1, Chr(0))
+    res = StaGetLongLabelForValue16(hSF, Var, Value, s, BL)
+    szLLabel = Left(s, InStr(s, Chr(0)) - 1)
+    StaGetLongLabelForValue = res
+End Function
+
+Function StaGetVarLabelByIndex (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As String, ByRef szLongLabel As String) As Integer
+    Dim s As String
+    Dim s1 as String
+    s = String(STAMAX_SLABELLEN + 1, Chr(0))
+    s1 = String(STAMAX_LLABELLEN + 1, Chr(0))
+    res = StaGetVarLabelByIndex16(hSF, Var, Index, Value, s, s1)
+    szLabel = Left(s, InStr(s, Chr(0)) - 1)
+    szLongLabel = Left(s1, InStr(s1, Chr(0)) - 1)
+    StaGetVarLabelByIndex = res
+End Function
+4.2.2.	For 32-bit Visual Basic:
+Rem     VB Header File for STATISTICA Development Environment
+Rem     Copyright (c) 1997 by StatSoft, Inc.
+
+Public Const STAMAX_NVARS = 4092
+Public Const STAMAX_VARNAMELEN = 8
+Public Const STAMAX_LONGVARNAMELEN = 128
+Public Const STAMAX_CASENAMELEN = 20
+Public Const STAMAX_SLABELLEN = 8
+Public Const STAMAX_LLABELLEN = 40
+Public Const STAMAX_HEADERLEN = 80
+Public Const STAMAX_NB_SLAB = 2200
+Public Const STAMAX_NB_LLAB = 720
+
+Public Const RES_OK = 1
+Public Const RES_ERR = 0
+
+Declare Function StaDevVersion Lib "stadev32.dll" () As Long
+Declare Function StaOpenFile Lib "stadev32.dll" (ByVal szFileName As String) As Long
+Declare Function StaCreateFile Lib "stadev32.dll" (ByVal NVars As Integer, ByVal NCases As Integer, ByVal szFileName As String) As Long
+Declare Function StaCloseFile Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+Declare Function StaGetNVars Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+Declare Function StaGetNCases Lib "stadev32.dll" (ByVal hSF As Long) As Long
+Declare Function StaAddVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+Declare Function StaDeleteVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+Declare Function StaAddCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+Declare Function StaDeleteCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+Declare Function StaSetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+Declare Function StaGetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByRef szHeader As Byte, ByVal BL As Integer) As Integer
+Declare Function StaSetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+Declare Function StaGetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szName As Byte) As Integer
+Declare Function StaSetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+Declare Function StaGetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As Byte, ByVal BL As Integer) As Integer
+Declare Function StaSetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+Declare Function StaGetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+Declare Function StaSetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+Declare Function StaGetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+Declare Function StaSetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+Declare Function StaGetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+Declare Function StaSetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+Declare Function StaGetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+Declare Function StaSetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+Declare Function StaGetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+Declare Function StaGetLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As Byte) As Integer
+Declare Function StaGetLongLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As Byte, ByVal BL As Integer) As Integer
+Declare Function StaGetValueForLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+Declare Function StaAddLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+Declare Function StaDeleteLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+Declare Function StaDeleteLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+Declare Function StaGetNumVarLabels Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+Declare Function StaGetVarLabelByIndex Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As Byte, ByRef szLongLabel As Byte) As Integer
+4.3.	Delphi Unit
+{-------------------------------------------------------
+   Delphi unit for STATISTICA Development Environment
+   Copyright (c) 1997 by StatSoft, Inc.
+-------------------------------------------------------}
+
+unit StaDev32;
+
+interface
+
+uses Windows;
+
+type
+   HSTAFILE = longint;
+   HRES = smallint;
+   PSHORT = ^smallint;
+   PDOUBLE = ^double;
+
+const
+   STAMAX_NVARS = 4092;
+   STAMAX_VARNAMELEN = 8;
+   STAMAX_LONGVARNAMELEN = 128;
+   STAMAX_CASENAMELEN = 20;
+   STAMAX_SLABELLEN = 8;
+   STAMAX_LLABELLEN = 40;
+   STAMAX_HEADERLEN = 80;
+   STAMAX_NB_SLAB = 2200;
+   STAMAX_NB_LLAB = 720;
+   RES_OK = 1;
+   RES_ERR = 0;
+
+function StaDevVersion: longint; stdcall;
+function StaOpenFile(szFileName: LPCSTR): HSTAFILE; stdcall;
+function StaCreateFile(NVars: smallint; NCases: longint; szFileName: LPCSTR): HSTAFILE; stdcall;
+function StaCloseFile(hSF: HSTAFILE): HRES; stdcall;
+
+function StaGetNVars(hSF: HSTAFILE): smallint; stdcall;
+function StaGetNCases(hSF: HSTAFILE): longint; stdcall;
+function StaAddVars(hSF: HSTAFILE; After, HowMany: smallint): HRES; stdcall;
+function StaDeleteVars(hSF: HSTAFILE; FromVar, ToVar: smallint): HRES; stdcall;
+function StaAddCases(hSF: HSTAFILE; After, HowMany: longint): HRES; stdcall;
+function StaDeleteCases(hSF: HSTAFILE; FromCase, ToCase: longint): HRES; stdcall;
+
+function StaSetFileHeader(hSF: HSTAFILE; szHeader: LPCSTR): HRES; stdcall;
+function StaGetFileHeader(hSF: HSTAFILE; szHeader: LPSTR; BL: smallint): HRES; stdcall;
+
+{Variable Name functions}
+function StaSetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPCSTR): HRES; stdcall;
+function StaGetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPSTR): HRES; stdcall;
+function StaSetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPCSTR): HRES; stdcall;
+function StaGetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPSTR; BL: smallint): HRES; stdcall;
+
+{Variable Format functions}
+function StaSetVarFormat(hSF: HSTAFILE; VarNum, Width, Decs, Categ, Display: smallint): HRES; stdcall;
+function StaGetVarFormat(hSF: HSTAFILE; VarNum: smallint; Width, Decs, Categ, Display: PSHORT): HRES; stdcall;
+
+{Missing Data functions}
+function StaSetVarMD(hSF: HSTAFILE; VarNum: smallint; MDValue: double): HRES; stdcall;
+function StaGetVarMD(hSF: HSTAFILE; VarNum: smallint; lpMDVal: PDOUBLE): HRES; stdcall;
+function StaGetAllMD(hSF: HSTAFILE; lpMD: PDOUBLE): HRES; stdcall;
+
+{Case Name functions}
+function StaSetCaseNameLength(hSF: HSTAFILE; CNLen: smallint): HRES; stdcall;
+function StaGetCaseNameLength(hSF: HSTAFILE): smallint; stdcall;
+function StaSetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPCSTR): HRES; stdcall;
+function StaGetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPSTR; BL: short): HRES; stdcall;
+
+{Data functions}
+function StaSetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; Value: double): HRES; stdcall;
+function StaGetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; lpValue: PDOUBLE): HRES; stdcall;
+function StaSetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES; stdcall;
+function StaGetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES; stdcall;
+
+{Label functions}
+function StaGetLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel: LPSTR): HRES; stdcall;
+function StaGetLongLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLLabel: LPSTR; BL: smallint): HRES; stdcall;
+function StaGetValueForLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR; lpValue: PDOUBLE): HRES; stdcall;
+function StaAddLabel(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel, szLongLabel: LPCSTR): HRES; stdcall;
+function StaDeleteLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double): HRES; stdcall;
+function StaDeleteLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR): HRES; stdcall;
+function StaGetNumVarLabels(hSF: HSTAFILE; VarNum: smallint; lpNumLabels: PSHORT): HRES; stdcall;
+function StaGetVarLabelByIndex(hSF: HSTAFILE; VarNum, index: smallint; lpValue: PDOUBLE; szLabel, szLongLabel: LPSTR): HRES; stdcall;
+
+implementation
+
+const
+   stadev = 'stadev32.dll';
+
+function StaDevVersion; external stadev name 'StaDevVersion';
+function StaOpenFile; external stadev name 'StaOpenFile';
+function StaCreateFile; external stadev name 'StaCreateFile';
+function StaCloseFile; external stadev name 'StaCloseFile';
+function StaGetNVars; external stadev name 'StaGetNVars';
+function StaGetNCases; external stadev name 'StaGetNCases';
+function StaAddVars; external stadev name 'StaAddVars';
+function StaDeleteVars; external stadev name 'StaDeleteVars';
+function StaAddCases; external stadev name 'StaAddCases';
+function StaDeleteCases; external stadev name 'StaDeleteCases';
+function StaSetFileHeader; external stadev name 'StaSetFileHeader';
+function StaGetFileHeader; external stadev name 'StaGetFileHeader';
+function StaSetVarName; external stadev name 'StaSetVarName';
+function StaGetVarName; external stadev name 'StaGetVarName';
+function StaSetVarLongName; external stadev name 'StaSetVarLongName';
+function StaGetVarLongName; external stadev name 'StaGetVarLongName';
+function StaSetVarFormat; external stadev name 'StaSetVarFormat';
+function StaGetVarFormat; external stadev name 'StaGetVarFormat';
+function StaSetVarMD; external stadev name 'StaSetVarMD';
+function StaGetVarMD; external stadev name 'StaGetVarMD';
+function StaGetAllMD; external stadev name 'StaGetAllMD';
+function StaSetCaseNameLength; external stadev name 'StaSetCaseNameLength';
+function StaGetCaseNameLength; external stadev name 'StaGetCaseNameLength';
+function StaSetCaseName; external stadev name 'StaSetCaseName';
+function StaGetCaseName; external stadev name 'StaGetCaseName';
+function StaSetData; external stadev name 'StaSetData';
+function StaGetData; external stadev name 'StaGetData';
+function StaSetCaseData; external stadev name 'StaSetCaseData';
+function StaGetCaseData; external stadev name 'StaGetCaseData';
+function StaGetLabelForValue; external stadev name 'StaGetLabelForValue';
+function StaGetLongLabelForValue; external stadev name 'StaGetLongLabelForValue';
+function StaGetValueForLabel; external stadev name 'StaGetValueForLabel';
+function StaAddLabel; external stadev name 'StaAddLabel';
+function StaDeleteLabelForValue; external stadev name 'StaDeleteLabelForValue';
+function StaDeleteLabel; external stadev name 'StaDeleteLabel';
+function StaGetNumVarLabels; external stadev name 'StaGetNumVarLabels';
+function StaGetVarLabelByIndex; external stadev name 'StaGetVarLabelByIndex';
+end.
+
+
+
+Appendix A
+The following functions were added in Version 2 of STATISTICA Development Environment:
+StaGetNumVarLabels 
+StaGetVarLabelByIndex 
+STATISTICA Development Environment (12/09/97)		Copyright (c) StatSoft, Inc.
+
+Page 35
+
+

@@ -1,0 +1,72 @@
+<html>
+
+<body bgcolor="#002e63">
+<form method="post" action="saveconfig.cgi" name="save">
+  <table border="0" cellspacing="0" cellpadding="4" width="583" height="254" vspace="0" hspace="0" bordercolorlight="#e0e0e0" bordercolordark="#f0f0f0">
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="left" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b> 
+        Location</b>: </font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"><b> 
+        <input type="text" name="out" value="[OUT]" maxlength="256" size="80">
+        </b><b></b></td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="left" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Language</b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"> 
+        <select name="language">
+          <option value="SELECTED" selected>English</option>
+          <option>French</option>
+        </select>
+      </td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="left" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Format<b>: 
+        </b></b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"> 
+        <p><b> </b><b><b> 
+          <select name="reportformat">
+            <option value="SELECTED" selected>HTML</option>
+            <option>HTML Framed</option>
+            <option>Word (RTF)</option>
+            <option>Comma Delimited</option>
+            <option>PDF</option>
+            <option>Excel</option>
+          </select>
+          </b></b></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="left" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Graphics:</b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"><b> 
+        <select name="imageformat">
+          <option selected>GIF</option>
+          <option>JPEG</option>
+          <option>PNG</option>
+        </select>
+        </b></td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="left" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>DataBase:</b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"> <b>
+        <select name="database_active">
+          <option>On</option>
+          <option selected>Off</option>
+        </select>
+        </b><br>
+        <input type="text" name="databaseFile" size="80" value="C:\">
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>
+  <input type="submit" name="Submit" value="Save Config">
+</p>
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

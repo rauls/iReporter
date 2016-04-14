@@ -1,0 +1,45 @@
+
+# Help Card
+# Report: Routes To Key Pages
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most common routes taken to key pages on your site.  Use this information to ensure the expected paths are being taken to your key pages.  It aids in the restructuring of your site, to make key pages more readily accessible.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Key Pages
+Key Page, as specified in <i>Settings > Tracking > Routes To Key Pages</i>.
+
+<b>Horizontal axis:</b> Hits
+Hits (default sorting).  This sorting (and resultant horizontal graph axis) can be changed in <i>Settings > Statistics > Options > Sorting</i>. This report may only be sorted by hits, bytes or errors.
+
+<b>Red lines (if present):</b> 
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Main Table: Key Page Summaries</b>
+ 
+<b>Key Pages:<b>
+Name of the key page being tracked, as specified in the Settings dialog.
+
+<b>Hits (%):<b>
+Total number of hits to the key page. (Percentage as a proportion of all hits to key pages.)
+
+<b>Bytes (%):<b>
+Megabytes transferred as a result of hits to the key page. (Percentage as a proportion of bytes transferred from all key pages.)
+
+<b>Errors:<b>
+Number of errors generated when attempting to view the key page.
+
+
+<b>Sub-tables: Routes Taken To Individual Key Pages</b>
+<i>Note: the maximum number of items shown will match the maximum rows selected for the main table.</i>
+
+<b>Route:</b>
+The route taken to reach the key page. If the route is shorter than the "pages to trace forward" length specified in <i>Settings > Tracking > Routes To Key Pages<i>, the user entered your site on the last page listed.
+
+<b>Times Accessed:</b>
+Number of times that the corresponding route was traversed.
+
+<b>% of Routes Taken:</b>
+The percentage of routes taken as a proportion of all routes taken to the corresponding key page.

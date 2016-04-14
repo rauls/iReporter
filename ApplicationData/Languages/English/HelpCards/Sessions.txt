@@ -1,0 +1,36 @@
+
+# Help Card
+# Report: Session Distribution
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows a snapshot of every session undertaken on your site. Specifically, it charts the pages viewed within a session versus the total time of the same session. This information can be used to identify how deeply users are exploring your web site. Refer to the graph details below for a thorough explanation of how to achieve this.
+
+<!--GRAPH-->
+<b>Scatter Chart: Session Distribution</b>
+This graph cannot be customized.
+
+<b>Vertical axis:</b> Pages.
+Number of pages viewed within the corresponding session.
+
+<b>Horizontal axis:</b>  Duration. 
+The amount of time spent on the site, in minutes, during the corresponding session.
+
+<b>White dots:</b>
+Each dot represents an individual session.
+
+<b>Blue line:<b>
+Predicted average session duration for the corresponding number of viewed pages.
+
+<b>Horizontal grey line:<b>
+Average number of pages viewed.
+
+<b>Vertical grey line:<b>
+Average duration of sessions undertaken.
+
+<b>Intersection of blue and grey lines:<b>
+Average session duration and pages viewed within it. This is an extremely useful statistic that should be assessed in light of your site structure and content. If this value is below expectations, you may need to restructure your site, or alter its content to better serve your visitors.
+
+<!--TABLE-->
+This report does not contain table data.
+

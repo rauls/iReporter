@@ -1,0 +1,26 @@
+
+# Help Card
+# Report: File Types
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most requested types of files on your site. Use this information to see the preferred file type of visitors to your site, especially if they are given the option to view different file formats (such as PDF, HTML or text).
+
+"[UNKNOWN]" entries are associated with hits to files without an extension, as well as hits to directories.
+
+<!--GRAPH-->
+<b>Pie Chart: Server Errors</b>
+Each portion of the graph represents a different file type, corresponding to the key in the top-left corner.  It has an associated percentage value for clarity and is graphed by hits.  This graph cannot be customized.
+
+<!--TABLE-->
+<b>File Type:</b>
+The extension (type) of the file being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to files containing the corresponding file type. (Percentage as a proportion of hits to all files, regardless of their extension.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to files with corresponding extension. (Percentage as a proportion of bytes transferred for all files, regardless of their extension.)
+
+<b>Errors</b>
+Number of server errors generated as a result of hits to files with the corresponding extension.

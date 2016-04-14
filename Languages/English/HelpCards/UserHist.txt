@@ -1,0 +1,42 @@
+
+#  Help Card
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows the traffic being generated over time by visitors who have special privileges on your site. Typically, these visitors will login to your site with a username and password. Use this information to assess any trends in usage by authenticated users, taking into consideration the circumstances that may be causing any fluctuations in site usage. Every session undertaken and all pages viewed by each of the authenticated users in this report can be seen in the Authenticated Users Click Stream report.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages and errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Authenticated Users.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Authenticated User:</b>
+Name of the authenticated user being analyzed. Click the hyperlink to view the authenticated user's session click streams. The resultant report will open in a new browser window.
+
+<b>Hits (%):</b>
+Number of hits to the site by the corresponding authenticated user. (Percentage as a proportion of hits to the site by all authenticated users.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits by the corresponding authenticated user. (Percentage as a proportion of the   bytes transferred as a result of hits by all authenticated users.)
+
+<b>Sessions:</b>
+Number of sessions undertaken by the corresponding authenticated user.
+
+<b>Mean time:</b>
+The average time spent on the website during each session undertaken by the corresponding authenticated user. It is represented in hours, minutes and seconds (HH:MM:SS).
+
+<b>Pages:</b>
+Number of pages viewed by the corresponding site authenticated user. 
+
+<b>Errors:</b>
+Errors generated as a result of hits to the site by the corresponding authenticated user.
+
+
+

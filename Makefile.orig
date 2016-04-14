@@ -1,0 +1,50 @@
+##############-fno-strict-prototype -fcond-mismatch
+CC=gcc
+C++=g++
+OPTIM=-O2
+CFLAGS1= -D__dest_os=6 -g
+C++FLAGS= $(CFLAGS1)
+INCLUDES1=
+LIBS1=-lm
+LFLAGS1=
+BROKEN_BPRINTF_FLAGS=
+RANLIB=true
+SHELL=/bin/sh
+
+CFLAGS=$(OPTIM) $(CFLAGS1)
+LIBS=$(LIBS1)
+INCLUDES=$(INCLUDES1)
+LFLAGS=$(LFLAGS1)
+
+OBJS= macemu.o myansi.o gd.o gdfontl.o gdfonts.o gdfontt.o UnixMain.o util.o engine.o main.o
+
+.c.o:
+	$(CC) -c $(INCLUDES) $(CFLAGS) $(SPACER) $<
+
+all: engine
+
+engine: $(OBJS)
+	$(CC) $(LFLAGS)  -o engine $(OBJS) $(LIBS)
+
+clean:
+	rm -f engine *.o core
+
+object:
+	$(CC) $(LFLAGS)  -l enginelib.so $(OBJS) $(LIBS)
+
+#Dependencies
+$(OBJS): Makefile
+
+macemu.o: macemu.c  macemu.h myansi.h
+myansi.o: myansi.c myansi.h MacEmu.h
+gd.o: gd.c
+gdfontl.o: gdfontl.c
+gdfonts.o: gdfonts.c
+gdfontt.o: gdfontt.c
+main.o: main.c UnixMain.h
+UnixMain.o: UnixMain.c UnixMain.h
+util.o: util.c util.h
+engine.o: engine.c++ engine.h MacEmu.c MacEmu.h myansi.c
+
+
+

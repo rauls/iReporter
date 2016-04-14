@@ -1,0 +1,2364 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "application.h"
+#include "winver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+INDEX.HTML              HTML    DISCARDABLE     "General.htm"
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+FUNNELWEB MENU DISCARDABLE 
+BEGIN
+    POPUP "ÎÄ¼þ &F"
+    BEGIN
+        MENUITEM "ÐÂµÄÔOÖÃ &N",                 IDM_NEW
+        MENUITEM "´òé_ÔOÖÃ &O...",              IDM_OPEN
+        POPUP "½üÆÚÔOÖÃ &R"
+        BEGIN
+            MENUITEM "&1  ÎÄ¼þ",                    ID_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "±£´æÔOÖÃ &S",                 IDM_SAVE
+        MENUITEM "Áí´æÔOÖÃ &A...",              IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "ÌŽÀíÓ›ä›ÎÄ¼þ &P...",          IDM_PROCESS
+        MENUITEM "Í¨ß^FTPÌŽÀíßh¶ËÓ›ä› &P...",   IDM_FTPPROCESS
+        MENUITEM "ÌŽÀí”µ“þŽì &P... ",           IDM_PROCESS_ODBC_DB
+        MENUITEM SEPARATOR
+        MENUITEM "½YÊø &x",                     IDM_EXIT
+    END
+    POPUP "±à¼­ &E"
+    BEGIN
+        MENUITEM "ÔOÖÃ &S...",                  IDM_PREFS
+        MENUITEM "¶¨•r &e...",                  IDM_SCHEDULE
+    END
+    POPUP "¼ìÊÓ &V"
+    BEGIN
+        MENUITEM "„h³ýÓ›ä›Ä¿ä› &C\tCtrl+L",     IDM_CLEARLIST
+        MENUITEM "ï@Ê¾Ó›ä›Ä¿ä› &S",             IDM_GROW
+        MENUITEM "êPé]Ó›ä›Ä¿ä› &H",             IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "ï@Ê¾ˆó¸æ &R ...",             IDM_VIEWHTML
+    END
+    POPUP "¹¤¾ß &T"
+    BEGIN
+        MENUITEM "ÐÂÒ•´° &N...",                IDM_NEWAPP
+        MENUITEM "™zÒ•Ó›ä›ÎÄ¼þ &V...",          IDM_MONITORFILE
+        MENUITEM "¶¨•rÓ›ä› &T...",              IDM_VIEWTRANSCRIPT
+    END
+    POPUP "ŽÍÖú &H"
+    BEGIN
+        MENUITEM "°ïÖú &M...",                  IDM_HELP
+        MENUITEM "ÔÚ¾€ŽÍÖú &O...",              IDM_ONLINEMANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "¶¨ÆÚ¸üÐÂ™z²é &P ",            IDM_UPDATEONOFF
+        MENUITEM "¬F•r¸üÐÂ™z²é &u...",          IDM_CHECKFORUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "êPì¶Funnel¾W½j &A",           IDM_ABOUT
+        MENUITEM "Active Concepts ¾W½jµØÖ· &W", IDM_ACWWW
+        MENUITEM "Active Concepts Ö§³Ö¾W½jµØÖ· &S", IDM_SUPPORTWWW
+    END
+END
+
+FUNNELWEBNT MENU DISCARDABLE 
+BEGIN
+    POPUP "ÎÄ¼þ &F"
+    BEGIN
+        MENUITEM "ÐÂµÄÔOÖÃ &N",                 IDM_NEW
+        MENUITEM "´òé_ÔOÖÃ &O...",              IDM_OPEN
+        POPUP "½üÆÚÔOÖÃ &R"
+        BEGIN
+            MENUITEM "&1  ½üÆÚÎÄ¼þ",                ID_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "±£´æÔOÖÃ &S",                 IDM_SAVE
+        MENUITEM "Áí´æÔOÖÃ &A...",              IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "ÌŽÀíÓ›ä›ÎÄ¼þ &P...",          IDM_PROCESS
+        MENUITEM "Í¨ß^FTPÌŽÀíßh¶ËÓ›ä› &P...",   IDM_FTPPROCESS
+        MENUITEM "ÌŽÀí”µ“þŽì &P... ",           IDM_PROCESS_ODBC_DB
+        MENUITEM SEPARATOR
+        MENUITEM "½YÊø &x",                     IDM_EXIT
+    END
+    POPUP "¾ŽÝ‹ &E"
+    BEGIN
+        MENUITEM "ÔOÖÃ &S...",                  IDM_PREFS
+        MENUITEM "¶¨•r &e...",                  IDM_SCHEDULE
+    END
+    POPUP "™zÒ• &V"
+    BEGIN
+        MENUITEM "„h³ýÓ›ä›Ä¿ä› &C\tCtrl+L",     IDM_CLEARLIST
+        MENUITEM "ï@Ê¾Ó›ä›Ä¿ä› &S",             IDM_GROW
+        MENUITEM "êPé]Ó›ä›Ä¿ä› &H",             IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "ï@Ê¾ˆó¸æ &R ...",             IDM_VIEWHTML
+    END
+    POPUP "¹¤¾ß &T"
+    BEGIN
+        MENUITEM "ÐÂÒ•´° &N...",                IDM_NEWAPP
+        MENUITEM "™zÒ•Ó›ä›ÎÄ¼þ &V...",          IDM_MONITORFILE
+        MENUITEM "¶¨•rÓ›ä› &T...",              40046
+        MENUITEM SEPARATOR
+        MENUITEM "°²Ñb¾W½j·þ„Õ &I",             IDM_INSTALLNTS
+        MENUITEM "°²Ñb×ÔÆð„ÓµÄ¾W½j·þ„Õ",        IDM_INSTALLNTSBOOT
+        MENUITEM "ÒÆÈ¥¾W½j·þ„Õ &N",             IDM_REMOVENTS
+        MENUITEM "Æð„Ó¾W½j·þ„Õ &S",             IDM_STARTUPSERVICE
+        MENUITEM "½YÊø¾W½j·þ„Õ &E",             IDM_ENDSERVICE
+        MENUITEM "¿ØÖÆÆÁÃæ·þ„Õ &C...",          IDM_SHOWNTSERVICES
+    END
+    POPUP "ŽÍÖú &H"
+    BEGIN
+        MENUITEM "ŽÍÖú &M...",                  IDM_HELP
+        MENUITEM "ÔÚ¾€ŽÍÖú &O...",              IDM_ONLINEMANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "¶¨ÆÚ¸üÐÂ™z²é &P",             IDM_UPDATEONOFF
+        MENUITEM "¬F•r¸üÐÂ™z²é &u...",          IDM_CHECKFORUPDATE
+        MENUITEM SEPARATOR
+        MENUITEM "êPì¶ Funnel ¾W½jµØÖ· &A",     IDM_ABOUT
+        MENUITEM "Active Concepts ¾W½jµØÖ· &W", IDM_ACWWW
+        MENUITEM "Active Concepts Ö§³Ö¾W½jµØÖ· &S", IDM_SUPPORTWWW
+    END
+END
+
+SCHED_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ÊÂ¼þÌØÐÔ"
+    BEGIN
+        MENUITEM "ÐÂµÄ",                        SCHM_NEW
+        MENUITEM "„h³ý",                        SCHM_DELETE
+        MENUITEM "Çå³ý",                        SCHM_CLEAR
+        MENUITEM "¬F•rß\ÐÐ",                    SCHM_RUNNOW
+        MENUITEM "½ûÖ¹",                        SCHM_DISABLETHIS
+        MENUITEM "ÔÊÔS",                        SCHM_ENABLETHIS
+        MENUITEM "ÌØÐÔ",                        SCHM_PROPERTIES
+        MENUITEM "½ûÖ¹È«²¿ÊÂ¼þ",                SCHM_DISABLEALL
+        MENUITEM "ÔÊÔSÈ«²¿ÊÂ¼þ",                SCHM_ENABLEALL
+        MENUITEM "ï@Ê¾Ó›ä›",                    SCHM_TRANSCRIPT
+    END
+END
+
+LOG_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Ó›ä›"
+    BEGIN
+        MENUITEM "ÌŽÀíßx“ñµÄÓ›ä›",              ID_LOGS_PROCESSLOGS
+        MENUITEM "ÒÆÈ¥ßx“ñµÄÓ›ä›",              ID_LOGS_REMOVELOGS
+        MENUITEM "¼ÓÓ›ä›µ½Ä¿ä›...",             ID_LOGS_ADDLOGS
+        MENUITEM "Çå³ýÄ¿ä›",                    ID_LOGS_CLEARLOGS
+        MENUITEM "±£´æÄ¿ä›..",                  ID_LOGS_SAVELOGS
+        MENUITEM "Ý”ÈëÐÂµÄÄ¿ä›...",             ID_LOGS_LOADLOGS
+        MENUITEM "ÔÚ±O¿Ø³ÌÐòÏÂ™zÒ•...",         ID_LOGS_VIEWLOGS
+        MENUITEM "¾ŽÝ‹Ó›ä›...",                 ID_LOGS_EDITLOGS
+        MENUITEM "êPé]Ä¿ä›",                    IDM_GROW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+CONNECT DIALOG DISCARDABLE  0, 0, 183, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ßB½Óµ½ßh¶Ë·þ„ÕÆ÷"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "ßB½Ó",IDC_REMOTECONNECT,8,73,50,14
+    PUSHBUTTON      "È¡Ïû",IDCANCEL,124,73,50,14
+    EDITTEXT        IDC_REMOTEIP,8,19,108,12,ES_AUTOHSCROLL
+    LTEXT           "ßB½Óµ½ßh¶Ë¾W½jµØÖ·",IDC_STATIC,10,9,98,8
+    EDITTEXT        IDC_REMOTEPORT,124,19,47,12,ES_AUTOHSCROLL
+    LTEXT           "¶Ë¿Ú",IDC_STATIC,125,9,39,8
+    EDITTEXT        IDC_REMOTEPASSWD,8,51,108,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "ÃÜ´a",IDC_STATIC,10,41,60,8
+END
+
+PREFS_REPORTBANNERS DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "˜Ëî}",IDC_STATIC,4,4,280,92
+    GROUPBOX        "Ä_×¢",IDC_STATIC,4,100,280,92
+    PUSHBUTTON      "·ÅÖÃˆDÐÎ ...",IDC_BUTTON1,12,16,64,13
+    EDITTEXT        IDC_EDIT1,84,16,193,13,ES_AUTOHSCROLL
+    LTEXT           "wah wah wah ...",IDC_STATIC,14,34,53,8
+    EDITTEXT        IDC_EDIT2,84,34,193,36,ES_AUTOHSCROLL
+    PUSHBUTTON      "îAÔOÖÃ ...",IDC_BUTTON2,12,76,64,13
+    LTEXT           "(ÓÃì¶¼Ó¶¨ÖÆµÄHTMLµ½HTMLˆó¸æ)",IDC_STATIC,86,78,186,9
+    PUSHBUTTON      "·ÅÖÃˆDÐÎ ...",IDC_BUTTON3,12,114,64,13
+    EDITTEXT        IDC_EDIT3,84,114,193,13,ES_AUTOHSCROLL
+    LTEXT           "wah wah wah ...",IDC_STATIC,14,132,53,8
+    EDITTEXT        IDC_EDIT4,84,132,193,36,ES_AUTOHSCROLL
+    PUSHBUTTON      "îAÔOÖÃ...",IDC_BUTTON4,12,172,64,13
+    LTEXT           "(ÓÃì¶¼Ó¶¨ÖÆµÄHTMLµ½HTMLˆó¸æ)",IDC_STATIC,86,174,186,9
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "•þÔ’¿ò"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "´_¶¨",IDOK,129,7,50,14
+    PUSHBUTTON      "È¡Ïû",IDCANCEL,129,24,50,14
+END
+
+PREFS_ADDSCAMPAIGNS DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,280,190
+    LTEXT           "Òª¹ÀÓ‹V¸æ¾¹ßxµÄÓÐÐ§ÐÔ, ÕˆÔÚÏÂÃæÝ”ÈëÔ”Çé.",IDC_STATIC,
+                    12,14,264,18
+    PUSHBUTTON      "Ôö¼Ó",IDC_ADDCAMP_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "„h³ý",IDC_ADDCAMP_REM,172,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_ADDCAMP_NAME,66,36,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDCAMP_PATTERN,66,52,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDCAMP_COST,66,68,210,12,ES_AUTOHSCROLL
+    LTEXT           "ÆðÊ¼í“Ãæ",IDC_STATIC,14,54,36,8
+    LTEXT           "ÕfÃ÷",IDC_STATIC,14,38,51,8
+    LTEXT           "ÙMÓÃ/ÔÂ",IDC_STATIC,14,70,51,8
+    CONTROL         "List1",IDC_ADDCAMP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,86,264,84
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_ADDCAMP_CHANGE,226,176,50,12,NOT WS_TABSTOP
+END
+
+FTP_OPEN DIALOG DISCARDABLE  0, 0, 219, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTPÌŽÀíßh¶ËÓ›ä›ÎÄ¼þ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "¾W½jµØÖ·",IDC_STATIC,13,14,38,8
+    LTEXT           "ÓÃ‘ôÃû×Ö",IDC_STATIC,13,32,35,8
+    LTEXT           "ÃÜ´a",IDC_STATIC,13,48,17,8
+    LTEXT           "Â·½",IDC_STATIC,13,66,35,8
+    PUSHBUTTON      "ÌŽÀí",IDC_FTPOK,154,87,50,12
+    PUSHBUTTON      "È¡Ïû",IDC_FTPCANCEL,99,87,50,12
+    EDITTEXT        IDC_FTPHOST,53,12,150,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPUSER,53,29,150,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPPASS,53,46,150,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPPATH,53,64,150,13,ES_AUTOHSCROLL
+END
+
+SERIALREG DIALOG DISCARDABLE  9, 26, 240, 114
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_VISIBLE | WS_CAPTION
+CAPTION "FunnelÍøÂçÏµÁÐ×¢²á"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "ÕˆÔÚÏÂÃæÝ”ÈëÄãµÄÃû×Ö, ½M¿—™C˜‹ºÍ×¢ƒÔÌ–´a.",IDC_REGTXT1,
+                    11,6,223,17
+    LTEXT           "Ãû×Ö:",IDC_REGTXT2,11,32,61,8
+    LTEXT           "½M¿—™C˜‹:",IDC_REGTXT3,11,45,67,8
+    LTEXT           "×¢ƒÔÌ–´a:",IDC_REGTXT4,11,58,67,11
+    EDITTEXT        IDC_REGNAME,79,27,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGORG,79,42,154,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGSERIAL,79,57,154,12,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "×¢ƒÔ",IDC_REGOK,169,94,66,16
+    PUSHBUTTON      "È¡Ïû",IDC_REGCANCEL,13,94,66,16
+    PUSHBUTTON      "Ô‡ß\ÐÐ30ÌìÑÝÊ¾",IDC_REGDEMO,91,94,66,16
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINDOWS)
+#if defined(APSTUDIO_INVOKED)
+MAINTOOLBAR$(_WINDOWS) DIALOGEX 9, 26, 370, 623
+#else
+MAINTOOLBAR DIALOGEX 9, 26, 370, 623
+#endif
+STYLE DS_NOFAILCREATE | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_ACCEPTFILES
+MENU FUNNELWEB
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Settings",IDC_PREFS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_NOTIFY | WS_TABSTOP,10,12,41,36
+    CONTROL         "Process",IDC_PROCESS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,129,12,41,36
+    CONTROL         "Schedule",IDC_SCHED,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,72,12,41,36
+    CONTROL         "View",IDC_VIEW,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,189,12,41,36
+    CONTROL         "Help",IDC_APPHELP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,244,12,41,36
+    CONTROL         "->",IDC_SHOWLIST,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,3,52,12,11
+    CONTROL         "List2",IDC_LOGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,76,365,223
+    CONTROL         140,IDC_TOOLBARIMAGE,"Static",SS_BITMAP | NOT WS_VISIBLE,
+                    0,1,293,55,WS_EX_TRANSPARENT
+    CONTROL         "Help",IDC_APPLOGO,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,302,12,41,36
+END
+#endif
+
+SPLASH DIALOG DISCARDABLE  10, 10, 307, 250
+STYLE DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "FUNNELWEBLOGO",IDC_SPLASHIMAGE,"Static",SS_BITMAP | NOT 
+                    WS_VISIBLE,0,0,15,13
+END
+
+CONFIGPREFS DIALOGEX 70, 20, 380, 258
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+CAPTION "ÉèÖÃ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",PREFS_LISTRECT,"SysListView32",LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,8,10,62,214,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "´_¶¨",IDC_PREFOK,269,234,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "È¡Ïû",IDC_PREFCANCEL,322,234,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "îAÔOÖÃ",IDC_PREFDEFAULT,9,234,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "ÍÔ­",IDC_PREFREVERT,62,234,50,14,NOT WS_TABSTOP
+END
+
+PREFS_REPORTHTMLHEAD DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PREFHTML_HEAD,12,46,264,60,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    LTEXT           "ÕýÎÄ",IDC_STATIC,97,19,22,9
+    CONTROL         "",IDC_PREFHTML_RGB7,"Button",BS_OWNERDRAW,12,18,22,10
+    LTEXT           "ßB½Ó",IDC_STATIC,150,19,22,9
+    CONTROL         "",IDC_PREFHTML_RGB8,"Button",BS_OWNERDRAW,71,18,24,10
+    LTEXT           "AßB½Ó",IDC_STATIC,254,19,28,9
+    CONTROL         "",IDC_PREFHTML_RGB9,"Button",BS_OWNERDRAW,124,18,24,10
+    LTEXT           "±³¾°îÉ«",IDC_STATIC,36,19,39,9
+    CONTROL         "",IDC_PREFHTML_RGB10,"Button",BS_OWNERDRAW,228,18,24,10
+    LTEXT           "VßB½Ó",IDC_STATIC,201,18,25,9
+    CONTROL         "",IDC_PREFHTML_RGB11,"Button",BS_OWNERDRAW,174,18,24,10
+    EDITTEXT        IDC_PREFHTML_FOOT,12,119,264,68,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    GROUPBOX        "",IDC_STATIC,4,4,280,190
+    LTEXT           "˜Ëî}",IDC_STATIC,12,36,17,8
+    LTEXT           "Ä_×¢",IDC_STATIC,12,110,17,8
+END
+
+EDIT_STATDESC DIALOGEX 2, 14, 288, 198
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_TOOLWINDOW
+CAPTION "ˆó¸æÕfÃ÷¾ŽÝ‹"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_STAT_DESC,8,26,274,148,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "¾ŽÝ‹Òª·ÅÔÚˆó¸æÀïµÄÕfÃ÷£¨ƒHƒHßmÓÃì¶HTML)",IDC_STATIC,8,8,
+                    226,11,NOT WS_GROUP
+    PUSHBUTTON      "È¡Ïû",IDC_DESCCANCEL,232,180,50,12
+    PUSHBUTTON      "´_¶¨",IDC_DESCOK,178,180,50,12
+END
+
+SCHEDULEEDIT DIALOGEX 0, 0, 265, 293
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "¼Æ»®µÄÌØµã"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Ãû×Ö &N",IDC_STATIC,12,11,24,9
+    EDITTEXT        SCH_NAME,60,8,198,13,ES_AUTOHSCROLL
+    GROUPBOX        "ÊÂ¼þ",IDC_STATIC,6,29,252,60
+    LTEXT           "é_Ê¼ÈÕÆÚ &d",IDC_STATIC,13,45,46,10
+    EDITTEXT        SCH_DATE,60,43,48,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",SCH_DATEADJUST,"msctls_updown32",UDS_ARROWKEYS,
+                    110,43,11,13
+    LTEXT           "é_Ê¼•rég &t",IDC_STATIC,151,45,36,9
+    EDITTEXT        SCH_TIME,189,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",SCH_TIMEADJUST,"msctls_updown32",UDS_ARROWKEYS,
+                    240,43,11,13
+    LTEXT           "Ã¿ &y",IDC_STATIC,14,65,25,9
+    EDITTEXT        SCH_NUM,60,64,48,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ÖÜÆÚ &P",IDC_STATIC,151,66,31,9
+    COMBOBOX        SCH_NUMTYPE,189,64,62,68,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "ÎÄ¼þ",IDC_STATIC,6,93,252,172
+    LTEXT           "Ó›ä› &L",IDC_STATIC,13,107,36,8
+    EDITTEXT        SCH_LOGFILE,60,106,191,65,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL,
+                    WS_EX_ACCEPTFILES
+    PUSHBUTTON      "Ôö¼Ó&A...",SCH_ADDLOG,146,175,50,12
+    PUSHBUTTON      "ßx“ñ &S...",SCH_SELECTLOG,201,175,50,12
+    LTEXT           "ÔOÖÃ",IDC_STATIC,14,198,36,8
+    EDITTEXT        SCH_PREFSFILE,60,196,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "žgÓ[ &B...",SCH_SELECTPREFS,146,213,50,12
+    PUSHBUTTON      "¾ŽÝ‹ÔOÖÃ &E...",SCH_EDITPREFS,201,213,50,12
+    LTEXT           "ÉÏÝdÍ¨ÓÃÙYÔ´µØÖ· &U",IDC_STATIC,9,230,48,17
+    EDITTEXT        SCH_UPLOAD,60,230,191,13,ES_AUTOHSCROLL
+    LTEXT           "ˆó¸æ",IDC_STATIC,14,248,43,8
+    CONTROL         "Static",SCH_REPORTFILE,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,60,247,137,12
+    PUSHBUTTON      "™zÒ• &V...",SCH_VIEW,201,247,50,12
+    CONTROL         "ÔÊÔS (Ó‹»®µÄÈÎ„ÕÔÚÒŽ¶¨µÄ•régß\ÐÐ)",SCH_ACTIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,272,166,14
+    DEFPUSHBUTTON   "È·¶¨",SCH_EDITOK,208,273,50,12
+END
+
+PREFS_REPORTPAGE DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "±í¸ñ˜Ëî}",IDC_STATIC,166,96,70,9
+    LTEXT           "±í¸ñÁÐ˜Ëî}",IDC_STATIC,166,112,70,9
+    LTEXT           "±í¸ñí—Ä¿",IDC_STATIC,166,128,68,9
+    LTEXT           "ÆäËü",IDC_STATIC,166,144,65,9
+    LTEXT           "Æ½¾ù",IDC_STATIC,166,160,69,9
+    LTEXT           "¿‚ºÍ",IDC_STATIC,166,176,67,9
+    CONTROL         "",IDC_PREFHTML_RGB1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,96,24,10
+    CONTROL         "",IDC_PREFHTML_RGB2,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,112,24,10
+    CONTROL         "",IDC_PREFHTML_RGB3,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,128,24,10
+    CONTROL         "",IDC_PREFHTML_RGB4,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,144,24,10
+    CONTROL         "",IDC_PREFHTML_RGB5,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,160,24,10
+    CONTROL         "",IDC_PREFHTML_RGB6,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,176,24,10
+    GROUPBOX        "±í¸ñîÉ«",IDC_STATIC,148,4,136,190
+    GROUPBOX        "ï@Ê¾",IDC_STATIC,4,4,136,190
+    LISTBOX         IDC_SCHEMES,158,30,116,54,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "•rég˜ËÓ›",IDC_PREF_TIMESTAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,46,110,10
+    CONTROL         "Ó›ä›Ãû×Ö",IDC_PREF_HEADTITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,32,110,10
+    CONTROL         "îlŽ§Œ’¶È",IDC_PREF_BANDWIDTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,18,110,10
+    CONTROL         "êPæIµÄÁÐÔÚ±í¸ñ×óß…",IDC_PREF_LEFTSIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,60,110,10
+    LTEXT           "ßx“ñÉ«Õ{½M",IDC_STATIC,158,18,114,10
+    CONTROL         "",IDC_PREFIMG_RGB1,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,101,24,8
+    CONTROL         "",IDC_PREFIMG_RGB2,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,110,24,8
+    CONTROL         "",IDC_PREFIMG_RGB3,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,119,24,8
+    CONTROL         "",IDC_PREFIMG_RGB4,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,127,24,8
+    CONTROL         "",IDC_PREFIMG_RGB5,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,137,24,8
+    CONTROL         "",IDC_PREFIMG_RGB6,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,146,24,8
+    CONTROL         "",IDC_PREFIMG_RGB7,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,154,24,8
+    CONTROL         "",IDC_PREFIMG_RGB8,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,164,24,8
+    CONTROL         "",IDC_PREFIMG_RGB9,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,173,24,8
+    CONTROL         "",IDC_PREFIMG_RGB10,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,10,182,24,8
+    CONTROL         "¿ìËÙßB½ÓÖ¸Ê¾",IDC_PREF_QINDEX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,74,110,10
+END
+
+PREFS_FILTERS DIALOGEX 78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_FILTER,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_REPORT DIALOG DISCARDABLE  78, 9, 295, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_REPORT,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | WS_GROUP,0,0,294,215
+END
+
+PREFS_STATS DIALOG DISCARDABLE  78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_STATS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_STATSGLOBAL DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ˆDÐÎßx“ñ",65534,4,4,136,190,WS_GROUP
+    CONTROL         "3 ¾SˆDÐÎ",IDC_PREFGRAPH_3DBARS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,18,79,9
+    CONTROL         "Œ’ˆDÐÎ",IDC_PREFGRAPH_WIDER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,32,92,8
+    EDITTEXT        IDC_PREFVD_COST,156,18,37,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ÙMÓÃ ˆ@/Õ××Ö¹",IDC_STATIIDC_PREFVD_MONTHLYC,198,20,74,
+                    10
+    EDITTEXT        IDC_PREFSTAT_SESSIONTIME,156,36,37,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "•þÔ’³¬ß^•rég (·ÖçŠ)",IDC_PREFSTAT_SESSIONTXT,198,38,76,
+                    13
+    CONTROL         "¾Wí“Õ{É«°å",IDC_PREFGRAPH_WEBPAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,46,107,8
+    GROUPBOX        "•þÔ’",IDC_STATIC,148,4,136,190,WS_GROUP
+    LTEXT           "Ê¹ÓÃCookie ×ƒÁ¿žéÓÃ‘ô¸úÛ™",IDC_STATIC,156,60,115,9
+    EDITTEXT        IDC_COOKIEVAR,156,72,120,12,ES_AUTOHSCROLL
+    CONTROL         "¼ˆˆ¿É´òÓ¡µÄˆDÐÎ",IDC_PREFGRAPH_CORP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,60,107,8
+    LTEXT           "Ê¹ÓÃÍ¨ÓÃÙYÔ´µØÖ·…¢”µžéÓÃ‘ô¸úÛ™",IDC_STATIC,156,92,126,9
+    EDITTEXT        IDC_URLVAR,156,104,120,12,ES_AUTOHSCROLL
+END
+
+PREFS_ROUTER DIALOGEX 78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ROUTER,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_ROUTER_IP DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ƒÈ²¿µØÖ· (IP's)",IDC_STATIC,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFROUTER_NAME,10,18,208,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_PREFROUTER_LIST,10,40,208,112,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFROUTER_ADD,223,18,50,13
+    PUSHBUTTON      "„h³ý",IDC_PREFROUTER_REM,223,56,50,13
+    PUSHBUTTON      "Çå³ý",IDC_PREFROUTER_CLR,223,72,50,13
+    LTEXT           "ßMÈëß@Ð©µØÖ·µÄÍ¨ÐÅÁ¿±»Ö¸Ê¾žéÝ”Èë, ëxé_ß@Ð©µØÖ·µÄÍ¨ÐÅÁ¿±»Ö¸Ê¾žéÝ”³ö. ÔÚß@Ð©µØÖ·Ö®égµÄÍ¨ÐÅÁ¿±»Ö¸Ê¾žéƒÈ²¿.",
+                    IDC_STATIC,11,158,207,26
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFROUTER_CHANGE,223,40,50,13
+END
+
+PREFS_SERVER DIALOG DISCARDABLE  80, 9, 292, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ßh¶Ë¿ØÖÆ",IDC_STATIC,2,0,289,214,WS_GROUP
+    CONTROL         "ÔÊÔSßh¶Ë¿ØÖÆ",IDC_REMOTEON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,22,133,10
+    RTEXT           "ÃÜ´a",IDC_STATIC,19,42,43,9
+    EDITTEXT        IDC_REMOTEPASSWD,67,40,54,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "TCP ¶Ë¿Ú",IDC_STATIC,10,62,49,11
+    EDITTEXT        IDC_REMOTEPORT,67,60,54,12,ES_AUTOHSCROLL
+    LTEXT           "Ê¹ÓÃß@‚€ßx“ñ, ¿ÉÒÔÄÒ»‚€ßh¶ËÓ‹Ëã™C¿ØÖÆFunnel¾WµÄÍÖÆ..",
+                    IDC_STATIC,65,87,205,20
+    LTEXT           "( 911 ÊÇTCP¶Ë¿ÚµÄîAÔOÖÃ)",IDC_STATIC,132,62,111,12
+END
+
+PREFS_STATSDOMAINS DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "îIÓò·ÖÅä",65534,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFORG_PATTERN,41,18,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFORG_ADD,64,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFORG_CHANGE,172,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_PREFORG_NAME,156,18,120,12,ES_AUTOHSCROLL
+    LTEXT           "Ä£Ê½",IDC_STATIC,12,20,17,8
+    LTEXT           "Ãû×Ö",IDC_STATIC,134,20,17,8
+    PUSHBUTTON      "îAÔOÖÃ",IDC_PREFORG_DEFAULT,226,176,50,12,NOT 
+                    WS_TABSTOP
+    CONTROL         "List1",IDC_PREFORG_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "„h³ý",IDC_PREFORG_DEL,118,176,50,12,NOT WS_TABSTOP
+END
+
+PREFS_VDOMAINS DIALOGEX 78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_VDOMAINS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_VDOMAINSOPT DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,148,4,136,190,WS_GROUP
+    GROUPBOX        "ˆó¸æ",IDC_STATIC,4,4,136,190,WS_GROUP
+    CONTROL         "¾ŽÌ–µÄîIÓò",IDC_PREFVD_SEQDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,118,115,10
+    LTEXT           "·Öî",IDC_STATIC,12,84,40,10
+    COMBOBOX        IDC_VDSORTBY,12,96,120,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "´_ÕJÖ÷™CÓÃ",IDC_STATIC,12,18,72,10
+    COMBOBOX        IDC_VDREPORTBY,12,30,120,69,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Ì“”MîIÓòˆó¸æÔÊÔSÄãÄÒ»‚€»òÕß¶à‚€Ó›ä›ÎÄ¼þ®aÉú¶à‚€Ó›ä›ˆó¸æ. \r\r®”Ê¹ÓÃÌ“”MÖ÷™Cßx“ñ, Äã±Øíš´_±£ÄãµÄÓ›ä›ÎÄ¼þ°üÀ¨ÁËºÏ·¨µÄÖ÷™CÐÅÏ¢.",
+                    IDC_STATIC,155,17,120,64
+    EDITTEXT        IDC_VDMULTIDIR,12,64,120,12,ES_AUTOHSCROLL
+    LTEXT           "ÒŽ¶¨Ä¿ä›",IDC_STATIC,12,52,116,10
+END
+
+PREFS_VDOMAINSRT DIALOGEX 2, 14, 286, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Œ•r",IDC_STATIC,4,4,278,190,WS_GROUP
+    LTEXT           "¸üÐÂˆó¸æµÄ•régég¸ô",IDC_STATIC,22,40,96,8
+    EDITTEXT        IDC_PREFVD_NUM,22,52,17,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_PREFVD_TYPE,43,53,67,68,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Íê³ÉŒ•rÕfÃ÷",IDC_PREFVD_SLEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,23,64,10
+END
+
+PREFS_VDOMAINSMAP DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFVD_PATTERN,34,38,98,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFVD_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "„h³ý",IDC_PREFVD_REM,172,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_PREFVD_NAME,160,38,116,12,ES_AUTOHSCROLL
+    LTEXT           "Ö÷™C",IDC_STATIC,14,40,17,8
+    LTEXT           "Ãû×Ö",IDC_STATIC,139,40,17,8
+    CONTROL         "List1",IDC_PREFVD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS,12,56,264,114,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFVD_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    LTEXT           "Ê¹ÓÃ¼¯ºÏ¿ÉÒÔ¾CºÏ¶à‚€¾W½jµØÖ·Ãûµ½Ò»‚€µØÖ·Ãû",IDC_STATIC,
+                    13,17,258,12
+END
+
+PREFS_ANALYSISOPT DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Áã×Ö¹‚÷ËÍ",IDC_PREFGEN_FILTERZERO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,20,110,8
+    CONTROL         "×ÔÎÒÆðÊ¼í“Ãæ",IDC_PREFGEN_IGNORESELF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,34,110,8
+    GROUPBOX        "ÈÕÆÚ·¶‡ú",IDC_STATIC,4,4,136,190,WS_GROUP
+    RTEXT           "é_Ê¼",IDC_MISC2,18,40,17,8
+    COMBOBOX        IDC_PREFGEN_DATESTYLE,18,20,102,92,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "•øºž & ÎÄ¼þ:// ÆðÊ¼í“Ãæ",IDC_PREFGEN_IGNOREBOOKMARK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,76,110,8
+    CONTROL         "Í¨ÓÃÙYÔ´µØÖ·´óÐ¡Œ‘",IDC_PREFGEN_IGNORECASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,48,110,8
+    CONTROL         "ÓÃ‘ôÃû×÷žé¿Í‘ô",IDC_PREFGEN_IGNOREUSERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,62,110,8
+    EDITTEXT        IDC_PREFGEN_URL,158,126,118,12,ES_AUTOHSCROLL
+    GROUPBOX        "Í¨ÓÃÙYÔ´µØÖ·",IDC_STATIC,148,100,136,94,WS_GROUP
+    LTEXT           "îAÖÃÖ÷™CÃû",IDC_STATIC,158,114,111,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "îAÖÃí“Ãæ",IDC_STATIC,158,154,105,9
+    EDITTEXT        IDC_PREFGEN_INDEXFILE,158,166,118,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DATEOVERIDE,18,138,102,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ÈÕÆÚ¸ñÊ½",IDC_STATIC,18,126,97,10
+    GROUPBOX        "ÒÔÏÂÇé›r²»Óè¿¼‘]",IDC_STATIC,148,4,136,90,WS_GROUP
+    EDITTEXT        IDC_DATESTART,56,38,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATEEND,56,54,64,12,ES_AUTOHSCROLL
+    RTEXT           "½YÊø",IDC_STATIC,18,56,17,8
+    COMBOBOX        IDC_PREFGEN_SPLITDATE,18,100,102,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "¶à‚€ˆó¸æ",IDC_STATIC,18,88,102,8
+    LTEXT           "ÀýÈç www.site.com",IDC_STATIC,160,140,63,8
+    LTEXT           "ÀýÈç index.html",IDC_STATIC,160,180,66,8
+    EDITTEXT        IDC_DATEOFFSET,66,165,53,12,ES_AUTOHSCROLL
+    RTEXT           "•régÕ{Õý",IDC_STATIC,17,167,33,8
+END
+
+PREFS_REPORTOUTPUT DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PREF_LANG,156,100,116,84,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Áí´æ...",IDC_PREFGEN_OUT,220,18,54,12,NOT WS_TABSTOP
+    LTEXT           "ÕZÑÔ",IDC_STATIC,156,90,38,10
+    GROUPBOX        "îÐÍ",IDC_STATIC,148,74,136,120,WS_GROUP
+    GROUPBOX        "µØÖ·",IDC_LOCATION,4,4,280,66,WS_GROUP
+    EDITTEXT        IDC_OUTDIR,12,18,200,12,ES_AUTOHSCROLL
+    LTEXT           "¸ñÊ½:",IDC_STATIC,156,126,25,10,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREFGEN_TYPE,156,136,116,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ˆDÐÎ",IDC_STATIC,156,162,33,10,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREFGEN_GTYPE,156,172,116,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Â·½˜ËÓ›",IDC_STATIC,12,38,195,10
+    GROUPBOX        "”µ“þŽì",IDC_STATIC,4,74,136,120,WS_GROUP
+    COMBOBOX        IDC_TOKENS,12,48,200,122,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "›]ÓÐ",IDC_DB_NONE,"Button",BS_AUTORADIOBUTTON,14,88,60,
+                    10
+    CONTROL         "ßx“ñ",IDC_DB_SELECT,"Button",BS_AUTORADIOBUTTON,14,102,
+                    32,10
+    PUSHBUTTON      "ßx“ñ...",IDC_DB_BROWSE,58,130,70,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_DB_NAME,26,114,102,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "²åÈë",IDC_PREFGEN_INSERT,220,48,54,12,NOT WS_TABSTOP
+END
+
+PREFS_CUSTOMFORMAT DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,8,0,280,190,WS_GROUP
+    LTEXT           "·Ö¸ô·û",IDC_STATIC,14,18,38,8
+    COMBOBOX        IDC_CUSTOM_DATA,57,33,48,161,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "”µ“þ…^Óò",IDC_STATIC,14,35,38,8
+    LTEXT           "Î»ÖÃ:00",IDC_CUSTOM_POSTXT,14,55,36,10
+    COMBOBOX        IDC_CUSTOM_DATE,57,71,93,143,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "ÈÕÆÚ¸ñÊ½",IDC_STATIC,11,73,41,8
+    LTEXT           "ÈÕÆÚ[3]  •rég[4]",IDC_CUSTOM_INFO,17,116,252,38
+    COMBOBOX        IDC_CUSTOM_TIME,57,89,93,117,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "•rég¸ñÊ½",IDC_STATIC,19,89,33,8
+    CONTROL         "ÔÊÔS",IDC_CUSTOM_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,4,32,10,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_CUSTOM_POS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,51,49,224,19
+    EDITTEXT        IDC_CUSTOM_SEP,57,16,47,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,11,107,265,77
+    LTEXT           "Èç¹ûÄãÓÐ·Ç˜Ë×¼µÄÓ›ä›ÎÄ¼þ, ¿ÉÒÔÊ¹ÓÃ¶¨ÁxµÄ¸ñÊ½.",
+                    IDC_STATIC,17,170,254,10
+    LTEXT           "(Ê¹ÓÃ¿É´òÓ¡µÄ×Ö·û)",IDC_STATIC,112,17,167,11
+END
+
+PREFS_NOTIFYRULES DIALOG DISCARDABLE  2, 14, 303, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ÒŽ„t",65534,4,4,295,194,WS_GROUP
+    LISTBOX         IDC_PREFNOTIFY_LIST,10,50,281,94,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFNOTIFY_ADD,10,179,50,13
+    PUSHBUTTON      "ÒÆÈ¥",IDC_PREFNOTIFY_REM,64,179,50,13
+    EDITTEXT        IDC_PREFNOTIFY_NAME,189,30,105,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Çå³ý",IDC_PREFNOTIFY_CLR,118,179,50,13
+    COMBOBOX        IDC_NOTIFY_DB,34,30,82,102,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NOTIFY_LOGIC,160,30,26,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Èç¹û",IDC_STATIC,10,33,27,11
+    EDITTEXT        IDC_NOTIFYEMAIL,10,161,279,12,ES_AUTOHSCROLL
+    LTEXT           "à]¼þÄ¿˜ËµØÖ· (user@site)",IDC_STATIC,7,150,145,9
+    CONTROL         "êPé]",IDC_NOTIFY_ON1,"Button",BS_AUTORADIOBUTTON,8,17,
+                    36,8
+    CONTROL         "ÆÁÄ»",IDC_NOTIFY_ON2,"Button",BS_AUTORADIOBUTTON,49,17,
+                    57,8
+    CONTROL         "à]¼þ",IDC_NOTIFY_ON3,"Button",BS_AUTORADIOBUTTON,105,17,
+                    47,9
+    COMBOBOX        IDC_NOTIFY_FIELD,119,30,38,97,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+PREFS_VDOMAINSPATH DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    PUSHBUTTON      "Ôö¼Ó",EDITPATH_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "„h³ý",EDITPATH_DEL,172,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        EDITPATH_HOST,34,34,186,12,ES_AUTOHSCROLL
+    EDITTEXT        EDITPATH_PATH,34,52,186,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "žgÓ[...",EDITPATH_BROWSE,226,52,50,12,NOT WS_TABSTOP
+    LTEXT           "Ö÷™C",IDC_STATIC,14,36,17,8
+    LTEXT           "Â·½",IDC_STATIC,14,54,17,8
+    PUSHBUTTON      "ÐÞ¸Ä",EDITPATH_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    CONTROL         "List1",PREFS_EDITPATH,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS,17,68,264,102,WS_EX_CLIENTEDGE
+    LTEXT           "Ö÷™C·ÖÅäÔÊÔSÄã¸ù“þîIÓòÃû»òÕßÄ¿ä›, ±£´æÌ“”MîIÓòˆó¸æµ½ÒŽ¶¨µÄµØ·½.",
+                    IDC_STATIC,13,13,256,18
+END
+
+FILEVIEW DIALOGEX 0, 0, 666, 281
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "™zÒ•"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_VIEWLINES,7,18,638,256,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | 
+                    LBS_WANTKEYBOARDINPUT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    SCROLLBAR       IDC_VIEWSCROLL,647,3,12,271,SBS_VERT
+    EDITTEXT        IDC_FILEVIEWNAME,7,3,638,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+WIZARD5 DIALOGEX 100, 0, 181, 112
+STYLE DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "¾«ì`ÔOÖÃÒÑÍê³É !",IDC_STATIC,7,25,128,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "ÒªÌŽÀíºÍ™zÒ•ˆó¸æ,  üc“ô<Íê³É>°´¼~",IDC_STATIC,7,42,139,
+                    16
+    LTEXT           "Ò»µ©ÄãÒÑ®aÉúµÚÒ»‚€ˆó¸æ, Äã¿ÉÒÔÔÚFunnel¾WÊ¹ÓÃÔOÖÃÄÜ´æÈ¡ÔS¶àÆäËüµÄŠ´ó¹¦ÄÜ.",
+                    IDC_STATIC,7,69,146,26
+    LTEXT           "²½óE 5",IDC_STATIC,153,7,21,8
+END
+
+WIZARD4 DIALOG DISCARDABLE  100, 0, 186, 126
+STYLE DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "ÏÂÒ»²½, Ê¹ÓÃßx“ñ...°´Å¥ÒŽ¶¨ÄãÒªŒ¢ÌŽÀíµÄˆó¸æ±£´æµ½ÄÄÀï.",
+                    IDC_STATIC,3,25,164,25
+    LTEXT           "îAÔOÖÃµÄÄ¿ä›µØÖ·ÔÚ: FunnelWeb/Reports.",IDC_STATIC,3,57,
+                    154,22
+    LTEXT           "²½óE 4",IDC_STATIC,154,7,21,8
+    PUSHBUTTON      "ßx“ñ...",Frame4SelBut,137,105,38,10
+    EDITTEXT        Wizard4Outputloc,2,104,130,12,ES_AUTOHSCROLL
+END
+
+WIZARD3 DIALOG DISCARDABLE  100, 0, 185, 127
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "ßx“ñˆó¸æÔ”¼š¶ÈµÄ¼‰„e. žé¸ü¶àµÄßx“ñ, Õˆ²éé†Funnel¾W½jÔOÖÃ•þÔ’¿ò.",
+                    IDC_STATIC,1,20,162,24
+    LTEXT           "²½óE 3",IDC_STATIC,154,7,21,8
+    CONTROL         "»ù±¾µÄ",Frame3Radio1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,52,47,10
+    CONTROL         "˜Ë×¼µÄ",Frame3Radio2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,74,56,10
+    CONTROL         "¸ß¼‰µÄ",Frame3Radio3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,95,54,9
+    LTEXT           "°üÀ¨»ù±¾µÄ¿Í‘ôºÍ·þ„ÕÆ÷½yÓ‹",IDC_STATIC,9,62,162,11
+    LTEXT           "°üÀ¨ËùÓÐµÄ¿Í‘ôºÍ·þ„ÕÆ÷½yÓ‹",IDC_STATIC,10,84,162,9
+    LTEXT           "°üÀ¨ËùÓÐµÄ¿Í‘ôºÍ·þ„ÕÆ÷¾ßÓÐšvÊ·”µ“þµÄ½yÓ‹",IDC_STATIC,10,
+                    104,162,16
+END
+
+WIZARD2 DIALOG DISCARDABLE  100, 0, 185, 124
+STYLE DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "ßx“ñ...",Frame2SelBut,136,103,38,10
+    LTEXT           "Ó›ä›ÎÄ¼þÍ¨³£ÔÚ¾W½j·þ„ÕÆ÷µÄ¸ùÄ¿ä›ÏÂ. Èç¹ûÄãÊ¹ÓÃISP, Äã¾ÍÄÜ‰òÔÚÎÄ¼þÀïÒŽ¶¨FTP»òÕßHTTPÍ¨ÓÃÙYÔ´µØÖ·.",
+                    IDC_STATIC,2,54,149,31
+    LTEXT           "Ê¹ÓÃßx“ñ¡­ °´¼~, ÒŽ¶¨ÄãÒªÌŽÀíµÄÓ›ä›ÎÄ¼þµÄµØÖ·.",
+                    IDC_STATIC,2,25,149,21
+    LTEXT           "²½óE  2",IDC_STATIC,154,7,23,8
+    EDITTEXT        Frame2FileName,2,102,131,12,ES_AUTOHSCROLL
+END
+
+WIZARD1 DIALOGEX 100, 0, 185, 125
+STYLE DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "šgÓ­Ê¹ÓÃ¾«ì`ÔOÖÃFunnel¾W½j",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,4,25,128,8,
+                    WS_EX_TRANSPARENT
+    LTEXT           "ß@‚€¾«ì`ÄÜŽÍÖúÄãÔOÖÃ:",IDC_STATIC,4,41,128,8
+    CONTROL         105,Frame1Bullet1,"Static",SS_BITMAP,4,53,6,6
+    LTEXT           "ÒªÌŽÀíµÄÓ›ä›ÎÄ¼þµÄµØÖ·",IDC_STATIC,13,52,128,8
+    CONTROL         105,Frame1Bullet2,"Static",SS_BITMAP,4,65,6,6
+    LTEXT           "·ÖÎöµÄ¼‰„eºÍ",IDC_STATIC,13,64,128,8
+    CONTROL         105,Frame1Bullet3,"Static",SS_BITMAP,4,77,6,6
+    LTEXT           "Ý”³öÄ¿˜ËµØÖ·",IDC_STATIC,13,76,128,8
+    LTEXT           "ß@Ð©ÔOÖÃÒÔºó¿ÉÒÔÔÚÔOÖÃ…^ÀïÐÞ¸Ä",IDC_STATIC,4,95,137,16
+    LTEXT           "²½óE 1",IDC_STATIC,154,7,24,8
+END
+
+WIZARD DIALOG DISCARDABLE  0, 0, 288, 156
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Funnel¾W½j¾«ì`"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         103,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER,5,5,92,128
+    GROUPBOX        "",IDC_STATIC,0,133,288,23
+    PUSHBUTTON      "È¡Ïû",WizardCancel,246,141,38,12
+    DEFPUSHBUTTON   "ÏÂÒ»í“>>",WizardNext,205,141,38,12
+    PUSHBUTTON      "<<ÉÏÒ»í“",WizardPrev,164,141,38,12
+END
+
+PREFS_STATSDIRMAP DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ä¿ä›½M·ÖÅä",65534,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFGRP_PATTERN,40,18,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFGRP_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "„h³ý",IDC_PREFGRP_REM,172,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_PREFGRP_NAME,158,18,118,12,ES_AUTOHSCROLL
+    LTEXT           "Â·½",IDC_STATIC,12,20,17,8
+    LTEXT           "Ãû×Ö",IDC_STATIC,134,20,17,8
+    CONTROL         "List1",IDC_PREFGRP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,39,264,132
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFGRP_CHANGE,226,176,50,12,NOT WS_TABSTOP
+END
+
+SCHEDULELIST DIALOGEX 0, 0, 408, 293
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "¼Æ»®ÊÂ¼þÄ¿Â¼"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "È·¶¨",SCH_OK,304,273,46,13
+    GROUPBOX        "",IDC_STATIC,6,2,396,251
+    PUSHBUTTON      "ÐÂµÄ...",SCH_ADD,6,273,46,12
+    PUSHBUTTON      "ÒÆÈ¥",SCH_DEL,54,273,46,12
+    RTEXT           "",SCH_CURRENTTIME,249,10,141,11
+    PUSHBUTTON      "Ó›ä›...",SCH_VIEWLOG,198,273,46,12
+    CONTROL         "List1",SCH_LISTRECT,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,47,383,200,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "¬F•rß\ÐÐ",SCH_RUNNOW,102,273,46,12
+    PUSHBUTTON      "ÌØÐÔ...",SCH_EDIT,150,273,46,12
+    ICON            "SCHED_ICON",IDC_STATIC,17,17,20,20,SS_REALSIZEIMAGE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Ê¹ÓÃÓ‹»®¿ÉÒÔ×Ô„ÓµØÌŽÀíÓ›ä›ÎÄ¼þ",IDC_STATIC,53,23,251,11,
+                    0,WS_EX_TRANSPARENT
+    CONTROL         "½ûÖ¹È«²¿ÊÂ¼þ",SCH_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,257,237,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "È¡Ïû",SCH_CANCEL,354,273,46,13
+END
+
+PREFS_FILTEROUTPUT DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,280,190,WS_GROUP
+    COMBOBOX        IDC_FILTEROUT1,14,36,72,71,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FILTEROUT2,108,36,72,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILTEROUT3,202,36,72,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILTEROUT_DATA,14,52,260,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_FILTEROUT_ADD,62,176,50,13
+    PUSHBUTTON      "ÒÆÈ¥",IDC_FILTEROUT_REM,170,176,50,13
+    PUSHBUTTON      "Çå³ý",IDC_FILTEROUT_CLEAR,224,176,50,13
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_FILTEROUT_CHANGE,116,176,50,13
+    LISTBOX         IDC_FILTEROUT_LIST,14,72,260,98,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Ý”³öºYßxÔÊÔSÄãŒ¦ˆó¸æÖÐï@Ê¾µÄÐÅÏ¢ßMÐÐÏÞÖÆ. ²»ÏóÝ”ÈëºYßx, Ëü‚ƒK²»Ó°í‘Ó‹Ëã»òÕß½yÓ‹.",
+                    IDC_STATIC,10,14,270,16
+END
+
+PREFS_FILTERINPUT DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,280,190,WS_GROUP
+    COMBOBOX        IDC_FILTERIN1,12,36,88,83,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FILTERIN2,100,36,88,62,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FILTERIN3,188,36,88,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_FILTERIN_DATA,12,52,264,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_FILTERIN_ADD,118,176,50,12
+    PUSHBUTTON      "„h³ý",IDC_FILTERIN_REM,172,176,50,12
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_FILTERIN_CHANGE,226,176,50,12
+    LTEXT           "Ý”ÈëºYßxÔÊÔSÄãŒ¦¾W½jµÄÒŽ¶¨²¿·ÖÏÞÖÆ·ÖÎöµÄ¹ ‡ú. Ê¹ÓÃîAÔOÖÃ, Œ¢°üÀ¨È«²¿µÄƒÈÈÝ.",
+                    IDC_STATIC,10,14,270,16
+    CONTROL         "List1",IDC_FILTERIN_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,68,264,100
+END
+
+PREFS_ANALYSISNET DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "îIÓòÃüÃûÏµ½y",-1,4,4,136,190,WS_GROUP
+    GROUPBOX        "Í¨ÓÃµÄ",-1,148,4,136,190,WS_GROUP
+    CONTROL         "êPé]ËÑŒ¤",IDC_PREFGEN_DNSNO,"Button",BS_AUTORADIOBUTTON,
+                    12,20,85,9
+    CONTROL         "é_Í¨ËÑŒ¤",IDC_PREFGEN_DNSYES,"Button",
+                    BS_AUTORADIOBUTTON,12,34,91,8
+    CONTROL         "ƒHƒHËÑŒ¤´æƒ¦Æ÷",IDC_PREFGEN_DNSCACHE,"Button",
+                    BS_AUTORADIOBUTTON,12,68,120,8
+    LTEXT           "Í¬•rµÄ",-1,76,50,54,8
+    EDITTEXT        IDC_PREFGEN_DNSNUM,30,48,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Çå³ý´æƒ¦Æ÷",IDC_CLEARCACHE,30,82,70,12
+    CONTROL         "™zË÷í“Ãæ˜Ëî}",IDC_PREF_REMOTETITLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,34,119,10
+    CONTROL         "ŸoÔ´ FTP",IDC_PREFFTP_PASSIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,158,20,47,10
+END
+
+PREFS_ANALYSISEXT DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Ôö¼Ó",IDC_GLOB_PAGEADD,226,30,50,12
+    PUSHBUTTON      "„h³ý",IDC_GLOB_PAGEREM,226,46,50,12
+    PUSHBUTTON      "îAÔOÖÃ",IDC_GLOB_PAGEDEFAULT,226,78,50,12,WS_GROUP
+    GROUPBOX        "",IDC_GLOB_TITLE,4,4,280,190,WS_GROUP
+    CONTROL         "Tree1",IDC_EXTEDIT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,12,30,206,156
+    LTEXT           "ÔÚÏÂÃæµÄÄ¿ä›Àï, ¶¨Áx³£ÒŽµÄÎÄ¼þ”UÕ¹Ãû.",IDC_STATIC,12,14,
+                    218,12,SS_CENTERIMAGE
+    PUSHBUTTON      "¾ŽÝ‹",IDC_GLOB_PAGEEDIT,226,62,50,12
+END
+
+PREFS_ANALYSIS DIALOG DISCARDABLE  78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ANALYSIS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | WS_TABSTOP,0,0,294,215
+END
+
+PREFS_STATSEDIT DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATEDIT_NAME,4,4,280,190,WS_GROUP
+    GROUPBOX        "ßx“ñ",IDC_STATIC,158,14,118,174,WS_GROUP
+    COMBOBOX        IDC_TABSIZE,184,38,80,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "·Öî",IDC_STATIC,172,70,52,9
+    CONTROL         "±í¸ñ",IDC_STAT_TABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,172,26,90,10,WS_EX_TRANSPARENT
+    CONTROL         "ˆDÐÎ",IDC_STAT_GRAPH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,172,56,95,10
+    CONTROL         "Tree2",IDC_STATEDIT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_CHECKBOXES | 
+                    TVS_TRACKSELECT | WS_BORDER,10,18,140,156,
+                    WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_SORTING,172,82,92,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "‘ªÓÃËùÓÐµÄ",IDC_APPLYALL,96,176,53,12,NOT WS_TABSTOP
+    PUSHBUTTON      "îAÔOÖÃ",IDC_STATDEFAULT,37,176,54,12,NOT WS_TABSTOP
+    COMBOBOX        IDC_STATFILTER,172,114,92,12,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ˆó¸æºYßx",IDC_STATIC,172,102,89,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "ÕfÃ÷",IDC_STATEDITDESC,190,168,74,12
+    COMBOBOX        IDC_STATFILTER2,172,146,92,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STATFILTERTXT,172,130,92,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_USEDESC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,172,
+                    169,10,10
+END
+
+PREFS_POSTCOMPRESS DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ˆó¸æ",-1,148,4,136,190
+    GROUPBOX        "Ó›ä›ÎÄ¼þ",-1,4,4,136,190
+    CONTROL         "¼ÓÎÄ¼þµ½Zip",IDC_PP_ZIPREPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,159,18,58,10
+    CONTROL         "Ê¹ÓÃ Gzip ‰º¿sÎÄ¼þ",IDC_PP_COMPRESSLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,18,74,10
+    CONTROL         "Ä±¾™C´Å±P„h³ý",IDC_PP_DELETEREPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,31,72,10
+    CONTROL         "Ä±¾™C´Å±P„h³ý",IDC_PP_DELETELOG,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,13,31,72,10
+END
+
+PREFS_POSTUPLOAD DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,148,4,136,190
+    GROUPBOX        "",IDC_STATIC,4,4,136,190
+    CONTROL         "ˆó¸æ",IDC_PP_UPLOADREPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,152,4,39,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "žgÓ[±¾™C...",IDC_PP_BROWSE,216,160,60,12,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "Ó›ä›ÎÄ¼þ",IDC_PP_UPLOADLOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,5,50,10,WS_EX_TRANSPARENT
+    LTEXT           "Ö÷™CÃû",IDC_STATIC,12,22,33,10
+    EDITTEXT        IDC_PP_HOST,12,34,120,12,ES_AUTOHSCROLL
+    LTEXT           "ÓÃ‘ôÃû",IDC_STATIC,12,52,33,10
+    EDITTEXT        IDC_PP_USER,12,64,120,12,ES_AUTOHSCROLL
+    LTEXT           "ÃÜ´a",IDC_STATIC,12,82,32,10
+    EDITTEXT        IDC_PP_PASSWD,12,94,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Â·½",IDC_STATIC,12,112,28,10
+    EDITTEXT        IDC_PP_PATH,12,124,120,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "žgÓ[±¾™C...",IDC_PP_LOGBROWSE,72,160,60,12,NOT 
+                    WS_VISIBLE | WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Ö÷™CÃû",IDC_STATIC,156,22,33,10
+    EDITTEXT        IDC_PP_HOST2,156,34,120,12,ES_AUTOHSCROLL
+    LTEXT           "ÓÃ»§Ãû",IDC_STATIC,156,52,33,10
+    EDITTEXT        IDC_PP_USER2,156,64,120,12,ES_AUTOHSCROLL
+    LTEXT           "ÃÜ´a",IDC_STATIC,156,82,32,10
+    EDITTEXT        IDC_PP_PASSWD2,156,94,120,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_PATH2,156,124,120,12,ES_AUTOHSCROLL
+    LTEXT           "Â·½",IDC_STATIC,156,112,28,10
+    PUSHBUTTON      "žgÓ[ FTP...",IDC_PP_FTP,216,144,60,12,WS_DISABLED | NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "žgÓ[ FTP...",IDC_PP_LOGFTP,72,144,60,12,WS_DISABLED | 
+                    NOT WS_TABSTOP
+END
+
+PREFS_POSTEMAIL DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,280,190
+    EDITTEXT        IDC_PP_EMAIL,58,15,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_MSG,12,90,261,95,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "°lËÍµ½",IDC_STATIC,12,17,41,10
+    LTEXT           "ÐÅÏ¢",IDC_STATIC,12,78,34,8
+    EDITTEXT        IDC_PP_EMAILSUB,58,45,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_EMAILSMTP,58,60,215,12,ES_AUTOHSCROLL
+    LTEXT           "Ö÷î}",IDC_STATIC,12,47,41,10
+    LTEXT           "SMTP Ö÷™C",IDC_STATIC,12,63,41,10
+    CONTROL         "Ò»µ©Íê³É, °lËÍà]¼þ",IDC_PP_EMAILON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,4,77,10,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PP_EMAILFROM,58,30,215,12,ES_AUTOHSCROLL
+    LTEXT           "Ä",IDC_STATIC,12,32,41,10
+    LTEXT           "Ò»µ©ˆó¸æÒÑÍê³É, Ê¹ÓÃà]¼þ°lËÍÍ¨Öª½oÓÃ‘ô»òÕß¹ÜÀí†T",
+                    IDC_STATIC,59,79,212,35,SS_SUNKEN | NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+PREFS_POSTPROC DIALOGEX 78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_POSTPROC,"SysTabControl32",0x0,0,0,294,
+                    215
+END
+
+PREFS_ADDSBANNERS DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFADD_NAME,66,36,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFADD_PATTERN1,66,52,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFADD_PATTERN2,66,68,210,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFADD_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "„h³ý",IDC_PREFADD_REM,172,176,50,12,NOT WS_TABSTOP
+    LTEXT           "ÎÄ¼þÃû",IDC_STATIC,14,54,25,8
+    LTEXT           "ÕfÃ÷",IDC_STATIC,14,38,17,8
+    LTEXT           "üc“ô×Ö·û",IDC_STATIC,14,70,33,8
+    LTEXT           "Èç¹ûÄãÔÚ¾WÉÏäNÊÛV¸æÒÔ¼°Òª¹ÀÓ‹Ó°í‘¶ÈºÍüc“ôÁ¿, ÕˆÊ¹ÓÃß@‚€•þÔ’¿ò.",
+                    IDC_STATIC,12,14,264,18
+    CONTROL         "List1",IDC_PREFADD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,86,264,84
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFADD_CHANGE,226,176,50,12,NOT WS_TABSTOP
+END
+
+PREFS_ADDS DIALOG DISCARDABLE  78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ADDS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_FILTERSOURCE DIALOG DISCARDABLE  2, 14, 284, 196
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Â·ÓÉÆ÷Ô´µØÖ·ºYßx",IDC_STATIC,1,3,277,182,WS_GROUP
+    EDITTEXT        IDC_PREFFILT_SRCNAME,7,16,208,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_PREFFILT_SRCLIST,7,32,208,124,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFFILT_SRCADD,221,16,50,13
+    PUSHBUTTON      "ÒÆÈ¥",IDC_PREFFILT_SRCREM,221,48,50,13
+    PUSHBUTTON      "Çå³ý",IDC_PREFFILT_SRCCLR,221,64,50,13
+    LTEXT           "ºYßx½ÓÊÜÒ»°ãµÄÍ¨Åä·ûÄ£Ê½. ÀýÈç *stuff*¡¡Œ¢°üÀ¨ËùÓÐµÄÓÐ stuff ÔÚƒÈµÄ×Ö·û´®. ¼Ó ! ×Ö·û, ß‰Ý‹Œ¢Ïà·´. Òò´Ë""!things""Œ¢°üÀ¨ËùÓÐµÄ×Ö·û´®³ýÁËÄÇÐ©ÓÐ""things""ÔÚƒÈµÄ×Ö·û´®.",
+                    IDC_STATIC,6,158,270,26
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFSRC_CHANGE,221,32,50,13
+END
+
+PREFS_PREOPTIONS DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ÏÂÝdßx“ñ",IDC_STATIC,4,4,280,190
+    CONTROL         "ÏÂÝdÒÔºó„h³ýßh¶ËµÄÓ›ä›ÎÄ¼þ",IDC_PREPROC_DEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,18,188,10
+    LTEXT           "ÏÂÝdßx“ñÔÊÔSÄãÒŽ¶¨Ó›ä›ÎÄ¼þµÄÏÂÝdµØÖ·ÒÔ¼°Ò»µ©‚÷ËÍÍê®…ÊÇ·ñÒª„h³ýÔÚßh¶Ë·þ„ÕÆ÷µÄÎÄ¼þ.",
+                    IDC_STATIC,14,64,260,54,SS_SUNKEN
+    EDITTEXT        IDC_PREPROC_DEST,14,45,215,12,ES_AUTOHSCROLL
+    LTEXT           "ÏÂÝdµØÖ·",IDC_STATIC,14,34,119,9
+    PUSHBUTTON      "žgÓ[....",IDC_PREPROC_BROWSE,234,45,39,12,NOT 
+                    WS_TABSTOP
+END
+
+PREFS_PREDOWNLOAD DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_DOWNLOADLOGS,4,4,280,190
+    LTEXT           "Ö÷™CÃû",IDC_STATIC,14,20,80,10
+    EDITTEXT        IDC_PRE_HOST,14,32,126,12,ES_AUTOHSCROLL
+    LTEXT           "ÓÃ‘ôÃû",IDC_STATIC,14,56,90,10
+    EDITTEXT        IDC_PRE_USER,14,68,126,12,ES_AUTOHSCROLL
+    LTEXT           "ÃÜ´a",IDC_STATIC,15,92,70,10
+    EDITTEXT        IDC_PRE_PASSWD,14,104,126,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Â·½",IDC_STATIC,14,128,74,10
+    EDITTEXT        IDC_PRE_PATH,14,140,126,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "žgÓ[ ...",IDC_PRE_BROWSE,13,161,64,12,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    CONTROL         "Ó›ä›ÎÄ¼þ",IDC_PRE_ON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,4,48,10,WS_EX_TRANSPARENT
+    LTEXT           "Ê¹ÓÃÏÂÝdßx“ñ¿ÉÒÔßB½Óµ½ßh¶ËµÄFTP¾W½jµØÖ·ÒÔ¼°™zË÷ÄãµÄÓ›ä›ÎÄ¼þ.\r\r\rÄã¿ÉÒÔÔÚÎÄ¼þ´òé_•þÔ’¿òÀï, Ý”ÈëFTP»òÕßHTTP¸ñÊ½Í¨ÓÃÙYÔ´µØÖ·, ŸoÐèÏÂÝd¾ÍÄÜ‰ò×Ô„ÓµØÌŽÀíßh¶ËµÄÎÄ¼þ.¡¡",
+                    IDC_STATIC,154,32,120,121,SS_SUNKEN
+END
+
+PREFS_PREPROC DIALOG DISCARDABLE  78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_PREPROC,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_CUSTOM DIALOGEX 78, 9, 294, 215
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_CUSTOM,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_VDOMAINSCLUSTER DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Èº¼¯ßx“ñ",-1,4,4,280,190,WS_GROUP
+    CONTROL         "Èº¼¯·þ„ÕÆ÷ÔÊÔS",IDC_PREFVD_CLUSTER,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,11,21,129,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Èº¼¯ÔS¿ÉÔ^¿ÉÒÔÊ¹¶à‚€Èº¼¯·þ„ÕÆ÷ÓÐÐ§.",-1,24,40,148,12
+    LTEXT           "Clustering blah blah blah, waffle waffle waffle, blah blah blah ...",
+                    -1,24,62,249,44,SS_SUNKEN | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_PREFVD_CLUSTERINFO,178,38,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+PREFS_ANALYSISDYN DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Í¨ÓÃÙYÔ´µØÖ·…¢”µ",-1,4,4,280,94,WS_GROUP
+    CONTROL         "±£ÁôËùÓÐµÄÍ¨ÓÃÙYÔ´µØÖ·…¢”µ",IDC_PREFGEN_USECGI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,18,123,8
+    CONTROL         "±£Áôß@Ð©×ƒÁ¿¡¡(Äã¿ÉÒÔÓÃ¶ºÌ–°ÑËü‚ƒ·Öé_)",
+                    IDC_PREFGEN_RETAINVAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,32,264,8
+    GROUPBOX        "",-1,4,100,280,94,WS_GROUP
+    EDITTEXT        IDC_PREFGEN_RETAINVARLIST,12,44,265,12,ES_AUTOHSCROLL
+END
+
+GLOBAL_WEBADMIN DIALOGEX 80, 9, 292, 158
+STYLE DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "¾W½j¹ÜÀíîAÔOÖÃ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "ßB½Óßx“ñ",IDC_STATIC,7,23,129,71,WS_GROUP
+    CONTROL         "ÔÊÔSßh¶Ë¾W½j¿ØÖÆ",IDC_WEBON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,8,133,10,WS_EX_TRANSPARENT
+    LTEXT           "ÃÜ´a:",IDC_STATIC,15,37,53,11
+    EDITTEXT        IDC_REMOTEPASSWD,73,35,54,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "TCP¶Ë¿Ú:",IDC_STATIC,15,56,53,11
+    EDITTEXT        IDC_REMOTEPORT,73,54,54,12,ES_AUTOHSCROLL
+    LTEXT           "Ê¹ÓÃß@‚€ßx“ñ, ¿ÉÒÔÔÚÊÀ½çÉÏµÄÈÎºÎµØ·½, Äßh¶Ë¾W½jžgÓ[Æ÷¿ØÖÆFunnel¾WµÄÍÖÆ.",
+                    IDC_STATIC,145,26,138,67,SS_SUNKEN
+    PUSHBUTTON      "È¡Ïû",IDC_DESCCANCEL,238,137,45,12
+    PUSHBUTTON      "½ÓÊÜ",IDC_DESCOK,8,136,45,12
+END
+
+PREFS_STATSREFMAP DIALOG DISCARDABLE  2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "ÆðÊ¼í“Ãæ·ÖÅä",65534,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFREF_PATTERN,60,18,90,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ôö¼Ó",IDC_PREFREF_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "ÐÞ¸Ä",IDC_PREFREF_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    EDITTEXT        IDC_PREFREF_NAME,172,18,109,12,ES_AUTOHSCROLL
+    LTEXT           "Í¨ÓÃÙYÔ´µØÖ·",IDC_STATIC,10,19,49,8
+    LTEXT           "Ãû×Ö",IDC_STATIC,153,20,17,8
+    CONTROL         "List1",IDC_PREFREF_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "„h³ý",IDC_PREFREF_DEL,172,176,50,12,NOT WS_TABSTOP
+END
+
+PREFS_REPORTRTF DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "±í¸ñîÉ«",-1,148,4,136,190
+    GROUPBOX        "RTF ßx“ñ",-1,4,4,136,190
+END
+
+PREFS_REPORTPDF DIALOGEX 2, 14, 288, 198
+STYLE DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PREF_PDF_PAGESIZE,41,21,88,40,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Œ’¶È:",IDC_STATIC,16,37,20,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_PAGEWIDTH,42,36,20,10,ES_AUTOHSCROLL
+    LTEXT           "¸ß¶È:",IDC_STATIC,78,37,27,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_PAGEHEIGHT,109,36,20,10,ES_AUTOHSCROLL
+    LTEXT           "×óß…:",IDC_STATIC,17,62,19,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_LEFTMARGIN,42,60,20,10,ES_AUTOHSCROLL
+    LTEXT           "ÓÒß…:",IDC_STATIC,70,61,19,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_RIGHTMARGIN,102,60,20,10,ES_AUTOHSCROLL
+    LTEXT           "í”²¿:",IDC_STATIC,16,76,19,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_TOPMARGIN,42,75,20,10,ES_AUTOHSCROLL
+    LTEXT           "µ×²¿:",IDC_STATIC,70,76,27,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_BOTTOMMARGIN,102,75,20,10,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PREF_PDF_PAGENUMBERINGPOS,16,102,107,59,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "ï@Ê¾˜Ëî}×Ö",IDC_PREF_PDF_SHOWBANNER,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_MULTILINE | 
+                    WS_TABSTOP,10,150,62,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_SPACINGSIZE,103,132,20,10,ES_AUTOHSCROLL
+    LTEXT           "½Ø”àÕýÎÄîÐÍ",IDC_STATIC,11,165,51,8,0,
+                    WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_TRUNCATETEXT,73,162,59,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ÓÉ:",IDC_STATIC,234,139,11,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_GRAPHFONT,170,19,60,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_GRAPHFONTSIZE,250,19,26,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ˆDÐÎßx“ñ",IDC_STATIC,140,2,143,39
+    GROUPBOX        "ˆDÐÎÕýÎÄ³ß´ç",IDC_STATIC,144,9,135,27
+    LTEXT           "Ãû×Ö:",IDC_STATIC,148,22,21,8,0,WS_EX_TRANSPARENT
+    LTEXT           "%",IDC_STATIC,267,139,8,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "±í¸ñßx“ñ",IDC_STATIC,140,41,144,153
+    GROUPBOX        "±í¸ñÕýÎÄ",IDC_STATIC,144,49,135,74
+    LTEXT           "³ß´ç:",IDC_STATIC,146,85,20,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_FONTSIZE,169,82,27,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "îÉ«",IDC_STATIC,148,104,18,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_FONTCOLOR,169,102,104,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "¸ñÊ½:",IDC_STATIC,198,84,31,10,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_FONTSTYLE,217,82,56,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ÕýÎÄÐÞ¸Ä",IDC_STATIC,144,124,135,65
+    LTEXT           "œpÉÙ×î´óÁÐ:",IDC_STATIC,149,156,84,8,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_REDUCELARGESTDATACOL,236,155,20,10,
+                    ES_AUTOHSCROLL
+    LTEXT           "×îÐ¡˜Ëî}éL¶È:",IDC_STATIC,149,172,79,9,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_MINCOLHEADSCHARS,236,171,20,10,
+                    ES_AUTOHSCROLL
+    LTEXT           "×Ö·û",IDC_STATIC,258,172,17,8,0,WS_EX_TRANSPARENT
+    CONTROL         "œpÉÙ”µ“þÕýÎÄ³ß´ç:",IDC_PREF_PDF_REDUCEDATAFONTSIZE,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_MULTILINE | 
+                    WS_TABSTOP,147,139,85,8,WS_EX_TRANSPARENT
+    LTEXT           "îÐÍ:",IDC_STATIC,147,65,19,9,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_REDUCEDATAFONTSIZEPER,245,138,20,10,
+                    ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,258,156,8,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "í“Ãæß…½ç",IDC_STATIC,10,50,123,40
+    GROUPBOX        "í“Ãæßx“ñ",IDC_STATIC,4,2,133,193
+    COMBOBOX        IDC_PREF_PDF_SPACING,16,130,81,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "í“Ãæ¾ŽÌ–",IDC_STATIC,10,91,123,28
+    GROUPBOX        "í“Ãæ³ß´ç",IDC_STATIC,10,11,123,39
+    GROUPBOX        "¿ÕÐÐ",IDC_STATIC,10,120,123,27
+    COMBOBOX        IDC_PREF_PDF_TABLETEXTNAME,169,62,104,59,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "×Öów:",IDC_STATIC,12,179,19,8,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PREF_PDF_FONT,34,177,99,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_PREF_PDF_FONTCOLORADD,223,102,20,12,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Del",IDC_PREF_PDF_FONTCOLORDEL,245,102,20,12,NOT 
+                    WS_VISIBLE
+    LTEXT           "³ß´ç:",IDC_STATIC,15,23,20,8,0,WS_EX_TRANSPARENT
+    LTEXT           "³ß´ç:",IDC_STATIC,231,23,19,8,0,WS_EX_TRANSPARENT
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINDOWS)
+#if defined(APSTUDIO_INVOKED)
+XMAINTOOLBAR$(_WINDOWS) DIALOGEX 9, 26, 370, 318
+#else
+XMAINTOOLBAR DIALOGEX 9, 26, 370, 318
+#endif
+STYLE DS_NOFAILCREATE | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+MENU FUNNELWEB
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Settings",IDC_PREFS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_NOTIFY | WS_TABSTOP,10,12,41,36
+    CONTROL         "Process",IDC_PROCESS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,129,12,41,36
+    CONTROL         "Schedule",IDC_SCHED,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,72,12,41,36
+    CONTROL         "View",IDC_VIEW,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,189,12,41,36
+    CONTROL         "Help",IDC_APPHELP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,244,12,41,36
+    CONTROL         "->",IDC_SHOWLIST,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,0,52,12,11
+    CONTROL         "List2",IDC_LOGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,3,75,365,223
+    CONTROL         140,IDC_TOOLBARIMAGE,"Static",SS_BITMAP | NOT WS_VISIBLE,
+                    0,1,293,55,WS_EX_TRANSPARENT
+    CONTROL         "Help",IDC_APPLOGO,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,302,12,41,36
+    CONTROL         "Progress1",IDCX_PROGRESS,"msctls_progress32",WS_BORDER,
+                    188,303,177,11
+    LTEXT           "Ok.",IDC_XSTATUS,0,304,181,9
+END
+#endif
+
+ABOUT DIALOGEX 110, 210, 309, 249
+STYLE DS_3DLOOK | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "APPLICATIONLOGO8",IDC_ABOUTIMAGE,"Static",SS_BITMAP | 
+                    NOT WS_VISIBLE,0,0,264,97
+END
+
+IDD_SELECTLOGTABLEDlg DIALOG DISCARDABLE  100, 100, 183, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ßx“ñ±í¸ñÃû"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "È·¶¨",IDC_SELECTLOGTABLEOK,67,26,50,14
+    COMBOBOX        IDC_SELECTLOGTABLECOMB,64,7,112,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "È¡Ïû",IDC_SELECTLOGTABLEOKCANCEL,126,26,50,14
+    LTEXT           "±í¸ñÃû",IDC_STATIC,7,13,25,8
+END
+
+IDD_ENTERLOGTABLEDlg DIALOG DISCARDABLE  0, 0, 180, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ý”Èë±í¸ñÃû"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "È·¶¨",IDC_EDITLOGTABLEOK,67,37,50,14
+    PUSHBUTTON      "È¡Ïû",IDC_EDITLOGTABLECANCELL,123,37,50,14
+    EDITTEXT        IDC_EDITLOGTABLE,49,14,124,14,ES_AUTOHSCROLL
+    LTEXT           "±í¸ñÃû:",IDC_STATIC,7,17,27,8
+END
+
+IDD_DIALOGDATABASETABLE DIALOG DISCARDABLE  100, 100, 175, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ßx“ñ±í¸ñ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "È·¶¨",IDDATABASETABLEOK,57,29,50,14
+    COMBOBOX        IDC_COMBODATABASETABLE,55,6,112,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "È¡Ïû",IDC_DATABASETABLECANCEL,117,29,50,14
+    LTEXT           "±í¸ñÃû:",IDC_STATIC,8,9,42,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SELECTLOGTABLEDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ENTERLOGTABLEDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+        HORZGUIDE, 31
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOADDATABASE        "Ý”Èë”µ“þŽì..."
+    IDS_FAILEDLISTEN        "²»ÄÜÊÕÂ "
+    IDS_FAILEDREAD          "²»ÄÜ×x×Ö¹..."
+    IDS_STOREFILEINTEMP     "ÎÄ¼þ´æ·ÅÔÚÅR•rÄ¿ä›"
+    IDS_FAILEDSOCKET        "²»ÄÜ·ÖÅäsocket"
+    IDS_SENDMAILHEADER      "°lËÍà]¼þ˜Ëî}..."
+    IDS_MAILSENT            "ÒÑÍê³É°lËÍEmail..."
+    IDS_HIDELIST            "êPé]Ä¿ä›"
+    IDS_SHOWLIST            "ï@Ê¾Ó›ä›Ä¿ä›"
+    IDS_DISCONNECT          "”àé_ßB½Ó..."
+    IDS_CONNECT             "ßB½Ó...."
+    IDS_LOADSETFILE         "×xÔOÖÃÎÄ¼þ..."
+    IDS_QUIT                "½YÊø."
+    IDS_FAILEDWRITE         "²»ÄÜŒ‘×Ö¹..."
+    IDS_NEWSKIN             "ßx“ñÐÂµÄ±³¾°..."
+    IDS_LOADSKIN            "Ý”ÈëÐÂµÄ±³¾°"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DNSCOMPLETE         "ÒÑÍê³ÉîIÓòÃüÃûÏµ½y"
+    IDS_MAKEDEFAULT         "„“½¨îAÔOÖÃ"
+    IDS_PREPROCESS          "îAÌŽÀí"
+    IDS_PROCESSFROMLIST     "ÄÀúÊ·Ä¿ä›ÌŽÀíÓ›ä›"
+    IDS_PROCESSLOG          "ÌŽÀíÓÃ»§ßx“ñµÄÓ›ä›..."
+    IDS_RECEIVELOGLIST      "½ÓÊÜÓ›ä›Ä¿ä›..."
+    IDS_CONFIG              "½ÓÊÜÔOÖÃ..."
+    IDS_REMOTEDISCON        "ßh¶Ë”àé_ßB½Ó..."
+    IDS_REMOTESTOP          "ßh¶ËÍ£Ö¹..."
+    IDS_REMOTEPROCESS       "ßh¶ËÌŽÀí..."
+    IDS_REMOTESHOW          "ï@Ê¾ßh¶ËÓ›ä›Ä¿ä›..."
+    IDS_REMOTEPROCESSLIST   "ÌŽÀíßh¶ËÄ¿ä›..."
+    IDS_REMOTEADDLOG        "Ôö¼Óßh¶ËÓ›ä›..."
+    IDS_REMOTEGETCONFG      "´æÈ¡ßh¶ËÔOÖÃ..."
+    IDS_SENFCONFIG          "°lËÍÔOÖÃµ½·þ„ÕÆ÷..."
+    IDS_MAKEDIR             "„“½¨Ä¿ä›?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REGISTONLINE        "¬FÔÚÔÚ¾€×¢ƒÔ?"
+    IDS_INFO                "ÐÅÏ¢"
+    IDS_REGISTMSG           "Èç¹ûÄã»¹›]ÓÐ×¢ƒÔFunnel¾W½j®aÆ·,Çë¬FÔÚ×¢ƒÔ. Í¨¹ý×¢ƒÔ, Äã¿ÉÒÔ´æÈ¡¸üÐÂµÄ°æ±¾ºÍµÃµ½¼¼ÐgÖ§³Ö.\n\n\\Äã»¹¿ÉÒÔÊÕµ½®aÆ·îA¸æ,ÌØ„eµÄˆóƒrºÍÏûÏ¢.\n\n"
+    IDS_REGNOTCREATE        "²»ÄÜ„“½¨×¢ƒÔÌ–´a  '%s' - '%s', retcode=%d"
+    IDS_BACKGROUND          "ÓÐu×ƒµÄGUI±³¾°"
+    IDS_CONNECTTOREMOTE     "ßB½Óµ½ßh¶ËFunnel¾W½j... &r"
+    IDS_DISCONREMOTE        "”àé_ßh¶ËßB½Ó &D"
+    IDS_WEB                 "¾W½j¹ÜÀíÔOÖÃ... &A..."
+    IDS_WIZARD              "†¢„Ó¾«ì` &B..."
+    IDS_ORDER               "ÔÚ¾€¶¨ÙFunnel¾W½j... &O"
+    IDS_REG                 "×¢ƒÔFunnel¾W½j... &R"
+    IDS_PRE_REG             "ÖØÐÂ×¢ƒÔFunnel¾W½j..."
+    IDS_REGONLINE           "ÔÚ¾€×¢ƒÔFunnel¾W½j...&o"
+    IDS_ADDCAMP_CHANGE      "ÐÞ¸Ä¾¹ßx"
+    IDS_SERIALREG1          "×¢ƒÔÌ–´a <%s> ²»Õý´_\nÇëÖØÐÂÝ”Èë×¢ƒÔÌ–´a."
+    IDS_SERIALREG2          "×¢ƒÔÌ–´a <%s> ²»Õý´_\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_WIZARDGUIMSG        "Äã±Øíšßx“ñÒ»‚€Ó›ä›ÎÄ¼þ"
+    IDS_NEXT                "ÏÂÒ»í“ >>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_LOCATIONFREE        "ˆó¸æ´æ·ÅÔÚ: (ÓÐ %d Kb ´Å±PÈÝÁ¿¿ÉÒÔÊ¹ÓÃ)"
+    IDS_NOTENOUGH           "´æƒ¦Æ÷ÈÝÁ¿²»‰ò !!!"
+    IDS_NETINIT_ERR         "¾W½j³õÊ¼»¯³öåe¡£¿ÉÄÜÄãêPé]ÁËËÑŒ¤îIÓòÃüÃûÏµ½y"
+    IDS_COMPRESSED          "Ó›ä›ÎÄ¼þÒÑ±»‰º¿s"
+    IDS_UPLOADED            "ÒÑÉÏÝdˆó¸æµ½ %S.\n\n"
+    IDS_CANCELLED_ODBC_DB   "”µ“þ¿âÌŽÀíÒÑÈ¡Ïû."
+    IDS_MENU_PROCESS_ODBC_DB "ÌŽÀí”µ“þ¿â."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MSG_NOREPORT        "›]ÓÐˆó¸æ¿ÉÒÔ™zÒ•.. ÒÑÓ‹»®µÄÊÂ¼þ›]ÓÐ®aÉúˆó¸æ!"
+    IDS_WRITEGRAPH          "Œ‘ %s ˆDÐÎ..."
+    IDS_WRITEGRAPH_DONE     "Œ‘ %s ˆDÐÎ ÒÑÍê³É."
+    IDS_WRITINGHOST         "Œ‘Ì“”MÖ÷™C"
+    IDS_WRITEREPORT         "Œ‘ %s ..."
+    IDS_WRITEREPORT_DONE    "Œ‘ %s ÒÑÍê³É."
+    IDS_NODISKSPACE         "´Å±PÈÝÁ¿²»‰ò, Ö»ÓÐ %ld Kb ¿ÉÒÔÓÃ"
+    IDS_WRITINGREPORT       "Œ‘ˆó¸æ %d '%s'..."
+    IDS_LITTLEDISKSPACE     "´Å±PÈÝÁ¿²»‰ò(%x Kb)\nÀ^Àmß\ÐÐ†á?"
+    IDS_REPORT_PDFPAGESIZES "USLetter,A4,¶¨Áx"
+    IDS_REPORT_PDFPAGENUMBERINGPOS 
+                            "Ÿo,í”²¿ºÍµ×²¿ÖÐég,í”²¿ºÍµ×²¿ÓÒß…,í”²¿ÖÐég,í”²¿ÓÒß…,µ×²¿ÖÐég,µ×²¿ÓÒß…"
+    IDS_REPORT_PDFSPACING   "˜Ëî}×ÖÒÔºó,ˆDÐÎÒÔºó,±í¸ñÒÔºó"
+    IDS_REPORT_PDFTABLETEXTNAME "±í¸ñ˜Ëî},ÁÐ˜Ëî},ÁÐ”µ“þ"
+    IDS_REPORT_PDF_GRAPHFONT "ºÜÐ¡,Ð¡µÄ,˜ËœÊµÄ,´óµÄ"
+    IDS_REPORT_PDFTRUNCATETEXT "×ó,ÓÒ,×ó™Eˆ@,ÓÒ™Eˆ@"
+    IDS_REPORT_PDFFONTSTYLES "˜ËœÊµÄ,ºÚów,Ð±ów,ºÚÐ±ów"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REPORT_PDFFONT      "Times Roman,Helvetica,Courier"
+    IDS_TOOLBARSERVICE      "¾W½j·þ„Õ: ÒÑ°²×°"
+    IDS_TIPEDIT             "±à¼©ˆó¸æ"
+    IDS_TIPPROCESS          "ÌŽÀíÓ›ä›ºÍ®aÉúˆó¸æ"
+    IDS_TIPPREFS2           "ÔOÖÃˆó¸æ"
+    IDS_TIPPROCESS2         "ÌŽÀíÓ›ä›ºÍ®aÉúˆó¸æ"
+    IDS_TIPSCHED            "œÊ±¸ºÍ¾ŽÝ‹Ó‹»®"
+    IDS_TIPOPEN             "´òé_ˆó¸æÔOÖÃÎÄ¼þ"
+    IDS_TIPAPPHELP         "ï@Ê¾ÔÚ¾€°ïÖú."
+    IDS_TIPVIEW             "ÔÚžgÓ[Æ÷ï@Ê¾ˆó¸æ"
+    IDS_TIPLISTVIEW         "ÄÎÄ¼þÄ¿ä›ÍÏ·ÅÒ»‚€Ó›ä›ÎÄ¼þ."
+    IDS_TIPSHOWLIST         "ï@Ê¾/êPé]ÏÂÃæµÄÓ›ä›ÎÄ¼þÄ¿ä›"
+    IDS_STATUST_CMPT        "ˆó¸æÒÑÍê³É"
+    IDS_INSTALLNTS          "ÕýÔÚ°²×°¾W½j·þ„Õ..."
+    IDS_INSTALLNTSBOOT      "ÕýÔÚ°²×°×Ô†¢„ÓµÄ¾W½j·þ„Õ..."
+    IDS_REMOVENTS           "ÕýÔÚÒÆÈ¥¾W½j·þ„Õ..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREF_REMOTETITLE    "ÇëÇóßh¶ËÍ¨ÓÃÙYÔ´µØÖ·˜Ëî} "
+    IDS_EXTEDIT             "í“ÃæºÍÏÂÝd”UÕ¹Ãû"
+    IDS_GLOB_PAGEADD        "Ôö¼ÓÒ»‚€í“Ãæ»òÕßÏÂÝd”UÕ¹Ãûµ½ß@‚€Ä¿ä›"
+    IDS_GLOB_PAGEREM        "ÒÆÈ¥Ò»‚€í“Ãæ»òÕßÏÂÝd”UÕ¹Ãû"
+    IDS_GLOB_PAGECLR        "»Ö¸´ËùÓÐµÄ”UÕ¹Ãûµ½îAÔOÖÃµÄÄ¿ä›"
+    IDS_OUTDIR              "´æ·Åˆó¸æµÄÂ·½"
+    IDS_PREFGEN_OUT         "ßx“ñ´æ·Åˆó¸æµÄÂ·½"
+    IDS_PREF_LANG           "ˆó¸æÊ¹ÓÃµÄÕZÑÔ"
+    IDS_PREFGEN_TYPE        "ˆó¸æÊ¹ÓÃµÄ”µ“þ¸ñÊ½"
+    IDS_PREF_PDF_PAGESIZE   "ˆó¸æí“Ãæ³ß´ç"
+    IDS_FRAMEDHTML          "ÔÚˆó¸æµÄ×ó±ß®aÉúÒ»‚€Ä¿ä›"
+    IDS_PREFGEN_GTYPE       "ˆó¸æÊ¹ÓÃµÄˆDÐÎ¸ñÊ½"
+    IDS_TOKENS              "ß@Ð©ÊÇ¿ÉÒÔÊ¹ÓÃµÄÈÕÆÚ˜Ë¼Ç,ËüÃÇ±»×Ô¶¯µØ·ÅÔÚÎÄ¼þÃû/Í¨ÓÃÙYÔ´µØÖ·"
+    IDS_PREF_TIMESTAT       "ÔÚˆó¸æÖÐŒ‘ÈëÌŽÀíµÄ•régÐÅÏ¢"
+    IDS_PREF_BANDWIDTH      "ÔÚˆó¸æÖÐŒ‘ÈëÆµ´ø¿í¶ÈÐÅÏ¢"
+    IDS_PREF_HEADTITLE      "ÔÚˆó¸æ˜Ëî}ÖÐ°üÀ¨Ó›ä›Ãû"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREF_LEFTSIDE       "ËùÓÐµÄÃû×Ö·ÅÔÚÁÐÓÒ±ß"
+    IDS_PREF_QINDEX         "ÔÚÃ¿Ò»‚€í“Ãæï@Ê¾¿ìËÙßB½Ó"
+    IDS_PREFHTML_RGB1       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_RGB2       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_RGB3       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_RGB4       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_RGB5       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_RGB6       "žéÃ¿Ò»‚€±í¸ñîAÔOÖÃîÉ«"
+    IDS_PREFHTML_HEAD       "Ê¹ÓÃHTML±àŒ‘ˆó¸æµÄ˜Ëî}"
+    IDS_PREFHTML_FOOT       "Ê¹ÓÃHTML±àŒ‘ˆó¸æµÄÄ_×¢"
+    IDS_EDITSET             "¾ŽÝ‹ÔOÖÃ"
+    IDS_EDITSCHEDULE        "¾ŽÝ‹Ó‹»®"
+    IDS_SET                 "ÔOÖÃ"
+    IDS_PROCESSCLIENT       "ÌŽÀí¿Í»§..."
+    IDS_SAVEDATABASE        "±£´æ”µ“þ¿â..."
+    IDS_CLEAN               "Çå³ý..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STARTUPSERVICE      "ÕýÔÚ†¢„Ó·þ„Õ..."
+    IDS_ENDSERVICE          "ÕýÔÚ½YÊø·þ„Õ..."
+    IDS_PREFADD_ADD         "Ôö¼Ó˜Ëî}"
+    IDS_PREFADD_REM         "É¾³ý˜Ëî}"
+    IDS_PREFADD_NAME        "˜Ëî}Ãû"
+    IDS_PREFADD_PATTERN1    "™zÒ•Í¨ÓÃÙYÔ´µØÖ·¸ñÊ½"
+    IDS_PREFADD_PATTERN2    "üc“ôÍ¨ÓÃÙYÔ´µØÖ·¸ñÊ½"
+    IDS_PREFADD_CLR         "ÐÞ¸Ä˜Ëî}"
+    IDS_PREFROUTER_ADD      "Ôö¼ÓƒÈ²¿µØÖ·"
+    IDS_PREFROUTER_REM      "É¾³ýƒÈ²¿µØÖ·"
+    IDS_PREFROUTER_NAME     "Ôö¼Ó¾W½jƒÈ²¿µØÖ·(eg. 192.168.* )"
+    IDS_PREFROUTER_CLR      "ÒÆÈ¥ËùÓÐµÄµØÖ·"
+    IDS_PREFROUTER_CHANGE   "ÐÞ¸ÄµØÖ·"
+    IDS_ADDCAMP_ADD         "Ôö¼Ó¾¹ßx"
+    IDS_ADDCAMP_REM         "É¾³ý¾¹ßx"
+    IDS_ADDCAMP_NAME        "¾¹ßxÃû"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADDCAMP_PATTERN     "™zÒ•¾¹ßxµÄÍ¨ÓÃÙYÔ´µØÖ·¸ñÊ½"
+    IDS_ADDCAMP_COST        "Ã¿ÔÂ¾¹ßxµÄ·ÑÓÃ"
+    IDS_PREFVD_ADD          "Ôö¼ÓÌ“”MÖ÷™C·ÖÅä"
+    IDS_PREFVD_REM          "É¾³ýÌ“”MÖ÷™C·ÖÅä"
+    IDS_PREFVD_NAME         "ÐÂµÄÌ“”MÖ÷™CÃû"
+    IDS_PREFVD_CLR          "ÐÞ¸ÄÌ“”MÖ÷™CÃû"
+    IDS_PREFNOTIFY_ADD      "Ôö¼ÓÍ¨Öª"
+    IDS_PREFNOTIFY_REM      "É¾³ýÍ¨Öª"
+    IDS_PREFNOTIFY_NAME     "ÐÂµÄÍ¨Öª"
+    IDS_PREFNOTIFY_CLR      "Çå³ýËùÓÐµÄÍ¨Öª"
+    IDS_CUSTOM_USE          "Ê¹ÓÃ¶¨ÁxµÄ¸ñÊ½,´úÌæ×Ô¶¯™zœy"
+    IDS_CUSTOM_SEP          "ÔÚ…^ÓòÖ®¼äÊ¹ÓÃ·Ö¸ô·û, »òÕßÊ¹ÓÃ \\t »òÕßÊ¹ÓÃ¿Õ¸ñ"
+    IDS_CUSTOM_DATA         "ÄÄ‚€…^ÓòÒª¾ŽÝ‹?"
+    IDS_CUSTOM_POS          "ß@‚€…^ÓòµÄÎ»ÖÃÔÚ 1~25"
+    IDS_CUSTOM_DATE         "”µ“þ…^ÓòµÄ¸ñÊ½"
+    IDS_CUSTOM_TIME         "•rég…^ÓòµÄ¸ñÊ½"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CUSTOM_INFO         "¶¨Áx¸ñÊ½¸ÅÒª"
+    IDS_PP_ZIPREPORT        "‰º¿sˆó¸æµ½Ò»‚€zipÎÄ¼þ"
+    IDS_PP_COMPRESSLOG      "‰º¿sÓ›ä›ÎÄ¼þµ½Ò»‚€GzipÎÄ¼þ"
+    IDS_PP_SENDTO           "ÍÖÆˆó¸æ»òÕß‰º¿sµÄˆó¸æµ½ÏÂÃæµÄÄ¿ä›"
+    IDS_PP_LOCATION         "ÍÖÆÈ«Â·½µÄˆó¸æµ½"
+    IDS_PP_LOGBROWSE        "ßx“ñÒ»‚€´æ·ÅÓ›ä›µÄÎÄ¼þÄ¿ä›"
+    IDS_PP_BROWSE           "ßx“ñÒ»‚€´æ·Åˆó¸æµÄÎÄ¼þÄ¿ä›Â·½"
+    IDS_PP_FTP              "ÔÚFTP, ßx“ñÒ»‚€´æ·Åˆó¸æµÄµÄßh¶ËÎÄ¼þÄ¿ä›Â·½"
+    IDS_PP_DELETEREPORT     "ÉÏÝdÒÔºó, Ä´ÅÅÌÉ¾³ýß@‚€ˆó¸æ"
+    IDS_PP_EMAIL            "Ý”Èëà]¼þµÄÄ¿˜ËµØÖ·"
+    IDS_PP_EMAILSUB         "Ý”ÈëÖ÷Ìâ"
+    IDS_PP_EMAILSMTP        "SMTP à]¼þ·þ„ÕÆ÷Êä³ö"
+    IDS_PP_MSG              "Ý”Èëà]¼þÐÅÏ¢..."
+    IDS_TIPVDREPORTBY       "´_¶¨Ôõ˜ÓÊ¹ÓÃÌ“”MÖ÷™CÌŽÀíÓ›ä›"
+    IDS_TIPVDSORTBY         "ÓÃß@‚€·ÖîÌ“”Mˆó¸æÄ¿ä›"
+    IDS_PREFVD_SEQDIR       "´æ·ÅÌ“”MîIÓòµ½í˜Ðò¾ŽÌ–µÄÄ¿ä›Àï"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREFVD_CLUSTER      "ÔÊÐí¶à·þ„ÕÆ÷Èº¼¯µÄÓ›ä›ÌŽÀí"
+    IDS_STATEDIT            "ß@‚€½yÓ‹Ä¿ä›¿ÉÒÔï@Ê¾/êPé]"
+    IDS_TIPTABSIZE          "ÁÐÔÚ î‘B±í¸ñÖÐµÄí—Ä¿"
+    IDS_USEGRAPH            "ÔÚˆó¸æÖÐ†¢„ÓˆDÐÎ"
+    IDS_STAT_TABLE          "ÔÚˆó¸æÖÐ†¢„Ó±í¸ñÄ¿ä›"
+    IDS_APPLYALL            "ËùÓÐµÄ½yÓ‹‘ªÓÃß@Ð©ÔOÖÃ"
+    IDS_COOKIEVAR           "ÒªµÃµ½ÓÃ‘ôÃû, ¶¨ÁxÒ»‚€ cookie ×ƒÁ¿»òÕß…^Óò"
+    IDS_PREFGRAPH_3DBARS    "Ê¹ÓÃ3  ¾S—lÐÎˆDÐÎ"
+    IDS_PREFGRAPH_WIDER     "Ê¹ÓÃ 50% Œ’¶ÈµÄˆDÐÎ"
+    IDS_PREFGRAPH_WEBPAL    "ËùÓÐµÄˆDÐÎÊ¹ÓÃ Netscape 256·NÕ{É«°åîÉ«"
+    IDS_PREFGRAPH_CORP      "žéº†»¯´òÓ¡, Ê¹ÓÃŸo±³¾°µÄˆDÐÎ"
+    IDS_PREFVD_COST         "Ã¿Õ×”µ“þµÄÙMÓÃ"
+    IDS_PREFSTAT_SESSIONTIME "ÔÚƒÉ‚€ßBÀmµÄüc“ôÖ®ég¶¨ÁxµÄÒ»‚€ÐÂµÄ•þÔ’•rég"
+    IDS_PREFGEN_DATESTYLE   "ßx“ñÈÕÆÚ·¶‡ú"
+    IDS_DATESTART           "ˆó¸æÄß@‚€ÈÕÆÚé_Ê¼"
+    IDS_DATEEND             "ˆó¸æµ½ß@‚€ÈÕÆÚ½YÊø"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREFVD_WEEKLY       "Ã¿ÖÜÒ»‚€Ó›ä›ÎÄ¼þ®aÉúÒ»‚€ˆó¸æ "
+    IDS_PREFVD_MONTHLY      "Ã¿ÔÂÒ»‚€Ó›ä›ÎÄ¼þ®aÉúÒ»‚€ˆó¸æ "
+    IDS_PREFGEN_URL         "îAÔOÖÃµÄÍ¨ÓÃÙYÔ´µØÖ·, ÀýÈç www.site.com"
+    IDS_PREFGEN_INDEXFILE   "îAÔOÖÃµÄÎÄ¼þÃû, ÀýÈç index.html"
+    IDS_PREFGEN_FILTERZERO  "²»¿¼‘]éL¶ÈžéÁãµÄÎÄ¼þ"
+    IDS_PREFGEN_IGNORESELF  "²»¿¼‘]í×Ôì¶Äã×Ô¼º¾WÖ·µÄËùÓÐÆðÊ¼í“Ãæ"
+    IDS_PREFGEN_IGNOREBOOKMARK 
+                            "²»¿¼‘]ËùÓÐµÄÎÄ¼þ•øºž:// ÆðÊ¼í“ÃæÔÚÆðÊ¼í“ÃæÄ¿ä›"
+    IDS_PREFGEN_IGNORECASE  "²»¿¼‘]ËùÓÐµÄÍ¨ÓÃÙYÔ´µØÖ·´óÐ¡Œ‘"
+    IDS_PREFGEN_USECGI      "½ÓÊÜËùÓÐµÄÔÚÍ¨ÓÃÙYÔ´µØÖ·ÀïµÄ cgi …¢”µ"
+    IDS_DATEOVERIDE         "Èç¹û²»ÄÜ™zœyµ½ÈÕÆÚ¸ñÊ½, Ê¹ÓÃß@‚€¸ñÊ½"
+    IDS_DATEOFFSET          "Ê¹ÓÃß@‚€•régÁ¿Õ{ÕýËùÓÐµÄ•rég"
+    IDS_PREFGEN_DNSNO       "ÞD“Q¾W½jµØÖ·µ½¾W½jÃû×Ö"
+    IDS_PREFGEN_DNSYES      "Ê¹ÓÃ»¥ßB¾WËÑŒ¤, ÞD“Q¾W½jµØÖ·µ½¾W½jÃû×Ö"
+    IDS_PREFGEN_DNSCACHE    "ƒHƒHÊ¹ÓÃÔÚ¾›_´æƒ¦Æ÷µÄ”µ“þÞD“Q¾W½jµØÖ·,¶ø²»ÊÇÊ¹ÓÃ»¥ßB¾WËÑŒ¤"
+    IDS_PREFGEN_DNSNUM      "žéÍ¬•rËÑŒ¤îIÓòÃüÃûÏµ½y, Ý”Èë×î´óÔÊÔSÖµ"
+    IDS_CLEARCACHE          "Çå³ýƒÈ²¿µÄîIÓòÃüÃûÏµ½y¾›_´æƒ¦Æ÷"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REPORTFORMAT        "HTML,HTML Framed,Word 97/98 (RTF),Comma Delimited,PDF,Excel"
+    IDS_DATES               "ÒŽ¶¨ÈÕÆÚ,È«²¿ÈÕÆÚ,½ñÌì,×òÌì,ß@Ò»ßL,ÉÏÒ»ßL,×î½ü7Ìì,×î½ü14Ìì,×î½ü21Ìì,×î½ü30Ìì,ß@‚€ÔÂ,ÉÏ‚€ÔÂ,ß@‚€¼¾¶È,ÉÏ‚€¼¾¶È,ß@6‚€ÔÂ,ÉÏÒ»‚€6‚€ÔÂ,½ñÄê,È¥Äê,Ò»ÔÂ,¶þÔÂ,ÈýÔÂ,ËÄÔÂ,ÎåÔÂ,ÁùÔÂ,ÆßÔÂ,°ËÔÂ,¾ÅÔÂ,Ê®ÔÂ,Ê®Ò»ÔÂ,Ê®¶þÔÂ"
+    IDS_LANG                "Ó¢ÕZ,µÂÕZ,Òâ´óÀûÕZ,·¨ÕZ,Î÷°àÑÀÕZ,ÈðµäÕZ,Å²ÍþÕZ,µ¤ûœÕZ,ºÉÌmÕZ,ÈÕ±¾ÕZ"
+    IDS_TIMER               "·ÖçŠ,Ð¡•r,ÈÕ,ÔÂ,Äê"
+    IDS_TABSIZE             "10ÐÐ,20ÐÐ,30ÐÐ,40ÐÐ,50ÐÐ,100ÐÐ,200ÐÐ,300ÐÐ,400ÐÐ,500ÐÐ,È«²¿ÐÐ"
+    IDS_DATEFMT             "None,Fri  07 Mar 1997,DD/MMM/YYYY,MM/DD/YY,DD/MM/YY,YYYY-MM-DD,Thu Aug  1 10:32:18 1996,Unix Time"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIMEFMT             "None,HH:MM:SS,1:40 PM,Unix Time"
+    IDS_FIELDFMT            "ÈÕÆÚ,•rég, î‘B,¿Í‘ô,ÙYÔ´,ÎÄ¼þ,´úÀí,×Ö¹,Ý”Èë×Ö¹,³ÖÀm•rég,ÆðÊ¼í“Ãæ,ÓÃ‘ôÃû,Ì“Ö÷™C,·½·¨,…f×h,¶Ë¿Ú"
+    IDS_TABREPORT           "Êä³ö,í“Ãæ,¸ñÊ½"
+    IDS_TABSTATS            "½yÓ‹,È«¾ÖÔOÖÃ,îIÓò"
+    IDS_TABSTATSDEBUG       "½yÓ‹,È«¾ÖÔOÖÃ,îIÓò½M,Ä¿ä›½M,ÆðÊ¼í“Ãæ½M"
+    IDS_TABSTATSENT         "½yÓ‹,È«¾Ö, îIÓò,Ä¿ä›½M,ÆðÊ¼í“Ãæ½M"
+    IDS_TABVHOSTS           "îIÓò,¼¯ºÏ,·ÖÅä,Èº¼¯"
+    IDS_TABROUTER           "ƒÈ²¿¾W½j"
+    IDS_SAVETODATABASE      "ÄãÒª±£´æß@‚€Ó›ä›ÎÄ¼þ  ' %s ' µ½”µ“þŽì†á ?  \r\rÈç¹ûÄãßx“ñ 'Yes' °´¼~,  ÕˆÔÚÏÂÃæµÄ²½óEÌá¹©”µ“þÙYÔ´ÃûºÍ±í¸ñÃû.\n\n\n\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TABANALYSIS         "ßx“ñ,¾W½j,”UÕ¹Ãû,„Ó‘B"
+    IDS_TABFILTERS          "Ý”Èë”µ“þ"
+    IDS_IMAGETYPE           "GIF,JPEG,PNG"
+    IDS_DATETOKENS          "Day of Month {DD},Month {MM},Month Name {MMM},Year {YYYY},Year {YY},Log Date Start {DD_BEG},Log Date Ending Year {YY_END}"
+    IDS_DATEFORMAT          "Auto,DD/MM/YY,MM/DD/YY,YY/MM/DD"
+    IDS_NOTABLE             "ÔÚß@‚€”µ“þŽìÀï, ›]ÓÐÈÎºÎ±í¸ñ."
+    IDS_FILTER1             "°üÀ¨,²»°üÀ¨"
+    IDS_FILTER2             "ÎÄ¼þ/Í¨ÓÃÙYÔ´µØÖ·,¿Í‘ô,´úÀí,ÆðÊ¼í“Ãæ,åeÕ`,Ì“Ö÷™C,Cookie,Ä¿˜ËµØÖ·, ·½·¨,ÔÚ•þÔ’ÖÐµÄµÚÒ»‚€ÆðÊ¼í“Ãæ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER3             "°üº¬,é_Ê¼ÒÔ,½YÊøÒÔ,µÈì¶"
+    IDS_TABPOSTPROC         "‰º¿s,ÉÏÝd,à]¼þ"
+    IDS_TABADDS             "Ó°í‘¶È,¾¹ßx"
+    IDS_SORTING             "Ãû×Ö,°lËÍµÄ×Ö¹,ÕˆÇó,í“Ãæ,åeÕ`,•þÔ’,ÔL†–Õß"
+    IDS_TABPREPROC          "ÏÂÝd,ßx“ñ"
+    IDS_EDITPATH            "Ì“Ö÷™C,Ý”³öÂ·½"
+    IDS_TABCUSTOM           "¶¨Áx"
+    IDS_VDSORTBY            "Ãû×Ö,°lËÍµÄ×Ö¹, ÕˆÇó, í“Ãæ,ÈÕÆÚ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VDREPORTBY          "Ÿo,Ó›ä›ÎÄ¼þ,Ì“Ö÷™C,¸ùÄ¿ä›,µÚ¶þ¼‰Ä¿ä›,ÒŽ¶¨Ä¿ä›"
+    IDS_PREFGEN_SPLITDATE   "˜ËœÊ,Ã¿ÖÜ,Ã¿ÔÂ"
+    IDS_FILTERS             "ÒŽ„t,îÐÎ,ß‰Ý‹,”µ“þ"
+    IDS_ORGHEADER           "îIÓòÄ£Ê½,½M¿—™C˜‹Ãû"
+    IDS_GROUPHEADER         "Â·½,Ãû×Ö"
+    IDS_REFERHEADER         "Í¨ÓÃÙYÔ´µØÖ·,Ãû×Ö"
+    IDS_ADDHEADER           "ÕfÃ÷,ÎÄ¼þÃû,üc“ô×Ö·û´®"
+    IDS_VMAPHEADER          "ÀÏµÄÖ÷™CÃû,ÐÂµÄÖ÷™CÃû"
+    IDS_ADDHEADER2          "ÕfÃ÷,ÆðÊ¼í“Ãæ,ÙMÓÃ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TABVHOSTS2          "îIÓò,¼¯ºÏ,·ÖÅä"
+    IDS_SCHEDULEOFF         "•ºÍ£Ó‹»®Ä¿ä› - ¾W½j·þ„ÕÕýÔÚÌŽÀíÓ‹»®"
+    IDS_MSG_CLEARSCH        "Çå³ýÓ‹»®: Äã´_ŒÒªÇå³ýÓ‹»®?"
+    IDS_SCH_NOEDIT          "ÔÚß\ÐÐÊÂ¼þÆÚég²»ÄÜ¾ŽÝ‹Ó‹»®"
+    IDS_SCH_NOEDIT2         "²»ÄÜ¾ŽÝ‹¿ÕÓ‹»®"
+    IDS_SCH_SAVED           "Ó‹»®ÒÑ±£´æ."
+    IDS_SCH_CANCEL          "Ó‹»®ÒÑÈ¡Ïû."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SCH_NOSETTINGS      "²»ÄÜÕÒµ½ÔOÖÃÎÄ¼þ."
+    IDS_GETURLTITLE         "ÕýÔÚËÑŒ¤Í¨ÓÃÙYÔ´µØÖ·..."
+    IDS_ERR_CANTOPENLOG     "²»ÄÜ´òé_Ó›ä›ÎÄ¼þ '%s'"
+    IDS_REMOTELOG           "ÌŽÀíßh¶ËÓ›ä› %s"
+    IDS_ERR_PROCESS         "²»ÄÜÌŽÀí %s Òòžéß@ÊÇÒ»‚€ %s ÎÄ¼þ."
+    IDS_CONNECTED           "ßB½Ó³É¹¦!"
+    IDS_FAILEDCONNECT       "ßB½ÓŸoÐ§!"
+    IDS_CONNECTINGTO        "ÕýßB½Óµ½ftp %s@%s..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_WIZARD         "ß\ÐÐ¾«ì`ÅäÖÃ"
+    IDS_MENU_HELP           "°ïÖú"
+    IDS_MENU_ABOUT          "êPì¶FunnelÍøÂç..."
+    IDS_MENU_EXIT           "½YÊøFunnelÍøÂç"
+    IDS_MENU_GROW           "ï@Ê¾½üÆÚÓ›ä›ÎÄ¼þÄ¿ä›"
+    IDS_MENU_SHRINK         "êPé]½üÆÚÓ›ä›ÎÄ¼þÄ¿ä›"
+    IDS_MENU_CLEARLIST      "Çå³ý½üÆÚÓ›ä›ÎÄ¼þÄ¿ä›"
+    IDS_MENU_ONLINEMANUAL   "ÔÚ¾€°ïÖú"
+    IDS_MENU_FTPPROCESS     "ÔÚFTP·þ„ÕÆ÷, ´òé_ßh¶ËµÄÓ›ä›ÎÄ¼þ"
+    IDS_MENU_NEWAPP        "ß\ÐÐFunnel¾W½jµÄÐÂÍÖÆ"
+    IDS_MENU_REMOTECONNECT  "ßB½Óµ½ßh¶ËµÄFunnel¾W½j..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_REMOTEDISCONNECT "”àé_ßB½Óµ½ßh¶ËµÄFunnel¾W½j..."
+    IDS_MENU_BACKGROUNDGRAD "é_/êP ÌÝ¶È×ƒ»¯µÄ±³¾°"
+    IDS_MENU_INSTALLNTS     "°²Ñb·þ„Õ"
+    IDS_MENU_REMOVENTS      "ÒÆÈ¥·þ„Õ"
+    IDS_MENU_STARTUPSERVICE "Æð„Ó·þ„Õ"
+    IDS_MENU_ENDSERVICE     "Í£Ö¹·þ„Õ"
+    IDS_MENU_SHOWNTSERVICES "ï@Ê¾·þ„Õ"
+    IDS_MENU_REGISTERSERIAL "×¢ƒÔÏµÁÐÔS¿ÉÔ^"
+    IDS_MENU_CHECKFORUPDATE "™z²éÊÇ·ñÓÐ¸üÐÂµÄÎÄ¼þ¿ÉÒÔ‘ªÓÃ"
+    IDS_MENU_REGISTERNOW    "ÔÚ¾€×¢ƒÔ¼¼ÐgÖ§³Ö"
+    IDS_MENU_ORDERWWW       "ÔÚ¾€¶¨Ù"
+    IDS_MENU_ACWWW          "ÎÒ‚ƒµÄ¾W½jµØÖ·"
+    IDS_MENU_VIEWHTML       "™zÒ•ˆó¸æ"
+    IDS_MENU_PROCESS        "ÌŽÀíÓ›ä›ÎÄ¼þ"
+    IDS_MENU_PREFS          "¾ŽÝ‹ÔOÖÃ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ICON_NAMESENT       "îAÌŽÀí,ˆó¸æ,·ÖÎö,ºYßx,½yÓ‹,V¸æ,Ì“Ö÷™C,ºóÆÚÌŽÀí,¶¨Áx¸ñÊ½,ßh¶Ë¿ØÖÆ,Â·ÓÉÆ÷Ô´ / ·À»ð "
+    IDS_MSG_OPENYESNO       "ÐÅÏ¢:Äã´_ŒÒª´òé_ %s?"
+    IDS_SELECTLOG           "ßx“ñÓ›ä›ÎÄ¼þ, »òÕßÝ”Èë Http/Ftp Í¨ÓÃÙYÔ´µØÖ·"
+    IDS_SELECTSAVELOG       "ßx“ñÓ›ä›ÎÄ¼þÁí´æ..."
+    IDS_SELECTDOMAIN        "ßx“ñÖ÷™CÝ”³öÂ·½/ÎÄ¼þ..."
+    IDS_SELECTSAVE          "ßx“ñÒª±£´æµÄÔOÖÃÎÄ¼þ..."
+    IDS_SELECTOUTPUT        "ßx“ñÝ”³öÂ·½ºÍÎÄ¼þÃû×Ö"
+    IDS_SELECTSAVELOGLIST   "±£´æÓ›ä›Ä¿ä›"
+    IDS_SELECTLOADLOGLIST   "Ý”ÈëÓ›ä›Ä¿ä›"
+    IDS_SELECTSKIN          "ßx“ñ±³¾°ÎÄ¼þ..."
+    IDS_SELECTLOAD          "ßx“ñÒª´òé_µÄÔOÖÃÎÄ¼þ..."
+    IDS_ERR_OUTPUT          "²»ÄÜÕÒµ½Ý”³öÂ·½ (%s)\nÒòžé %s\n"
+    IDS_ERR_MAKEDIR         "²»ÄÜÕÒµ½Ý”³öÂ·½ (%s)\nÒòžé %s\nÄãÒª„“½¨ß@‚€Ä¿ä›†á?"
+    IDS_STAT_NEWVER         "ÐÂ°æ±¾ÒÑ°lÐÐ"
+    IDS_STAT_NOUDPATES      "¸üÐÂ°æ±¾ß€›]ÓÐ°lÐÐ."
+    IDS_SCH_HEADERS         "#    , Ãû×Ö        , Ó›ä›ÎÄ¼þ     ,ß\ÐÐ, é_Ê¼ÈÕÆÚ/•rég  ,ÖØÍ  ,ÏÂÒ»‚€Ó‹»®    , ÔOÖÃÎÄ¼þ              "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MENU_SCHEDULE       "¾ŽÝ‹Ó‹»®"
+    IDS_MENU_NEW            "ÐÂÔOÖÃ"
+    IDS_MENU_OPEN           "´òé_ÔOÖÃ"
+    IDS_MENU_SAVE           "±£´æ®”Ç°µÄÔOÖÃ"
+    IDS_MENU_SAVEAS         "±£´æ®”Ç°µÄÔOÖÃµ½ÎÄ¼þ"
+    IDS_MENU_STOP           "Í£Ö¹ÌŽÀí"
+    IDS_MENU_MONITORFILE    "™zÒ•Ó›ä›ÎÄ¼þ"
+    IDS_MENU_UPDATEONOFF    "ßx“ñ é_Í¨/¹Ø±Õ."
+    IDS_ERR_DATERANGE       "²»ºÏ·¨µÄ”µ“þÌŽÀí,\nÒòžéÔÚß@‚€ÈÕÆÚ¹ ‡ú(%s - %s)\n›]ÓÐ°üÀ¨ÈÕÆÚ¹ ‡úÔÚ (%s - %s) µÄüc“ô.\n"
+    IDS_ERR_ZEROBYTE        "²»ºÏ·¨µÄ”µ“þÌŽÀí, Òòžé²»¿¼‘]Áã×Ö¹”µ“þŒ¦ËùÓÐµÄ”µ“þ¶¼²»Óè¿¼‘]."
+    IDS_ERR_NOFILTER        "²»ºÏ·¨µÄ”µ“þÌŽÀí, Òòžéß@‚€ºYßxŒ¦ËùÓÐµÄüc“ô¶¼²»Óè¿¼‘]."
+    IDS_ERR_BADLOG          "²»ºÏ·¨µÄ”µ“þÌŽÀí,Òòžé²»ÕJ×Rß@‚€Ó›ä›ÎÄ¼þ."
+    IDS_MSG_SAVESETTINGS    "±£´æÔOÖÃ ?: ÔOÖÃß€›]ÓÐ±£´æ.\nÄãÒª±£´æµ½ÎÄ¼þ\n%s ?"
+    IDS_ERR_REGFAILED       "×¢ƒÔŸoÐ§. ½YÊø Funnel ¾W½j"
+    IDS_ERR_NOSETTINGS      "ÔOÖÃÎÄ¼þ %s ²»´æÔÚ"
+    IDS_ERR_SETTINGSFAILED  "²»ÄÜÝ”ÈëÔOÖÃÎÄ¼þ %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_SETTINGSBAD     "ß@‚€ÎÄ¼þ²»ÊÇÒ»‚€ Funnel ¾W½jµÄÔOÖÃÎÄ¼þ"
+    IDS_LOGLIST_COL1        "·þ„ÕÆ÷Ó›ä› (ÄÎÄ¼þÄ¿ä›ÍÏ·ÅÒ»‚€ÎÄ¼þ)"
+    IDS_LOGLIST_COL2        "³ß´ç           "
+    IDS_LOGLIST_COL3        "¸ñÊ½         "
+    IDS_LOGLIST_COL4        "é_Ê¼ÈÕÆÚ"
+    IDS_DONE                "ÒÑÍê³É."
+    IDS_OK                  "´_¶¨."
+    IDS_FAILED              "²»³É¹¦..."
+    IDS_PROCESSING          "ÌŽÀí..."
+    IDS_STOPPED             "ÌŽÀíÒÑÍ£Ö¹."
+    IDS_CANCELLED           "ÌŽÀíÒÑÈ¡Ïû."
+    IDS_ERR_DATE1           "é_Ê¼ÈÕÆÚµÄ¸ñÊ½²»Õý´_\\Õý´_µÄ¸ñÊ½ÊÇÔÂ/ÈÕ/Äê"
+    IDS_ERR_DATE2           "½YÊøÈÕÆÚµÄ¸ñÊ½²»Õý´_\nÕý´_µÄ¸ñÊ½ÊÇÔÂ/ÈÕ/Äê"
+    IDS_ERR_DATE3           "é_Ê¼ÈÕÆÚ %s ²»¿ÉÄÜÔÚ½YÊøÈÕÆÚ %s¡¡ÒÔºó \nÕˆÐÞ¸Ä"
+    IDS_WARN_MANYFILES      "ÒªÀ^Àm†á? ¾¯¸æ!, Ê¹ÓÃß@Ð©ÔOÖÃ¿ÉÄÜ®aÉúŽ×Ç§‚€•þÔ’švÊ·ÎÄ¼þ."
+    IDS_DNSCLEARED          "îIÓòÃüÃûÏµ½yµÄ¡¡´æƒ¦Æ÷ÒÑ±»Çå³ý."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_POSTPROC        "ºóÆÚÌŽÀíµÄÎÄ¼þÝ”³öÂ·½²»ÄÜÅcˆó¸æÝ”³öÂ·½ÏàÍ¬"
+    IDS_CANNOTEDIT          "ÔÚÓ‹»®ß\ÐÐÆÚég, ²»ÄÜ¾ŽÝ‹ÔOÖÃÎÄ¼þ"
+    IDS_ERR_CANTSAVE        "²»ÄÜ±£´æÔOÖÃÎÄ¼þ\n%s"
+    IDS_SETTINGSSAVED       "±£´æÔOÖÃµ½"
+    IDS_FILTER_ADD          "Ôö¼ÓÄ£Ê½..."
+    IDS_FILTER_REM          "ÒÆÈ¥Ä¿Ç°µÄßx“ñÄ£Ê½"
+    IDS_FILTERIN_DATA       "ÒªÊ¹ÓÃµÄÎÄ¼þ/Í¨ÓÃÙYÔ´µØÖ·Ä£Ê½ (eg, *.html)"
+    IDS_FILTER_CHANGE       "¸Ä×ƒÄ£Ê½"
+    IDS_PREFORG_ADD         "Ôö¼Ó½M¿—™C˜‹"
+    IDS_PREFORG_REM         "¸Ä×ƒ½M¿—™C˜‹"
+    IDS_PREFORG_NAME        "½M¿—™C˜‹Ãû×Ö"
+    IDS_PREFORG_CLR         "„h³ý½M¿—™C˜‹"
+    IDS_PREFORG_DEFAULT     "Ôö¼ÓîAÔOÖÃ½M¿—™C˜‹"
+    IDS_PREFGRP_ADD         "Ôö¼Ó½MÀà"
+    IDS_PREFGRP_REM         "¸Ä×ƒ½MÀà"
+    IDS_PREFGRP_NAME        "½MÀàÃû×Ö"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREFGRP_CLR         "„h³ý½MÀà"
+    IDS_PREFREF_ADD         "Ôö¼ÓÆðÊ¼í“Ãæ"
+    IDS_PREFREF_NAME        "ÆðÊ¼í“ÃæÃû"
+    IDS_PREFREF_CLR         "ÒÆÈ¥ËùÓÐµÄÆðÊ¼í“Ãæ"
+    IDS_LOCATION            "µØÖ·"
+    IDS_SELECTFOLDER        "ßx“ñÄ¿˜ËÎÄ¼þÄ¿ä› ..."
+    IDS_SELECTDBASE         "ßx“ñ”µ“þŽì»òÕß®aÉúÐÂµÄ..."
+    IDS_APPLY_ALL           "‘ªÓÃËùÓÐµÄ"
+    IDS_OPTIONS_ON          "´òé_ßx“ñ"
+    IDS_OPTIONS_OFF         "êPé]ßx“ñ"
+    IDS_APPLY_GROUP         "‘ªÓÃ½M"
+    IDS_EXT_PAGES           "í“Ãæ"
+    IDS_EXT_DOWN            "ÏÂÝdÎÄ¼þ"
+    IDS_EXT_AUDIO           "ÒôîlÎÄ¼þ"
+    IDS_EXT_VIDEO           "Ò•îlÎÄ¼þ"
+    IDS_ICON_NAMES          "îAÌŽÀí,ˆó¸æ,·ÖÎö,ºYßx,½yÓ‹,Ì“Ö÷™C,ºóÆÚÌŽÀí,¶¨Áx¸ñÊ½,ßh¶Ë¿ØÖÆ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERR_CONNECTING      "åeÕ` ßB½Óµ½FTP·þ„ÕÆ÷ %s ÓÃ‘ô %s Òòžé\n%s."
+    IDS_ERR_FILEFAILED      "åeÕ`, ²»ÄÜ´òé_Ó›ä›ÎÄ¼þ (%s)"
+    IDS_UPLOADINGTO         "ÉÏÝdÎÄ¼þµ½ %s..."
+    IDS_COPYINGFILE         "ÍÖÆÎÄ¼þ %s"
+    IDS_ERR_UPLOADFAIL      "ÉÏÝdÓ›ä›ŸoÐ§\nåeÕ` ßB½Óµ½·þ„ÕÆ÷ %s ÓÃ‘ô %s "
+    IDS_COMPRESSDONE        "ÒÑÍê³É‰º¿sÎÄ¼þ."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMPRESSING         "ÕýÔÚ‰º¿sÎÄ¼þ..."
+    IDS_ERR_FTPWRITE        "åeÕ`, ²»ÄÜŒ‘ÎÄ¼þ (%s).\n ¿ÉÄÜÂ·½›²»´æÔÚ?"
+    IDS_DOWNLOADING         "ÕýÔÚÏÂÝdÎÄ¼þ %s ..."
+    IDS_DOWNLOADINGKB       "ÕýÔÚÏÂÝdÎÄ¼þ %s...%d Ç§×Ö¹ (%.2f%%)"
+    IDS_ERR_FTPREAD         "²»ÄÜ´òé_FTPÎÄ¼þ¡¡%s¡¡\n¿ÉÄÜÂ·½›²»´æÔÚ?"
+    IDS_DOWNLOADSTOP        "ÏÂÝdÎÄ¼þÒÑ±»È¡Ïû"
+    IDS_DELETEFTP           "„h³ýFTPÎÄ¼þ %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MAKEZIP             "ÕýÔÚ‰º¿sÎÄ¼þ..."
+    IDS_ZIPFINISH           "ˆó¸æÒÑ±»‰º¿s. Äã¿ÉÒÔÔÚ %s ´æÈ¡\n\n"
+    IDS_UPLOADREPORT        "ÉÏÝdˆó¸æÎÄ¼þ..."
+    IDS_UPLOADLOGS          "ÉÏÝdÓ›ä›ÎÄ¼þ..."
+    IDS_EMAILNOTIFY         "à]¼þ°lËÍÍ¨Öª..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+HELP                    BITMAP  DISCARDABLE     "help.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+HELP_ICON               ICON    DISCARDABLE     "help.ico"
+PREPROC                 ICON    DISCARDABLE     "preproc.ico"
+SCHED_ICON              ICON    DISCARDABLE     "schdule.ico"
+ADDSICON                ICON    DISCARDABLE     "advert.ico"
+ANALYSISICON            ICON    DISCARDABLE     "analysis.ico"
+IDI_EXPAND1             ICON    DISCARDABLE     "expand1.ico"
+IDI_EXPAND2             ICON    DISCARDABLE     "expand2.ico"
+IDI_CHECKOFF            ICON    DISCARDABLE     "checkoff.ico"
+IDI_CHECKON             ICON    DISCARDABLE     "checkon.ico"
+IDI_STATITEM            ICON    DISCARDABLE     "checkon1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_NORMAL)
+#if defined(APSTUDIO_INVOKED)
+BIGTOOLBAR24$(_NORMAL)  BITMAP  DISCARDABLE     "bigtoolbar24N.bmp"
+#else
+BIGTOOLBAR24            BITMAP  DISCARDABLE     "bigtoolbar24N.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_PRO)
+#if defined(APSTUDIO_INVOKED)
+BIGTOOLBAR24$(_PRO)     BITMAP  DISCARDABLE     "bigtoolbar24.bmp"
+#else
+BIGTOOLBAR24            BITMAP  DISCARDABLE     "bigtoolbar24.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_PRO)
+#if defined(APSTUDIO_INVOKED)
+BIGTOOLBAR24B$(_PRO)    BITMAP  DISCARDABLE     "bigtoolbar24b.bmp"
+#else
+BIGTOOLBAR24B           BITMAP  DISCARDABLE     "bigtoolbar24b.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_NORMAL)
+#if defined(APSTUDIO_INVOKED)
+BIGTOOLBAR24B$(_NORMAL) BITMAP  DISCARDABLE     "bigtoolbar24Nb.bmp"
+#else
+BIGTOOLBAR24B           BITMAP  DISCARDABLE     "bigtoolbar24Nb.bmp"
+#endif
+#endif
+SPIDER                  BITMAP  PRELOAD MOVEABLE PURE "application.bmp"
+#if defined(APSTUDIO_INVOKED) || defined(_NORMAL)
+#if defined(APSTUDIO_INVOKED)
+FUNNELWEBLOGO24$(_NORMAL) BITMAP  PRELOAD DISCARDABLE "fwsplash24.bmp"
+#else
+FUNNELWEBLOGO24         BITMAP  PRELOAD DISCARDABLE "fwsplash24.bmp"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_PRO)
+#if defined(APSTUDIO_INVOKED)
+APPLICATIONLOGO24$(_PRO) BITMAP  PRELOAD DISCARDABLE "applicationpro24.bmp"
+#else
+APPLICATIONLOGO24      BITMAP  PRELOAD DISCARDABLE "applicationpro24.bmp"
+#endif
+#endif
+PROGRESSBAR1            BITMAP  DISCARDABLE     "progress.bmp"
+PROGRESSBAR2            BITMAP  DISCARDABLE     "progress2.bmp"
+WizSpid                 BITMAP  DISCARDABLE     "wizspid2.bmp"
+Bullet                  BITMAP  DISCARDABLE     "bullet2.bmp"
+#if defined(APSTUDIO_INVOKED) || defined(_PRO)
+#if defined(APSTUDIO_INVOKED)
+BIGTOOLBAR24R$(_PRO)    BITMAP  DISCARDABLE     "bigtoolbar24r.bmp"
+#else
+BIGTOOLBAR24R           BITMAP  DISCARDABLE     "bigtoolbar24r.bmp"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+_LOG_ICON               ICON    DISCARDABLE     "log_icon.ico"
+AAAFUNNELWEBICON        ICON    PRELOAD DISCARDABLE "AAPP.ICO"
+GRAPHSICON              ICON    PRELOAD DISCARDABLE "GRAPHS.ICO"
+GENERALICON             ICON    PRELOAD DISCARDABLE "GENERAL.ICO"
+STATSICON               ICON    PRELOAD DISCARDABLE "STATS.ICO"
+POSTPROC                ICON    PRELOAD DISCARDABLE "HTMLHEAD.ICO"
+HTMLEDIT                ICON    PRELOAD DISCARDABLE "HTMLFOOT.ICO"
+FILTERSICON             ICON    DISCARDABLE     "FILTERS.ICO"
+_AFUNNELWEBICONSM       ICON    PRELOAD DISCARDABLE "afunnelw.ico"
+VDOMAINSICON            ICON    PRELOAD DISCARDABLE "ico00001.ico"
+_LOG_ICON1              ICON    DISCARDABLE     "ico00002.ico"
+_LOG_ICON2              ICON    DISCARDABLE     "ico00003.ico"
+ROUTERICON              ICON    PRELOAD DISCARDABLE "routeric.ico"
+REMOTEICON              ICON    PRELOAD DISCARDABLE "notifyic.ico"
+CUSTOMICON              ICON    PRELOAD DISCARDABLE "customic.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+ENGLISH                 TEXT    DISCARDABLE     "..\\..\\lang\\English.lang"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+#if defined(APSTUDIO_INVOKED) || defined(_PRO)
+#if defined(APSTUDIO_INVOKED)
+LOOP1$(_PRO)            WAVE    DISCARDABLE     "loop.wav"
+#else
+LOOP1                   WAVE    DISCARDABLE     "loop.wav"
+#endif
+#endif
+#if defined(APSTUDIO_INVOKED) || defined(_NORMAL)
+#if defined(APSTUDIO_INVOKED)
+LOOP1$(_NORMAL)         WAVE    DISCARDABLE     "loop.wav"
+#else
+LOOP1                   WAVE    DISCARDABLE     "loop.wav"
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+FUNNELWEB ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "A",            IDM_SAVEAS,             VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SCHEDULE,           VIRTKEY, NOINVERT
+    "F",            IDM_FTPOPEN,            VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_CLEARLIST,          VIRTKEY, CONTROL, NOINVERT
+    "M",            IDM_HELP,               VIRTKEY, CONTROL, NOINVERT
+    "N",            SCHM_NEW,               VIRTKEY, NOINVERT
+    "N",            IDM_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_PROCESS,            VIRTKEY, NOINVERT
+    "R",            IDM_VIEWHTML,           VIRTKEY, NOINVERT
+    "S",            IDM_PREFS,              VIRTKEY, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDM_STOP,               VIRTKEY, NOINVERT
+    VK_F1,          IDM_HELPCONTENTS,       VIRTKEY, NOINVERT
+    VK_F1,          IDM_PREFS_1,            VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDM_PREFS_2,            VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          IDM_PREFS_3,            VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          IDM_PREFS_4,            VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_PREFS_5,            VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          IDM_PREFS_6,            VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          IDM_PREFS_7,            VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          IDM_PREFS_8,            VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_PREFS_9,            VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         IDM_GROW,               VIRTKEY, NOINVERT
+    "X",            IDM_EXIT,               VIRTKEY, CONTROL, NOINVERT
+END
+
+SCH_KEYACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "N",            SCHM_NEW,               VIRTKEY, NOINVERT
+    "V",            SCH_VIEWLOG,            VIRTKEY, NOINVERT
+    VK_DELETE,      SCH_DEL,                VIRTKEY, NOINVERT
+    VK_DELETE,      SCH_CLEAR,              VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      SCH_CANCEL,             VIRTKEY, NOINVERT
+    VK_RETURN,      SCH_EDIT,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x2bL
+#else
+ FILEFLAGS 0x2aL
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Written by: Active Concepts  (www.activeconcepts.com)\0"
+            VALUE "CompanyName", "Active Concepts Pty Ltd\0"
+            VALUE "FileDescription", "Web/Proxy log analysis program, the fastest\0"
+            VALUE "FileVersion", "4.01\0"
+            VALUE "InternalName", "FUNNELWEB\0"
+            VALUE "LegalCopyright", "Copyright © Active Concepts. 1997 - 2000 and beyond\0"
+            VALUE "LegalTrademarks", "FunnelWeb® is a registered trademark of Active Concepts Pty Ltd.\0"
+            VALUE "OriginalFilename", "application.exe\0"
+            VALUE "PrivateBuild", "4.01\0"
+            VALUE "ProductName", "Funnel Web\0"
+            VALUE "ProductVersion", "4.01\0"
+            VALUE "SpecialBuild", "Active Concepts grants you a non-exclusive right to use the enclosed software and related documentation (Software) on your single, stand-alone computer for your personal use in accordance with the terms of this licence. - You acknowledge that all copyrig\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Data
+//
+
+DLGINCLUDE RCDATA DISCARDABLE 
+BEGIN
+    "APP.H\0"
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""application.h""\r\n"
+    "#include ""winver.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

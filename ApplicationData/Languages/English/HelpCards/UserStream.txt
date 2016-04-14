@@ -1,0 +1,35 @@
+# Help Card
+# Report: Authenticated Users' Click Stream
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This extremely powerful report allows you to drill down through every page viewed within every session undertaken by your authenticated site users. It can be particularly useful in assessing the behavioral trends of these key visitors, and can help in the planning of new site content. This report can also assist in the enforcement of acceptable use policies in an Intranet environment (allowing administrators to hone in on individual authenticated employees of an organization).
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Authenticated.
+The name of the authenticated user being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits to the site by the corresponding authenticated user. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages and errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Authenticated User:</b>
+Name of the authenticated user being analyzed. Click the hyperlink to view the authenticated user's session click streams. The resultant report will open in a new browser window.
+
+<b>Hits (%):</b>
+Number of hits to the site by the corresponding authenticated user. (Percentage as a proportion of hits to the site by all authenticated users.)
+
+<b>Sessions:</b>
+Number of sessions undertaken by the corresponding authenticated user.
+
+<b>Mean time:</b>
+The average time spent on the website during each session undertaken by the corresponding authenticated user. It is represented in hours, minutes and seconds (HH:MM:SS).
+
+<b>Pages:</b>
+Number of pages viewed by the corresponding site authenticated user. 
+
+<b>Errors:</b>
+Errors generated as a result of hits to the site by the corresponding authenticated user.

@@ -1,0 +1,42 @@
+/* XPM */
+static char *rename_icon[] = {
+/* width height num_colors chars_per_pixel */
+"    18    19       16            1",
+/* colors */
+". c #000000",
+"# c #0000ff",
+"a c #00319c",
+"b c #3163ff",
+"c c #319cff",
+"d c #31ceff",
+"e c #636331",
+"f c #848484",
+"g c #9c9c63",
+"h c #9cffff",
+"i s None c None",
+"j c #cece9c",
+"k c #cecece",
+"l c #ffff9c",
+"m c #ffffce",
+"n c #ffffff",
+/* pixels */
+"iiiiiiiiiggggggibb",
+"iiiiiiiignnmmmmghh",
+"iiiiiiigm.mmjjjjdd",
+"ffffffgm.jejjjggcc",
+"fnnnngm.jejeggg.bb",
+"fnnngm.k.jej......",
+"fnnn..knk.j.klk.ii",
+"fnnnkklnlk.klnk.ii",
+"fnnnnlnlnlnlnlk.ii",
+"fnnbbnbbbbbbbnk.ii",
+"fnlnnlnlnlnlnlk.ii",
+"fnn##n#######nk.ii",
+"fnnnnlnlnlnlnlk.ii",
+"fnl##n#######nk.ii",
+"fnnnnlnlnlnlnlk.ii",
+"fnnaanaaaaaaank.ii",
+"flnlnlnlnlnlnlk.ii",
+"fkkkkkkkkkkkkkk.ii",
+"................ii"
+};

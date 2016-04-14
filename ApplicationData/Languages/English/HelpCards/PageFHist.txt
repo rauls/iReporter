@@ -1,0 +1,27 @@
+
+# Help Card
+# Report: Entry Pages History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the pages on which visitors entered your site over time. Use this information to gauge whether your intended entry pages are consistently fulfilling their role. If not, you may need to restructure your site. You can also find out if certain pages are being bookmarked (i.e. they can't normally be accessed other than through your main pages), which may indicate particular topics of interest that you need to propagate elsewhere in the site, or that should be moved to your intended entry pages.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Entry Pages.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Pages:</b>
+Name of the page being analyzed. The directory path shown is from the document root ("/") of your webserver. Click the hyperlink to view the page (note: for these links to work, you must specify your default hostname in <i>Settings > Analysis > Options > URL > Default host</i>.
+
+<b>Times entered on:</b>
+The number of times visitors entered your site at the corresponding page.
+
+<b>Errors:</b>
+Number of errors generated as a result of all hits to the corresponding page (this includes when the page was not an actual entry page, explaining instances where the number of errors exceeds the number of "times entered on").

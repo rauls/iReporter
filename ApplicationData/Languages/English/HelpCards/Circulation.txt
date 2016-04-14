@@ -1,0 +1,33 @@
+
+# Help Card
+# Report: Circulation Frequency
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report illustrates how often sessions are undertaken on your site by the same visitor. Use this information to assess the appropriateness and timeliness of site content. If site content changes many times a day, yet the majority of visitors return only once a week, you will have to look at ways of increasing awareness of site changes.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Frequency.
+The frequency at which visitors returned to your site.
+
+<b>Horizontal axis:</b>  Visitors (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, pages or visitors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Frequency:</b>
+The frequency at which visitors returned to your site.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors who returned to the site at the corresponding frequency range. (Percentage as a proportion of hits from all frequency ranges.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors who returned at the corresponding frequency range. (Percentage as a proportion of bytes transferred by hits from all frequency ranges.)
+
+<b>Pages:</b>
+Number of pages viewed by visitors who returned to the site at the corresponding frequency range.
+
+<b>Visitors:</b>
+Number of site visitors who returned to the site at the corresponding frequency range.

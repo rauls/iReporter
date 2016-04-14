@@ -1,0 +1,31 @@
+UNIX RELEASE NOTES
+==================
+Solaris Requirements
+SunOS 2.7 with min 256 meg ram, running on Sparc CPUs
+
+RedHat Linux Requirements
+Linux Kernel 2.2.x with min 128meg ram, running on Intel Pentium CPUs or AMD cpus
+
+Notes
+All of the unix edition lives on /usr/local/Analyzer/
+config-setup.sh links in the binaries to /usr/bin/ 
+There are two builds supplied, a dynamic build that
+depends on libgcc and libjpeg/libpng/libgz and a static
+build that contains all the libraries inside itself.
+
+Solaris Installation
+The Package way.
+pkgadd -d Analyzer-4.5-sparc-solaris
+or
+tar -zxfv Analyzer-4_5_solaris.tar.gz /
+
+RedHat Installation
+rpm -i Analyzer-4.5-1.i386.rpm
+or
+tar -zxfv Analyzer-4_5_linux-gnu.tar.gz /
+
+
+
+Local configuration details like the schedule and registration
+are stored in the users HOME directory (ie ~/.)
+

@@ -1,0 +1,41 @@
+
+# Help Card
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows a month-by-month summary of all dates in your report period. Use this information to  evaluate the effects of unusual or dramatic events that may have caused fluctuations in site traffic. The assessment of low and high traffic periods should be correlated against month-to-month objectives of your web site.
+
+This report may be affected by world time zones. Many webservers generate timestamps in Greenwich Mean Time (GMT+0), which may not be your local time zone. The time data in your logs can be adjusted to represent your local time zone, in <i>Settings > Analysis > Options > Date range > Time adjust</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Number of hits to the site. Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method (Visitors, Bytes, etc).  This report may be sorted by hits, bytes, sessions, visitors, pages or errors.
+
+<b>Horizontal axis:</b> Date.
+Representative of all months in the report period.
+
+<b>Red line (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+
+<!--TABLE-->
+<b>Date:</b>
+Specfic month as the focus of analysis.
+
+<b>Hits (%):</b>
+Number of hits to the web site during the corresponding month. (Percentage as a proportion of hits generated during all months in the report period.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits during the corresponding month. (Percentage as a proportion of bytes transferred during all months in the report period.)
+
+<b>Sessions:</b>
+Total number of sessions undertaken during the corresponding month. This number includes sessions undertaken by 'repeat' visitors, that is, it is not representative of a 'unique' session count.
+
+<b>Visitors:</b>
+Total number of unique visitors who undertook one or more sessions during the corresponding month. Note that this figure represents a unique monthly visitor count, not a unique yearly visitor count (as a unique visitor for one month may return during another month). As such, the "Totals" value will be cumulative for all months (monthly uniqueness is disregarded) and the overall value may therefore appear higher than expected.
+
+<b>Pages:</b>
+Number of pages viewed during the corresponding month.
+
+<b>Errors:</b>
+Errors generated as a result of hits to the site during the corresponding month.

@@ -1,0 +1,1890 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f4\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Times;}
+{\f5\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Helvetica;}{\f6\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier;}{\f7\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Geneva;}
+{\f8\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Tms Rmn;}{\f9\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Helv;}{\f10\froman\fcharset0\fprq2{\*\panose 00000000000000000000}MS Serif;}
+{\f11\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}MS Sans Serif;}{\f12\froman\fcharset0\fprq2{\*\panose 00000000000000000000}New York;}{\f13\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}System;}
+{\f14\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f15\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f16\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}LinePrinter;}
+{\f17\froman\fcharset0\fprq2{\*\panose 00000000000000000000}CG Times;}{\f18\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Univers;}{\f19\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Univers Condensed;}
+{\f20\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Antique Olive;}{\f21\froman\fcharset0\fprq2{\*\panose 02020404030301010803}Garamond;}{\f22\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}CG Omega;}
+{\f23\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Albertus Medium;}{\f24\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Albertus Extra Bold;}{\f25\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Clarendon Condensed;}
+{\f26\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Coronet;}{\f27\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Letter Gothic;}{\f28\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Marigold;}
+{\f29\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Marlett;}{\f30\fswiss\fcharset238\fprq2{\*\panose 00000000000000000000}Arial CE;}{\f31\fmodern\fcharset238\fprq1{\*\panose 00000000000000000000}Courier New CE;}
+{\f32\froman\fcharset238\fprq2{\*\panose 00000000000000000000}Times New Roman CE;}{\f33\froman\fcharset2\fprq2{\*\panose 05050102010205020202}MT Extra;}{\f34\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Arial Rounded MT Bold;}
+{\f35\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Book Antiqua;}{\f36\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Century Gothic;}{\f37\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Century Schoolbook;}
+{\f38\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Map Symbols;}{\f39\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Algerian;}{\f40\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Braggadocio;}
+{\f41\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Britannic Bold;}{\f42\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Brush Script MT;}{\f43\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Colonna MT;}
+{\f44\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Desdemona;}{\f45\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Footlight MT Light;}{\f46\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Kino MT;}
+{\f47\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Wide Latin;}{\f48\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Matura MT Script Capitals;}{\f49\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Playbill;}
+{\f50\fmodern\fcharset2\fprq1{\*\panose 00000000000000000000}MS LineDraw;}{\f51\fswiss\fcharset0\fprq2{\*\panose 020b0506020202030204}Arial Narrow;}{\f52\fswiss\fcharset0\fprq2{\*\panose 020b0a04020102020204}Arial Black;}
+{\f53\froman\fcharset0\fprq2{\*\panose 02050604050505020204}Bookman Old Style;}{\f54\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Monotype Sorts;}{\f55\fswiss\fcharset0\fprq2{\*\panose 020b0706040902060204}Haettenschweiler;}
+{\f56\fswiss\fcharset0\fprq2{\*\panose 020b0806030902050204}Impact;}{\f57\fswiss\fcharset2\fprq2{\*\panose 00000000000000000000}Bookshelf Symbol 1;}{\f58\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Bookshelf Symbol 2;}
+{\f59\froman\fcharset2\fprq2{\*\panose 00000000000000000000}Bookshelf Symbol 3;}{\f60\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}MS Outlook;}{\f61\fscript\fcharset0\fprq2{\*\panose 030f0702030302020204}Comic Sans MS;}
+{\f62\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Verdana;}{\f63\fmodern\fcharset255\fprq2{\*\panose 00000000000000000000}Modern;}{\f64\fswiss\fcharset0\fprq1{\*\panose 00000000000000000000}MS Dialog;}
+{\f65\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Graeca;}{\f66\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Hebraica;}{\f67\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Semitica;}
+{\f68\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}TransRomanAH;}{\f69\froman\fcharset204\fprq2{\*\panose 00000000000000000000}Times New Roman Cyr;}{\f70\froman\fcharset161\fprq2{\*\panose 00000000000000000000}Times New Roman Greek;}
+{\f71\froman\fcharset162\fprq2{\*\panose 00000000000000000000}Times New Roman Tur;}{\f72\froman\fcharset186\fprq2{\*\panose 00000000000000000000}Times New Roman Baltic;}{\f73\fswiss\fcharset204\fprq2{\*\panose 00000000000000000000}Arial Cyr;}
+{\f74\fswiss\fcharset161\fprq2{\*\panose 00000000000000000000}Arial Greek;}{\f75\fswiss\fcharset162\fprq2{\*\panose 00000000000000000000}Arial Tur;}{\f76\fswiss\fcharset186\fprq2{\*\panose 00000000000000000000}Arial Baltic;}
+{\f77\fmodern\fcharset204\fprq1{\*\panose 00000000000000000000}Courier New Cyr;}{\f78\fmodern\fcharset161\fprq1{\*\panose 00000000000000000000}Courier New Greek;}{\f79\fmodern\fcharset162\fprq1{\*\panose 00000000000000000000}Courier New Tur;}
+{\f80\fmodern\fcharset186\fprq1{\*\panose 00000000000000000000}Courier New Baltic;}{\f171\fswiss\fcharset238\fprq2 Tahoma CE;}{\f172\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f174\fswiss\fcharset161\fprq2 Tahoma Greek;}
+{\f175\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f176\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f207\froman\fcharset238\fprq2 Garamond CE;}{\f208\froman\fcharset204\fprq2 Garamond Cyr;}{\f210\froman\fcharset161\fprq2 Garamond Greek;}
+{\f211\froman\fcharset162\fprq2 Garamond Tur;}{\f212\froman\fcharset186\fprq2 Garamond Baltic;}{\f387\fswiss\fcharset238\fprq2 Arial Narrow CE;}{\f388\fswiss\fcharset204\fprq2 Arial Narrow Cyr;}{\f390\fswiss\fcharset161\fprq2 Arial Narrow Greek;}
+{\f391\fswiss\fcharset162\fprq2 Arial Narrow Tur;}{\f392\fswiss\fcharset186\fprq2 Arial Narrow Baltic;}{\f393\fswiss\fcharset238\fprq2 Arial Black CE;}{\f394\fswiss\fcharset204\fprq2 Arial Black Cyr;}{\f396\fswiss\fcharset161\fprq2 Arial Black Greek;}
+{\f397\fswiss\fcharset162\fprq2 Arial Black Tur;}{\f398\fswiss\fcharset186\fprq2 Arial Black Baltic;}{\f399\froman\fcharset238\fprq2 Bookman Old Style CE;}{\f400\froman\fcharset204\fprq2 Bookman Old Style Cyr;}
+{\f402\froman\fcharset161\fprq2 Bookman Old Style Greek;}{\f403\froman\fcharset162\fprq2 Bookman Old Style Tur;}{\f404\froman\fcharset186\fprq2 Bookman Old Style Baltic;}{\f417\fswiss\fcharset238\fprq2 Impact CE;}
+{\f418\fswiss\fcharset204\fprq2 Impact Cyr;}{\f420\fswiss\fcharset161\fprq2 Impact Greek;}{\f421\fswiss\fcharset162\fprq2 Impact Tur;}{\f422\fswiss\fcharset186\fprq2 Impact Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;
+\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;
+\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20 \snext0 Normal;}{\s1\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\kerning28 \sbasedon0 \snext0 
+heading 1;}{\s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\i\f1 \sbasedon0 \snext0 heading 2;}{\s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 \sbasedon0 \snext0 heading 3;}{
+\s4\fi-720\li2880\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\f1 \sbasedon0 \snext0 heading 4;}{\s5\fi-720\li3600\sb240\sa60\nowidctlpar\widctlpar\adjustright \f1\fs22 \sbasedon0 \snext0 heading 5;}{
+\s6\fi-720\li4320\sb240\sa60\nowidctlpar\widctlpar\adjustright \i\fs22 \sbasedon0 \snext0 heading 6;}{\s7\fi-720\li5040\sb240\sa60\nowidctlpar\widctlpar\adjustright \f1\fs20 \sbasedon0 \snext0 heading 7;}{
+\s8\fi-720\li5760\sb240\sa60\nowidctlpar\widctlpar\adjustright \i\f1\fs20 \sbasedon0 \snext0 heading 8;}{\s9\fi-720\li6480\sb240\sa60\nowidctlpar\widctlpar\adjustright \b\i\f1\fs18 \sbasedon0 \snext0 heading 9;}{\*\cs10 \additive Default Paragraph Font;}{
+\s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 \sbasedon0 \snext15 Notes;}{\s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 \sbasedon0 \snext16 Prototype;}{\s17\fi-1440\li2160\nowidctlpar\widctlpar\adjustright \f1\fs16 
+\sbasedon0 \snext17 Parameters;}{\s18\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 \sbasedon0 \snext18 Example;}{\s19\nowidctlpar\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20 \sbasedon0 \snext19 header;}{\s20\nowidctlpar\widctlpar
+\tqc\tx4320\tqr\tx8640\adjustright \fs20 \sbasedon0 \snext20 footer;}{\*\cs21 \additive \sbasedon10 page number;}{\s22\nowidctlpar\widctlpar\adjustright \f2\fs20 \sbasedon0 \snext22 Plain Text;}{\s23\nowidctlpar\widctlpar\adjustright \cbpat9 \f15\fs20 
+\sbasedon0 \snext23 Document Map;}}{\*\listtable{\list\listtemplateid-1\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01*;}{\levelnumbers;}}{\listname ;}\listid-2}{\list\listtemplateid230056672
+\listsimple{\listlevel\levelnfc2\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'03\'00) ;}{\levelnumbers\'01;}\b0\i0\f1\fs20\fbias0 \fi-360\li360 }{\listname ;}\listid872691495}{\list\listtemplateid230056672\listsimple
+{\listlevel\levelnfc2\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'03\'00) ;}{\levelnumbers\'01;}\b0\i0\f1\fs20\fbias0 \fi-360\li360 }{\listname ;}\listid1000885008}{\list\listtemplateid230056672\listsimple
+{\listlevel\levelnfc2\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'03\'00) ;}{\levelnumbers\'01;}\b0\i0\f1\fs20\fbias0 \fi-360\li360 }{\listname ;}\listid1209144847}{\list\listtemplateid230056672\listsimple
+{\listlevel\levelnfc2\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'03\'00) ;}{\levelnumbers\'01;}\b0\i0\f1\fs20\fbias0 \fi-360\li360 }{\listname ;}\listid1433697984}{\list\listtemplateid67698703\listsimple{\listlevel
+\levelnfc0\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'02\'00.;}{\levelnumbers\'01;}\fi-360\li360 }{\listname ;}\listid1526362831}}{\*\listoverridetable{\listoverride\listid1526362831\listoverridecount0\ls1}
+{\listoverride\listid-2\listoverridecount1{\lfolevel\listoverrideformat{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent360{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360 }}\ls2}
+{\listoverride\listid872691495\listoverridecount0\ls3}{\listoverride\listid1209144847\listoverridecount0\ls4}{\listoverride\listid1000885008\listoverridecount0\ls5}{\listoverride\listid1433697984\listoverridecount0\ls6}}{\*\revtbl {Unknown;}}{\info{\author Anna Gawlas}
+{\operator George R. Butler}{\creatim\yr1997\mo1\dy28\hr13}{\revtim\yr1997\mo12\dy9\hr9\min49}{\printim\yr1997\mo8\dy4\hr11\min34}{\version4}{\edmins10}{\nofpages36}{\nofwords10757}{\nofchars61318}{\*\company StatSoft, Inc.}{\nofcharsws75302}{\vern71}}
+\margl1440\margr1440 \widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind1\viewscale100 \fet0\sectd \linex0\endnhere\sectdefaultcl {\header \pard\plain \s19\qc\nowidctlpar\widctlpar\tqc\tx4320\tx6300\tqr\tx8640\adjustright \fs20 {
+STATISTICA Development Environment (}{\field{\*\fldinst { DATE }}{\fldrslt {\lang1024 12/09/97}}}{)\tab \tab Copyright \'a9 StatSoft, Inc.
+\par }}{\footer \pard\plain \s20\qc\nowidctlpar\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20 {\f1\fs18 Page }{\field{\*\fldinst {\cs21  PAGE }}{\fldrslt {\cs21\lang1024 20}}}{\fs18 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qc\nowidctlpar\widctlpar\adjustright \fs20 {\b\i\f1\fs28 STATISTICA}{\b\f1\fs28  DEVELOPMENT ENVIRONMENT
+\par }\pard\plain \s1\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28 {1.\tab Overview
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {1.1.\tab What it is
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 General purpose libraries for reading/writing }{\i\f1 STATISTICA}{\f1  system data files.
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {1.2.\tab Where it can be used
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 Can be used in a variety of environments: }{\i\f1 STATISTICA BASIC}{\f1 , Visual C++, Visual Basic, Delphi, FORTRAN.  There are two versions: 16 and 32 bit.
+\par Sample applications:
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 1.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\f1 
+third party general-purpose programs for importing/exporting data, 
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 2.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\f1 front-ends for data mining applications,
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 3.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\f1 various applications that interface }{\i\f1 
+STATISTICA}{\f1  with other components of enterprise-wide computing environments (e.g., one can add a front-end to a database that transfers data to }{\i\f1 STATISTICA}{\f1  files or use }{\i\f1 STATISTICA}{\f1 
+ data files to communicate selected data to a corporate data base (e.g., written in VB or C/C++)),
+\par {\pntext\pard\plain\i\f1\fs20 \hich\af1\dbch\af0\loch\f1 4.\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec\pnstart1\pnindent360\pnhang{\pntxta .}}\ls1\adjustright {\i\f1 STATISTICA}{\f1  }{\i\f1 BASIC}{\f1 
+ programs that access data files that are currently \lquote not loaded\rquote  into }{\i\f1 STATISTICA}{\f1  (data array), such as custom applications that merge data from multiple (simultaneously open) }{\i\f1 STATISTICA }{\f1 data files.
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {1.3.\tab What you can do with it
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\i\f1 STATISTICA}{\f1  Development Environment is a very powerful tool that allows the users to manipulate virtually all components of }{\i\f1 STATISTICA}{\f1 
+ files including file headers, variable specifications, case names, value labels and data.
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {1.4.\tab How to use it
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 Operating on }{\i\f1 STATISTICA}{\f1  files is generally handle-based, just like Scrollsheet and graph operations in }{\i\f1 STATISTICA}{\f1  }{\i\f1 BASIC}{\f1 
+.  A handle to a file must be opened/created, operated on, and then closed.  Closing a file handle is }{\f1\ul very important}{\f1  :
+\par {\pntext\pard\plain\f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls2\adjustright {\f1 it commits changes to the disk file;
+\par {\pntext\pard\plain\f3\fs20 \loch\af3\dbch\af0\hich\f3 \'b7\tab}a failure to close open handles will cause GPFs and memory leaks.}{
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f1 Any modifications of specifications or data of an existing }{\i\f1 STATISTICA}{\f1  file are performed directly on that file.  It is the user\rquote s responsibility to cre
+ate a backup if he/she wants to preserve the original.
+\par Operating on files currently loaded into }{\i\f1 STATISTICA}{\f1  is not allowed - it may cause sharing problems and data corruption.}{
+\par }\pard\plain \s1\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28 {2.\tab Examples
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {2.1.\tab STATISTICA BASIC
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 To use it from }{\i\f1 STATISTICA}{\f1  }{\i\f1 BASIC}{\f1  one must do the following:
+\par i) put stadev.dll and stadev.inc files in the }{\i\f1 STATISTICA}{\f1  directory;
+\par ii) include the development environment include file at the beginning of the program:
+\par \{$I:\rquote stadev.inc\rquote \}
+\par or alternatively in the userlib.inc file and then it will be visible to all programs;
+\par iii) call appropriate functions from the list below.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.1.1.\tab Simple reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example opens a }{\i\f1 STATISTICA}{\f1  data file, reads one data value and then closes it.
+\par }{\f2\fs16 
+\par \{$I:\rquote stadev.inc\rquote \}
+\par handle := StaOpenFile ("d:\\data\\file.sta");
+\par StaGetData (handle, 2, 3, d); \{get value of second variable in third case \}
+\par StaCloseFile (handle);
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.1.2.\tab More sophisticated reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example dumps to the }{\i\f1 STATISTICA}{\f1  text output window all information about the }{\i\f1 STATISTICA}{\f1 
+ data file, including all variable specifications, labels, and data values:
+\par }{
+\par }{\f2\fs16 \{$I:\rquote stadev.inc\rquote \}
+\par 
+\par if 0 = SelectOpenFileName (?Title$, fn$, ".sta") then Exit; 
+\par  
+\par writeln ("STATISTICA file information"); 
+\par writeln; 
+\par h := StaOpenFile (fn$); 
+\par writeln ("File name:", fn$); 
+\par  
+\par nv := StaGetNVars (h); 
+\par writeln ("Number of variables:", nv); 
+\par  
+\par nc := StaGetNCases (h); 
+\par writeln ("Number of cases:", nc); 
+\par  
+\par StaGetFileHeader (h, fh$, 80); 
+\par writeln ("File header:", fh$); 
+\par writeln; 
+\par  
+\par writeln ("Variable specs:"); 
+\par for i:=1 to nv do 
+\par begin 
+\par \tab StaGetVarName (h, i, vn$); 
+\par \tab StaGetVarLongName (h, i, lvn$, 128); 
+\par \tab writeln ("Variable ", i, ": ", vn$, "     ", lvn$); 
+\par \tab StaGetVarFormat (h, i, wid, dec, type, subt); 
+\par \tab writeln ("Format: ", wid, ".", dec); 
+\par \tab StaGetVarMD (h, i, md); 
+\par \tab writeln ("Missing Data: ", md) 
+\par end; 
+\par writeln; 
+\par  
+\par writeln ("Case names:"); 
+\par writeln; 
+\par cnl := StaGetCaseNameLength (h); 
+\par if cnl = 0 then 
+\par \tab writeln ("No case names in this file") 
+\par else 
+\par begin 
+\par \tab writeln ("CN Length: ", cnl); 
+\par \tab for i := 1 to nc do 
+\par \tab begin 
+\par \tab \tab StaGetCaseName (h, i, cn$, 20);   
+\par \tab \tab writeln ("Case # ", i, ": ", cn$) 
+\par \tab end 
+\par end; 
+\par  
+\par for i := 1 to nc do 
+\par begin 
+\par \tab writeln ("Case # ", i, ":"); 
+\par \tab for j := 1 to nv do 
+\par \tab begin 
+\par \tab \tab StaGetData (h, j, i, d); 
+\par \tab \tab write (d); 
+\par \tab \tab if 0 <> StaGetLabelForValue (h, j, d, lab$) then 
+\par \tab \tab begin 
+\par \tab \tab \tab write ("(", lab$); 
+\par \tab \tab \tab if 0 <> StaGetLongLabelForValue (h, j, d, llab$, 128) then 
+\par \tab \tab \tab \tab write (",", llab$); 
+\par \tab \tab \tab write (") ") 
+\par \tab \tab end 
+\par \tab end; 
+\par \tab writeln; 
+\par end; 
+\par  
+\par StaCloseFile (h); 
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.1.3.\tab Creating a new file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example creates a new data file with 3 variables and 5 cases and fills it with random numbers:
+\par }{
+\par }{\f2\fs16 \{$I:\rquote stadev.inc\rquote \}
+\par handle := StaCreateFile (3, 5, "e:\\myfiles\\test.sta");
+\par 
+\par StaSetVarName (handle, 1, "ABC");
+\par StaSetVarName (handle, 2, "MIDDLE");
+\par StaSetVarName (handle, 3, "XYZ");
+\par 
+\par for i := 1 to 3 do
+\par   for j := 1 to 5 do
+\par     StaSetData (handle, i, j, rnd(10));
+\par 
+\par StaCloseFile (han dle);
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.1.4.\tab Modifying an existing file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+\par }{
+\par }{\f2\fs16 \{$I:\rquote stadev.inc\rquote \}
+\par handle := StaOpenFile ("c:\\data.sta");
+\par   \{add variable number 5\}
+\par StaAddVars (handle, 4, 1); 
+\par   \{set new variable name\}
+\par StaSetVarName (handle, 5, "BHPH");
+\par   \{insert some values\}
+\par NC := StaGetNCases (handle);
+\par for i := 1 to NC do
+\par   StaSetData (handle, 5, i, i * 10);
+\par   \{add text labels\}
+\par StaAddLabel (handle, 5, 10, "A", "long label for A");
+\par StaAddLabel (handle, 5, 20, "B", "long label for B");
+\par   \{close the handle\}
+\par StaCloseFile (handle);
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {2.2.\tab C/C++
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 To use it from C/C++:
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 i) \tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pnlcrm\pnb0\pni0\pnf1\pnfs20\pnstart1\pnindent360\pnhang{\pntxta ) }}\ls3\adjustright {\f1 
+include the Development Environment include file ( }{\f2 #include }{\f2\fs16 "}{\f2 stadev.h}{\f2\fs16 " }{\f1 ) into the source file where you will call the library functions;
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 ii) \tab}call desired functions, as shown in examples below; 
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 iii) \tab}link stadev.dll (for 16-bit programs) or stadev32.dll (for 32-bit programs) to your program.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.2.1.\tab Reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example dumps to a text file all information about the }{\i\f1 STATISTICA}{\f1  data file, including variable specifications and data values with labels:
+\par }{
+\par }{\f2\fs16    HSTAFILE hSta;
+\par    FILE * hOut;
+\par 
+\par    hOut = fopen ("c:\\\\stat\\\\sdevout.txt", "w+");
+\par    if ( hOut == NULL ) \{
+\par       MessageBox (NULL, "Cannot open text output file !!!", "Error", MB_OK);
+\par       return;
+\par    \}
+\par    hSta = StaOpenFile ("c:\\\\stat\\\\examples\\\\adstudy.sta");
+\par    if ( hSta == 0 ) \{
+\par       MessageBox (NULL, "Cannot open requested STATISTICA file !!!", "Error", MB_OK);
+\par       fclose (hOut);
+\par       return;
+\par    \}
+\par    fputs ("STATISTICA file information\\n\\n", hOut);
+\par    fputs ("File name: ", hOut);
+\par    fputs (FileName, hOut);
+\par    fputc ('\\n', hOut);
+\par     
+\par    short nv = StaGetNVars (hSta); 
+\par    fprintf (hOut, "Number of variables: %d\\n", nv);
+\par     
+\par    long nc = StaGetNCases (hSta);
+\par    fprintf (hOut, "Number of cases: %ld\\n", nc);
+\par 
+\par    char fh[STAMAX_HEADERLEN+1];
+\par    StaGetFileHeader (hSta, fh, sizeof(fh));
+\par    fprintf (hOut, "File header: %s\\n", fh); 
+\par     
+\par    char Varname[STAMAX_VARNAMELEN+1],
+\par         LongVN[STAMAX_LONGVARNAMELEN+1];
+\par    Varname[STAMAX_VARNAMELEN] = 0;
+\par    LongVN[STAMAX_LONGVARNAMELEN] = 0;
+\par    short wid, dec, type, subt;
+\par    double MD;
+\par    short i;
+\par    fprintf (hOut, "\\nVariable specs:\\n"); 
+\par    for (i=1; i <= nv; i++ ) \{
+\par       StaGetVarName (hSta, i, Varname); 
+\par       if ( RES_ERR == StaGetVarLongName (hSta, i, LongVN, sizeof(LongVN)) )
+\par          *LongVN = 0;
+\par       fprintf (hOut, "Variable %d: %s, %s\\n", i, Varname, LongVN); 
+\par       StaGetVarFormat (hSta, i, &wid, &dec, &type, &subt); 
+\par       fprintf (hOut, "Format: %d.%d; Type: %d, Subtype: %d\\n", wid, dec, type, subt); 
+\par       StaGetVarMD (hSta, i, &MD); 
+\par       fprintf (hOut, "Missing Data: %f\\n\\n", MD);
+\par    \}
+\par 
+\par    fprintf (hOut, "Case names:\\n");
+\par    short cnl = StaGetCaseNameLength (hSta);
+\par    long j;
+\par    char Casename[STAMAX_CASENAMELEN+1];
+\par    Casename[STAMAX_CASENAMELEN] = 0;
+\par    if ( cnl == 0 )
+\par       fputs ("No case names in this file", hOut);
+\par    else \{
+\par       fprintf (hOut, "Case name length: %d\\n", cnl); 
+\par       for (j=1; j <= nc; j++ ) \{
+\par          StaGetCaseName (hSta, j, Casename, sizeof(Casename));
+\par          fprintf (hOut, "Case # %d: %s\\n", j, Casename);
+\par       \}
+\par    \}
+\par    
+\par    double d;
+\par    char lab[STAMAX_SLABELLEN+1],
+\par         llab[STAMAX_LLABELLEN+1];
+\par    lab[STAMAX_SLABELLEN] = 0;
+\par    fputs ("\\nData dump:\\n\\n", hOut);
+\par    for ( j=1; j <= nc; j++ ) \{
+\par       fprintf (hOut, "\\nCase # %d:\\n", j); 
+\par       for ( i=1; i <= nv; i++ ) \{
+\par          StaGetData (hSta, i, j, &d); 
+\par          fprintf (hOut, " %5.1f", d);
+\par          if ( 0 != StaGetLabelForValue (hSta, i, d, lab) ) \{
+\par             fprintf (hOut, "(%s", lab);
+\par             memset (llab, 0, STAMAX_LLABELLEN+1);
+\par             if ( 0 != StaGetLongLabelForValue (hSta, i, d, llab, sizeof(llab)) )
+\par                fprintf (hOut, ", %s", llab); 
+\par             fputs (")   ", hOut);
+\par          \}
+\par       \}
+\par    \}
+\par 
+\par    StaCloseFile (hSta);
+\par    fclose (hOut);}{
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.2.2.\tab Creating a new file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+\par }{
+\par }{\f2\fs16    HSTAFILE handle = StaCreateFile (10, 10, "c:\\\\stat\\\\files\\\\newdata.sta");
+\par    if ( handle == 0 ) \{
+\par       MessageBox (NULL, "Cannot create STATISTICA file !!!", "Error", MB_OK);
+\par       return;
+\par    \}
+\par    // change names of 3 first variables:
+\par    StaSetVarName (handle, 1, "ABC");
+\par    StaSetVarName (handle, 2, "MIDDLE");
+\par    StaSetVarName (handle, 3, "XYZ");
+\par    // fill the file with random numbers:
+\par    srand( (unsigned)time( NULL ) );
+\par    for ( short i=1; i <= 10; i++ )
+\par       for ( long j=1; j <= 10; j++ )
+\par          StaSetData (handle, i, j, rand());
+\par    StaCloseFile (handle);}{
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.2.3.\tab Modifying existing file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+\par }{
+\par }{\f2\fs16    HSTAFILE handle = StaOpenFile ("c:\\\\stat\\\\files\\\\mydata.sta");
+\par    if ( handle == 0 ) \{
+\par       MessageBox (NULL, "Cannot create STATISTICA file !!!", "Error", MB_OK);
+\par       return;
+\par    \}
+\par    // add variable number 5:
+\par    StaAddVars (handle, 4, 1);
+\par    // set new variable name:
+\par    StaSetVarName (handle, 5, "BHPH");
+\par    // insert some values:
+\par    long NC = StaGetNCases (handle);
+\par    for ( long i=1; i <= NC; i++ )
+\par       StaSetData (handle, 5, i, i * 10);
+\par    // add text labels:
+\par    StaAddLabel (handle, 5, 10, "A", "long label for A");
+\par    StaAddLabel (handle, 5, 20, "B", "long label for B");
+\par    // close the handle:
+\par    StaCloseFile (handle);}{
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {2.3.\tab Visual Basic (32 bit)
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 To use it from 32-bit Visual Basic:
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 i) \tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pnlcrm\pnb0\pni0\pnf1\pnfs20\pnstart1\pnindent360\pnhang{\pntxta ) }}\ls4\adjustright {\f1 
+create a module containing STATISTICA Development Environment VB header file (sd_vb32.inc);
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 ii) \tab}call desired functions, as shown in examples below; 
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 iii) \tab}put stadev32.dll on the path or in VB directory (so it is visible for VB run time).
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.3.1.\tab Reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example dumps to a debug window all information about the }{\i\f1 STATISTICA}{\f1  data file, including variable specifications and data values with labels:
+\par }\pard \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par Private Sub example1(fname$)
+\par 
+\par Debug.Print ("STATISTICA file information")
+\par 
+\par h = StaOpenFile(fname$)
+\par If h = 0 Then Exit Sub
+\par Debug.Print "File name:", fname$
+\par  
+\par nv = StaGetNVars(h)
+\par Debug.Print "Number of variables:", nv
+\par  
+\par nc = StaGetNCases(h)
+\par Debug.Print "Number of cases:", nc
+\par  
+\par Dim fh(STAMAX_HEADERLEN + 1) As Byte
+\par res = StaGetFileHeader(h, fh(0), STAMAX_HEADERLEN + 1)
+\par Debug.Print "File header:", BytesToString(fh)
+\par 
+\par Dim vn(STAMAX_VARNAMELEN + 1) As Byte
+\par Dim lvn(STAMAX_LONGVARNAMELEN + 1) As Byte
+\par Dim wid As Integer
+\par Dim dec As Integer
+\par Dim typ As Integer
+\par Dim subt As Integer
+\par Dim md As Double
+\par Debug.Print "Variable specs:"
+\par For i = 1 To nv
+\par     res = StaGetVarName(h, i, vn(0))
+\par     res = StaGetVarLongName(h, i, lvn(0), STAMAX_LONGVARNAMELEN + 1)
+\par     Debug.Print "Variable ", i, ": ", BytesToString(vn), "     ", BytesToString(lvn)
+\par     res = StaGetVarFormat(h, i, wid, dec, typ, subt)
+\par     Debug.Print "Format: ", wid, ".", dec
+\par     res = StaGetVarMD(h, i, md)
+\par     Debug.Print "Missing Data: ", md
+\par Next i
+\par  
+\par Dim cn(STAMAX_CASENAMELEN + 1) As Byte
+\par Debug.Print "Case names:"
+\par cnl = StaGetCaseNameLength(h)
+\par If cnl = 0 Then
+\par     Debug.Print "No case names in this file"
+\par Else
+\par     Debug.Print "CN Length: ", cnl
+\par     For i = 1 To nc
+\par         res = StaGetCaseName(h, i, cn(0), 20)
+\par         Debug.Print "Case # ", i, ": ", BytesToString(cn)
+\par     Next i
+\par End If
+\par  
+\par Dim d As Double
+\par Dim lab(STAMAX_SLABELLEN + 1) As Byte
+\par Dim llab(STAMAX_LLABELLEN + 1) As Byte
+\par For i = 1 To nc
+\par     Debug.Print "Case # ", i, ":"
+\par     For j = 1 To nv
+\par         res = StaGetData(h, j, i, d)
+\par         Debug.Print d
+\par         If 0 <> StaGetLabelForValue(h, j, d, lab(0)) Then
+\par             Debug.Print BytesToString(lab)
+\par             If 0 <> StaGetLongLabelForValue(h, j, d, llab(0), STAMAX_LLABELLEN + 1) Then
+\par                 Debug.Print BytesToString(llab)
+\par             End If
+\par         End If
+\par     Next j
+\par Next i
+\par StaCloseFile (h)
+\par End Sub
+\par  
+\par }\pard \keepn\nowidctlpar\widctlpar\adjustright {\f1 For this example you also need the following utility function in order to be able to pass string arguments by reference (they are actually passed as byte arrays and then converted to string):
+\par }\pard \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par Private Function BytesToString(byte_array() As Byte) As String
+\par ' convert byte array to string.
+\par Dim Data As String, StrLen As String
+\par Data = StrConv(byte_array(), vbUnicode)
+\par StrLen = InStr(Data, Chr(0)) - 1
+\par BytesToString = Left(Data, StrLen)
+\par End Function
+\par 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.3.2.\tab Creating a new file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+\par }{
+\par }{\f2\fs16 Private Sub example2(fname$)
+\par H = StaCreateFile(10, 10, fname$)
+\par If H = 0 Then Exit Sub
+\par 'change names of 3 first variables:
+\par res = StaSetVarName(H, 1, "ABC")
+\par res = StaSetVarName(H, 2, "MIDDLE")
+\par res = StaSetVarName(H, 3, "XYZ")
+\par 'fill the file with random numbers:
+\par For i = 1 To 10
+\par       For j = 1 To 10
+\par          res = StaSetData(H, i, j, Rnd)
+\par       Next j
+\par Next i
+\par StaCloseFile (H)
+\par Debug.Print "finished"
+\par End Sub
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.3.3.\tab Modifying existing file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+\par }{
+\par }{\f2\fs16 Private Sub example3(fname$)
+\par H = StaOpenFile(fname$)
+\par If H = 0 Then Exit Sub
+\par 'add variable number 5:
+\par res = StaAddVars(H, 4, 1)
+\par 'set new variable name:
+\par res = StaSetVarName(H, 5, "BHPH")
+\par 'insert some values:
+\par NC = StaGetNCases(H)
+\par For i = 1 To NC
+\par    res = StaSetData(H, 5, i, i * 10)
+\par Next i
+\par 'add text labels:
+\par res = StaAddLabel(H, 5, 10, "A", "long label for A")
+\par res = StaAddLabel(H, 5, 20, "B", "long label for B")
+\par 'close the file handle:
+\par StaCloseFile (H)
+\par Debug.Print "finished"
+\par End Sub
+\par }{
+\par }\pard \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par 
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {2.4.\tab Visual Basic (16 bit)
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 To use it from 16-bit Visual Basic:
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 i) \tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pnlcrm\pnb0\pni0\pnf1\pnfs20\pnstart1\pnindent360\pnhang{\pntxta ) }}\ls5\adjustright {\f1 
+create a module containing STATISTICA Development Environment VB header file (sd_vb16.inc);
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 ii) \tab}call desired functions, as shown in examples below; 
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 iii) \tab}put stadev.dll on the path or in VB directory (so it is visible for VB run time).
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.4.1.\tab Reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example dumps to a debug window all information about the }{\i\f1 STATISTICA}{\f1  data file, including variable specifications and data values with labels:
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 
+\par Private Sub example1(fname$)
+\par 
+\par Debug.Print ("STATISTICA file information")
+\par 
+\par H = StaOpenFile(fname$)
+\par If H = 0 Then Exit Sub
+\par Debug.Print "File name:", fname$
+\par  
+\par nv = StaGetNVars(H)
+\par Debug.Print "Number of variables:", nv
+\par  
+\par NC = StaGetNCases(H)
+\par Debug.Print "Number of cases:", NC
+\par  
+\par res = StaGetFileHeader(H, fh$, STAMAX_HEADERLEN + 1)
+\par Debug.Print "File header:", fh$
+\par 
+\par Dim wid As Integer
+\par Dim dec As Integer
+\par Dim typ As Integer
+\par Dim subt As Integer
+\par Dim md As Double
+\par Debug.Print "Variable specs:"
+\par For i = 1 To nv
+\par     res = StaGetVarName(H, i, vn$)
+\par     res = StaGetVarLongName(H, i, lvn$, STAMAX_LONGVARNAMELEN + 1)
+\par     Debug.Print "Variable ", i, ": ", vn$, "     ", lvn$
+\par     res = StaGetVarFormat(H, i, wid, dec, typ, subt)
+\par     Debug.Print "Format: ", wid, ".", dec
+\par     res = StaGetVarMD(H, i, md)
+\par     Debug.Print "Missing Data: ", md
+\par Next i
+\par  
+\par Debug.Print "Case names:"
+\par cnl = StaGetCaseNameLength(H)
+\par If cnl = 0 Then
+\par     Debug.Print "No case names in this file"
+\par Else
+\par     Debug.Print "CN Length: ", cnl
+\par     For i = 1 To NC
+\par         res = StaGetCaseName(H, i, cn$, 20)
+\par         Debug.Print "Case # ", i, ": ", cn$
+\par     Next i
+\par End If
+\par  
+\par Dim d As Double
+\par For i = 1 To NC
+\par     Debug.Print "Case # ", i, ":"
+\par     For j = 1 To nv
+\par         res = StaGetData(H, j, i, d)
+\par         Debug.Print d
+\par         If 0 <> StaGetLabelForValue(H, j, d, lab$) Then
+\par             Debug.Print "(", lab$
+\par             If 0 <> StaGetLongLabelForValue(H, j, d, llab$, STAMAX_LLABELLEN + 1) Then
+\par                 Debug.Print ",", llab$
+\par             End If
+\par             Debug.Print ") "
+\par         End If
+\par     Next j
+\par Next i
+\par  
+\par StaCloseFile (H)
+\par End Sub
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.4.2.\tab Creating a new file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 
+\par Private Sub example2(fname$)
+\par 
+\par H = StaCreateFile(10, 10, fname$)
+\par If H = 0 Then Exit Sub
+\par 'change names of 3 first variables:
+\par res = StaSetVarName(H, 1, "ABC")
+\par res = StaSetVarName(H, 2, "MIDDLE")
+\par res = StaSetVarName(H, 3, "XYZ")
+\par 'fill the file with random numbers:
+\par For i = 1 To 10
+\par       For j = 1 To 10
+\par          res = StaSetData(H, i, j, Rnd)
+\par       Next j
+\par Next i
+\par StaCloseFile (H)
+\par Debug.Print "finished"
+\par 
+\par End Sub
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.4.3.\tab Modifying existing file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+\par }{\f2\fs16 
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 Private Sub example3(fname$)
+\par H = StaOpenFile(fname$)
+\par If H = 0 Then Exit Sub
+\par 'add variable number 5:
+\par res = StaAddVars(H, 4, 1)
+\par 'set new variable name:
+\par res = StaSetVarName(H, 5, "BHPH")
+\par 'insert some values:
+\par NC = StaGetNCases(H)
+\par For i = 1 To NC
+\par    res = StaSetData(H, 5, i, i * 10)
+\par Next i
+\par 'add text labels:
+\par res = StaAddLabel(H, 5, 10, "A", "long label for A")
+\par res = StaAddLabel(H, 5, 20, "B", "long label for B")
+\par 'close the file handle:
+\par StaCloseFile (H)
+\par Debug.Print "finished"
+\par End Sub
+\par 
+\par 
+\par 
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {2.5.\tab Delphi
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 To use it from Delphi:
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 i) \tab}}\pard \fi-360\li360\nowidctlpar\widctlpar{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pnlcrm\pnb0\pni0\pnf1\pnfs20\pnstart1\pnindent360\pnhang{\pntxta ) }}\ls6\adjustright {\f1 
+include the stadev32 unit into your compilation:  uses StaDev32
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 ii) \tab}call desired functions, as shown in examples below; 
+\par {\pntext\pard\plain\f1\fs20 \hich\af1\dbch\af0\loch\f1 iii) \tab}put stadev32.dll in your path and in the Delphi search path
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.5.1.\tab Reading of data
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example dumps to a text file all information about the }{\i\f1 STATISTICA}{\f1  data file, including variable specifications and data values with labels:
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 
+\par procedure TestReadData;
+\par const
+\par    StatFileName = 'c:\\stat\\examples\\adstudy.sta';
+\par var
+\par    hSF: HSTAFILE;
+\par    Outfile: text;
+\par    NVars: smallint;
+\par    NCases: longint;
+\par    fh: array[0..STAMAX_HEADERLEN] of char;
+\par    VarName: array[0..STAMAX_VARNAMELEN] of char;
+\par    LongVN: array[0..STAMAX_LONGVARNAMELEN] of char;
+\par    Width, Decs, Typ, Subt: smallint;
+\par    MD: double;
+\par    i: integer;
+\par    CaseNameLen: smallint;
+\par    CaseName: array[0..STAMAX_CASENAMELEN] of char;
+\par    j: longint;
+\par    d: double;
+\par    lab: array[0..STAMAX_SLABELLEN] of char;
+\par    llab: array[0..STAMAX_LLABELLEN] of char;
+\par begin
+\par    AssignFile(OutFile, 'sdevout.txt');
+\par    Rewrite(Outfile);
+\par 
+\par    hSF := StaOpenFile(StatFileName);
+\par    if (hSF = 0) then
+\par       begin
+\par       writeln('ERROR: Could not open STATISTICA file');
+\par       Close(Outfile);
+\par       exit;
+\par       end;
+\par 
+\par    writeln(Outfile, 'STATISTICA file information'); writeln(Outfile);
+\par    writeln(Outfile, 'File name:', StatFileName);
+\par 
+\par    NVars := StaGetNVars(hSF);
+\par    writeln(Outfile, 'Number of variables = ', NVars);
+\par 
+\par    NCases := StaGetNCases(hSF);
+\par    writeln(Outfile, 'Number of cases = ', NCases);
+\par 
+\par    StaGetFileHeader(hSF, fh, sizeof(fh));
+\par    writeln(Outfile, 'File Header: ', fh);
+\par 
+\par    writeln(Outfile); writeln(Outfile, 'Variable specs:');
+\par    for i := 1 to NVars do
+\par       begin
+\par       StaGetVarName(hSF, i, VarName);
+\par       if (RES_ERR = StaGetVarLongName(hSF, i, LongVN, sizeof(LongVN))) then
+\par          LongVN[0] := chr(0);
+\par       writeln(Outfile, 'Variable ', i, ' ', VarName, ', ', LongVN);
+\par       StaGetVarFormat(hSF, i, @Width, @Decs, @Typ, @Subt);
+\par       writeln(Outfile, 'Format: ',Width,'.',Decs,'; Type: ', Typ, ', Subtype: ', Subt);
+\par       StaGetVarMD(hSF, i, @MD);
+\par       writeln(Outfile, 'Missing Data: ', MD); writeln(Outfile);
+\par       end;
+\par 
+\par    writeln(Outfile, 'Case names:');
+\par    CaseNameLen := StaGetCaseNameLength(hSF);
+\par    CaseName[0] := chr(0);
+\par    if (CaseNameLen = 0) then
+\par       writeln(Outfile, 'No case names in this file')
+\par    else
+\par       begin
+\par       writeln(Outfile, 'Case name length: ', CaseNameLen);
+\par       for j := 1 to NCases do
+\par          begin
+\par          StaGetCaseName(hSF, j, CaseName, sizeof(CaseName));
+\par          writeln(Outfile, 'Case # ', j, ': ', CaseName);
+\par          end;
+\par       end;
+\par 
+\par    lab[0] := chr(0);
+\par    writeln(Outfile);writeln(Outfile,'Data dump:'); writeln(Outfile);
+\par 
+\par    for j:= 1 to NCases do
+\par       begin
+\par       writeln(Outfile,chr(13),chr(10), 'Case # ', j,':');
+\par       for i := 1 to NVars do
+\par          begin
+\par          StaGetData(hSF, i, j, @d);
+\par          write(Outfile, d:5:1);
+\par          FillChar(lab, sizeof(lab), 0);
+\par          if (0 <> StaGetLabelForValue(hSF, i, d, lab)) then
+\par             begin
+\par             write(Outfile, '(', lab);
+\par             FillChar(llab, sizeof(llab), 0);
+\par             if (0 <> StaGetLongLabelForValue(hSF, i, d, llab, sizeof(llab))) then
+\par                write(Outfile, ', ', llab);
+\par             write(Outfile, ')   ');
+\par             end;
+\par          end;
+\par       end;
+\par 
+\par    StaCloseFile(hSF);
+\par    Close(Outfile);
+\par end;
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.5.2.\tab Creating a new file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example creates a new data file with 10 variables and 10 cases and fills it with random numbers:
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 
+\par procedure TestCreateFile;
+\par const
+\par    CreateFileName = 'c:\\stat\\files\\newdata.sta';
+\par var
+\par    hSF: HSTAFILE;
+\par    i: smallint;
+\par    j: longint;
+\par    d: double;
+\par begin
+\par    hSF := StaCreateFile(10, 10, CreateFileName);
+\par    if (0 = hSF) then
+\par       begin
+\par       writeln('Could not create STATISTICA file');
+\par       exit;
+\par       end;
+\par 
+\par    \{ change the names of the first three variables\}
+\par    StaSetVarName(hSF, 1, 'ABC');
+\par    StaSetVarName(hSF, 2, 'MIDDLE');
+\par    StaSetVarName(hSF, 3, 'XYZ');
+\par 
+\par    \{ fill the file with random numbers\}
+\par 
+\par    Randomize;
+\par    for i := 1 to 10 do
+\par       for j := 1 to 10 do
+\par          begin
+\par          StaSetData(hSF, i, j, Random);
+\par          end;
+\par 
+\par    StaCloseFile(hSF);
+\par end;
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {\ul 2.5.3.\tab Modifying existing file
+\par }\pard\plain \keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1 This example adds a variable to an existing data file, fills it with some numbers, and then adds two value labels:
+\par }{\f2\fs16 
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 procedure TestModifyFile;
+\par const
+\par    FileName = 'c:\\stat\\files\\newdata.sta';
+\par var
+\par    hSF: HSTAFILE;
+\par    NC: longint;
+\par    i: longint;
+\par begin
+\par    hSF := StaOpenFile(FileName);
+\par    if (hSF = 0) then
+\par       begin
+\par       writeln('Cannot open STATISTICA file !!!');
+\par       exit;
+\par       end;
+\par 
+\par    \{ add variable number 5\}
+\par    StaAddVars(hSF, 4, 1);
+\par 
+\par    \{ set new variable name\}
+\par    StaSetVarName(hSF, 5, 'BHPH');
+\par 
+\par    \{insert some values\}
+\par    NC := StaGetNCases(hSF);
+\par    for i := 1 to NC do
+\par       StaSetData(hSF, 5, i, i*10);
+\par 
+\par    \{ add text labels\}
+\par    StaAddLabel(hSF, 5, 10, 'A', 'long label for A');
+\par    StaAddLabel(hSF, 5, 20, 'B', 'long label for B');
+\par    StaCloseFile(hSF);
+\par end;
+\par }\pard\plain \s1\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28 {3.\tab Reference
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1 In this documentation, the term \ldblquote 1-based\rdblquote  means that indices for variables and cases start from 1 (rather than 0).
+\par The VB function prototypes are designed for use with 32-bit VB.  For 16-bit VB prototypes, please refer to section 4.2.1 (\ldblquote 16-bit VB Header\rdblquote ).
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {3.1.\tab Functions
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.1.\tab StaOpenFile
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HSTAFILE StaOpenFile (LPCSTR szFileName);
+\par VB\tab Declare Function StaOpenFile Lib "stadev32.dll" (ByVal szFileName As String) As Long
+\par ST Basic\tab Function StaOpenFile (szFileName) As Long
+\par Delphi \tab function StaOpenFile(szFileName: LPCSTR): HSTAFILE;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par szFileName\tab input file name
+\par Return Value\tab STATISTICA file handle if file successfully opened, 0 otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: this function opens a }{\i STATISTICA}{
+ data file, returning a handle to it. This handle is used in subsequent calls, and must be closed when finished by the corresponding StaCloseFile call.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {\i C/C++ Example:
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 HSTAFILE handle = StaOpenFile ("D:\\\\data\\\\adstudy.sta");
+\par if ( handle != 0 ) \{
+\par   nbcases = StaGetNCases (handle);
+\par   StaCloseFile (handle);
+\par \}
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.2.\tab StaCreateFile
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HSTAFILE StaCreateFile (short NVars, long NCases, LPCSTR szFileName); 
+\par VB\tab Declare Function StaCreateFile Lib "stadev32.dll" (ByVal NVars As Integer, ByVal NCases As Integer, ByVal szFileName As String) As Long
+\par ST Basic\tab FUNCTION StaCreateFile (NVars, NCases, szFileName) AS long;
+\par Delphi\tab function StaCreateFile(NVars: smallint; NCases: longint; szFileName: LPCSTR): HSTAFILE;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par NVars\tab number of variables
+\par NCases\tab number of cases
+\par szFileName\tab name of the file being created
+\par 
+\par Return Value\tab STATISTICA handle if file successfully opened, 0 otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: this function creates a }{\i STATISTICA}{ data file and returns a handle to it. This handle is used in subsequent calls, and must be closed when fin
+ished by the corresponding StaCloseFile call.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {\i C/C++ Example:
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 HSTAFILE handle = StaCreateFile (15, 17, "D:\\\\data\\\\new.sta");
+\par if ( handle != 0 ) \{
+\par   StaSetVarName(handle, 1, "DF2");
+\par   StaCloseFile (handle);
+\par \}
+\par }\pard \nowidctlpar\widctlpar\adjustright {
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.3.\tab StaCloseFile
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaCloseFile (HSTFILE hSF); 
+\par VB\tab Declare Function StaCloseFile Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par ST Basic\tab FUNCTION StaCloseFile (hSF) AS integer;
+\par Delphi\tab function StaCloseFile(hSF: HSTAFILE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: this function closes a previously opened/created }{\i STATISTICA}{ data file; after this call is made no other calls using hSF will succeed.  Every file opened via 
+StaCreateFile or StaOpenFile must be closed using StaCloseFile.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {\i C/C++ Example:
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 HSTAFILE handle = StaCreateFile (15, 17, "D:\\\\data\\\\new.sta");
+\par if ( handle != 0 ) \{
+\par   StaSetVarName(handle, 1, "DF2");
+\par   StaCloseFile (handle);
+\par \}
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.4.\tab StaGetNVars
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab short StaGetNVars (HSTAFILE hSF); 
+\par VB\tab Declare Function StaGetNVars Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par ST Basic\tab FUNCTION StaGetNVars (hSF) AS integer;
+\par Delphi\tab function StaGetNVars(hSF: HSTAFILE): smallint;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par 
+\par Return Value\tab number of variables if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function returns the number of variables in the }{\i STATISTICA}{ data file.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {\i STATISTICA BASIC Example:
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 handle := StaOpenFile ("D:\\\\data\\\\adstudy.sta");
+\par nv := StaGetNVars (handle);
+\par StaCloseFile (handle);
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.5.\tab StaGetNCases
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab long StaGetNCases (HSTAFILE hSF);
+\par VB\tab Declare Function StaGetNCases Lib "stadev32.dll" (ByVal hSF As Long) As Long
+\par ST Basic\tab FUNCTION StaGetNCases (hSF) AS long;
+\par Delphi\tab function StaGetNCases(hSF: HSTAFILE): longint;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par 
+\par Return Value\tab number of cases if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function returns the number of cases in the }{\i STATISTICA}{ data file.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.6.\tab StaSetFileHeader
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetFileHeader (HSTAFILE hSF, LPCSTR szHeader);
+\par VB\tab Declare Function StaSetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+\par ST Basic\tab FUNCTION StaSetFileHeader (hSF, szHeader) AS integer;
+\par Delphi\tab function StaSetFileHeader(hSF: HSTAFILE; szHeader: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par szHeader\tab string containing new file Header
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Functions changes the }{\i STATISTICA}{ data file header.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.7.\tab StaGetFileHeader
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetFileHeader (HSTAFILE hSF, LPSTR szHeader, short BL);
+\par VB\tab Declare Function StaGetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByRef szHeader As Byte, ByVal BL As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetFileHeader (hSF, szHeader, BL) AS integer;
+\par Delphi\tab function StaGetFileHeader(hSF: HSTAFILE; szHeader: LPSTR; BL: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par szHeader\tab buffer to store header
+\par BL\tab maximum length of the buffer
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the }{\i STATISTICA}{ data file header into the buffer szHeader. If the buffer is long enough, it terminates it with char 0.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.8.\tab StaSetVarName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetVarName (HSTAFILE hSF, short Var, LPCSTR szName);
+\par VB\tab Declare Function StaSetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+\par ST Basic\tab FUNCTION StaSetVarName (hSF, Var, szName) AS integer;
+\par Delphi\tab function StaSetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par szName\tab new name for the variable
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes the name of the specified variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.9.\tab StaGetVarName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetVarName (HSTAFILE hSF, short Var, LPSTR szName);
+\par VB\tab Declare Function StaGetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szName As Byte) As Integer
+\par ST Basic\tab FUNCTION StaGetVarName (hSF, Var, szName) AS integer;
+\par Delphi\tab function StaGetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par szName\tab buffer to store variable name
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the variable name for the specified variable. Buffer must be at least }{\f2 STAMAX_VARNAMELEN}{ characters long.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.10.\tab StaSetVarLongName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetVarLongName (HSTAFILE hSF, short Var, LPCSTR szLongName);
+\par VB\tab Declare Function StaSetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+\par ST Basic\tab FUNCTION StaSetVarLongName (hSF, Var, szLongName) AS integer;
+\par Delphi\tab function StaSetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par szLongName\tab long name
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes the long variable name for the specified variable.  If the new name is a formula, it will }{\ul not}{
+ be evaluated on assignment (i.e., values in the file will not be recalculated according to the formula).
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.11.\tab StaGetVarLongName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetVarLongName (HSTAFILE hSF, short Var, LPSTR szLongName, short BL);
+\par VB\tab Declare Function StaGetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As Byte, ByVal BL As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetVarLongName (hSF, Var, szLongName, BL) AS integer;
+\par Delphi\tab function StaGetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPSTR; BL: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par }\pard \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright {Var\tab 1-based variable number
+\par szLongName\tab buffer for long name
+\par BL\tab buffer length
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the long name for the specified variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.12.\tab StaSetVarFormat
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetVarFormat (HSTAFILE hSF, short Var, short width, short dec, short categ, short display);
+\par VB\tab Declare Function StaSetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+\par ST Basic\tab FUNCTION StaSetVarFormat (hSF, Var, width, dec, categ, display) AS integer;
+\par Delphi\tab function StaSetVarFormat(hSF: HSTAFILE; VarNum, Width, Decs, Categ, Display: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par width\tab display width
+\par dec\tab number of decimals
+\par categ\tab display category (date, time, etc.); 0 is the default
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {0\tab General numeric
+\par 1\tab Date
+\par 2 \tab Time (v5.0)
+\par 3\tab Special numeric (v5.0)}{
+\par }\pard \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright {display\tab display subtype within category:
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {'display' is unused for categ==0 (General numeric)
+\par 
+\par 'display' for categ==1 (date):
+\par }\pard \s17\li2160\keepn\nowidctlpar\widctlpar\tx2520\tx3960\adjustright {0\tab m/d/yy\tab }{3/6/87
+\par }{1\tab mm/dd/yy\tab }{03/06/87
+\par }{2\tab d-mmm-yy\tab }{6-Mar-87
+\par }{3\tab d-mmm\tab }{6-Mar
+\par }{4\tab mmm-yyyy\tab }{Mar-1987
+\par }{5\tab dd/mm/yy\tab }{06/03/87
+\par }{6\tab yyyy/mm/dd\tab }{1987/03/06
+\par 7\tab Windows Format (localized settings)
+\par 
+\par 'display' for categ==2 (time):
+\par }{0\tab m/d/yy h:mm AM\tab }{3/6/87 10:30 PM
+\par }{1\tab yy/mm/dd h:mm\tab }{87/03/06 22:30 
+\par }{2\tab h:mm AM\tab }{10:30 PM
+\par }{3\tab h:mm\tab }{22:30
+\par }{4\tab h:mm:ss am\tab }{10:30:23 PM\tab \tab 
+\par }{5\tab h:mm:ss\tab }{22:30:23\tab \tab 
+\par 6 \tab Windows Format (localized settings)
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {
+\par 'display' for categ==3 (special numeric):
+\par 0\tab Scientific notation (general)\tab \tab \tab 
+\par 1\tab Scientific notation (small values)
+\par 2\tab Currency, negatives in ()'s
+\par 3\tab Currency, negatives with '-'
+\par 4\tab Percentages
+\par 5\tab number; separated 
+\par 6\tab number, not separated, negative in ()'s
+\par 7\tab number, separated, negatives in ()'s
+\par 
+\par Note: 'separated' refers to localized digit separator as defined by Windows; in US version this is a comma (i.e. 1,000).}{
+\par }\pard \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright {
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Functions changes the display format specification for the passed variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.13.\tab StaGetVarFormat
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetVarFormat (HSTAFILE hSF, short Var, short FAR * lpWidth, short FAR * lpDec, short FAR * lpCateg, short FAR * lpDisplay);
+\par VB\tab Declare Function StaGetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetVarFormat (hSF, Var, lpWidth, lpDec, lpCateg, lpDisplay) AS integer;
+\par Delphi\tab function StaGetVarFormat(hSF: HSTAFILE; VarNum: smallint; Width, Decs, Categ, Display: PSHORT): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par lpWidth\tab returned width
+\par lpDec\tab returned number of decimals
+\par lpCateg\tab returned display category
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {0\tab General numeric
+\par 1\tab Date
+\par 2 \tab Time (v5.0)
+\par 3\tab Special numeric (v5.0)
+\par }\pard \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright {lpDisplay\tab returned display subtype within category
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {'display' is unused for categ==0 (General numeric)
+\par 
+\par 'display' for categ==1 (date):
+\par }\pard \s17\li2160\keepn\nowidctlpar\widctlpar\tx2520\tx3960\adjustright {0\tab m/d/yy\tab 3/6/87
+\par 1\tab mm/dd/yy\tab 03/06/87
+\par 2\tab d-mmm-yy\tab 6-Mar-87
+\par 3\tab d-mmm\tab 6-Mar
+\par 4\tab mmm-yyyy\tab Mar-1987
+\par 5\tab dd/mm/yy\tab 06/03/87
+\par 6\tab yyyy/mm/dd\tab 1987/03/06
+\par 7\tab Windows Format (localized settings)
+\par 
+\par 'display' for categ==2 (time):
+\par 0\tab m/d/yy h:mm AM\tab 3/6/87 10:30 PM
+\par 1\tab yy/mm/dd h:mm\tab 87/03/06 22:30 
+\par 2\tab h:mm AM\tab 10:30 PM
+\par 3\tab h:mm\tab 22:30
+\par 4\tab h:mm:ss am\tab 10:30:23 PM\tab \tab 
+\par 5\tab h:mm:ss\tab 22:30:23\tab \tab 
+\par 6 \tab Windows Format (localized settings)
+\par }\pard \s17\fi-1440\li3600\keepn\nowidctlpar\widctlpar\tx2520\adjustright {
+\par 'display' for categ==3 (special numeric):
+\par 0\tab Scientific notation (general)\tab \tab \tab 
+\par 1\tab Scientific notation (small values)
+\par 2\tab Currency, negatives in ()'s
+\par 3\tab Currency, negatives with '-'
+\par 4\tab Percentages
+\par 5\tab number; separated 
+\par 6\tab number, not separated, negative in ()'s
+\par 7\tab number, separated, negatives in ()'s
+\par 
+\par Note: 'separated' refers to localized digit separator as defined by Windows; in US version this is a comma (i.e. 1,000).
+\par }\pard \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright {
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the display format specification for the passed variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.14.\tab StaSetVarMD
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetVarMD (HSTAFILE hSF, short Var, double MDValue);
+\par VB\tab Declare Function StaSetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+\par ST Basic\tab FUNCTION StaSetVarMD (hSF, Var, MDValue) AS integer;
+\par Delphi\tab function StaSetVarMD(hSF: HSTAFILE; VarNum: smallint; MDValue: double): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par MDValue\tab new missing data value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes the missing data value for a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.15.\tab StaGetVarMD
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetVarMD (HSTAFILE hSF, short Var, double FAR * lpMDVal);
+\par VB\tab Declare Function StaGetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+\par ST Basic\tab FUNCTION StaGetVarMD (hSF, Var, lpMDVal) AS integer;
+\par Delphi\tab function StaGetVarMD(hSF: HSTAFILE; VarNum: smallint; lpMDVal: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par lpMDVal\tab buffer for missing data value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the missing data value for specified variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.16.\tab StaGetAllMD
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetAllMD (HSTAFILE hSF, double FAR * lpMD);
+\par ST Basic\tab FUNCTION StaGetAllMD (hSF, lpMD) AS integer;
+\par Delphi\tab function StaGetAllMD(hSF: HSTAFILE; lpMD: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par lpMD\tab buffer for missing data values
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the array of missing data values for all variables, lpMD must be big enough to keep them.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.17.\tab StaSetCaseNameLength
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetCaseNameLength (HSTAFILE hSF, short CNLen);
+\par VB\tab Declare Function StaSetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+\par ST Basic\tab FUNCTION StaSetCaseNameLength (hSF, CNLen) AS integer;
+\par Delphi\tab function StaSetCaseNameLength(hSF: HSTAFILE; CNLen: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par CNLen\tab new length of case names
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes the length of the case names. If CNlen is less then the current length, case names will be truncated.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.18.\tab StaGetCaseNameLength
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab short StaGetCaseNameLength (HSTAFILE hSF);
+\par VB\tab Declare Function StaGetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par ST Basic\tab FUNCTION StaGetCaseNameLength (hSF) AS integer;
+\par Delphi\tab function StaGetCaseNameLength(hSF: HSTAFILE): smallint;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par 
+\par Return Value\tab case names length if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function returns the case name length.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.19.\tab StaSetCaseName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetCaseName (HSTAFILE hSF, long Case, LPCSTR szName);
+\par VB\tab Declare Function StaSetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+\par ST Basic\tab FUNCTION StaSetCaseName (hSF, Case, szName) AS integer;
+\par Delphi\tab function StaSetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Case\tab 1-based case number
+\par szName\tab new case name
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes the case name for specified case.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.20.\tab StaGetCaseName
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetCaseName (HSTAFILE hSF, long Case, LPSTR szName, short BL);
+\par VB\tab Declare Function StaGetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetCaseName (hSF, Case, szName, BL) AS integer;
+\par Delphi\tab function StaGetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPSTR; BL: short): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Case\tab case number
+\par szName\tab buffer to hold case name
+\par BL\tab buffer length
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves case name for specified case.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.21.\tab StaSetData
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetData (HSTAFILE hSF, short Var, long Case, double Value);
+\par VB\tab Declare Function StaSetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+\par ST Basic\tab FUNCTION StaSetData (hSF, Var, Case, Value) AS integer;
+\par Delphi\tab function StaSetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; Value: double): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Case\tab 1-based case number
+\par Value\tab new value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function changes a single cell at the specified location in the }{\i STATISTICA}{ data file.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.22.\tab StaGetData
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetData (HSTAFILE hSF, short Var, long Case, double FAR * lpValue);
+\par VB\tab Declare Function StaGetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+\par ST Basic\tab FUNCTION StaGetData (hSF, Var, Case, lpValue) AS integer;
+\par Delphi\tab function StaGetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; lpValue: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable
+\par Case\tab 1-based case
+\par lpValue\tab buffer for the value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves single cell of data at specified location.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.23.\tab StaSetCaseData
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaSetCaseData (HSTAFILE hSF, long Case, const double FAR * lpCase);
+\par Delphi\tab function StaSetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Case\tab 1-based case number
+\par lpCase\tab array of new values for case
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function sets new data values for all variables in the specifi
+ed case; lpCase must contain values for all variables. (The case name must not be included in the lpCase; in order to assign a case name, use function StaSetCaseName)
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.24.\tab StaGetCaseData
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetCaseData (HSTAFILE hSF, long Case, double FAR * lpCase);
+\par Delphi\tab function StaGetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Case\tab 1-based case number
+\par lpCase\tab array to store data values for all variables in a given case
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+Notes: Function retrieves data values for all variables in the specified case; lpCase must be large enough to contain values for all the variables.  (The case name is not included in the lp
+Case; in order to retrieve a case name, use function StaGetCaseName)
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.25.\tab StaGetLabelForValue
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLabel);
+\par VB\tab Declare Function StaGetLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As Byte) As Integer
+\par ST Basic\tab FUNCTION StaGetLabelForValue (hSF, Var, Value, szLabel) AS integer;
+\par Delphi\tab function StaGetLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel: LPSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Value\tab data value
+\par szLabel\tab buffer for label
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the text label associated with specified value in a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.26.\tab StaGetLongLabelForValue
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetLongLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLLabel, short BL);
+\par VB\tab Declare Function StaGetLongLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As Byte, ByVal BL As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetLongLabelForValue (hSF, Var, Value, szLLabel, BL) AS integer;
+\par Delphi\tab function StaGetLongLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLLabel: LPSTR; BL: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Value\tab data value
+\par szLLabel\tab buffer for long label
+\par BL\tab buffer length
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the long text label associated with specified value in a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.27.\tab StaGetValueForLabel
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaGetValueForLabel (HSTAFILE hSF, short Var, LPCSTR szLabel, double FAR * lpValue);
+\par VB\tab Declare Function StaGetValueForLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+\par ST Basic\tab FUNCTION StaGetValueForLabel (hSF, Var, szLabel, lpValue) AS integer;
+\par Delphi\tab function StaGetValueForLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR; lpValue: PDOUBLE): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par szLabel\tab text label
+\par lpValue\tab buffer for corresponding data value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function retrieves the numerical value associated with text label in a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.28.\tab StaAddLabel
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaAddLabel (HSTAFILE hSF, short Var, double Value, LPCSTR szLabel, LPCSTR szLongLabel); 
+\par VB\tab Declare Function StaAddLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+\par ST Basic\tab FUNCTION StaAddLabel (hSF, Var, Value, szLabel, szLongLabel) AS integer;
+\par Delphi\tab function StaAddLabel(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel, szLongLabel: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Value\tab data value
+\par szLabel\tab text label
+\par szLongLabel\tab long text label
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function adds (value, text label, long label) ass
+ociation to labels for a given variable. Note that if Value equals missing data for this variable, the function will automatically assign new value.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.29.\tab StaDeleteLabelForValue
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaDeleteLabelForValue (HSTAFILE hSF, short Var, double Value);
+\par VB\tab Declare Function StaDeleteLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+\par ST Basic\tab FUNCTION StaDeleteLabelForValue (hSF, Var, Value) AS integer;
+\par Delphi\tab function StaDeleteLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Value\tab data value
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function removes labels associated with a specified numeric value for a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.30.\tab StaDeleteLabel
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaDeleteLabel (HSTAFILE hSF, short Var, LPCSTR szLabel);
+\par VB\tab Declare Function StaDeleteLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+\par ST Basic\tab FUNCTION StaDeleteLabel (hSF, Var, szLabel) AS integer;
+\par Delphi\tab function StaDeleteLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par szLabel\tab text label
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function removes labels associated with a specified text label for a given variable.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.31.\tab StaAddVars
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaAddVars (HSTAFILE hSF, short After, short HowMany); 
+\par VB\tab Declare Function StaAddVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+\par ST Basic\tab FUNCTION StaAddVars (hSF, After, HowMany) AS integer;
+\par Delphi\tab function StaAddVars(hSF: HSTAFILE; After, HowMany: smallint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par After\tab after this variable new variables will be added
+\par HowMany\tab number of variables to be added
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function adds new variables to the }{\i STATISTICA}{ data file. The variables are assigned standard names for new variables (NEWVAR1, NEWVAR2,\'85
+), are formatted as numbers with 8.3 display, and receive standard Missing Data values of -9999.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.32.\tab StaAddCases
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaAddCases (HSTAFILE hSF, long After, long HowMany);
+\par VB\tab Declare Function StaAddCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+\par ST Basic\tab FUNCTION StaAddCases (hSF, After, HowMany) AS integer;
+\par Delphi\tab function StaAddCases(hSF: HSTAFILE; After, HowMany: longint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par After\tab after this case new cases will be added
+\par HowMany\tab number of cases to be added
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function adds cases to the }{\i STATISTICA}{ data file.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.33.\tab StaDeleteVars
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaDeleteVars (HSTAFILE hSF, short FromVar, short ToVar);
+\par VB\tab Declare Function StaDeleteVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+\par ST Basic\tab FUNCTION StaDeleteVars (hSF, FromVar, ToVar) AS integer;
+\par Delphi\tab function StaDeleteVars(hSF: HSTAFILE; FromVar, ToVar: smallint): HRES;
+\par 
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par FromVar\tab specifies first variable to be deleted
+\par ToVar\tab specifies last variable to be deleted
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function deletes variables in the specified range.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s18\fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.34.\tab StaDeleteCases
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES StaDeleteVars (HSTAFILE hSF, long FromCase, long ToCase);
+\par VB\tab Declare Function StaDeleteCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+\par ST Basic\tab FUNCTION StaDeleteCases (hSF, FromCase, ToCase) AS integer;
+\par Delphi\tab function StaDeleteCases(hSF: HSTAFILE; FromCase, ToCase: longint): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par FromCase\tab specifies first case to be deleted
+\par ToCase\tab specifies last case to be deleted
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function deletes cases in the specified range.
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par 
+\par 
+\par 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.35.\tab StaGetNumVarLabels
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES API_EXP StaGetNumVarLabels (HSTAFILE hSF, short Var, short FAR * lpNumLabels);
+\par VB\tab Declare Function StaGetNumVarLabels Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+\par ST Basic\tab FUNCTION StaGetNumVarLabels (hSF, Var, NumLabels) AS integer;
+\par Delphi\tab function StaGetNumVarLabels(hSF: HSTAFILE; VarNum: smallint; lpNumLabels: PSHORT): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par NumLabels\tab (output) number of labels for specified variable
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function returns (on NbLabels parameter) the number of labels for a given variable.
+\par 
+\par 
+\par 
+\par 
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.1.36.\tab StaGetVarLabelByIndex
+\par }\pard\plain \s16\fi-1152\li1152\keepn\nowidctlpar\widctlpar\adjustright \f1\fs20 {C/C++\tab HRES API_EXP StaGetVarLabelByIndex (HSTAFILE hSF, short Var, short Index,
+\par                                     double FAR * lpValue, LPSTR szLabel, LPSTR szLongLabel);
+\par VB\tab Declare Function StaGetVarLabelByIndex Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As Byte, ByRef szLongLabel As Byte) As Integer
+\par ST Basic\tab FUNCTION StaGetVarLabelByIndex (hSF, Var, Index, Value, szLabel, szLongLabel) AS integer;
+\par Delphi\tab function StaGetVarLabelByIndex (hSF: HSTAFILE; VarNum, index: smallint; lpValue: PDOUBLE; szLabel, szLongLabel: LPSTR): HRES;
+\par }\pard\plain \s17\fi-1440\li2160\keepn\nowidctlpar\widctlpar\adjustright \f1\fs16 {
+\par hSF\tab handle to STATISTICA file (returned from StaCreateFile or StaOpenFile)
+\par Var\tab 1-based variable number
+\par Index\tab 1-based index of requested value/label/long label set
+\par Value\tab (output) numeric value
+\par szLabel\tab (output) text label
+\par szLongLabel\tab (output) long label
+\par 
+\par Return Value\tab RES_OK if successful, RES_ERR otherwise
+\par }\pard\plain \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 
+\par }\pard\plain \s15\fi-1440\li1440\nowidctlpar\widctlpar\adjustright \f1\fs16 {Notes: Function returns the Index\rquote th value/label/long label set (on Value/szLabel/szLongLabel parameters, respectivel
+y) for a given variable.  This function along with StaGetNumVarLabels is intended for use in situations when you need to find all labels for a specified variable. Note that indexes of labels can be affected by adding new labels, deleting them etc. Therefo
+re, the recommended (and safe) way of using this function is: first, call StaGetNumVarLabels function to find out the number of labels for the variable, then retrieve them all in one loop.  
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {
+\par }\pard \fi-1440\li1440\keepn\nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par }\pard \nowidctlpar\widctlpar\adjustright {\f2\fs16 
+\par 
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {3.2.\tab Constants
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.1.\tab STAMAX_NVARS
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum number of variables in }{\i\f1\fs16 STATISTICA}{\f1\fs16  data file.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.2.\tab STAMAX_VARNAMELEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum length of a variable name.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.3.\tab STAMAX_LONGVARNAMELEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum length of variable long name.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.4.\tab STAMAX_CASENAMELEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum case name length.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.5.\tab STAMAX_SLABELLEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum length of variable label.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.6.\tab STAMAX_LLABELLEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum length of variable long label
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.7.\tab STAMAX_HEADERLEN
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum length of file header
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.8.\tab STAMAX_NB_SLAB
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum number of labels for a variable.
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.2.9.\tab STAMAX_NB_LLAB
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Maximum number of long labels for a variable.
+\par }{
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {3.3.\tab Types
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.3.1.\tab HSTAFILE
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Handle to structure holding information about }{\i\f1\fs16 STATISTICA}{\f1\fs16  files. The type used to represent it in different environments:
+\par C/C++\tab HSTAFILE
+\par VB\tab long
+\par ST/B\tab number
+\par Delphi\tab longint
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {3.3.2.\tab HRES
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f1\fs16 Type denoting values returned by various library functions. Possible values: RES_OK, RES_ERR.
+\par }{
+\par }\pard\plain \s1\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\kerning28 {4.\tab \page Headers
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {4.1.\tab C/C++ Header
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 /*****************************************************************************
+\par *   C/C++ Header File for STATISTICA Development Environment                 *
+\par *   Copyright (c) 1997 by StatSoft, Inc.                                     *
+\par *****************************************************************************/
+\par 
+\par #ifndef _STADEV_H
+\par #define _STADEV_H
+\par 
+\par #ifdef _WIN32
+\par #define     API_EXP  __declspec( dllimport )
+\par #else
+\par #define     API_EXP  FAR PASCAL
+\par #endif
+\par 
+\par typedef\tab \tab long  HSTAFILE;
+\par typedef\tab \tab short HRES;
+\par 
+\par #define     STAMAX_NVARS            4092
+\par #define     STAMAX_VARNAMELEN       8
+\par #define     STAMAX_LONGVARNAMELEN   128
+\par #define     STAMAX_CASENAMELEN      20
+\par #define     STAMAX_SLABELLEN        8
+\par #define     STAMAX_LLABELLEN        40
+\par #define     STAMAX_HEADERLEN        80
+\par #define     STAMAX_NB_SLAB          2200
+\par #define     STAMAX_NB_LLAB          720
+\par 
+\par #define     RES_OK   1
+\par #define     RES_ERR  0
+\par 
+\par extern "C" \{
+\par HSTAFILE API_EXP StaOpenFile (LPCSTR szFileName);
+\par HSTAFILE API_EXP StaCreateFile (short NVars, long NCases, LPCSTR szFileName); 
+\par HRES API_EXP StaCloseFile (HSTAFILE hSF);
+\par 
+\par short API_EXP StaGetNVars (HSTAFILE hSF);
+\par long API_EXP StaGetNCases (HSTAFILE hSF);
+\par HRES API_EXP StaAddVars (HSTAFILE hSF, short After, short HowMany);
+\par HRES API_EXP StaDeleteVars (HSTAFILE hSF, short From, short To);
+\par HRES API_EXP StaAddCases (HSTAFILE hSF, long After, long HowMany);
+\par HRES API_EXP StaDeleteCases (HSTAFILE hSF, long From, long To);
+\par 
+\par HRES API_EXP StaSetFileHeader (HSTAFILE hSF, LPCSTR szHeader);
+\par HRES API_EXP StaGetFileHeader (HSTAFILE hSF, LPSTR szHeader, short BL);
+\par 
+\par HRES API_EXP StaSetVarName (HSTAFILE hSF, short Var, LPCSTR szName);
+\par HRES API_EXP StaGetVarName (HSTAFILE hSF, short Var, LPSTR szName);
+\par HRES API_EXP StaSetVarLongName (HSTAFILE hSF, short Var, LPCSTR szLongName);
+\par HRES API_EXP StaGetVarLongName (HSTAFILE hSF, short Var, LPSTR szLongName, short BL);
+\par 
+\par HRES API_EXP StaSetVarFormat (HSTAFILE hSF, short Var, short width, short dec, short categ, short display);
+\par HRES API_EXP StaGetVarFormat (HSTAFILE hSF, short Var, short FAR * lpWidth, short FAR * lpDec, short FAR * lpCateg, short FAR * lpDisplay);
+\par 
+\par HRES API_EXP StaSetVarMD (HSTAFILE hSF, short Var, double MDValue);
+\par HRES API_EXP StaGetVarMD (HSTAFILE hSF, short Var, double FAR * lpMDVal);
+\par HRES API_EXP StaGetAllMD (HSTAFILE hSF, double FAR * lpMD);
+\par 
+\par HRES API_EXP StaSetCaseNameLength (HSTAFILE hSF, short CNLen);
+\par short API_EXP StaGetCaseNameLength (HSTAFILE hSF);
+\par 
+\par HRES API_EXP StaSetCaseName (HSTAFILE hSF, long Case, LPCSTR szName);
+\par HRES API_EXP StaGetCaseName (HSTAFILE hSF, long Case, LPSTR szName, short BL);
+\par 
+\par HRES API_EXP StaSetData (HSTAFILE hSF, short Var, long Case, double Value);
+\par HRES API_EXP StaGetData (HSTAFILE hSF, short Var, long Case, double FAR * lpValue);
+\par HRES API_EXP StaSetCaseData (HSTAFILE hSF, long Case, const double FAR * lpCase);
+\par HRES API_EXP StaGetCaseData (HSTAFILE hSF, long Case, double FAR * lpCase);
+\par 
+\par HRES API_EXP StaGetLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLabel);
+\par HRES API_EXP StaGetLongLabelForValue (HSTAFILE hSF, short Var, double Value, LPSTR szLLabel, short BL);
+\par HRES API_EXP StaGetValueForLabel (HSTAFILE hSF, short Var, LPCSTR szLabel, double FAR * lpValue);
+\par 
+\par HRES API_EXP StaAddLabel (HSTAFILE hSF, short Var, double Value, LPCSTR szLabel, LPCSTR szLongLabel);
+\par HRES API_EXP StaDeleteLabelForValue (HSTAFILE hSF, short Var, double Value);
+\par HRES API_EXP StaDeleteLabel (HSTAFILE hSF, short Var, LPCSTR szLabel);
+\par HRES API_EXP StaGetNumVarLabels (HSTAFILE hSF, short Var, short FAR * lpNumLabels);
+\par HRES API_EXP StaGetVarLabelByIndex (HSTAFILE hSF, short Var, short index,
+\par                                     double FAR * lpValue, LPSTR szLabel,
+\par                                     LPSTR szLongLabel);
+\par \}
+\par 
+\par #endif
+\par 
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {4.2.\tab Visual Basic Header
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {4.2.1.\tab For 16-bit Visual Basic:
+\par }\pard\plain \s22\nowidctlpar\widctlpar\adjustright \f2\fs20 {\fs16 Rem     VB-16 Header File for STATISTICA Development Environment
+\par Rem     Copyright (c) 1997 by StatSoft, Inc.
+\par 
+\par Public Const STAMAX_NVARS = 4092
+\par Public Const STAMAX_VARNAMELEN = 8
+\par Public Const STAMAX_LONGVARNAMELEN = 128
+\par Public Const STAMAX_CASENAMELEN = 20
+\par Public Const STAMAX_SLABELLEN = 8
+\par Public Const STAMAX_LLABELLEN = 40
+\par Public Const STAMAX_HEADERLEN = 80
+\par Public Const STAMAX_NB_SLAB = 2200
+\par Public Const STAMAX_NB_LLAB = 720
+\par 
+\par Public Const RES_OK = 1
+\par Public Const RES_ERR = 0
+\par 
+\par Declare Function StaDevVersion Lib "stadev.dll" () As Long
+\par Declare Function StaOpenFile Lib "stadev.dll" (ByVal szFileName As String) As Long
+\par Declare Function StaCreateFile Lib "stadev.dll" (ByVal NVars As Integer, ByVal NCases As Long, ByVal szFileName As String) As Long
+\par Declare Function StaCloseFile Lib "stadev.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaGetNVars Lib "stadev.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaGetNCases Lib "stadev.dll" (ByVal hSF As Long) As Long
+\par Declare Function StaAddVars Lib "stadev.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+\par Declare Function StaDeleteVars Lib "stadev.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+\par Declare Function StaAddCases Lib "stadev.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+\par Declare Function StaDeleteCases Lib "stadev.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+\par Declare Function StaSetFileHeader Lib "stadev.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+\par Declare Function StaGetFileHeader16 Lib "stadev.dll" Alias "StaGetFileHeader" (ByVal hSF As Long, ByVal szHeader As String, ByVal BL As Integer) As Integer
+\par Declare Function StaSetVarName Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+\par Declare Function StaGetVarName16 Lib "stadev.dll" Alias "StaGetVarName" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+\par Declare Function StaSetVarLongName Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+\par Declare Function StaGetVarLongName16 Lib "stadev.dll" Alias "StaGetVarLongName" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String, ByVal BL As Integer) As Integer
+\par Declare Function StaSetVarFormat Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+\par Declare Function StaGetVarFormat Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+\par Declare Function StaSetVarMD Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+\par Declare Function StaGetVarMD Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+\par Declare Function StaSetCaseNameLength Lib "stadev.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+\par Declare Function StaGetCaseNameLength Lib "stadev.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaSetCaseName Lib "stadev.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+\par Declare Function StaGetCaseName16 Lib "stadev.dll" Alias "StaGetCaseName" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+\par Declare Function StaSetData Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+\par Declare Function StaGetData Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+\par Declare Function StaGetLabelForValue16 Lib "stadev.dll" Alias "StaGetLabelForValue" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String) As Integer
+\par Declare Function StaGetLongLabelForValue16 Lib "stadev.dll" Alias "StaGetLongLabelForValue" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLLabel As String, ByVal BL As Integer) As Integer
+\par Declare Function StaGetValueForLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+\par Declare Function StaAddLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+\par Declare Function StaDeleteLabelForValue Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+\par Declare Function StaDeleteLabel Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+\par Declare Function StaGetNumVarLabels Lib "stadev.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+\par Declare Function StaGetVarLabelByIndex16 Lib "stadev.dll" Alias "StaGetVarLabelByIndex" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+\par 
+\par Function StaGetFileHeader(ByVal hSF As Long, ByRef szHeader As String, ByVal BL As Integer) As Integer
+\par     Dim s As String
+\par     s = String(BL, Chr(0))
+\par     res = StaGetFileHeader16(hSF, s, BL)
+\par     szHeader = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetFileHeader = res
+\par End Function
+\par 
+\par Function StaGetVarName(ByVal hSF As Long, ByVal Var As Integer, ByRef szName As String) As Integer
+\par     Dim s As String
+\par     s = String(STAMAX_VARNAMELEN + 1, Chr(0))
+\par     res = StaGetVarName16(hSF, Var, s)
+\par     szName = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetVarName = res
+\par End Function
+\par 
+\par Function StaGetVarLongName(ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As String, ByVal BL As Integer) As Integer
+\par     Dim s As String
+\par     s = String(BL + 1, Chr(0))
+\par     res = StaGetVarLongName16(hSF, Var, s, BL)
+\par     szLongName = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetVarLongName = res
+\par End Function
+\par 
+\par Function StaGetCaseName(ByVal hSF As Long, ByVal CaseNo As Long, ByRef szName As String, ByVal BL As Integer) As Integer
+\par     Dim s As String
+\par     s = String(BL + 1, Chr(0))
+\par     res = StaGetCaseName16(hSF, CaseNo, s, BL)
+\par     szName = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetCaseName = res
+\par End Function
+\par 
+\par Function StaGetLabelForValue(ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As String) As Integer
+\par     Dim s As String
+\par     s = String(STAMAX_SLABELLEN + 1, Chr(0))
+\par     res = StaGetLabelForValue16(hSF, Var, Value, s)
+\par     szLabel = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetLabelForValue = res
+\par End Function
+\par 
+\par Function StaGetLongLabelForValue(ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As String, ByVal BL As Integer) As Integer
+\par     Dim s As String
+\par     s = String(BL + 1, Chr(0))
+\par     res = StaGetLongLabelForValue16(hSF, Var, Value, s, BL)
+\par     szLLabel = Left(s, InStr(s, Chr(0)) - 1)
+\par     StaGetLongLabelForValue = res
+\par End Function
+\par 
+\par Function StaGetVarLabelByIndex (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As String, ByRef szLongLabel As String) As Integer
+\par     Dim s As String
+\par     Dim s1 as String
+\par     s = String(STAMAX_SLABELLEN + 1, Chr(0))
+\par     s1 = String(STAMAX_LLABELLEN + 1, Chr(0))
+\par     res = StaGetVarLabelByIndex16(hSF, Var, Index, Value, s, s1)
+\par     szLabel = Left(s, InStr(s, Chr(0)) - 1)
+\par     szLongLabel = Left(s1, InStr(s1, Chr(0)) - 1)
+\par     StaGetVarLabelByIndex = res
+\par End Function
+\par }\pard\plain \s3\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {4.2.2.\tab For 32-bit Visual Basic:
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 Rem     VB Header File for STATISTICA Development Environment
+\par Rem     Copyright (c) 1997 by StatSoft, Inc.
+\par 
+\par Public Const STAMAX_NVARS = 4092
+\par Public Const STAMAX_VARNAMELEN = 8
+\par Public Const STAMAX_LONGVARNAMELEN = 128
+\par Public Const STAMAX_CASENAMELEN = 20
+\par Public Const STAMAX_SLABELLEN = 8
+\par Public Const STAMAX_LLABELLEN = 40
+\par Public Const STAMAX_HEADERLEN = 80
+\par Public Const STAMAX_NB_SLAB = 2200
+\par Public Const STAMAX_NB_LLAB = 720
+\par 
+\par Public Const RES_OK = 1
+\par Public Const RES_ERR = 0
+\par 
+\par Declare Function StaDevVersion Lib "stadev32.dll" () As Long
+\par Declare Function StaOpenFile Lib "stadev32.dll" (ByVal szFileName As String) As Long
+\par Declare Function StaCreateFile Lib "stadev32.dll" (ByVal NVars As Integer, ByVal NCases As Integer, ByVal szFileName As String) As Long
+\par Declare Function StaCloseFile Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaGetNVars Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaGetNCases Lib "stadev32.dll" (ByVal hSF As Long) As Long
+\par Declare Function StaAddVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Integer, ByVal HowMany As Integer) As Integer
+\par Declare Function StaDeleteVars Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromVar As Integer, ByVal ToVar As Integer) As Integer
+\par Declare Function StaAddCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal After As Long, ByVal HowMany As Long) As Integer
+\par Declare Function StaDeleteCases Lib "stadev32.dll" (ByVal hSF As Long, ByVal FromCase As Long, ByVal ToCase As Long) As Integer
+\par Declare Function StaSetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByVal szHeader As String) As Integer
+\par Declare Function StaGetFileHeader Lib "stadev32.dll" (ByVal hSF As Long, ByRef szHeader As Byte, ByVal BL As Integer) As Integer
+\par Declare Function StaSetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szName As String) As Integer
+\par Declare Function StaGetVarName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szName As Byte) As Integer
+\par Declare Function StaSetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLongName As String) As Integer
+\par Declare Function StaGetVarLongName Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef szLongName As Byte, ByVal BL As Integer) As Integer
+\par Declare Function StaSetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal width As Integer, ByVal dec As Integer, ByVal categ As Integer, ByVal display As Integer) As Integer
+\par Declare Function StaGetVarFormat Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpWidth As Integer, ByRef lpDec As Integer, ByRef lpCateg As Integer, ByRef lpDisplay As Integer) As Integer
+\par Declare Function StaSetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal MDValue As Double) As Integer
+\par Declare Function StaGetVarMD Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef lpMDVal As Double) As Integer
+\par Declare Function StaSetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long, ByVal CNLen As Integer) As Integer
+\par Declare Function StaGetCaseNameLength Lib "stadev32.dll" (ByVal hSF As Long) As Integer
+\par Declare Function StaSetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String) As Integer
+\par Declare Function StaGetCaseName Lib "stadev32.dll" (ByVal hSF As Long, ByVal CaseNo As Long, ByVal szName As String, ByVal BL As Integer) As Integer
+\par Declare Function StaSetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByVal Value As Double) As Integer
+\par Declare Function StaGetData Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal CaseNo As Long, ByRef Value As Double) As Integer
+\par Declare Function StaGetLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLabel As Byte) As Integer
+\par Declare Function StaGetLongLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByRef szLLabel As Byte, ByVal BL As Integer) As Integer
+\par Declare Function StaGetValueForLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String, ByRef lpValue As Double) As Integer
+\par Declare Function StaAddLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double, ByVal szLabel As String, ByVal szLongLabel As String) As Integer
+\par Declare Function StaDeleteLabelForValue Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Value As Double) As Integer
+\par Declare Function StaDeleteLabel Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal szLabel As String) As Integer
+\par Declare Function StaGetNumVarLabels Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByRef NumLabels As Integer) As Integer
+\par Declare Function StaGetVarLabelByIndex Lib "stadev32.dll" (ByVal hSF As Long, ByVal Var As Integer, ByVal Index As Integer, ByRef Value As Double, ByRef szLabel As Byte, ByRef szLongLabel As Byte) As Integer
+\par }\pard\plain \s2\fi-720\li720\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1 {4.3.\tab Delphi Unit
+\par }\pard\plain \nowidctlpar\widctlpar\adjustright \fs20 {\f2\fs16 \{-------------------------------------------------------
+\par    Delphi unit for STATISTICA Development Environment
+\par    Copyright (c) 1997 by StatSoft, Inc.
+\par -------------------------------------------------------\}
+\par 
+\par unit StaDev32;
+\par 
+\par interface
+\par 
+\par uses Windows;
+\par 
+\par type
+\par    HSTAFILE = longint;
+\par    HRES = smallint;
+\par    PSHORT = ^smallint;
+\par    PDOUBLE = ^double;
+\par 
+\par const
+\par    STAMAX_NVARS = 4092;
+\par    STAMAX_VARNAMELEN = 8;
+\par    STAMAX_LONGVARNAMELEN = 128;
+\par    STAMAX_CASENAMELEN = 20;
+\par    STAMAX_SLABELLEN = 8;
+\par    STAMAX_LLABELLEN = 40;
+\par    STAMAX_HEADERLEN = 80;
+\par    STAMAX_NB_SLAB = 2200;
+\par    STAMAX_NB_LLAB = 720;
+\par    RES_OK = 1;
+\par    RES_ERR = 0;
+\par 
+\par function StaDevVersion: longint; stdcall;
+\par function StaOpenFile(szFileName: LPCSTR): HSTAFILE; stdcall;
+\par function StaCreateFile(NVars: smallint; NCases: longint; szFileName: LPCSTR): HSTAFILE; stdcall;
+\par function StaCloseFile(hSF: HSTAFILE): HRES; stdcall;
+\par 
+\par function StaGetNVars(hSF: HSTAFILE): smallint; stdcall;
+\par function StaGetNCases(hSF: HSTAFILE): longint; stdcall;
+\par function StaAddVars(hSF: HSTAFILE; After, HowMany: smallint): HRES; stdcall;
+\par function StaDeleteVars(hSF: HSTAFILE; FromVar, ToVar: smallint): HRES; stdcall;
+\par function StaAddCases(hSF: HSTAFILE; After, HowMany: longint): HRES; stdcall;
+\par function StaDeleteCases(hSF: HSTAFILE; FromCase, ToCase: longint): HRES; stdcall;
+\par 
+\par function StaSetFileHeader(hSF: HSTAFILE; szHeader: LPCSTR): HRES; stdcall;
+\par function StaGetFileHeader(hSF: HSTAFILE; szHeader: LPSTR; BL: smallint): HRES; stdcall;
+\par 
+\par \{Variable Name functions\}
+\par function StaSetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPCSTR): HRES; stdcall;
+\par function StaGetVarName(hSF: HSTAFILE; VarNum: smallint; szName: LPSTR): HRES; stdcall;
+\par function StaSetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPCSTR): HRES; stdcall;
+\par function StaGetVarLongName(hSF: HSTAFILE; VarNum: smallint; szLongName: LPSTR; BL: smallint): HRES; stdcall;
+\par 
+\par \{Variable Format functions\}
+\par function StaSetVarFormat(hSF: HSTAFILE; VarNum, Width, Decs, Categ, Display: smallint): HRES; stdcall;
+\par function StaGetVarFormat(hSF: HSTAFILE; VarNum: smallint; Width, Decs, Categ, Display: PSHORT): HRES; stdcall;
+\par 
+\par \{Missing Data functions\}
+\par function StaSetVarMD(hSF: HSTAFILE; VarNum: smallint; MDValue: double): HRES; stdcall;
+\par function StaGetVarMD(hSF: HSTAFILE; VarNum: smallint; lpMDVal: PDOUBLE): HRES; stdcall;
+\par function StaGetAllMD(hSF: HSTAFILE; lpMD: PDOUBLE): HRES; stdcall;
+\par 
+\par \{Case Name functions\}
+\par function StaSetCaseNameLength(hSF: HSTAFILE; CNLen: smallint): HRES; stdcall;
+\par function StaGetCaseNameLength(hSF: HSTAFILE): smallint; stdcall;
+\par function StaSetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPCSTR): HRES; stdcall;
+\par function StaGetCaseName(hSF: HSTAFILE; CaseNum: longint; szName: LPSTR; BL: short): HRES; stdcall;
+\par 
+\par \{Data functions\}
+\par function StaSetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; Value: double): HRES; stdcall;
+\par function StaGetData(hSF: HSTAFILE; VarNum: smallint; CaseNum: longint; lpValue: PDOUBLE): HRES; stdcall;
+\par function StaSetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES; stdcall;
+\par function StaGetCaseData(hSF: HSTAFILE; CaseNum: longint; lpCase: PDOUBLE): HRES; stdcall;
+\par 
+\par \{Label functions\}
+\par function StaGetLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel: LPSTR): HRES; stdcall;
+\par function StaGetLongLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double; szLLabel: LPSTR; BL: smallint): HRES; stdcall;
+\par function StaGetValueForLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR; lpValue: PDOUBLE): HRES; stdcall;
+\par function StaAddLabel(hSF: HSTAFILE; VarNum: smallint; Value: double; szLabel, szLongLabel: LPCSTR): HRES; stdcall;
+\par function StaDeleteLabelForValue(hSF: HSTAFILE; VarNum: smallint; Value: double): HRES; stdcall;
+\par function StaDeleteLabel(hSF: HSTAFILE; VarNum: smallint; szLabel: LPCSTR): HRES; stdcall;
+\par function StaGetNumVarLabels(hSF: HSTAFILE; VarNum: smallint; lpNumLabels: PSHORT): HRES; stdcall;
+\par function StaGetVarLabelByIndex(hSF: HSTAFILE; VarNum, index: smallint; lpValue: PDOUBLE; szLabel, szLongLabel: LPSTR): HRES; stdcall;
+\par 
+\par implementation
+\par 
+\par const
+\par    stadev = 'stadev32.dll';
+\par 
+\par function StaDevVersion; external stadev name 'StaDevVersion';
+\par function StaOpenFile; external stadev name 'StaOpenFile';
+\par function StaCreateFile; external stadev name 'StaCreateFile';
+\par function StaCloseFile; external stadev name 'StaCloseFile';
+\par function StaGetNVars; external stadev name 'StaGetNVars';
+\par function StaGetNCases; external stadev name 'StaGetNCases';
+\par function StaAddVars; external stadev name 'StaAddVars';
+\par function StaDeleteVars; external stadev name 'StaDeleteVars';
+\par function StaAddCases; external stadev name 'StaAddCases';
+\par function StaDeleteCases; external stadev name 'StaDeleteCases';
+\par function StaSetFileHeader; external stadev name 'StaSetFileHeader';
+\par function StaGetFileHeader; external stadev name 'StaGetFileHeader';
+\par function StaSetVarName; external stadev name 'StaSetVarName';
+\par function StaGetVarName; external stadev name 'StaGetVarName';
+\par function StaSetVarLongName; external stadev name 'StaSetVarLongName';
+\par function StaGetVarLongName; external stadev name 'StaGetVarLongName';
+\par function StaSetVarFormat; external stadev name 'StaSetVarFormat';
+\par function StaGetVarFormat; external stadev name 'StaGetVarFormat';
+\par function StaSetVarMD; external stadev name 'StaSetVarMD';
+\par function StaGetVarMD; external stadev name 'StaGetVarMD';
+\par function StaGetAllMD; external stadev name 'StaGetAllMD';
+\par function StaSetCaseNameLength; external stadev name 'StaSetCaseNameLength';
+\par function StaGetCaseNameLength; external stadev name 'StaGetCaseNameLength';
+\par function StaSetCaseName; external stadev name 'StaSetCaseName';
+\par function StaGetCaseName; external stadev name 'StaGetCaseName';
+\par function StaSetData; external stadev name 'StaSetData';
+\par function StaGetData; external stadev name 'StaGetData';
+\par function StaSetCaseData; external stadev name 'StaSetCaseData';
+\par function StaGetCaseData; external stadev name 'StaGetCaseData';
+\par function StaGetLabelForValue; external stadev name 'StaGetLabelForValue';
+\par function StaGetLongLabelForValue; external stadev name 'StaGetLongLabelForValue';
+\par function StaGetValueForLabel; external stadev name 'StaGetValueForLabel';
+\par function StaAddLabel; external stadev name 'StaAddLabel';
+\par function StaDeleteLabelForValue; external stadev name 'StaDeleteLabelForValue';
+\par function StaDeleteLabel; external stadev name 'StaDeleteLabel';
+\par function StaGetNumVarLabels; external stadev name 'StaGetNumVarLabels';
+\par function StaGetVarLabelByIndex; external stadev name 'StaGetVarLabelByIndex';
+\par end.
+\par 
+\par 
+\par 
+\par }{\b\f1\fs28 Appendix A
+\par }\pard \sb120\nowidctlpar\widctlpar\adjustright {\f1 The following functions were added in Version 2 of STATISTICA Development Environment:
+\par }\pard\plain \s3\fi-720\li1440\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\fs20 {StaGetNumVarLabels 
+\par StaGetVarLabelByIndex 
+\par }}

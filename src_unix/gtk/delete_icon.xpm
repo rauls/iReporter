@@ -1,0 +1,33 @@
+/* XPM */
+static char *delete_icon[] = {
+/* width height num_colors chars_per_pixel */
+"    20    18        8            1",
+/* colors */
+". c #9c0000",
+"# c #9c6363",
+"a s None c None",
+"b c #ce0000",
+"c c #ce3131",
+"d c #ff0000",
+"e c #ff6300",
+"f c #ff9c31",
+/* pixels */
+"a#bb#aaaaaaaaaaaaaaa",
+"abfed.aaaaaaaaaaabaa",
+"aabfed.aaaaaaaab.aaa",
+"aaabbfd.aaaaaab.aaaa",
+"aaaaabbd.aaaab.aaaaa",
+"aaaaaaabd.aab.aaaaaa",
+"aaaaaaaabd.b.aaaaaaa",
+"aaaaaaaaabd.aaaaaaaa",
+"aaaaaaaabd.d.aaaaaaa",
+"aaaaaaabd.aad.aaaaaa",
+"aaaaaabd.aaaad.aaaaa",
+"aaaaabe.aaaaaad.aaaa",
+"aaaabfb.aaaaaaad.aaa",
+"aaacfd.aaaaaaaaadaaa",
+"aacfeb.aaaaaaaaaadaa",
+"aaced.aaaaaaaaaaaaaa",
+"aacd.aaaaaaaaaaaaada",
+"aaa.aaaaaaaaaaaaaaaa"
+};

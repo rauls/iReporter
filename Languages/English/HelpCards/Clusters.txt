@@ -1,0 +1,35 @@
+
+#  Help Card
+# Report: Load Balancing
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows whether or not the servers in your clustered environment are performing as expected. The bars on the graph should be as similar as possible. If there are major differences, there may be a problem with your load balancer. If certain servers have a higher amount of errors, maintenance work may be necessary.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Server Name.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Server Name:</b>
+Name given to the server, as specified in <i>Settings > Virtual > Clustering > Options > Server name</i>.
+
+<b>Hits (%):</b>
+Number of hits to files on the site that were accessed from the corresponding server. (Percentage as a proportion of files accessed from all servers in your web cluster.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits by the corresponding visitor. (Percentage as a proportion of the   bytes transferred as a result of files accessed from all servers in your web cluster.)
+
+<b>Cached Hits (%):</b>
+Number of cached hits to files on the site that were accessed from the corresponding server. (Percentage as a proportion of files accessed from all servers in your web cluster.)
+
+<b>Pages:</b>
+Number of pages that were accessed from the corresponding server.
+
+<b>Errors:</b>
+Errors generated as a result of hits to files being accessed from the corresponding server.

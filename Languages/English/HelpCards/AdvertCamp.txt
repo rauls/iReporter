@@ -1,0 +1,34 @@
+
+#  Help Card
+# Report: Advertising Campaigns
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report analyzes paid advertising campaigns that you may be running on another organization's web site. Use this information to determine the return on investment (ROI) of your campaigns, via the "cost/click" statistic.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Advertisement Name.
+Name given to the advertising campaign being analyzed, in <i>Settings > Advertising > Campaigns</i>.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits referred by the corresponding advertisement campaign. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Advertisement Name:</b>
+Name given to the advertising campaign being analyzed.
+
+<b>Hits (%):</b>
+Number of times site visitors were brought to your site as a result of the advertising campaign. (Percentage as a proportion of site visitors brought to your site as a result of all advertising campaigns.)
+
+<b>Cost/Month:</b>
+The cost of the advertising campaign per month, as specified in <i>Settings > Advertising > Campaigns</i>. 
+
+<b>Cost/Click:</b>
+The cost per click of the advertising campaign.
+
+<b>Errors:</b>
+Number of times visitors encountered an error after following an external advertising link.
+

@@ -1,0 +1,31 @@
+
+#  Help Card
+# Media Players
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most popular programs being used to access media files on your server. Use this information to ensure future media content development is for the more popular media players.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Media Player.
+Name of the media player being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits to the site using the corresponding media player. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors and pages.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Player:</b>
+Name of the media player being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors using the corresponding media player. (Percentage as a proportion of hits from all media players.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors using the corresponding media player. (Percentage as a proportion of bytes transferred from all media players.)
+
+<b>Visitors:</b>
+Number of site visitors who used the corresponding media player. This figure includes repeat visitors, so the total amount may appear higher than expected. 
+

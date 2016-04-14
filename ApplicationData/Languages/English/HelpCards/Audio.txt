@@ -1,0 +1,32 @@
+
+# Help Card
+# Report: Audio Clips
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report highlights the most popular audio clips being accessed on your site. This includes both streamed files and downloaded sound files. Use this information to assess your bandwidth requirements - audio clips are generally quite large in size, and will apply greater pressure on your Internet connection than normal web pages.
+
+Note that for a file to be recognized as an audio clip, its extension (such as .wma) must be specified in <i>Settings > Analysis > Extensions > Audio</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Audio Content.
+URL of the audio clip being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits to the corresponding audio clip. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Files:</b>
+URL of the audio clip being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the corresponding audio clip. (Percentage as a proportion of hits to all audio clips.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits to the corresponding audio clip. (Percentage as a proportion of bytes transferred for all audio clips.)
+
+<b>Errors:</b>
+Errors generated as a result of hits to the corresponding audio clip.

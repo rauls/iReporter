@@ -1,0 +1,24 @@
+
+# Help Card
+# Report: Exit Pages
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the pages on which visitors exited your site. Use this information to gauge whether your site is providing users with the content they're seeking. If your home page features prominently in this report, it suggests that visitors are either disinterested or cannot find the information they were looking for. Furthermore, if users are leaving your site before they can view more important information, it may indicate a need to review the site's structure, or to improve the content on earlier pages.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Pages.
+Name of the page at which visitors exited your site.
+
+<b>Horizontal axis:</b> Sessions. 
+Number of hits to the page which was the last in a session.
+
+<!--TABLE-->
+<b>Pages:</b>
+Name of the page being analyzed. The directory path shown is from the document root ("/") of your webserver. Click the hyperlink to view the page (note: for these links to work, you must specify your default hostname in <i>Settings > Analysis > Options > URL > Default host</i>.
+
+<b>Times exited on:</b>
+The number of times visitors exited your site at the corresponding page.
+
+<b>Errors:</b>
+Number of errors generated as a result of all hits to the corresponding page (this includes when the page was not an actual exit page, explaining instances where the number of errors exceeds the number of "times exited on").

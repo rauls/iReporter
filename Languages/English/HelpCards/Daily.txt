@@ -1,0 +1,46 @@
+
+#  Help Card
+# Report: Daily Traffic
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows a day-by-day summary of all dates in your report period. Use this information to assess the damage of unforeseen downtime, or to evaluate the effects of unusual or dramatic events that may have caused fluctuations in site traffic.
+
+This report may be affected by world time zones. Many webservers generate timestamps in Greenwich Mean Time (GMT+0), which may not be your local time zone. The time data in your logs can be adjusted to represent your local time zone, in <i>Settings > Analysis > Options > Date range > Time adjust</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Number of hits to the site. Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method (Visitors, Bytes, etc).  This report may be sorted by hits, bytes, sessions, visitors, pages or errors.
+
+<b>Horizontal axis:</b> Date.
+Representative of all dates in the report period.
+
+<b>Yellow line:</b> Average.
+This line shows the floating average hits during the report period.
+
+<b>Red line (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+
+<!--TABLE-->
+<b>Date:</b>
+Specfic date as the focus of analysis.
+
+<b>Hits (%):</b>
+Number of hits to the web site on the corresponding date. (Percentage as a proportion of hits generated on all dates in the report period.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits on the corresponding date. (Percentage as a proportion of bytes transferred on all dates in the report period.)
+
+<b>Sessions:</b>
+Total number of sessions undertaken on the corresponding date. This number includes sessions undertaken by 'repeat' visitors, that is, it is not representative of a 'unique' session count.
+
+<b>Visitors:</b>
+Total number of unique visitors who undertook one or more sessions on the corresponding day. Note that  this figure represents a unique daily visitor count, not a unique weekly visitor count (as a unique visitor for one day may return on another day). As such, the "Totals" value will be cumulative for the seven days (daily uniqueness is disregarded) and the overall value may therefore appear higher than expected.
+
+<b>Pages:</b>
+Number of pages viewed on the corresponding date.
+
+<b>Errors:</b>
+Errors generated as a result of hits to the site on the corresponding date.

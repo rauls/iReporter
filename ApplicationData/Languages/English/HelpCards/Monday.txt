@@ -1,0 +1,42 @@
+
+# Help Card
+# Report: Monday Traffic
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report details the hour-by-hour breakdown of traffic generated on all Mondays. Use this information to assess the damage of unforeseen downtime, or to find key traffic spikes that could be used to influence special features or promotions.
+
+This report may be affected by world time zones. Many webservers generate timestamps in Greenwich Mean Time (GMT+0), which may not be your local time zone. The time data in your logs can be adjusted to represent your local time zone, in <i>Settings > Analysis > Options > Date range > Time adjust</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Number of hits to the site. Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method (Visitors, Bytes, etc).  This report may be sorted by hits, bytes, sessions, visitors, pages or errors.
+
+<b>Horizontal axis:</b> Time
+The hour of the day.
+
+<b>Red line (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Time:</b>
+The hourly period of the corresponding day.
+
+<b>Hits (%):</b>
+Number of hits to the site during the corresponding hourly period. (Percentage as a proportion of hits to the site during the day's 24 hours.)
+
+<b>Bytes (%):</b>
+Number of bytes transferred as a result of hits to the site during the corresponding hourly period. For readability, these values may be suffixed with kilobytes (KB), megabytes (MB) or gigabytes (GB), where applicable. (Percentage as a proportion of bytes transferred during the day's 24 hours.)
+
+<b>Sessions:</b>
+Total number of sessions undertaken during the corresponding hourly period. This number includes sessions undertaken by 'repeat' visitors.
+
+<b>Visitors:</b>
+Total number of unique visitors who undertook one or more sessions during the corresponding hourly period. Note that this figure represents a unique hourly visitor count, not a unique daily visitor count (as a unique visitor for one hour may return in another hour). As such, the "Totals" value will be cumulative for the 24 hours and the overall totals for individual days may appear higher than expected.
+
+<b>Pages</b>
+Number of pages viewed during the corresponding hourly period.
+
+<b>Errors</b>
+Number of server errors generated as a result of hits to the site during the corresponding hourly period.
+

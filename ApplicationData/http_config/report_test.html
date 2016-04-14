@@ -1,0 +1,76 @@
+<html>
+
+<body bgcolor="#002e63">
+<form method="post" action="saveconfig.cgi" name="save">
+  <table border="0" cellspacing="0" cellpadding="0" width="583" height="254" vspace="0" hspace="0" bordercolorlight="#e0e0e0" bordercolordark="#f0f0f0">
+    <tr valign="middle"> 
+      <td align="left" nowrap height="36" valign="top" width="129" ><img src="tab_on_left.gif" width="129" height="36"></td>
+      <td align="center" nowrap background="tab_on_bg.gif" height="36" width="94"><font face="Tahoma, Arial, Helvetica"><b><font size="2" color="#FFFFFF">Output</font></b></font></td>
+      <td align="left" nowrap height="36" width="9"><img src="tab_on_end.gif" width="9" height="36"></td>
+      <td align="left" nowrap height="36" width="20"><img src="tab_off_start.gif" width="19" height="36"></td>
+      <td align="center" nowrap background="tab_off_bg.gif" height="36" width="58"><font face="Tahoma, Arial, Helvetica"><b><font size="2" color="#000000">Page</font></b></font></td>
+      <td align="left" nowrap height="36" width="9"><img src="tab_off_end.gif" width="9" height="36"></td>
+      <td align="left" nowrap height="36" width="20"><img src="tab_off_start.gif" width="19" height="36"></td>
+      <td align="center" nowrap background="tab_off_bg.gif" height="36" width="54"><font face="Tahoma, Arial, Helvetica"><b><font size="2" color="#000000">Style</font></b></font></td>
+      <td align="left" nowrap height="36" width="9"><img src="tab_off_end.gif" width="9" height="36"></td>
+      <td align="left" nowrap height="36" width="19"><img src="tab_off_start.gif" width="19" height="36"></td>
+      <td align="center" nowrap background="tab_off_bg.gif" height="36" width="78"><font face="Tahoma, Arial, Helvetica"><b><font size="2" color="#000000">PDF 
+        Style </font></b></font></td>
+      <td align="left" nowrap height="36" width="81" background="tab_end_bg.gif"><img src="tab_off_end.gif" width="9" height="36"></td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="right" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b> 
+        Location</b>: </font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"><b> 
+        <input type="text" name="out2" value="[OUT]" maxlength="256" size="80">
+        </b><b></b></td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="right" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Report 
+        format<b>: </b></b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"> 
+        <p><b> </b><b><b> 
+          <select name="select">
+            <option value="SELECTED" selected>HTML</option>
+            <option>HTML Framed</option>
+            <option>Word (RTF)</option>
+            <option>Comma Delimited</option>
+            <option>PDF</option>
+            <option>Excel</option>
+          </select>
+          </b></b></p>
+        <p>&nbsp;</p>
+      </td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="right" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Graphics:</b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"><b> 
+        <select name="select2">
+          <option selected>GIF</option>
+          <option>JPEG</option>
+          <option>PNG</option>
+        </select>
+        </b></td>
+    </tr>
+    <tr bgcolor="#93BEE2" valign="baseline"> 
+      <td align="right" width="129"><font face="Tahoma, Arial, Helvetica" size="2"><b>Language</b></font></td>
+      <td align="left" colspan="13" bgcolor="#93BEE2"> 
+        <select name="language">
+          <option value="SELECTED" selected>English</option>
+          <option>French</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>
+  <input type="submit" name="Submit" value="Save Config">
+</p>
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

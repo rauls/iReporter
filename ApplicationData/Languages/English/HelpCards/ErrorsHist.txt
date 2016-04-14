@@ -1,0 +1,28 @@
+
+# Help Card
+# Report: Server Errors History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies the different errors occurring on your web site over time. Use this information to identify error trends, and to gauge the success of any efforts to reduce errors.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Server Error Type
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Server Error:</b>
+Shows the type of error being encountered on your site and its corresponding status code (such as "404"). See Chapter 3 <i>Exploring Settings > Diagnostic Statistics</i> in the User Guide for a listing of common error codes.
+
+<b>Hits (%):</b>
+Number of hits that resulted in the corresponding error. (Percentage as a proportion of all hits resulting in errors.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of the error. (Percentage as a proportion of all bytes transferred for hits resulting in server errors.)
+

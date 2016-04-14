@@ -1,0 +1,36 @@
+
+# Help Card
+# Report: Operating Systems History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the operating systems (and version number, where applicable) being used by site visitors to make hits to your site over time. Use this information to ensure that your site content is viewable by visitors on all operating systems. Additionally, different operating systems tend to represent different types of visitors, so any upward and downward trends in a particular operating system should be taken into consideration when planning future site content.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors, pages or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Operating Systems.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Operating System:</b>
+Name of the operating system being analyzed, along with its version number where applicable.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors using the corresponding operating system. (Percentage as a proportion of hits from all operating systems.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors using the corresponding operating system. (Percentage as a proportion of bytes transferred from all operating systems.)
+
+<b>Visitors:</b>
+Number of site visitors who used the corresponding operating system. This figure includes repeat visitors, so the total amount may appear higher than expected. 
+
+<b>Pages:</b>
+Number of pages viewed using the corresponding operating system.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the site by visitors using the corresponding  operating system.

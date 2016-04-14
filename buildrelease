@@ -1,0 +1,59 @@
+#!/bin/bash
+# NOTE: Must have UNIX Characters, not DOS ones.
+#
+
+INSTALL=/usr/local/iReporter/
+FILE=iReporter_$OSTYPE.tar
+
+echo Building Install archive for $FILE into $INSTALL 
+
+
+echo
+echo Stripping binaries...
+strip $INSTALL/bin/ireporter
+strip $INSTALL/bin/ireporter-static
+strip $INSTALL/bin/xireporter
+strip $INSTALL/bin/xireporter-static
+
+echo
+echo Copying programs...
+cp ../ireporter.spec $INSTALL
+
+echo
+echo Copying data...
+cp README.TXT $INSTALL
+cp LICENCE $INSTALL
+cp demo.txt $INSTALL
+cp config-setup.sh $INSTALL
+mkdir $INSTALL
+cp -pR ApplicationData/* $INSTALL
+rm -rf $INSTALL/*.exe
+rm -rf $INSTALL/http_config
+
+echo
+echo Copying manuals...
+mkdir $INSTALL/manual
+cp ../manual/* $INSTALL/manual/
+
+echo
+echo Redoing permissions...
+chown -R nobody.nobody $INSTALL/*
+chmod -R 755 $INSTALL/*
+find $INSTALL/ -name "*" -exec touch {} \;
+find $INSTALL/ -name "*.scc" -exec rm {} \;
+
+echo
+echo Making tar ...
+tar cfv /tmp/$FILE $INSTALL/*
+
+echo
+echo Gziping tar...
+gzip -7f /tmp/$FILE
+mv /tmp/$FILE.gz ../builds/
+
+rpm -ta ../builds/$FILE.gz
+
+echo
+echo Done.
+
+ls -l ../builds/$FILE.gz

@@ -1,0 +1,62 @@
+<html>
+
+<body bgcolor="white">
+<form method="post" action="saveconfig.cgi" name="save">
+  <p>&nbsp;</p>
+  <table width="504" border="0" cellspacing="0" cellpadding="0" height="214">
+    <tr height="14"> 
+      <td width="468" height="14" valign="TOP"><b><font color="#000051"><u>Virtual 
+        Host Method</u></font></b></td>
+      <td width="468" height="14" valign="TOP"><b><font color="#000051"><u>Sorting</u></font></b></td>
+    </tr>
+    <tr height="14"> 
+      <td width="234" height="14" valign="TOP"> 
+        <p><b> <br>
+          <input type="radio" name="graphsort" value="1">
+          Combined log files<br>
+          <input type="radio" name="graphsort" value="2">
+          Report per log file<br>
+          <input type="radio" name="graphsort" value="3">
+          Report per Month</b><br>
+          <b> 
+          <input type="radio" name="graphsort" value="3">
+          Report by Virtual Host<br>
+          <input type="radio" name="graphsort" value="2">
+          Report by Directory<br>
+          <input type="radio" name="graphsort" value="3">
+          Report by 2nd Directory</b></p>
+        <p>&nbsp;</p>
+      </td>
+      <td width="234" height="14" valign="TOP"><b><br>
+        <input type="radio" name="graphsort" value="1">
+        Name<br>
+        <input type="radio" name="graphsort" value="2">
+        Bytes<br>
+        <input type="radio" name="graphsort" value="3">
+        Requests</b><br>
+        <b> 
+        <input type="radio" name="graphsort" value="3">
+        Pages<br>
+        <input type="radio" name="graphsort" value="2">
+        Date</b></td>
+    </tr>
+    <tr height="14"> 
+      <td width="468" height="14" valign="TOP"> 
+        <input type="checkbox" name="[streaming]2282" value="on" unchecked>
+        <b> Use Sequential #s for directories</b></td>
+      <td width="468" height="14" valign="TOP">&nbsp;</td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<p>
+  <input type="submit" name="Submit" value="Save Config">
+</p>
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

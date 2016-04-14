@@ -1,0 +1,19 @@
+
+#  Help Card
+# Report: Mean Path
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies your site visitors' most popular page viewing sequences. Use this information to gauge the success of newly added site content. This new content, if succesfully placed, will appear in the top set of sequences. If not, your site may require restructuring. 
+
+The content of the pages listed this report are indicative of the information being sought by visitors to your site. As such, this report can be used as a guide for future content development, and for assessing the topics of interest for the majority of users, which is extremely useful for sales and marketing purposes.
+
+<!--GRAPH-->
+Mean Path analysis does not generate a graph.
+
+<!--TABLE-->
+<b>Mean Path:</b>
+Sequence of pages viewed through a web site.
+
+<b>Sessions (%):</b>
+Number of times the corresponding path was taken through the site. (Percentage as a proportion of all paths taken through the site.)

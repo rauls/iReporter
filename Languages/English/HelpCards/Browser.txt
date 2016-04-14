@@ -1,0 +1,38 @@
+
+#  Help Card
+# Report: Browsers
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the web browsers (and their version number) being used by site visitors to make hits to your site. By knowing the most popular browser types, you can determine the feasibility and appropriateness of using browser-specific features in your web content, such as frames, javascript or cascading style sheets.
+
+If you're seeing this report, your log file will contain an "agent" field, containing data that identifies the browser being used to access your site. These agents are decoded by  (FWA) into web browsers according to entries specified in the <i>FWASettings</i> file. Where FWA cannot find a suitable match from the <i>FWASettings</i> file, it will place them in the Unrecognized Agents report. Refer to the <i>FWASettings</i> file for instructions on how to add new browsers.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Browser.
+Name of the web browser being analyzed.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits that were made by a visitor using the corresponding browser. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors, pages or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Browser:</b>
+Name of the web browser being analyzed, along with its version number.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors using the corresponding browser. (Percentage as a proportion of hits from all browsers.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors using the corresponding browser. (Percentage as a proportion of bytes transferred from all browsers.)
+
+<b>Visitors:</b>
+Number of site visitors who used the corresponding browser. This figure includes repeat visitors, so the total amount may appear higher than expected. 
+
+<b>Pages:</b>
+Number of pages viewed using the corresponding browser.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the site by visitors using the corresponding  browser.

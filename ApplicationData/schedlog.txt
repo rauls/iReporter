@@ -1,0 +1,40 @@
+11:57:37 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+11:57:37 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+12:01:44 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+12:01:44 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+14:03:30 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+14:03:30 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+14:05:30 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+14:05:30 11/11/2006 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+14:23:33 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+14:23:33 11/11/2006 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+14:45:30 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+14:45:30 11/11/2006 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+14:45:47 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+14:45:47 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:07:52 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:02:44)
+19:07:52 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:20:43 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:02:44)
+19:20:43 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:28:08 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+19:28:08 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:29:34 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+19:29:34 11/11/2006 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:35:42 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+19:35:42 11/11/2006 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+19:40:29 11/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+19:40:29 11/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+10:56:58 12/11/2006 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+10:56:58 12/11/2006 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+00:32:08 24/2/2007 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+00:32:08 24/2/2007 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+18:22:30 3/3/2007 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+18:22:30 3/3/2007 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+23:03:50 4/3/2007 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+23:03:50 4/3/2007 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+23:15:58 4/3/2007 :    Read Schedule: iReporter Enterprise 5.0 (Debug) (Build 1046 - Built on Nov 11 2006 08:36:39)
+23:15:58 4/3/2007 :    Done Reading 1 schedules from config file c:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+00:58:27 15/4/2008 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+00:58:27 15/4/2008 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt
+23:00:15 24/5/2012 :    Read Schedule: iReporter Enterprise 5.0 (Build 1046 - Built on Nov 11 2006 19:27:38)
+23:00:15 24/5/2012 :    Done Reading 1 schedules from config file C:\Projects\iReporter2.0_src\ApplicationData\schedule.txt

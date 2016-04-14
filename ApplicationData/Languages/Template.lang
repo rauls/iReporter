@@ -1,0 +1,372 @@
+// English Template File
+// Application code base
+// Version 4.0, 07/09/00
+// All Extended characters should be input using HTML codes
+// Server Statistics = {ssNN}
+
+{ss01},Server Load Statistics
+{ss02},Detailed Reports
+{ss03},Requests
+{ss04},Duration
+{ss05},Date Range from
+{ss06},To
+{ss07},Total Requests
+{ss08},Total Cached Requests
+{ss09},Total Failed Requests
+{ss10},Invalid Log Entries
+{ss11},Average Daily Requests
+{ss12},Average Requests/Hour
+{ss13},Sessions Info
+{ss14},Total Sessions
+{ss15},Total Unique Visitors
+{ss16},Total Repeat Visitors
+{ss17},Total One Time Visitors
+{ss18},Average Daily Sessions
+{ss19},Average Session Length
+{ss20},Average Pages/Session
+{ss21},Average Requests/Session
+{ss22},Pages Info
+{ss23},Total Pages
+{ss24},Average Pages/Day
+{ss25},Total Downloaded Files
+{ss26},Total Download
+{ss27},Bandwidth Out
+{ss28},Total Megabytes
+{ss29},Average Daily Megabytes
+{ss30},Average bits/sec
+{ss31},Percent of
+{ss32},Kbps
+{ss33},Bandwidth In
+{ss34},Total Kilobytes
+{ss35},Average Daily Kilobytes
+{ss36},Access Statistics for Period
+{ss37},Log Processing Time
+{ss38},lines/min
+
+// Report Categories = {rcNN}
+
+{rc01},Statistics
+{rc02},Traffic
+{rc03},Diagnostic
+{rc04},Server
+{rc05},Demographics
+{rc06},Referrals
+{rc07},Streaming
+{rc08},Systems
+{rc09},Advertising
+{rc10},Marketing
+{rc11},Firewall
+
+// Report title (Long) = {rlNN}
+
+{rl01},Summary
+{rl02},Hourly
+{rl03},Hourly History
+{rl04},Daily
+{rl05},Recent Days
+{rl06},Weekly
+{rl07},Monthly
+{rl08},Server Errors
+{rl09},Server Errors History
+{rl10},Failed URLs
+{rl11},Failed URLs History
+{rl12},Pages
+{rl13},Pages History
+{rl14},Entry Pages
+{rl15},Entry Pages History
+{rl16},Exit Pages
+{rl17},Exit Pages History
+{rl18},Directories
+{rl19},Top Level Directories
+{rl20},Top Level Directories History
+{rl21},URLs
+{rl22},Mean Paths
+{rl23},Content Groups
+{rl24},Content Groups History
+{rl25},File Downloads
+{rl26},File Downloads History
+{rl27},File Types
+{rl28},Clients
+{rl29},Clients Click Stream
+{rl30},Clients History
+{rl31},Authenticated Users
+{rl32},Authenticated Users History
+{rl33},Domains
+{rl34},Countries
+{rl35},World Regions
+{rl36},Organizations
+{rl37},Session Distribution
+{rl38},Robots
+{rl39},Referrals
+{rl40},Referral Sites
+{rl41},Referral Sites History
+{rl42},Search Engines
+{rl43},Search Terms
+{rl44},Browsers
+{rl45},Browsers / Operating Systems
+{rl46},Operating Systems
+{rl47},Loyalty
+{rl48},Time Online
+{rl49},Impressions
+{rl50},Impressions History
+{rl51},Campaigns
+{rl52},Campaigns History
+{rl53},Circulation Frequency
+{rl54},Media Players
+{rl55},Audio Content
+{rl56},Video Content
+{rl57},Media Types
+{rl58},Source Addresses
+{rl59},Protocols
+{rl60},Sunday Transmission
+{rl61},Monday Transmission
+{rl62},Tuesday Transmission
+{rl63},Wednesday Transmission
+{rl64},Thursday Transmission
+{rl65},Friday Transmission
+{rl66},Saturday Transmission
+{rl67},Virtual Hosts
+{rl68},Virtual Hosts History
+{rl69},Protocol - HTTP
+{rl70},Protocol - HTTPS
+{rl71},Protocol - Mail
+{rl72},Protocol - FTP
+{rl73},Protocol - Telnet
+{rl74},Protocol - DNS
+{rl75},Protocol - POP3
+{rl76},Protocol - Real
+{rl77},Source Addresses
+{rl78},Report
+	
+// General Labels = {glNN}
+	
+{gl01},Requests
+{gl02},Sessions
+{gl03},File
+{gl04},Files
+{gl05},Traffic
+{gl06},Average
+{gl07},Errors
+{gl08},Total Units
+{gl09},$
+{gl10},Recent
+{gl11},Recent Totals
+{gl12},Directory
+{gl13},Other
+{gl14},File Not Found
+{gl15},High
+{gl16},Low
+{gl17},Client
+{gl18},Clients
+{gl19},Circulation
+{gl20},Frequency
+{gl21},Visit
+{gl22},Visits
+{gl23},Visitors
+{gl24},Bytes
+{gl25},Page
+{gl26},Pages
+{gl27},Others
+{gl28},Totals
+{gl29},Subtotals
+{gl30},Referral
+{gl31},Country
+{gl32},Region
+{gl33},Path
+{gl34},Domain
+{gl35},Organization
+{gl36},Download File
+{gl37},Total Cost
+{gl38},Percent of
+{gl39},Top Level Directory
+{gl40},File Type
+{gl41},Server Error
+{gl42},Failed URL
+{gl43},Virtual Host
+{gl44},URL
+{gl45},Browser
+{gl46},Operating System
+{gl47},Mean Path
+{gl48},Robot
+{gl49},Search Term
+{gl50},Search Engine
+{gl51},Media Player
+{gl52},Audio Content
+{gl53},Video Content
+{gl54},Media Type
+{gl55},Total Sessions
+{gl56},Click-throughs
+{gl57},Cost/Month
+{gl58},First Sessions
+{gl59},Last Sessions
+{gl60},Clicks
+{gl61},Cost/Click
+{gl62},Cost
+{gl63},Searches
+{gl64},Bytes Sent
+{gl65},Time Online
+{gl66},Content Group
+{gl67},Authenticated User
+{gl68},Advertisement Name
+{gl69},Protocol - HTTP
+{gl70},Protocol - HTTPS
+{gl71},Protocol - Mail
+{gl72},Protocol - FTP
+{gl73},Protocol - Telnet
+{gl74},Protocol - DNS
+{gl75},Protocol - POP3
+{gl76},Protocol - Real
+{gl77},Source Address
+{gl78},millions
+{gl79},kB
+{gl80},MB
+{gl81},GB
+{gl82},bps
+{gl83},kbps
+{gl84},Mbps
+{gl85},Gbps
+{gl86},%
+
+// Time-related = {tiNN}
+
+{ti01},Sunday
+{ti02},Monday
+{ti03},Tuesday
+{ti04},Wednesday
+{ti05},Thursday
+{ti06},Friday
+{ti07},Saturday
+{ti08},Sun
+{ti09},Mon
+{ti10},Tue
+{ti11},Wed
+{ti12},Thu
+{ti13},Fri
+{ti14},Sat
+{ti15},January
+{ti16},February
+{ti17},March
+{ti18},April
+{ti19},May
+{ti20},June
+{ti21},July
+{ti22},August
+{ti23},September
+{ti24},October
+{ti25},November
+{ti26},December
+{ti27},Jan
+{ti28},Feb
+{ti29},Mar
+{ti30},Apr
+{ti31},May
+{ti32},Jun
+{ti33},Jul
+{ti34},Aug
+{ti35},Sep
+{ti36},Oct
+{ti37},Nov
+{ti38},Dec
+{ti39},Time
+{ti40},Duration
+{ti41},s
+{ti42},min
+{ti43},h
+{ti44},day
+{ti45},Day
+{ti46},Days
+{ti47},Date
+{ti48},Month
+{ti49},Months
+{ti50},Hours of the Day
+{ti51},Days of the Week
+{ti52},Mean Time
+{ti53},Total Time
+{ti54},Duration (min)
+{ti55},Many times a day
+{ti56},Twice a day
+{ti57},Once a day
+{ti58},Twice a week
+{ti59},Once a week
+{ti60},Twice a month
+{ti61},Once a month
+{ti62},Rarely
+{ti63},First visit
+
+// Session Listing = {seNN}
+
+{se01},Session listing for
+{se02},Average session length
+{se03},Sessions list
+{se04},Total days
+{se05},Total Data bytes used
+{se06},Total Data bytes sent
+{se07},Average Data bytes/Day
+{se08},Total Time Online
+{se09},Average Time Online/Day
+{se10},Estimated Session length
+{se11},Session
+{se12},Data bytes used
+{se13},Average Pages/Session
+
+// Comments = {cmNN}
+
+{cm01},NOTE: Click on the clients to show individual Session History
+{cm02},NOTE: Click on the clients to show individual User History
+{cm03},No pages viewed during this session
+{cm04},Unresolved IP
+{cm05},Invalid
+{cm06},Local Net
+{cm07},Server Errors
+{cm08},Unknown Host
+{cm09},OK
+{cm10},ERR
+{cm11},No Referrer
+{cm12},Bookmarked
+{cm13},Others
+{cm14},Unknown
+{cm15},Continued on next page ...
+{cm16},... continued from previous page.
+
+// Server Errors = {erNN}
+
+{er01},Incomplete/Undefined (0)
+{er02},Created (201)
+{er03},Accepted (202)
+{er04},No content (204)
+{er05},Partial content (206)
+{er06},Moved permanently (301)
+{er07},Redirect (302)
+{er08},Not modified (304)
+{er09},Bad Request (400)
+{er10},Auth Required (401)
+{er11},Forbidden (403)
+{er12},File Not Found (404)
+{er13},Method Not Allowed (405)
+{er14},Not Acceptable (406)
+{er15},Proxy Authentication Required (407)
+{er16},Request timeout (408)
+{er17},Internal Server Error (500)
+{er18},Not Implemented (501)
+{er19},Bad Gateway (502)
+{er20},Service unavailable (503)
+{er21},Password Required (331)		// FTP errors
+{er22},Need account (332)
+{er23},Action pending (350)
+{er24},Service unavailable (421)
+{er25},Can't open connection (425)
+{er26},Connection closed (426)
+{er27},File Unavailable (450)
+{er28},Action aborted (451)
+{er29},Action not taken (452)
+{er30},Not Implemented (504)
+{er31},Not logged in (530)
+{er32},Need account (532)
+{er33},File unavailable (550)
+{er34},Action aborted (451)
+{er35},Storage Exceeded (552)
+{er36},Name not allowed (553)
+
+// System Information = {syNN}
+
+{sy01},ISO-8859-1		// charset for browser

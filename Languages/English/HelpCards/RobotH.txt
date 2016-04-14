@@ -1,0 +1,30 @@
+
+#  Help Card
+# Report: Robots History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the activity, over time, of search engine robots (also known as spiders or crawlers) that traversed your site. While on your site, a robot looks for META keywords embedded within your HTML files. This is how your site will be found when Internet users query search engines for particular keywords. Check the Search Engines report to see if your keywords are as effective as you expect. If not, you may need to alter them. This report should be reviewed if any changes to keywords occur, to ensure search engine robots have returned to update your site details.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Robots.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Robot:</b>
+Name of the robot being analyzed.
+
+<b>Hits (%):</b>
+Number of hits to the site by the corresponding robot. (Percentage as a proportion of hits to the site by all robots.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred by the corresponding robot. (Percentage as a proportion of bytes transferred through hits to the site by all robots.)
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to the site by the corresponding robot.

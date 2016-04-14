@@ -1,0 +1,33 @@
+
+# Help Card
+# Report: Loyalty
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report illustrates site loyalty via a measure of session numbers. Use this information to see how loyal your site visitors are, and to assess whether or not your site content makes visitors want to return. Low loyalty values generally indicate a lack of appropriate site content. Some web sites, however, are designed to be viewed once only, and hence, this report should be assessed in the  context of your site's expectations.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Sessions.
+The range of sessions undertaken by site visitors.
+
+<b>Horizontal axis:</b>  Visitors (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, pages or visitors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Sessions:</b>
+The range of sessions undertaken by site visitors.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors who undertook the corresponding number of sessions. (Percentage as a proportion of hits from all session ranges.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors who undertook the corresponding number of sessions. (Percentage as a proportion of bytes transferred by hits from all session ranges.)
+
+<b>Pages:</b>
+Number of pages viewed by visitors who undertook the corresponding number of sessions.
+
+<b>Visitors:</b>
+Number of site visitors who undertook the corresponding number of sessions.

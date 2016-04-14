@@ -1,0 +1,25 @@
+
+# Help Card
+# Report: Media Types
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows the different types of media clips being accessed on your site. Use this information to find the preferred media type of your site visitors. Media file types are defined in <i>Settings > Analysis > Extensions > Audio/Video</i>.
+
+<!--GRAPH-->
+<b>Pie Chart: Media Types</b>
+Each portion of the graph represents a different media type, corresponding to the key in the top-left corner. It has an associated percentage value for clarity and is graphed by hits. This graph cannot be customized.
+
+<!--TABLE-->
+<b>Media Type:</b>
+Specification of the file extension being analyzed.
+
+<b>Hits (%):</b>
+Number of hits for the corresponding media type. (Percentage as a proportion of hits to all media types.)
+
+<b>Bytes (%):</b>
+Bytes transferred as a result of hits to the corresponding media type. (Percentage as a proportion of bytes transferred for all media types.)
+
+<b>Errors:</b>
+Errors generated as a result of hits to the corresponding media type.

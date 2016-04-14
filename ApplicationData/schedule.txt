@@ -1,0 +1,12 @@
+#Schedule File
+#--------------------------------
+Name Schedule
+Active Off
+Log sample.log
+Prefs test.conf
+Startdate 1022551240 # (May 28 2002 02:00:40)
+NextRun 1022551240 # (May 28 2002 02:00:40)
+Repeat 1 # days
+RepeatType 2
+
+

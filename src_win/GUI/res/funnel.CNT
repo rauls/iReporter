@@ -1,0 +1,19 @@
+:Base  funnel.HLP>
+:Title User Guide
+1 Reference
+2 Introduction=Introduction>main
+2 Getting Started=Getting_Started>main
+2 Quick Start=Quick_Start>main
+2 Essentials=Essentials>main
+2 Log Formats=Formats>main
+2 Scheduling=Scheduling>main
+2 Revision Notes=Revision>main
+2 License=License>main
+2 Support=Support>main
+1 Settings
+2 Filters=Filters>main
+2 General=General>main
+2 Graphs=Graphs>main
+2 Statistics=Statistics>main
+2 Headers and Footers=Header>main
+2 Virtual Hosts / Real time=Virtual_Hosts_and_Real_Time>main

@@ -1,0 +1,55 @@
+
+# Help Card
+# Report: Pages Viewed By Key Visitor
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report narrows the focus of analysis to selected key site visitors, summarizing their usage statistics and highlighting their most viewed pages. Use this information to track the behavior of important individuals, or groups of visitors.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Key Visitors
+IP or named address of key visitors.
+
+<b>Horizontal axis:</b> Hits
+Hits to the site by the corresponding key visitor. You cannot change the sort order/horizontal graph axis of this report.
+
+<!--TABLE-->
+<b>Main Table: Key Visitor Summaries</b></u>
+
+<b>Key Visitors:</b>
+The IP or named address of the key visitor, as specified in <i>Settings > Tracking > Key Visitors</i>.
+
+<b>Pages (%):</b>
+Total number of pages viewed by the key visitor. (Percentage as a proportion of all pages viewed by key visitors)
+
+<b>Hits (%):</b>
+Hits made to the server by the key visitor. (Percentage as a proportion of all hits made by key visitors)
+
+<b>Sessions:</b>
+Number of sessions (or visits) undertaken by the key visitor.
+
+<b>Mean Time:</b>
+Average time spent on your site by the key visitor.
+
+<b>Errors:</b>
+Number of errors generated as a result of hits made by the key visitor.
+
+
+<b><u>Sub-tables: Pages Viewed by Each Key Visitor </b></u>
+<i>Note: the maximum number of items shown will match the maximum rows selected for the main table.</i>
+
+<b>Page:</b>
+Name of the page frequented by a key visitor.
+
+<b>Hits:</b>
+Number of hits to the frequently-viewed page.
+
+<b>%:</b>
+Percentage of hits to the corresponding page, as a proportion of hits to all pages viewed by the key visitor.
+
+<b>Sessions:</b>
+Number of sessions in which the key visitor viewed the corresponding page. Note: the overall average session count is not calculated as it is not meaningful.
+
+<b>Mean Time:</b>
+Average time the key visitor spent viewing the corresponding page. Note: the overall average mean time is not calculated as it is not meaningful.

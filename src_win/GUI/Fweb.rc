@@ -1,0 +1,2966 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "application.h"
+#include "winver.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PROGRESS_I          BITMAP                  "res\\progress_i.bmp"
+IDB_PROGRESS_D          BITMAP                  "res\\progress_d.bmp"
+IDB_ABOUTENT            BITMAP                  "res\\application_about.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_AAA_APPICON          ICON                    "res\\application.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_HELP                BITMAP                  "res\\help.bmp"
+IDB_BIGTOOLBAR24        BITMAP                  "res\\bigtoolbar24.bmp"
+IDB_BIGTOOLBAR24B       BITMAP                  "res\\bigtoolbar24b.bmp"
+IDB_PROGRESSBAR1        BITMAP                  "res\\progress.bmp"
+IDB_PROGRESSBAR2        BITMAP                  "res\\progress2.bmp"
+IDB_BULLET              BITMAP                  "res\\bullet2.bmp"
+IDB_BIGTOOLBAR24R       BITMAP                  "res\\bigtoolbar24r.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOG_ICON            ICON                    "res\\log_icon.ico"
+IDI_HELP_ICON           ICON                    "res\\help.ico"
+IDI_PREPROC             ICON                    "res\\preproc.ico"
+IDI_SCHED_ICON          ICON                    "res\\schdule.ico"
+IDI_ADDSICON            ICON                    "res\\advert.ico"
+IDI_ANALYSISICON        ICON                    "res\\analysis.ico"
+IDI_EXPAND1             ICON                    "res\\expand1.ico"
+IDI_EXPAND2             ICON                    "res\\expand2.ico"
+IDI_CHECKOFF            ICON                    "res\\checkoff.ico"
+IDI_CHECKON             ICON                    "res\\checkon.ico"
+IDI_STATITEM            ICON                    "res\\checkon1.ico"
+IDI_GRAPHSICON          ICON                    "res\\GRAPHS.ICO"
+IDI_GENERALICON         ICON                    "res\\GENERAL.ICO"
+IDI_STATSICON           ICON                    "res\\STATS.ICO"
+IDI_POSTPROC            ICON                    "res\\HTMLHEAD.ICO"
+IDI_HTMLEDIT            ICON                    "res\\HTMLFOOT.ICO"
+IDI_FILTERSICON         ICON                    "res\\FILTERS.ICO"
+IDI_AIREPORTERICONSM    ICON                    "res\\afunnelw.ico"
+IDI_VDOMAINSICON        ICON                    "res\\ico00001.ico"
+IDI_LOG_ICON1           ICON                    "res\\ico00002.ico"
+IDI_LOG_ICON2           ICON                    "res\\ico00003.ico"
+IDI_ROUTERICON          ICON                    "res\\routeric.ico"
+IDI_REMOTEICON          ICON                    "res\\notifyic.ico"
+IDI_CUSTOMICON          ICON                    "res\\customic.ico"
+IDI_ROUTESICON          ICON                    "res\\routesic.ico"
+IDI_BILLINGICON         ICON                    "res\\billingicon.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECTLOGTABLEDlg DIALOG  100, 100, 183, 47
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a Table Name For Saving Log File To"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_SELECTLOGTABLEOK,67,26,50,14
+    COMBOBOX        IDC_SELECTLOGTABLECOMB,64,7,112,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDC_SELECTLOGTABLEOKCANCEL,126,26,50,14
+    LTEXT           "Table Name:",IDC_STATIC,7,13,42,8
+END
+
+IDD_ENTERLOGTABLEDlg DIALOG  0, 0, 180, 58
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter a Table Name For Saving Log File To "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_EDITLOGTABLEOK,67,37,50,14
+    PUSHBUTTON      "Cancel",IDC_EDITLOGTABLECANCELL,123,37,50,14
+    EDITTEXT        IDC_EDITLOGTABLE,49,14,124,14,ES_AUTOHSCROLL
+    LTEXT           "Table Name:",IDC_STATIC,7,17,42,8
+END
+
+IDD_SUPPORTPASS DIALOG  0, 0, 196, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Go Support Zone"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_SUPP_OK,5,78,50,14
+    PUSHBUTTON      "Cancel",IDC_SUPP_CANCEL,142,78,50,14
+    EDITTEXT        IDC_SUPP_EMAIL,5,17,188,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUPP_PASS,5,49,84,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,5,37,92,13
+    LTEXT           "Email Address (user@host)",IDC_STATIC,5,3,155,11
+    PUSHBUTTON      "Clear",IDC_SUPP_CLR,75,78,50,14
+END
+
+IDD_CHANGEPASS DIALOG  0, 0, 199, 134
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Support Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_SUPPEDIT_OK,6,113,50,14
+    PUSHBUTTON      "Cancel",IDC_SUPPEDIT_CANCEL,142,113,50,14
+    EDITTEXT        IDC_SUPPEDIT_EMAIL,5,17,188,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUPPEDIT_OLD,5,49,91,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Old Password",IDC_STATIC,5,37,92,13
+    LTEXT           "Email Address (user@host)",IDC_STATIC,6,3,171,11
+    EDITTEXT        IDC_SUPPEDIT_NEW,5,86,91,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "New Password",IDC_STATIC,5,74,92,13
+    PUSHBUTTON      "Clear",IDC_SUPPEDIT_CLR,78,113,50,14
+    EDITTEXT        IDC_SUPPEDIT_VERIFY,101,86,91,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Verify Password",IDC_STATIC,102,73,82,13
+END
+
+IDD_DIALOGDATABASETABLE DIALOG  100, 100, 175, 50
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a table"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_DATABASETABLEOK,57,29,50,14
+    COMBOBOX        IDC_COMBODATABASETABLE,55,6,112,60,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDC_DATABASETABLECANCEL,117,29,50,14
+    LTEXT           "Table Name:",IDC_STATIC,8,9,42,8
+END
+
+PREFS_REPORTBANNERS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Header",IDC_STATIC,4,4,280,92
+    GROUPBOX        "Footer",IDC_STATIC,4,100,280,92
+    PUSHBUTTON      "Place graphic ...",IDC_BUTTON1,12,16,64,13
+    EDITTEXT        IDC_EDIT1,84,16,193,13,ES_AUTOHSCROLL
+    LTEXT           "wah wah wah ...",IDC_STATIC,14,34,53,8
+    EDITTEXT        IDC_EDIT2,84,34,193,36,ES_AUTOHSCROLL
+    PUSHBUTTON      "Advanced ...",IDC_BUTTON2,12,76,64,13
+    LTEXT           "(Use to add customized HTML to HTML reports)",
+                    IDC_STATIC,86,78,186,9
+    PUSHBUTTON      "Place graphic ...",IDC_BUTTON3,12,114,64,13
+    EDITTEXT        IDC_EDIT3,84,114,193,13,ES_AUTOHSCROLL
+    LTEXT           "wah wah wah ...",IDC_STATIC,14,132,53,8
+    EDITTEXT        IDC_EDIT4,84,132,193,36,ES_AUTOHSCROLL
+    PUSHBUTTON      "Advanced ...",IDC_BUTTON4,12,172,64,13
+    LTEXT           "(Use to add customized HTML to HTML reports)",
+                    IDC_STATIC,86,174,186,9
+END
+
+PREFS_ADDSCAMPAIGNS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ADDCAMP_NAME,70,36,206,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDCAMP_PATTERN,70,52,206,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDCAMP_COST,70,68,205,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_ADDCAMP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,86,264,84
+    PUSHBUTTON      "Add",IDC_ADDCAMP_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_ADDCAMP_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_ADDCAMP_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,4,280,190
+    LTEXT           "Use this section to assess the performance of any external advertisement campaigns, including their return on investment (ROI).",
+                    IDC_STATIC,14,14,264,18
+    LTEXT           "Referral:",IDC_STATIC,14,54,49,8
+    LTEXT           "Description:",IDC_STATIC,14,38,51,8
+    LTEXT           "Cost/month ($):",IDC_STATIC,14,70,51,8
+END
+
+FTP_OPEN DIALOG  0, 0, 201, 98
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP process remote log file"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Site",IDC_STATIC,6,9,26,8
+    LTEXT           "Username",IDC_STATIC,6,26,35,8
+    LTEXT           "Password",IDC_STATIC,6,41,32,8
+    LTEXT           "Path",IDC_STATIC,6,59,35,8
+    DEFPUSHBUTTON   "OK",IDC_FTPOK,88,78,50,13
+    PUSHBUTTON      "Cancel",IDC_FTPCANCEL,144,78,50,13
+    EDITTEXT        IDC_FTPHOST,44,6,150,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPUSER,44,23,150,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPPASS,44,40,150,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_FTPPATH,44,57,150,13,ES_AUTOHSCROLL
+END
+
+CONNECT DIALOG  0, 0, 183, 94
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connect to remote server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Connect",IDC_REMOTECONNECT,8,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,73,50,14
+    EDITTEXT        IDC_REMOTEIP,8,19,108,12,ES_AUTOHSCROLL
+    LTEXT           "Remote IP to connect to...",IDC_STATIC,10,9,98,8
+    EDITTEXT        IDC_REMOTEPORT,124,19,47,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,125,9,39,8
+    EDITTEXT        IDC_REMOTEPASSWD,8,51,108,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,10,41,60,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_WINDOWS)
+#if defined(APSTUDIO_INVOKED)
+IDD_MAINTOOLBAR$(_WINDOWS) DIALOGEX 9, 26, 370, 623
+#else
+IDD_MAINTOOLBAR DIALOGEX 9, 26, 370, 623
+#endif
+STYLE DS_SETFONT | DS_NOFAILCREATE | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_ACCEPTFILES
+MENU IREPORTER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Settings",IDC_PREFS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_NOTIFY | WS_TABSTOP,23,12,41,36
+    CONTROL         "Process",IDC_PROCESS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,142,12,41,36
+    CONTROL         "Schedule",IDC_SCHED,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,81,12,41,36
+    CONTROL         "View",IDC_VIEW,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,200,12,41,36
+    CONTROL         "Help",IDC_APPHELP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,257,12,41,36
+    CONTROL         "List2",IDC_LOGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,81,350,211
+    CONTROL         157,IDC_TOOLBARIMAGE,"Static",SS_BITMAP | NOT WS_VISIBLE,
+                    0,1,15,13,WS_EX_TRANSPARENT
+    CONTROL         "Help",IDC_APPLOGO,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,314,12,41,36
+END
+#endif
+
+ABOUT DIALOGEX 110, 210, 450, 243
+STYLE DS_SETFONT | DS_3DLOOK | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Ver 4.0x",IDC_ABOUTIMAGE,1,27,113,12,NOT WS_VISIBLE
+END
+
+SPLASH DIALOG  10, 10, 308, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Ver 4.0x",IDC_SPLASHIMAGE,3,30,113,12,NOT WS_VISIBLE
+END
+
+CONFIGPREFS DIALOGEX 70, 20, 380, 268
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_PREFS_LISTRECT,"SysListView32",LVS_LIST | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER,8,10,62,
+                    214,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "OK",IDC_PREFOK,273,228,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDC_PREFCANCEL,323,228,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Defaults",IDC_PREFDEFAULT,9,228,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Revert",IDC_PREFREVERT,60,228,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TIPS,9,245,364,20,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN
+    PUSHBUTTON      "Reload",IDC_BUTTON_DEBUG_RELOADXML,112,228,26,12,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT_CONTROLID,139,228,131,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_VISIBLE
+END
+
+PREFS_REPORTHTMLHEAD DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PREFHTML_RGB7,"Button",BS_OWNERDRAW,12,18,22,10
+    CONTROL         "",IDC_PREFHTML_RGB8,"Button",BS_OWNERDRAW,66,18,24,10
+    CONTROL         "",IDC_PREFHTML_RGB9,"Button",BS_OWNERDRAW,120,18,24,10
+    CONTROL         "",IDC_PREFHTML_RGB10,"Button",BS_OWNERDRAW,173,18,24,10
+    CONTROL         "",IDC_PREFHTML_RGB11,"Button",BS_OWNERDRAW,227,18,24,10
+    EDITTEXT        IDC_PREFHTML_HEAD,12,46,264,60,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_PREFHTML_FOOT,12,119,264,68,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Text",IDC_STATIC,92,19,22,9
+    LTEXT           "Link",IDC_STATIC,146,19,22,9
+    LTEXT           "ALink",IDC_STATIC,199,19,19,9
+    LTEXT           "BgColor",IDC_STATIC,36,19,28,9
+    LTEXT           "VLink",IDC_STATIC,253,19,20,9
+    GROUPBOX        "Customization",IDC_STATIC,4,4,280,190
+    LTEXT           "Header:",IDC_STATIC,12,36,26,8
+    LTEXT           "Footer:",IDC_STATIC,12,110,23,8
+END
+
+EDIT_STATDESC DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_TOOLWINDOW
+CAPTION "Report Description Editor"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_STAT_DESC,8,26,274,148,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "You may edit the description included for this report (HTML only).",
+                    IDC_STATIC,8,8,226,11
+    PUSHBUTTON      "Cancel",IDC_DESCCANCEL,232,180,50,12
+    PUSHBUTTON      "OK",IDC_DESCOK,178,180,50,12
+END
+
+SCHEDULEEDIT DIALOGEX 0, 0, 265, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Schedule Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Name",IDC_STATIC,12,11,24,9
+    EDITTEXT        IDC_SCHED_NAME,60,8,198,13,ES_AUTOHSCROLL
+    GROUPBOX        "Event",IDC_STATIC,6,29,252,60
+    LTEXT           "Start &date",IDC_STATIC,13,45,36,10
+    EDITTEXT        IDC_SCHED_DATE,60,43,48,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",IDC_SCHED_DATEADJUST,"msctls_updown32",
+                    UDS_ARROWKEYS,110,43,11,13
+    LTEXT           "Start &time",IDC_STATIC,151,45,36,9
+    EDITTEXT        IDC_SCHED_TIME,189,43,48,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SCHED_TIMEADJUST,"msctls_updown32",
+                    UDS_ARROWKEYS,240,43,11,13
+    LTEXT           "Ever&y",IDC_STATIC,14,65,25,9
+    EDITTEXT        IDC_SCHED_NUM,60,64,48,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "&Period",IDC_STATIC,151,66,31,9
+    COMBOBOX        IDC_SCHED_NUMTYPE,189,64,62,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Files",IDC_STATIC,6,93,252,172
+    LTEXT           "&Logs",IDC_STATIC,13,107,20,8
+    EDITTEXT        IDC_SCHED_LOGFILE,60,106,191,65,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "&Add...",IDC_SCHED_ADDLOG,148,175,50,12
+    PUSHBUTTON      "&Select...",IDC_SCHED_SELECTLOG,201,175,50,12
+    LTEXT           "Settings",IDC_STATIC,14,198,36,8
+    EDITTEXT        IDC_SCHED_PREFSFILE,60,196,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_SCHED_SELECTPREFS,146,213,50,12
+    PUSHBUTTON      "&Edit Settings...",IDC_SCHED_EDITPREFS,201,213,50,12
+    LTEXT           "&Upload URL",IDC_STATIC,14,231,43,8
+    EDITTEXT        IDC_SCHED_UPLOAD,60,230,191,13,ES_AUTOHSCROLL
+    LTEXT           "Report",IDC_STATIC,14,248,43,8
+    CONTROL         "Static",IDC_SCHED_REPORTFILE,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_SUNKEN | WS_GROUP,60,247,137,12
+    PUSHBUTTON      "&View...",IDC_SCHED_VIEW,201,247,50,12
+    CONTROL         "Enabled (schedule task runs at specified time)",
+                    IDC_SCHED_ACTIVE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,
+                    272,166,14
+    DEFPUSHBUTTON   "OK",IDC_SCHED_EDITOK,208,273,50,12
+END
+
+PREFS_REPORTPAGE DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Bandwidth",IDC_PREF_BANDWIDTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,18,110,10
+    CONTROL         "Log name",IDC_PREF_HEADTITLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,29,110,10
+    CONTROL         "Timestamp",IDC_PREF_TIMESTAT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,41,110,10
+    CONTROL         "Key column on left",IDC_PREF_LEFTSIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,53,110,10
+    CONTROL         "Quick links index (HTML only)",IDC_PREF_QINDEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,65,112,10
+    CONTROL         "Report shadows",IDC_PREF_SHADOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,77,110,10
+    CONTROL         "Label at footer",IDC_PREF_FOOTERLABEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,89,110,10
+    CONTROL         "Table column headings on last row",
+                    IDC_PREF_FOOTERLABELTRAIL,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,14,101,125,10
+    EDITTEXT        IDC_REPORTTITLE,59,118,73,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PREFHTML_RGB1,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,96,24,10
+    CONTROL         "",IDC_PREFHTML_RGB2,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,112,24,10
+    CONTROL         "",IDC_PREFHTML_RGB3,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,128,24,10
+    CONTROL         "",IDC_PREFHTML_RGB4,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,144,24,10
+    CONTROL         "",IDC_PREFHTML_RGB5,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,160,24,10
+    CONTROL         "",IDC_PREFHTML_RGB6,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    238,176,24,10
+    LTEXT           "Title:",IDC_STATIC,166,96,70,9
+    LTEXT           "Headers:",IDC_STATIC,166,112,70,9
+    LTEXT           "Items:",IDC_STATIC,166,128,68,9
+    LTEXT           "Others:",IDC_STATIC,166,144,65,9
+    LTEXT           "Average:",IDC_STATIC,166,160,69,9
+    LTEXT           "Totals:",IDC_STATIC,166,176,67,9
+    GROUPBOX        "Table colors",IDC_STATIC,148,4,136,190
+    GROUPBOX        "Display",IDC_STATIC,4,4,136,190
+    LISTBOX         IDC_SCHEMES,158,30,116,54,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Themes:",IDC_STATIC,158,18,114,10
+    CONTROL         "",IDC_PREFIMG_RGB1,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,55,152,24,8
+    CONTROL         "",IDC_PREFIMG_RGB2,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,55,161,24,8
+    CONTROL         "",IDC_PREFIMG_RGB3,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,55,170,24,8
+    CONTROL         "",IDC_PREFIMG_RGB4,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,55,178,24,8
+    CONTROL         "",IDC_PREFIMG_RGB5,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,81,161,24,8
+    CONTROL         "",IDC_PREFIMG_RGB6,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,81,170,24,8
+    CONTROL         "",IDC_PREFIMG_RGB7,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,81,178,24,8
+    CONTROL         "",IDC_PREFIMG_RGB8,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,107,161,24,8
+    CONTROL         "",IDC_PREFIMG_RGB9,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,107,170,24,8
+    CONTROL         "",IDC_PREFIMG_RGB10,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,107,178,24,8
+    LTEXT           "Report title:",IDC_STATIC,14,120,40,9
+END
+
+PREFS_FILTERS DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_FILTER,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_REPORT DIALOG  78, 9, 295, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_REPORT,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | WS_GROUP,0,0,294,215
+END
+
+PREFS_STATS DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_STATS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_STATSGLOBAL DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "3D graphs",IDC_PREFGRAPH_3DBARS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,18,79,9
+    CONTROL         "Wide graphs",IDC_PREFGRAPH_WIDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,32,92,8
+    CONTROL         "Web palette colors",IDC_PREFGRAPH_WEBPAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,46,107,8
+    CONTROL         "White background graphs",IDC_PREFGRAPH_CORP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,60,107,8
+    EDITTEXT        IDC_PREFVD_COST,156,18,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFSTAT_SESSIONTIME,156,36,26,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_COOKIEVAR,156,72,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_URLVAR,156,143,120,12,ES_AUTOHSCROLL
+    GROUPBOX        "Graph options",65534,4,4,136,190,WS_GROUP
+    LTEXT           "Bandwidth cost/MB (0.00)",IDC_STATIIDC_PREFVD_MONTHLYC,
+                    186,20,88,10
+    LTEXT           "Session timeout (minutes)",IDC_PREFSTAT_SESSIONTXT,186,
+                    38,84,13
+    GROUPBOX        "Sessions",IDC_STATIC,148,4,136,190,WS_GROUP
+    LTEXT           "Cookie variable for user tracking:",IDC_STATIC,156,60,
+                    115,9
+    LTEXT           "URL parameter for user tracking:",IDC_STATIC,156,131,
+                    115,9
+    LTEXT           "Enter * in the text box above if your log file does not contain a cookie variable.",
+                    IDC_STATIC,156,90,120,27
+END
+
+PREFS_PROXY DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_PROXY,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_PROXY_IP DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Internal Addresses (IP's)",IDC_STATIC,4,4,280,190,
+                    WS_GROUP
+    EDITTEXT        IDC_PROXY_NAME,10,18,208,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_PROXY_LIST,10,40,208,112,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_PROXY_ADD,223,18,50,13
+    PUSHBUTTON      "Remove",IDC_PROXY_REM,223,56,50,13
+    PUSHBUTTON      "Clear",IDC_PROXY_CLR,223,72,50,13
+    LTEXT           "Traffic entering these addresses will be designated incoming and traffic leaving will be outgoing. Traffic between these will be designated internal.",
+                    IDC_STATIC,11,158,207,26
+    PUSHBUTTON      "Change",IDC_PROXY_CHANGE,223,40,50,13
+END
+
+PREFS_SERVER DIALOG  80, 9, 292, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Remote Control",IDC_STATIC,2,0,289,214,WS_GROUP
+    CONTROL         "Enable Remote Control",IDC_REMOTEON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,22,133,10
+    RTEXT           "Password:",IDC_STATIC,19,42,43,9
+    EDITTEXT        IDC_REMOTEPASSWD,67,40,54,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    RTEXT           "TCP Port:",IDC_STATIC,10,62,49,11
+    EDITTEXT        IDC_REMOTEPORT,67,60,54,12,ES_AUTOHSCROLL
+    LTEXT           "Use this option to control this copy of iReporter from a remote computer.",
+                    IDC_STATIC,67,81,117,51
+    LTEXT           "( 911 is default )",IDC_STATIC,132,62,111,12
+END
+
+PREFS_STATSDOMAINS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFORG_PATTERN,40,18,87,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFORG_NAME,160,18,116,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFORG_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "Add",IDC_PREFORG_ADD,64,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFORG_DEL,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFORG_CHANGE,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Defaults",IDC_PREFORG_DEFAULT,226,176,50,12,NOT 
+                    WS_TABSTOP
+    GROUPBOX        "Organization mapping",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Pattern:",IDC_STATIC,12,20,26,8
+    LTEXT           "Name:",IDC_STATIC,135,20,22,8
+END
+
+PREFS_VDOMAINS DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_VDOMAINS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_VDOMAINSOPT DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_VDREPORTBY,12,30,120,111,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_VDMULTIDIR,12,64,120,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_VDSORTBY,12,96,120,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Number report directories",IDC_PREFVD_SEQDIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,118,115,10
+    GROUPBOX        "Reporting",IDC_STATIC,4,4,136,190,WS_GROUP
+    LTEXT           "Virtual hosts licensed to analyze: ???",IDC_VDTOTAL,156,
+                    151,125,22
+    GROUPBOX        "Notes",IDC_STATIC,148,4,136,190,WS_GROUP
+    LTEXT           "Sorting:",IDC_STATIC,12,84,40,10
+    LTEXT           "Identify hosts by:",IDC_STATIC,12,18,72,10
+    LTEXT           "Specific directory:",IDC_STATIC,12,52,116,10
+    LTEXT           "Virtual host analysis generates an individual report for each unique host found in the log file.\n\nSince different web servers have different standards of logging virtual hosts, the actual standard used must be specified in the ""identify hosts by"" field.",
+                    IDC_STATIC,155,17,120,76
+    LTEXT           "Checking on ""number report directories"" will replace the usual output directory name with a 4-digit number, e.g. ""www.site.com"" will become ""0001"".",
+                    IDC_STATIC,155,97,124,46
+END
+
+PREFS_VDOMAINSRT DIALOGEX 2, 14, 286, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Real Time",IDC_STATIC,4,4,278,190,WS_GROUP
+    LTEXT           "Report update Time interval",IDC_STATIC,22,40,96,8
+    EDITTEXT        IDC_PREFVD_NUM,22,52,17,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    COMBOBOX        IDC_PREFVD_TYPE,43,53,67,68,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Perform Real-Time stats",IDC_PREFVD_SLEEP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,23,91,10
+END
+
+PREFS_VDOMAINSMAP DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PREFVD_PATTERN,33,38,98,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFVD_NAME,160,38,116,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFVD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS,12,56,264,114,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add",IDC_PREFVD_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFVD_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFVD_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Host:",IDC_STATIC,14,40,18,8
+    LTEXT           "Name:",IDC_STATIC,137,40,22,8
+    LTEXT           "Use this to aggregate multiple hosts to one name, or to categorize different hosts.",
+                    IDC_STATIC,13,17,258,12
+END
+
+PREFS_ANALYSISOPT DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PREFGEN_DATESTYLE,18,20,102,176,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DATESTART,56,38,64,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATEEND,56,54,64,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PREFGEN_SPLITDATE,18,100,102,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DATEOVERIDE,18,138,102,74,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DATEOFFSET,61,165,59,12,ES_AUTOHSCROLL
+    CONTROL         "Zero byte transfers",IDC_PREFGEN_FILTERZERO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,20,110,8
+    CONTROL         "Self referrals",IDC_PREFGEN_IGNORESELF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,34,110,8
+    CONTROL         "URL case",IDC_PREFGEN_IGNORECASE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,48,110,8
+    CONTROL         "Usernames as visitors",IDC_PREFGEN_IGNOREUSERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,62,110,8
+    CONTROL         "Bookmarks && local referrals",
+                    IDC_PREFGEN_IGNOREBOOKMARK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,76,110,8
+    EDITTEXT        IDC_PREFGEN_URL,158,126,118,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFGEN_INDEXFILE,158,166,118,12,ES_AUTOHSCROLL
+    GROUPBOX        "Date range",IDC_STATIC,4,4,136,190,WS_GROUP
+    RTEXT           "Start:",IDC_MISC2,32,40,18,8
+    GROUPBOX        "URL",IDC_STATIC,148,100,136,94,WS_GROUP
+    LTEXT           "Default host:",IDC_STATIC,158,114,53,9,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Default page:",IDC_STATIC,158,154,105,9
+    LTEXT           "Date format:",IDC_STATIC,18,126,97,10
+    GROUPBOX        "Ignore",IDC_STATIC,148,4,136,90,WS_GROUP
+    RTEXT           "End:",IDC_STATIC,34,56,16,8
+    LTEXT           "Multiple reports:",IDC_STATIC,18,88,102,8
+    LTEXT           "e.g. http://www.site.com",IDC_STATIC,160,140,116,8
+    LTEXT           "e.g. index.html",IDC_STATIC,160,180,66,8
+    RTEXT           "Time adjust:",IDC_STATIC,17,167,39,8
+    RTEXT           "e.g. +- HH:MM:SS",IDC_STATIC,54,180,65,9
+END
+
+PREFS_REPORTOUTPUT DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_OUTDIR,12,18,200,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Save as...",IDC_PREFGEN_OUT,220,18,54,12,NOT WS_TABSTOP
+    COMBOBOX        IDC_TOKENS,12,48,200,122,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Insert token",IDC_PREFGEN_INSERT,220,48,54,12,NOT 
+                    WS_TABSTOP
+    CONTROL         "None",IDC_DB_NONE,"Button",BS_AUTORADIOBUTTON,14,87,60,
+                    10
+    CONTROL         "Compact",IDC_DB_SELECT_COMPACT,"Button",
+                    BS_AUTORADIOBUTTON,14,99,44,10
+    EDITTEXT        IDC_DB_NAME,14,142,115,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Delete",IDC_DB_DELETE,75,126,53,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Select...",IDC_DB_BROWSE,14,126,53,12,NOT WS_TABSTOP
+    CONTROL         "Report on new logs only",IDC_DB_EXCLUDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,177,92,10
+    COMBOBOX        IDC_PREF_LANG,156,100,116,84,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREFGEN_TYPE,156,136,116,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREFGEN_GTYPE,156,172,116,129,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language:",IDC_STATIC,156,90,38,10
+    GROUPBOX        "Style",IDC_STATIC,148,74,136,120,WS_GROUP
+    GROUPBOX        "Location",IDC_LOCATION,4,4,280,66,WS_GROUP
+    LTEXT           "Format:",IDC_STATIC,156,126,25,10,0,WS_EX_TRANSPARENT
+    LTEXT           "Graphics:",IDC_STATIC,156,162,33,10,0,WS_EX_TRANSPARENT
+    LTEXT           "Path tokens:",IDC_STATIC,12,38,195,10
+    GROUPBOX        "Database",IDC_STATIC,4,74,136,120,WS_GROUP
+    CONTROL         "Extended",IDC_DB_SELECT_EXTENDED,"Button",
+                    BS_AUTORADIOBUTTON,14,111,117,10
+    CONTROL         "Produce Report",IDC_DB_REPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,163,66,10
+END
+
+PREFS_CUSTOMFORMAT DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable custom formatting",IDC_CUSTOM_USE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,17,95,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_CUSTOM_SEP,83,35,47,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CUSTOM_DATA,83,52,48,161,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Slider1",IDC_CUSTOM_POS,"msctls_trackbar32",
+                    TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,77,68,198,19
+    COMBOBOX        IDC_CUSTOM_DATE,83,90,129,143,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CUSTOM_TIME,83,110,130,117,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "DATE[3]  TIME[4]",IDC_CUSTOM_INFO,84,131,185,31,
+                    WS_BORDER
+    GROUPBOX        "Configuration",IDC_STATIC,4,4,280,190,WS_GROUP
+    LTEXT           "Field delimiter:",IDC_STATIC,14,37,58,8
+    LTEXT           "Log field type:",IDC_STATIC,14,55,55,8
+    LTEXT           "Field position: 00",IDC_CUSTOM_POSTXT,14,74,62,10
+    RTEXT           "Date format:",IDC_STATIC,11,92,41,8
+    LTEXT           "Time format:",IDC_STATIC,13,112,40,8
+    LTEXT           "(Decimal, ASCII or literal character)",IDC_STATIC,134,
+                    36,131,15
+    LTEXT           "Format output:",IDC_STATIC,14,131,46,8
+END
+
+PREFS_NOTIFYRULES DIALOG  2, 14, 286, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Rules",65534,4,4,278,190,WS_GROUP
+    LISTBOX         IDC_PREFNOTIFY_LIST,10,46,262,95,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_PREFNOTIFY_ADD,10,175,50,13
+    PUSHBUTTON      "Remove",IDC_PREFNOTIFY_REM,64,175,50,13
+    EDITTEXT        IDC_PREFNOTIFY_NAME,175,30,102,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Clear",IDC_PREFNOTIFY_CLR,118,175,50,13
+    COMBOBOX        IDC_NOTIFY_DB,24,30,82,102,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_NOTIFY_LOGIC,148,30,26,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "If..",IDC_STATIC,9,33,12,10
+    EDITTEXT        IDC_NOTIFYEMAIL,10,157,260,12,ES_AUTOHSCROLL
+    LTEXT           "Email Destination (user@site)",IDC_STATIC,7,146,145,9
+    CONTROL         "Off",IDC_NOTIFY_ON1,"Button",BS_AUTORADIOBUTTON,8,17,36,
+                    8
+    CONTROL         "Screen",IDC_NOTIFY_ON2,"Button",BS_AUTORADIOBUTTON,49,
+                    17,57,8
+    CONTROL         "eMail",IDC_NOTIFY_ON3,"Button",BS_AUTORADIOBUTTON,105,
+                    17,47,9
+    COMBOBOX        IDC_NOTIFY_FIELD,108,30,38,97,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+PREFS_VDOMAINSPATH DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITPATH_HOST,34,34,186,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPATH_PATH,34,52,186,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse ...",IDC_EDITPATH_BROWSE,226,52,50,12,NOT 
+                    WS_TABSTOP
+    CONTROL         "List1",IDC_PREFS_EDITPATH,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS,17,68,259,102,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add",IDC_EDITPATH_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_EDITPATH_DEL,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_EDITPATH_CHANGE,226,176,50,12,NOT 
+                    WS_TABSTOP
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Host:",IDC_STATIC,14,36,18,8
+    LTEXT           "Path:",IDC_STATIC,14,54,18,8
+    LTEXT           "Mapping allows you to output virtual host reports to unique directories. This is useful for web hosting providers needing to place customers' reports in specific locations.",
+                    IDC_STATIC,13,13,267,16
+END
+
+FILEVIEW DIALOGEX 0, 0, 666, 281
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "View"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    SCROLLBAR       IDC_VIEWSCROLL,647,3,12,271,SBS_VERT
+    EDITTEXT        IDC_FILEVIEWNAME,7,3,638,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "List1",IDC_FILEVIEW,"SysListView32",LVS_LIST | 
+                    LVS_NOLABELWRAP | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,17,637,256,
+                    WS_EX_CLIENTEDGE
+END
+
+WIZARD5 DIALOGEX 100, 0, 181, 112
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Setup Wizard Complete!",IDC_STATIC,7,25,128,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "To process and view the report click the <DONE> button.",
+                    IDC_STATIC,7,42,139,16
+    LTEXT           "Once you have created your first report you can use the Settings within iReporter to access many of the other powerful features.",
+                    IDC_STATIC,7,69,146,26
+    LTEXT           "Step 5",IDC_STATIC,154,7,20,8
+END
+
+WIZARD4 DIALOG  100, 0, 186, 126
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Next use the Select... button to specify the location where you would like the processed reports stored.",
+                    IDC_STATIC,3,25,164,25
+    LTEXT           "The default location is the Reports folder within the iReporter application folder.",
+                    IDC_STATIC,3,57,154,22
+    LTEXT           "Step 4",IDC_STATIC,154,7,20,8
+    PUSHBUTTON      "Select...",IDC_FRAME4_SEL_BUTT,137,105,38,10
+    EDITTEXT        IDC_WIZARD4_OUTPUT_LOC,2,104,130,12,ES_AUTOHSCROLL
+END
+
+WIZARD3 DIALOG  100, 0, 185, 127
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "Choose the level of report detail you desire.  For more customization options consult the settings dialog.",
+                    IDC_STATIC,1,20,162,24
+    LTEXT           "Step 3",IDC_STATIC,154,7,20,8
+    CONTROL         "Basic",IDC_FRAME3_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,52,47,10
+    CONTROL         "Standard",IDC_FRAME3_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,74,56,10
+    CONTROL         "Advanced",IDC_FRAME3_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,0,95,54,9
+    LTEXT           "Includes reports for basic visitor and server statistics.",
+                    IDC_STATIC,9,62,162,11
+    LTEXT           "Includes reports for all visitor and server statistics.",
+                    IDC_STATIC,10,84,162,9
+    LTEXT           "Includes reports for all visitor and server statistics with historical data.",
+                    IDC_STATIC,10,104,162,16
+END
+
+WIZARD2 DIALOG  100, 0, 185, 124
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Select...",IDC_FRAME2_SEL_BUTT,136,103,38,10
+    LTEXT           "The log file is usually located in the root directory of your Web server.  If you are using an ISP you can specify the full FTP or HTTP url to your file.",
+                    IDC_STATIC,2,54,149,31
+    LTEXT           "Now use the Select... button to specify the location of the log file you would like to process",
+                    IDC_STATIC,2,25,149,21
+    LTEXT           "Step 2",IDC_STATIC,154,7,20,8
+    EDITTEXT        IDC_FRAME2_FILE_NAME,2,102,131,12,ES_AUTOHSCROLL
+END
+
+WIZARD1 DIALOGEX 100, 0, 185, 125
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Welcome to iReporter Setup Wizard.",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,4,25,174,8,
+                    WS_EX_TRANSPARENT
+    LTEXT           "This wizard can help you setup the:",IDC_STATIC,4,41,
+                    128,8
+    CONTROL         105,IDB_FRAME1_BULLET1,"Static",SS_BITMAP,4,53,6,6
+    LTEXT           "location of the log file to be processed,",IDC_STATIC,
+                    13,52,128,8
+    CONTROL         105,IDB_FRAME1_BULLET2,"Static",SS_BITMAP,4,65,6,6
+    LTEXT           "level of analysis, and",IDC_STATIC,13,64,128,8
+    CONTROL         105,IDB_FRAME1_BULLET3,"Static",SS_BITMAP,4,77,6,6
+    LTEXT           "output destination.",IDC_STATIC,13,76,128,8
+    LTEXT           "These settings can be modified later in the settings area.",
+                    IDC_STATIC,4,95,137,16
+    LTEXT           "Step 1",IDC_STATIC,154,7,20,8
+END
+
+WIZARD DIALOG  0, 0, 288, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Web Wizard"
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         184,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_BORDER,5,5,92,128
+    GROUPBOX        "",IDC_STATIC,0,133,288,23
+    PUSHBUTTON      "Cancel",IDC_WIZARD_CANCEL,246,141,38,12
+    DEFPUSHBUTTON   "Next >>",IDC_WIZARD_NEXT,205,141,38,12
+    PUSHBUTTON      "<< Prev",IDC_WIZARD_PREV,164,141,38,12
+END
+
+PREFS_STATSDIRMAP DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFGRP_PATTERN,40,18,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFGRP_NAME,159,18,117,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFGRP_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "Add",IDC_PREFGRP_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFGRP_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFGRP_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "Content group mapping",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Pattern:",IDC_STATIC,12,20,26,8
+    LTEXT           "Name:",IDC_STATIC,135,20,22,8
+END
+
+SCHEDULELIST DIALOGEX 0, 0, 408, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Schedule Events List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Save",IDC_SCHED_OK,304,273,46,13
+    GROUPBOX        "",IDC_STATIC,6,2,396,251
+    PUSHBUTTON      "New...",IDC_SCHED_ADD,6,273,46,12
+    PUSHBUTTON      "Remove",IDC_SCHED_DEL,54,273,46,12
+    RTEXT           "",IDC_SCHED_CURRENTTIME,249,10,141,11
+    PUSHBUTTON      "Event History...",IDC_SCHED_VIEWLOG,198,273,51,12
+    CONTROL         "List1",IDC_SCHED_LISTRECT,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,47,383,200,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Run now",IDC_SCHED_RUNNOW,102,273,46,12
+    PUSHBUTTON      "Properties...",IDC_SCHED_EDIT,150,273,46,12
+    ICON            "IDI_SCHED_ICON",IDC_STATIC,17,17,20,20,SS_REALSIZEIMAGE,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Use the schedule to automate the process of analysing log files",
+                    IDC_STATIC,53,23,251,11,0,WS_EX_TRANSPARENT
+    CONTROL         "Disable all events",IDC_SCHED_DISABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,257,237,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Cancel",IDC_SCHED_CANCEL,354,273,46,13
+END
+
+PREFS_FILTEROUTPUT DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,4,4,280,190,WS_GROUP
+    COMBOBOX        IDC_FILTEROUT1,14,36,72,71,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FILTEROUT2,108,36,72,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILTEROUT3,202,36,72,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILTEROUT_DATA,14,52,260,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_FILTEROUT_ADD,62,176,50,13
+    PUSHBUTTON      "Remove",IDC_FILTEROUT_REM,170,176,50,13
+    PUSHBUTTON      "Clear",IDC_FILTEROUT_CLEAR,224,176,50,13
+    PUSHBUTTON      "Change",IDC_FILTEROUT_CHANGE,116,176,50,13
+    LISTBOX         IDC_FILTEROUT_LIST,14,72,260,98,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Output filters allow you to limit the information displayed in the reports. Unlike input filters they do not affect any calculations or statistics.",
+                    IDC_STATIC,10,14,270,16
+END
+
+PREFS_FILTERINPUT DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_FILTERIN1,12,36,88,133,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FILTERIN2,100,36,88,131,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FILTERIN3,188,36,88,132,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FILTERIN_DATA,12,52,264,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Add",IDC_FILTERIN_ADD,118,176,50,12
+    PUSHBUTTON      "Delete",IDC_FILTERIN_REM,172,176,50,12
+    PUSHBUTTON      "Change",IDC_FILTERIN_CHANGE,226,176,50,12
+    GROUPBOX        "",IDC_STATIC,4,4,280,190,WS_GROUP
+    LTEXT           "Input filters narrow the scope of analysis according to the rules specified below.\nBy default, all activity is included.",
+                    IDC_STATIC,10,14,270,16
+    CONTROL         "List1",IDC_FILTERIN_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,68,264,100
+END
+
+PREFS_ANALYSISNET DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Disable lookups",IDC_PREFGEN_DNSNO,"Button",
+                    BS_AUTORADIOBUTTON,12,20,85,9
+    CONTROL         "Enable lookups",IDC_PREFGEN_DNSYES,"Button",
+                    BS_AUTORADIOBUTTON,12,34,91,8
+    EDITTEXT        IDC_PREFGEN_DNSNUM,101,46,22,12,ES_AUTOHSCROLL
+    CONTROL         "Cache-only lookups",IDC_PREFGEN_DNSCACHE,"Button",
+                    BS_AUTORADIOBUTTON,12,68,120,8
+    PUSHBUTTON      "Clear Cache",IDC_CLEARCACHE,30,82,70,12
+    CONTROL         "Passive FTP",IDC_PREFFTP_PASSIVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,20,56,10
+    CONTROL         "Retrieve HTML page titles",IDC_PREF_REMOTETITLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,158,34,119,10
+    GROUPBOX        "DNS",-1,4,4,136,190,WS_GROUP
+    GROUPBOX        "General",-1,148,4,136,190,WS_GROUP
+    LTEXT           "Simultaneous lookups:",-1,24,48,76,8
+END
+
+PREFS_ANALYSISEXT DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_EXTEDIT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,12,30,206,156
+    PUSHBUTTON      "Add",IDC_GLOB_PAGEADD,226,30,50,12
+    PUSHBUTTON      "Delete",IDC_GLOB_PAGEREM,226,46,50,12
+    PUSHBUTTON      "Edit",IDC_GLOB_PAGEEDIT,226,62,50,12
+    PUSHBUTTON      "Defaults",IDC_GLOB_PAGEDEFAULT,226,78,50,12,WS_GROUP
+    GROUPBOX        "",IDC_GLOB_TITLE,4,4,280,190,WS_GROUP
+    LTEXT           "Define any custom extensions by including them in the list below.",
+                    IDC_STATIC,12,14,218,12,SS_CENTERIMAGE
+END
+
+PREFS_ANALYSIS DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ANALYSIS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | WS_TABSTOP,0,0,294,215
+END
+
+PREFS_STATSEDIT DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree2",IDC_STATEDIT,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | TVS_NOTOOLTIPS | TVS_CHECKBOXES | 
+                    TVS_TRACKSELECT | WS_BORDER,10,19,158,155,
+                    WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Expand All",IDC_BUTTON_EXPANDALL,62,176,54,12,NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Defaults",IDC_STATDEFAULT,10,176,52,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Apply All",IDC_APPLYALL,116,176,52,12,NOT WS_TABSTOP
+    CONTROL         "Table:",IDC_STAT_TABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,26,90,10,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_TABSIZE,182,38,84,105,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Graph",IDC_STAT_GRAPH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,57,34,10
+    COMBOBOX        IDC_SORTING,182,79,84,86,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Help card",IDC_USEDESC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,182,100,46,10
+    PUSHBUTTON      "Edit Card",IDC_STATEDITDESC,229,99,36,12
+    COMBOBOX        IDC_STATFILTER,182,140,84,12,CBS_DROPDOWNLIST | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_STATFILTERTXT,182,157,84,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    COMBOBOX        IDC_STATFILTER2,182,172,84,12,CBS_DROPDOWNLIST | 
+                    CBS_SORT | NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "",IDC_STATEDIT_NAME,4,4,280,190,WS_GROUP
+    GROUPBOX        "Options",IDC_STATIC,174,14,101,174,WS_GROUP
+    LTEXT           "Sorting:",IDC_STATIC,182,69,52,9
+    LTEXT           "Report Filter",IDC_STATIC,182,129,83,9,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    COMBOBOX        IDC_STATSTYLES,10,6,140,69,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+END
+
+PREFS_POSTCOMPRESS DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Archive to a .gz file",IDC_PP_COMPRESSLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,18,76,10
+    CONTROL         "Delete original log file(s)",IDC_PP_DELETELOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,31,90,10
+    CONTROL         "Archive to a .zip file",IDC_PP_ZIPREPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,18,77,10
+    CONTROL         "Delete original report files",IDC_PP_DELETEREPORT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,159,31,95,10
+    GROUPBOX        "Reports",-1,148,4,136,190
+    GROUPBOX        "Log files",-1,4,4,136,190
+END
+
+PREFS_POSTUPLOAD DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable upload",IDC_PP_UPLOADLOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,17,116,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PP_HOST,12,45,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_USER,12,75,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_PASSWD,12,105,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_PATH,12,135,120,12,ES_AUTOHSCROLL
+    CONTROL         "Enable upload",IDC_PP_UPLOADREPORT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,155,17,105,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PP_HOST2,156,45,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_USER2,156,75,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_PASSWD2,156,105,120,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_PATH2,156,135,120,12,ES_AUTOHSCROLL
+    CONTROL         "Upload whole folder contents",IDC_PP_UPLOADFOLDER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,156,157,119,10,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "Reports",IDC_STATIC,148,4,136,190
+    GROUPBOX        "Log files",IDC_STATIC,4,4,136,190
+    LTEXT           "FTP server:",IDC_STATIC,12,33,43,10
+    LTEXT           "Username:",IDC_STATIC,12,63,33,10
+    LTEXT           "Password:",IDC_STATIC,12,93,32,10
+    LTEXT           "Path:",IDC_STATIC,12,123,28,10
+    LTEXT           "FTP server:",IDC_STATIC,156,33,46,10
+    LTEXT           "Username:",IDC_STATIC,156,63,33,10
+    LTEXT           "Password:",IDC_STATIC,156,93,32,10
+    LTEXT           "Path:",IDC_STATIC,156,123,28,10
+END
+
+PREFS_POSTEMAIL DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Send email notification",IDC_PP_EMAILON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,16,97,10,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "Test Email",IDC_EMAIL_TEST,215,14,57,12,NOT WS_VISIBLE
+    EDITTEXT        IDC_PP_EMAIL,58,32,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_EMAILFROM,58,47,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_EMAILSUB,58,62,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_EMAILSMTP,58,77,215,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PP_MSG,12,93,261,95,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL,WS_EX_STATICEDGE
+    GROUPBOX        "Notification",IDC_STATIC,4,4,280,190
+    LTEXT           "To:",IDC_STATIC,12,34,41,10
+    LTEXT           "Subject:",IDC_STATIC,12,64,41,10
+    LTEXT           "SMTP host:",IDC_STATIC,12,80,41,10
+    LTEXT           "From:",IDC_STATIC,12,49,41,10
+END
+
+PREFS_POSTPROC DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_POSTPROC,"SysTabControl32",0x0,0,0,294,
+                    215
+END
+
+PREFS_ADDSBANNERS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFADD_NAME,66,36,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFADD_PATTERN1,66,52,210,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFADD_PATTERN2,66,68,210,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFADD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,12,86,264,84
+    PUSHBUTTON      "Add",IDC_PREFADD_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFADD_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFADD_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "",65534,4,4,280,190,WS_GROUP
+    LTEXT           "File name:",IDC_STATIC,14,54,50,8
+    LTEXT           "Description:",IDC_STATIC,14,38,50,8
+    LTEXT           "Click string:",IDC_STATIC,14,70,50,8
+    LTEXT           "Use this section to track advertising banners or links being hosted on your site.\nThe ""click string"" value must be a CGI redirect or META-embedded redirect.",
+                    IDC_STATIC,12,14,264,18
+END
+
+PREFS_ADDS DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ADDS,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_FILTERSOURCE DIALOG  2, 14, 284, 196
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Router Source address filter",IDC_STATIC,1,3,277,182,
+                    WS_GROUP
+    EDITTEXT        IDC_PREFFILT_SRCNAME,7,16,208,12,ES_AUTOHSCROLL
+    LISTBOX         IDC_PREFFILT_SRCLIST,7,32,208,124,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_PREFFILT_SRCADD,221,16,50,13
+    PUSHBUTTON      "Remove",IDC_PREFFILT_SRCREM,221,48,50,13
+    PUSHBUTTON      "Clear",IDC_PREFFILT_SRCCLR,221,64,50,13
+    LTEXT           "Filters accept normal wildcard patterns. eg *stuff* would include any string that has the word stuff in it. Adding the ! character would reverse the logic so that  '!things' would include everything but strings with 'things'",
+                    IDC_STATIC,6,158,270,26
+    PUSHBUTTON      "Change",IDC_PREFSRC_CHANGE,221,32,50,13
+END
+
+PREFS_PREOPTIONS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Delete log file(s) from remote FTP server after download",
+                    IDC_PREPROC_DEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    18,188,10
+    EDITTEXT        IDC_PREPROC_DEST,14,45,215,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_PREPROC_BROWSE,234,45,39,12,NOT 
+                    WS_TABSTOP
+    GROUPBOX        "Download options",IDC_STATIC,4,4,280,190
+    LTEXT           "Local download location:",IDC_STATIC,14,34,119,9
+END
+
+PREFS_PREDOWNLOAD DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable download of remote log files",IDC_PRE_ON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,21,127,10,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PRE_HOST,17,63,126,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRE_USER,18,92,126,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRE_PASSWD,18,121,126,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PRE_PATH,18,151,126,12,ES_AUTOHSCROLL
+    GROUPBOX        "Configuration",IDC_DOWNLOADLOGS,4,4,280,190
+    LTEXT           "FTP server:",IDC_STATIC,18,53,80,10
+    LTEXT           "Username:",IDC_STATIC,18,83,90,8
+    LTEXT           "Password:",IDC_STATIC,18,111,70,10
+    LTEXT           "Path (wildcards permitted):",IDC_STATIC,18,141,127,10
+    PUSHBUTTON      "Browse ...",IDC_PRE_BROWSE,243,180,40,12,NOT WS_VISIBLE | 
+                    WS_DISABLED | NOT WS_TABSTOP
+    LTEXT           "Enabling pre process will connect to the specified remote FTP server and retrieve your log files.\r\rThe log files will be stored in your default Windows temporary directory until you delete it.",
+                    IDC_STATIC,161,61,112,63
+    LTEXT           "The next tab (Options) allows you to specify your own download location.",
+                    IDC_STATIC,161,126,111,38
+    GROUPBOX        "Properties",IDC_STATIC,10,39,142,133
+    GROUPBOX        "Notes",IDC_STATIC,156,39,121,133
+END
+
+PREFS_PREPROC DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_PREPROC,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_CUSTOM DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_CUSTOM,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_VDOMAINSCLUSTER DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable cluster analysis",IDC_PREFVD_CLUSTER,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,10,15,87,8,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_CLUSTER_NAME,11,52,91,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLUSTER_IP,105,52,63,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLUSTER_PATTERN,171,52,105,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_CLUSTER_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,11,69,265,102
+    PUSHBUTTON      "Add",IDC_CLUSTER_ADD,121,175,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_CLUSTER_DEL,174,175,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_CLUSTER_CHANGE,227,175,50,12,NOT WS_TABSTOP
+    GROUPBOX        "Options",IDC_STATIC,4,4,280,190,WS_GROUP
+    EDITTEXT        IDC_PREFVD_CLUSTERINFO,251,15,23,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Server name",IDC_STATIC,11,42,41,8
+    LTEXT           "IP address",IDC_STATIC,106,42,34,8
+    LTEXT           "Path pattern",IDC_STATIC,171,42,40,8
+    LTEXT           "Servers licensed to analyze:",IDC_STATIC,157,15,88,8
+    EDITTEXT        IDC_PREFVD_CLUSTERNUM,250,23,28,12,ES_AUTOHSCROLL
+    LTEXT           "Number of servers to analyze:",IDC_STATIC,152,25,98,9
+END
+
+PREFS_ANALYSISDYN DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Retain URL parameters",IDC_PREFGEN_USECGI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,16,264,12
+    CONTROL         "Specify URL parameters to retain (delimit with commas):",
+                    IDC_PREFGEN_RETAINVAR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,31,264,15
+    EDITTEXT        IDC_PREFGEN_RETAINVARLIST,12,51,265,12,ES_AUTOHSCROLL
+    CONTROL         "Flushing mode",IDC_PREFGEN_FLUSH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,113,264,12
+    GROUPBOX        "URL parameters",-1,4,4,280,94,WS_GROUP
+    GROUPBOX        "Analysis",-1,4,100,280,94,WS_GROUP
+    LTEXT           "Warning: This mode reduces RAM usage by removing low-impact visitors from the analysis.  As such, there may be slight statistical differences compared to running with this mode off.",
+                    IDC_FLUSHTXT1,11,130,265,28
+END
+
+GLOBAL_WEBADMIN DIALOGEX 80, 9, 292, 158
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Web Admin Preferences"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Connection Options",IDC_STATIC,7,23,129,71,WS_GROUP
+    CONTROL         "Enable Remote Web Control",IDC_WEBON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,8,133,10,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Password:",IDC_STATIC,15,37,53,11
+    EDITTEXT        IDC_REMOTEPASSWD,73,35,54,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "TCP Port:",IDC_STATIC,15,56,53,11
+    EDITTEXT        IDC_REMOTEPORT,73,54,54,12,ES_AUTOHSCROLL
+    LTEXT           "Use this option to control this application from a remote web browser from anywhere in the world.",
+                    IDC_STATIC,145,26,138,67,SS_SUNKEN
+    PUSHBUTTON      "Cancel",IDC_DESCCANCEL,238,137,45,12
+    PUSHBUTTON      "Accept",IDC_DESCOK,8,136,45,12
+END
+
+PREFS_STATSREFMAP DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFREF_PATTERN,41,18,87,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFREF_NAME,160,18,116,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFREF_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "Add",IDC_PREFREF_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFREF_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFREF_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "Referral mapping",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Pattern:",IDC_STATIC,12,20,26,8
+    LTEXT           "Name:",IDC_STATIC,136,20,22,8
+END
+
+PREFS_REPORTRTF DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Table colors",-1,148,4,136,190
+    GROUPBOX        "RTF Options",-1,4,4,136,190
+END
+
+PREFS_REPORTPDF2 DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_PREF_PDF_FONT,46,13,89,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_PAGENUMBERINGPOS,46,31,89,80,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_PAGESIZE,46,60,89,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PREF_PDF_PAGEWIDTH,46,78,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREF_PDF_PAGEHEIGHT,46,95,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREF_PDF_LEFTMARGIN,46,123,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREF_PDF_RIGHTMARGIN,103,123,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREF_PDF_TOPMARGIN,46,139,21,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREF_PDF_BOTTOMMARGIN,103,139,21,12,ES_AUTOHSCROLL
+    CONTROL         "Image:",IDC_PREF_PDF_SHOWBANNER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,173,34,9
+    EDITTEXT        IDC_PREF_PDF_BANNERFILE,46,171,78,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PREF_PDF_BROWSEBANNERFILE,124,171,10,13
+    CONTROL         "Wrapping:           ",IDC_PREF_PDF_TEXTWRAP,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,151,14,43,10
+    PUSHBUTTON      "Advanced...",IDC_PREF_PDF_ADVANCED,231,13,50,13
+    COMBOBOX        IDC_PREF_PDF_TRUNCATETEXT,187,31,94,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_TABLETEXTNAME,187,60,94,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_FONTSIZE,187,78,25,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_FONTSTYLE,235,78,46,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_FONTCOLOR,187,95,94,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_SPACING,209,135,72,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PREF_PDF_SPACINGSIZE,187,135,20,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PREF_PDF_GRAPHFONT,187,171,49,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PREF_PDF_GRAPHFONTSIZE,255,171,26,59,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Size:",IDC_STATIC,12,63,16,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Width:",IDC_STATIC,12,80,21,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Height:",IDC_STATIC,12,97,23,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Pixels",IDC_STATIC,76,80,20,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Left:",IDC_STATIC,12,125,19,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Right:",IDC_STATIC,74,125,20,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Top:",IDC_STATIC,12,141,19,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Bottom:",IDC_STATIC,74,141,27,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Truncation:",IDC_STATIC,150,34,37,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Table layout",IDC_STATIC,146,2,139,113
+    GROUPBOX        "Text styles",IDC_STATIC,146,50,139,65
+    LTEXT           "Size:",IDC_STATIC,153,80,17,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Style:",IDC_STATIC,216,80,17,10,0,WS_EX_TRANSPARENT
+    LTEXT           "Color:",IDC_STATIC,153,97,18,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Section:",IDC_STATIC,153,63,26,9,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Banner",IDC_STATIC,1,156,138,39
+    GROUPBOX        "Page layout",IDC_STATIC,1,2,138,193
+    GROUPBOX        "Dimensions",IDC_STATIC,1,50,138,145
+    LTEXT           "Font:",IDC_STATIC,12,16,17,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Numbers:",IDC_STATIC,12,33,34,8
+    LTEXT           "Pixels",IDC_STATIC,76,97,20,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Margins",IDC_STATIC,1,111,138,84
+    GROUPBOX        "Spacings",IDC_STATIC,145,122,140,73
+    LTEXT           "Pixels:",IDC_STATIC,151,137,20,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Graph text sizes",IDC_STATIC,145,156,140,39
+    LTEXT           "Name:",IDC_STATIC,149,174,21,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Size:",IDC_STATIC,237,174,15,8,0,WS_EX_TRANSPARENT
+END
+
+PREFS_REPORTPDFADVANCED DIALOGEX 2, 14, 177, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_CAPTION | WS_SYSMENU
+CAPTION "PDF Table Text Layout"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Reduce Column Width to:",IDC_STATIC,9,33,84,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "%",IDC_STATIC,117,34,8,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_REDUCELARGESTDATACOL,95,32,20,12,
+                    ES_AUTOHSCROLL
+    LTEXT           "Minimum length:",IDC_STATIC,10,67,54,9,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_MINCOLHEADSCHARS,68,65,20,12,ES_AUTOHSCROLL
+    LTEXT           "characters",IDC_STATIC,93,67,36,8,0,WS_EX_TRANSPARENT
+    CONTROL         "Reduce Font Size:",IDC_PREF_PDF_REDUCEDATAFONTSIZE,
+                    "Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_MULTILINE | 
+                    WS_TABSTOP,8,17,72,8,WS_EX_TRANSPARENT
+    LTEXT           "to:",IDC_STATIC,83,17,9,8,0,WS_EX_TRANSPARENT
+    LTEXT           "%",IDC_STATIC,117,17,8,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_PREF_PDF_REDUCEDATAFONTSIZEPER,95,15,20,12,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Largest Data Column",IDC_STATIC,4,4,166,46
+    GROUPBOX        "Column Headings",IDC_STATIC,4,53,166,28
+    DEFPUSHBUTTON   "OK",IDC_PREF_PDF_ADV_OK,61,86,50,14
+    PUSHBUTTON      "Cancel",IDC_PREF_PDF_ADV_CANCEL,120,86,50,14
+    LTEXT           "of Original",IDC_STATIC,125,17,33,8
+    LTEXT           "of Original",IDC_STATIC,125,34,33,8
+END
+
+IDD_XMAINTOOLBAR DIALOGEX 9, 26, 357, 303
+STYLE DS_SETFONT | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+MENU IREPORTER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Settings",IDC_PREFS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    BS_NOTIFY | WS_TABSTOP,10,12,41,36
+    CONTROL         "Process",IDC_PROCESS,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,129,12,41,36
+    CONTROL         "Schedule",IDC_SCHED,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,72,12,41,36
+    CONTROL         "View",IDC_VIEW,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,189,12,41,36
+    CONTROL         "Help",IDC_APPHELP,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,244,12,41,36
+    CONTROL         "->",IDC_SHOWLIST,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,0,52,12,11
+    CONTROL         "List2",IDC_LOGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,65,355,223
+    CONTROL         140,IDC_TOOLBARIMAGE,"Static",SS_BITMAP | NOT WS_VISIBLE,
+                    0,1,293,55,WS_EX_TRANSPARENT
+    CONTROL         "Help",IDC_APPLOGO,"Button",BS_OWNERDRAW | BS_BITMAP | 
+                    WS_TABSTOP,302,12,41,36
+    CONTROL         "Progress1",IDC_XPROGRESS,"msctls_progress32",WS_BORDER,
+                    188,291,167,11
+    LTEXT           "Ok.",IDC_XSTATUS,0,292,181,9
+END
+
+IDD_FILELOCATIONDlg DIALOG  100, 100, 240, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a location to save the file"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_FILELOCATIONOK,57,49,50,14
+    PUSHBUTTON      "Cancel",IDC_FILELOCATIONCANCEL,145,49,50,14
+    LTEXT           "File Location:",IDC_STATIC,5,10,45,8
+    EDITTEXT        IDC_FILELOCATIONEDIT,5,25,177,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_FILELOCATIONBROWSE,183,25,33,13
+END
+
+PREFS_STATSBOTMAP DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFBOT_PATTERN,41,18,90,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFBOT_NAME,156,18,120,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFBOT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER,12,38,264,132
+    PUSHBUTTON      "Add",IDC_PREFBOT_ADD,118,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFBOT_REM,172,176,50,12,NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFBOT_CHANGE,226,176,50,12,NOT WS_TABSTOP
+    GROUPBOX        "Robot Mapping",65534,4,4,280,190,WS_GROUP
+    LTEXT           "Pattern",IDC_STATIC,12,20,24,8
+    LTEXT           "Name",IDC_STATIC,134,20,20,8
+END
+
+IDD_LANGBUILDER DIALOGEX 0, 0, 402, 314
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION
+CAPTION "Language Builder"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LANGTOKEN_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,29,388,248
+    LTEXT           "Text:",IDC_STATIC,170,12,27,9,0,WS_EX_RIGHT
+    EDITTEXT        IDC_LANGTOKEN_TEXT,202,10,135,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Update",IDC_LANGTOKEN_UPDATE,345,9,50,14
+    EDITTEXT        IDC_LANGTOKEN_FINDTEXT,13,289,135,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Next",IDC_LANGTOKEN_FIND,154,288,50,14
+    LTEXT           "Language:",IDC_STATIC,7,12,38,10
+    COMBOBOX        IDC_LANGTOKEN_LANG,49,10,94,84,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Find Language Text",IDC_STATIC,7,280,202,27
+    PUSHBUTTON      "&Previous",IDC_LANGTOKEN_FINDPREV,215,288,50,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "&Save as...",IDC_LANGTOKEN_SAVEAS,283,293,50,14
+    PUSHBUTTON      "Exit",IDC_LANGTOKEN_EXIT,345,293,50,14
+END
+
+PREFS_STATSKEYVISITORS DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PREFKEYVISITOR_NAME,38,23,215,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_PREFKEYVISITOR_LIST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,38,37,215,125
+    PUSHBUTTON      "Add",IDC_PREFKEYVISITOR_ADD,105,172,50,13,NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_PREFKEYVISITOR_DEL,157,172,50,13,NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_PREFKEYVISITOR_CHANGE,209,172,50,13,NOT 
+                    WS_TABSTOP
+    GROUPBOX        "Configuration",65534,4,1,280,190,WS_GROUP
+    PUSHBUTTON      "Clear",IDC_PREFKEYVISITOR_DEFAULT,162,156,7,6,NOT 
+                    WS_VISIBLE | NOT WS_TABSTOP
+    GROUPBOX        "Visitor specification",IDC_STATIC,31,12,228,155
+END
+
+PREFS_REPORTROUTE2KEYPAGES DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROUTE2KEYPAGE_KEYPAGE,38,23,215,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST_KEYPAGES,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,38,37,215,101
+    EDITTEXT        IDC_ROUTE2KEYPAGE_TRACEBACK,100,150,27,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROUTE2KEYPAGE_NUMBERTOREPORT,231,150,28,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Add",IDC_ROUTE2KEYPAGE_ADD,106,172,50,13
+    PUSHBUTTON      "Delete",IDC_ROUTE2KEYPAGE_REM,158,172,50,13
+    PUSHBUTTON      "Change",IDC_ROUTE2KEYPAGE_CHANGE,210,172,50,13
+    PUSHBUTTON      "Clear",IDC_ROUTE2KEYPAGE_CLEAR,161,162,12,8,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Configuration",IDC_STATIC,4,1,280,190,WS_GROUP
+    LTEXT           "Pages to trace back:",IDC_STATIC,31,152,67,8
+    LTEXT           "Sequences to report:",IDC_STATIC,162,152,70,8
+    GROUPBOX        "Key page specification (routes to)",IDC_STATIC,31,12,
+                    228,133
+END
+
+SERIALREG DIALOGEX 9, 26, 293, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_VISIBLE | WS_CAPTION
+CAPTION "iReporter Serial Registration"
+FONT 8, "Helv", 0, 0, 0x1
+BEGIN
+    LTEXT           "Please enter your registration details below",
+                    IDC_REGTXT1,35,97,222,20,SS_SUNKEN,WS_EX_TRANSPARENT
+    LTEXT           "Name:",IDC_REGTXT2,35,126,67,12,0,WS_EX_TRANSPARENT
+    LTEXT           "Organization:",IDC_REGTXT3,35,139,67,12,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Registration Number:",IDC_REGTXT4,35,152,67,12,0,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_REGNAME,103,123,154,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_REGORG,103,138,154,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    EDITTEXT        IDC_REGSERIAL,103,153,154,12,ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT
+    LTEXT           "FWX-XXXX-XXXX-XX",IDC_REGTXT5,105,169,152,11,0,
+                    WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "Register",IDC_REGOK,193,200,66,16,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Cancel",IDC_REGCANCEL,35,200,66,16,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Try 15 Day Demo",IDC_REGDEMO,115,200,66,16,0,
+                    WS_EX_TRANSPARENT
+END
+
+PREFS_DEBUG DIALOGEX 78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_DEBUG,"SysTabControl32",0x0,0,0,294,215
+END
+
+PREFS_DEBUGOPTIONS DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",-1,4,4,280,190,WS_GROUP
+    CONTROL         "Enable something???",IDC_CUSTOM_USE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,16,84,10,
+                    WS_EX_TRANSPARENT
+END
+
+PREFS_REPORTROUTEFROMKEYPAGES DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROUTEFROMKEYPAGE_KEYPAGE,38,23,215,12,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_ROUTEFROMKEYPAGE_LIST,"SysListView32",
+                    LVS_REPORT | WS_BORDER | WS_TABSTOP,38,37,215,101
+    EDITTEXT        IDC_ROUTEFROMKEYPAGE_TRACEBACK,107,150,27,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ROUTEFROMKEYPAGE_NUMBERTOREPORT,231,150,28,12,
+                    ES_RIGHT | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Add",IDC_ROUTEFROMKEYPAGE_ADD,106,172,50,13
+    PUSHBUTTON      "Delete",IDC_ROUTEFROMKEYPAGE_REM,158,172,50,13
+    PUSHBUTTON      "Change",IDC_ROUTEFROMKEYPAGE_CHANGE,210,172,50,13
+    PUSHBUTTON      "Clear",IDC_ROUTEFROMKEYPAGE_CLEAR,166,161,10,6,NOT 
+                    WS_VISIBLE
+    GROUPBOX        "Configuration",IDC_STATIC,4,1,280,190,WS_GROUP
+    GROUPBOX        "Key page specification (routes from)",IDC_STATIC,31,12,
+                    228,133
+    LTEXT           "Sequences to report:",IDC_STATIC,162,152,70,8
+    LTEXT           "Pages to trace forward:",IDC_STATIC,31,152,74,8
+END
+
+PREFS_REPORTHTML DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "HTML Options",IDC_STATIC,4,4,280,190
+    CONTROL         "",IDC_PREFIMG_RGB1,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,200,153,24,8
+    CONTROL         "",IDC_PREFIMG_RGB2,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,200,162,24,8
+    CONTROL         "",IDC_PREFIMG_RGB3,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,200,172,24,8
+    CONTROL         "",IDC_PREFIMG_RGB4,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,200,180,24,8
+    CONTROL         "",IDC_PREFIMG_RGB5,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,226,162,24,8
+    CONTROL         "",IDC_PREFIMG_RGB6,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,226,172,24,8
+    CONTROL         "",IDC_PREFIMG_RGB7,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,226,180,24,8
+    CONTROL         "",IDC_PREFIMG_RGB8,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,252,162,24,8
+    CONTROL         "",IDC_PREFIMG_RGB9,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,252,172,24,8
+    CONTROL         "",IDC_PREFIMG_RGB10,"Button",BS_OWNERDRAW | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,252,180,24,8
+    CONTROL         "Quick Links index",IDC_PREF_QINDEX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,16,110,10
+    EDITTEXT        IDC_FONTNAME,11,48,88,12,ES_AUTOHSCROLL
+    LTEXT           "HTML Font Style",IDC_STATIC,12,37,85,9
+    EDITTEXT        IDC_FONTSIZE,11,80,88,12,ES_AUTOHSCROLL
+    LTEXT           "HTML Font Size",IDC_STATIC,12,69,86,9
+END
+
+PREFS_ROUTES DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_ROUTES,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN,0,0,294,215
+END
+
+PREFS_BILLING DIALOG  78, 9, 294, 215
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB_BILLING,"SysTabControl32",
+                    TCS_FOCUSONBUTTONDOWN | WS_TABSTOP,0,0,294,215
+END
+
+PREFS_BILLINGSETUP DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable billing reports",IDC_CHECK_ENABLEBILLING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,18,101,11
+    COMBOBOX        IDC_COMBO_BILLINGPERIOD,16,44,101,192,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_EDIT_BILLINGSTART,39,63,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGEND,39,79,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGREPORTTITLE,157,44,112,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCURRENCY,199,60,70,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_BILLINGFORMAT,199,76,70,92,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    CONTROL         "Customer name",IDC_CHECK_BILLINGREPORT_NAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,111,82,8
+    CONTROL         "Customer ID",IDC_CHECK_BILLINGREPORT_ID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,121,82,8
+    CONTROL         "MB transferred",IDC_CHECK_BILLINGREPORT_MBTRANSFERED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,131,82,8
+    CONTROL         "MB allowance",IDC_CHECK_BILLINGREPORT_MBALLOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,139,140,82,8
+    CONTROL         "Max. connections",IDC_CHECK_BILLINGREPORT_MAXCONN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,150,82,8
+    CONTROL         "Excess charges",IDC_CHECK_BILLINGREPORT_EXCESSCHARGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,160,82,8
+    CONTROL         "Total charges",IDC_CHECK_BILLINGREPORT_TOTALCHARGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,139,169,82,8
+    RTEXT           "Start:",IDC_MISC2,15,65,18,8
+    RTEXT           "End:",IDC_STATIC,15,81,16,8
+    GROUPBOX        "Billing period",IDC_STATIC,10,33,116,152
+    LTEXT           "Choose a billing period from the list, or specify the start and end dates of your billing period in the boxes above. Dates must be in the format MM/DD/YYYY.",
+                    IDC_STATIC,16,99,104,64
+    GROUPBOX        "Report options",IDC_STATIC,132,33,143,62
+    LTEXT           "Title:",IDC_STATIC,138,46,16,10
+    LTEXT           "Currency symbol:",IDC_STATIC,138,62,57,10
+    LTEXT           "Output format:",IDC_STATIC,138,77,55,10
+    GROUPBOX        "Report header selection",IDC_STATIC,132,99,143,86
+    GROUPBOX        "Billing setup",IDC_STATEDIT_NAME,4,4,280,190,WS_GROUP
+END
+
+PREFS_BILLINGCHARGES DIALOGEX 2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_BILLING_CUSTOMERNAME,96,17,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMERID,189,17,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMERURL,96,32,169,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMERFIXEDCHARGE,96,47,39,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMERFIXEDNUMBER,156,47,29,13,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_BILLINGCUSTOMERFIXEDTYPE,185,47,80,167,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMEREXCESSCHARGE,96,63,39,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BILLINGCUSTOMEREXCESSNUMBER,156,63,29,13,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_BILLINGCUSTOMEREXCESSTYPE,185,63,80,158,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_LIST_BILLINGCUSTOMER,"SysListView32",
+                    LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER,23,84,242,85
+    PUSHBUTTON      "Add",IDC_BUTTON_BILLINGCUSTOMERADD,106,174,50,12,NOT 
+                    WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_BUTTON_BILLINGCUSTOMERDELETE,160,174,50,12,
+                    NOT WS_TABSTOP
+    PUSHBUTTON      "Change",IDC_BUTTON_BILLINGCUSTOMERCHANGE,215,174,50,12,
+                    NOT WS_TABSTOP
+    GROUPBOX        "Charges",IDC_STATEDIT_NAME,3,2,280,190,WS_GROUP
+    LTEXT           "Base URL:",IDC_STATIC,23,33,36,8
+    LTEXT           "Per:",IDC_STATIC,141,64,15,12
+    LTEXT           "For:",IDC_STATIC,141,48,15,12
+    LTEXT           "Fixed charge:",IDC_STATIC,23,49,49,12
+    LTEXT           "Customer name:",IDC_STATIC,23,18,52,8,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "ID:",IDC_STATIC,176,18,10,8,0,WS_EX_TRANSPARENT
+    CONTROL         "Excess charge:",IDC_CHECK_BILLINGCUSTOMEREXCESSCHARGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,64,66,10
+END
+
+PREFS_FUNCTIONALITY_NOT_AVAILABLE DIALOG  2, 14, 288, 198
+STYLE DS_SETFONT | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Functionality Not Available",IDC_STATEDIT_NAME,3,2,280,
+                    190,WS_GROUP
+    LTEXT           "For this functionality you will need to purchase the Exterprise edition.",
+                    IDC_STATIC,31,46,237,81
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SELECTLOGTABLEDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ENTERLOGTABLEDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+        HORZGUIDE, 31
+    END
+
+    IDD_SUPPORTPASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CHANGEPASS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_DIALOGDATABASETABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 167
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 43
+        HORZGUIDE, 9
+        HORZGUIDE, 24
+        HORZGUIDE, 36
+        HORZGUIDE, 48
+    END
+
+    "FTP_OPEN", DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 194
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 91
+    END
+
+    "PREFS_REPORTPDF2", DIALOG
+    BEGIN
+        VERTGUIDE, 12
+        VERTGUIDE, 46
+        VERTGUIDE, 67
+        VERTGUIDE, 76
+        VERTGUIDE, 103
+        VERTGUIDE, 124
+        VERTGUIDE, 135
+        VERTGUIDE, 187
+        VERTGUIDE, 281
+        HORZGUIDE, 115
+    END
+
+    IDD_XMAINTOOLBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 356
+    END
+
+    IDD_FILELOCATIONDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 236
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 63
+    END
+
+    "IDD_LANGBUILDER", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 395
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 307
+    END
+
+    "SERIALREG", DIALOG
+    BEGIN
+        RIGHTMARGIN, 286
+        BOTTOMMARGIN, 156
+    END
+
+    "PREFS_BILLINGCHARGES", DIALOG
+    BEGIN
+        VERTGUIDE, 23
+        VERTGUIDE, 96
+        VERTGUIDE, 135
+        VERTGUIDE, 156
+        VERTGUIDE, 171
+        VERTGUIDE, 185
+        VERTGUIDE, 189
+        VERTGUIDE, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+INDEX.HTML              HTML                    "res\\General.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_LOOP1               WAVE                    "res\\loop.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IREPORTER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Settings",               IDM_NEW
+        MENUITEM "&Open Settings...",           IDM_OPEN
+        POPUP "&Recent Settings"
+        BEGIN
+            MENUITEM "&1  Recent file",             IDM_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings",              IDM_SAVE
+        MENUITEM "Save Settings &As...",        IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Process Log File...",        IDM_PROCESS
+        MENUITEM "&Process Remote Log via FTP...", IDM_FTPPROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Settings...",                IDM_PREFS
+        MENUITEM "Sch&edule...",                IDM_SCHEDULE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "View &Report ...",            IDM_VIEWHTML
+        MENUITEM "&View Log File...",           IDM_MONITORFILE
+        MENUITEM "View Schedule &Transcript...", IDM_VIEWTRANSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&Show List",                  IDM_GROW
+        MENUITEM "&Hide List",                  IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear List\tCtrl+L",         IDM_CLEARLIST
+        MENUITEM "Remove selected Logs",        IDM_LOGS_REMOVELOGS
+        MENUITEM "Edit log...",                 IDM_LOGS_EDITLOGS
+        MENUITEM "Compress log to gzip...",     IDM_LOGS_COMPLOG
+        MENUITEM "Compress log to bzip2...",    IDM_LOGS_COMPLOG2
+        MENUITEM "Show log duration...",        IDM_LOGS_SHOW_DURATION
+        MENUITEM "Add logs to List...",         IDM_LOGS_ADDLOGS
+        MENUITEM "Save List...",                IDM_LOGS_SAVELOGS
+        MENUITEM "Load List...",                IDM_LOGS_LOADLOGS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&New Instance...",            IDM_NEWAPP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Manual...",                  IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Company Website",            IDM_APPWWW
+        MENUITEM "Product &Website",            IDM_ACWWW
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+SCHED_MENU MENU 
+BEGIN
+    POPUP "Event Properties"
+    BEGIN
+        MENUITEM "New",                         IDM_SCHED_NEW
+        MENUITEM "Delete",                      IDM_SCHED_DELETE
+        MENUITEM "Clear",                       IDM_SCHED_CLEAR
+        MENUITEM "Run Now",                     IDM_SCHED_RUNNOW
+        MENUITEM "Disable",                     IDM_SCHED_DISABLETHIS
+        MENUITEM "Enable",                      IDM_SCHED_ENABLETHIS
+        MENUITEM "Properties",                  IDM_SCHED_PROPERTIES
+        MENUITEM "Disable All Events",          IDM_SCHED_DISABLEALL
+        MENUITEM "Enable All Events ",          IDM_SCHED_ENABLEALL
+        MENUITEM "Show Event History",          IDM_SCHED_TRANSCRIPT
+    END
+END
+
+LOG_MENU MENU 
+BEGIN
+    POPUP "Logs"
+    BEGIN
+        MENUITEM "Stop Processing",             IDM_STOPALL
+        MENUITEM "Clear List",                  IDM_LOGS_CLEARLOGS
+        MENUITEM "Revert List",                 IDM_LOGS_REVERT
+        MENUITEM "Process selected Logs",       IDM_LOGS_PROCESSLOGS
+        MENUITEM "Remove selected Logs",        IDM_LOGS_REMOVELOGS
+        MENUITEM "View log in realtime...",     IDM_LOGS_VIEWLOGS
+        MENUITEM "Edit log...",                 IDM_LOGS_EDITLOGS
+        MENUITEM "Compress log to gzip...",     IDM_LOGS_COMPLOG
+        MENUITEM "Compress log to bzip2...",    IDM_LOGS_COMPLOG2
+        MENUITEM "Add logs to List...",         IDM_LOGS_ADDLOGS
+        MENUITEM "Save List...",                IDM_LOGS_SAVELOGS
+        MENUITEM "Load List...",                IDM_LOGS_LOADLOGS
+    END
+END
+
+IREPORTERNT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Settings - Web",         40027
+        MENUITEM "&New Settings - Media Stream", IDM_NEW_STREAMING
+        MENUITEM "&New Settings - Firewalls",   IDM_NEW_FW
+        MENUITEM "&Open Settings...",           IDM_OPEN
+        POPUP "&Recent Settings"
+        BEGIN
+            MENUITEM "&1  Recent file",             IDM_FILE_RECENTSETTINGS_RECENTFILE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings",              IDM_SAVE
+        MENUITEM "Save Settings &As...",        IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Process Log File...",        IDM_PROCESS
+        MENUITEM "&Process Remote Log via FTP...", IDM_FTPPROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Settings...",                IDM_PREFS
+        MENUITEM "Sch&edule...",                IDM_SCHEDULE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "View &Report ...",            IDM_VIEWHTML
+        MENUITEM "&View Log File...",           IDM_MONITORFILE
+        MENUITEM "View Schedule &Event History...", IDM_VIEWTRANSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&Show List",                  IDM_GROW
+        MENUITEM "&Hide List",                  IDM_SHRINK
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear List\tCtrl+L",         IDM_CLEARLIST
+        MENUITEM "Remove selected Logs",        IDM_LOGS_REMOVELOGS
+        MENUITEM "Edit log...",                 IDM_LOGS_EDITLOGS
+        MENUITEM "Compress log to gzip...",     IDM_LOGS_COMPLOG
+        MENUITEM "Compress log to bzip2...",    IDM_LOGS_COMPLOG2
+        MENUITEM "Show log duration...",        IDM_LOGS_SHOW_DURATION
+        MENUITEM "Add logs to List...",         IDM_LOGS_ADDLOGS
+        MENUITEM "Save List...",                IDM_LOGS_SAVELOGS
+        MENUITEM "Load List...",                IDM_LOGS_LOADLOGS
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&New Instance...",            IDM_NEWAPP
+        MENUITEM SEPARATOR
+        MENUITEM "&Install Manual NTService and Start", IDM_INSTALLNTS
+        MENUITEM "Install Autostart NTService and Start", IDM_INSTALLNTSBOOT
+        MENUITEM "Stop and Remove &NTService",  IDM_REMOVENTS
+        MENUITEM "&Control Panel Services...",  IDM_SHOWNTSERVICES
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Manual...",                  IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "Software Website",            IDM_APPWWW
+        MENUITEM "Product &Website",            IDM_ACWWW
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+FILEVIEW_MENU MENU 
+BEGIN
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Copy selection...",           IDM_FM_COPY
+    END
+END
+
+IREPORTERUNIX MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Settings",               IDM_NEW
+        MENUITEM "&Open Settings...",           IDM_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Save Settings",              IDM_SAVE
+        MENUITEM "Save Settings &As...",        IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Process Log File...",        IDM_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Settings...",                IDM_PREFS
+        MENUITEM "Sch&edule...",                IDM_SCHEDULE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "View &Report ...",            IDM_VIEWHTML
+        MENUITEM "&View Log File...",           IDM_MONITORFILE
+        MENUITEM "View Schedule &Transcript...", IDM_VIEWTRANSCRIPT
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear List\tCtrl+L",         IDM_CLEARLIST
+        MENUITEM "Remove selected Logs",        IDM_LOGS_REMOVELOGS
+        MENUITEM "Compress log to gzip...",     IDM_LOGS_COMPLOG
+        MENUITEM "Compress log to bzip2...",    IDM_LOGS_COMPLOG2
+        MENUITEM "Show log duration...",        IDM_LOGS_SHOW_DURATION
+        MENUITEM "Add logs to List...",         IDM_LOGS_ADDLOGS
+        MENUITEM "Save List...",                IDM_LOGS_SAVELOGS
+        MENUITEM "Load List...",                IDM_LOGS_LOADLOGS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&New Instance...",            IDM_NEWAPP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Manual...",                  IDM_HELP
+        MENUITEM "&Online Manual...",           IDM_ONLINEMANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "&Analysis Software Website",  IDM_APPWWW
+        MENUITEM "iReporter &Website",          IDM_ACWWW
+        MENUITEM "iReporter Online &Support Site", IDM_SUPPORTWWW
+        MENUITEM SEPARATOR
+        MENUITEM "&About iReporter ",           IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IREPORTER ACCELERATORS 
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "A",            IDM_SAVEAS,             VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_SCHEDULE,           VIRTKEY, NOINVERT
+    "F",            IDM_FTPOPEN,            VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_CLEARLIST,          VIRTKEY, CONTROL, NOINVERT
+    "M",            IDM_HELP,               VIRTKEY, CONTROL, NOINVERT
+    "N",            IDM_SCHED_NEW,          VIRTKEY, NOINVERT
+    "N",            IDM_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDM_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_PROCESS,            VIRTKEY, NOINVERT
+    "R",            IDM_VIEWHTML,           VIRTKEY, NOINVERT
+    "S",            IDM_PREFS,              VIRTKEY, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_PASTE,              VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDM_STOP,               VIRTKEY, NOINVERT
+    VK_F1,          IDM_HELPCONTENTS,       VIRTKEY, NOINVERT
+    VK_F1,          IDM_PREFS_1,            VIRTKEY, CONTROL, NOINVERT
+    VK_F2,          IDM_PREFS_2,            VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          IDM_PREFS_3,            VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          IDM_PREFS_4,            VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          IDM_PREFS_5,            VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          IDM_PREFS_6,            VIRTKEY, CONTROL, NOINVERT
+    VK_F7,          IDM_PREFS_7,            VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          IDM_PREFS_8,            VIRTKEY, CONTROL, NOINVERT
+    VK_F9,          IDM_PREFS_9,            VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         IDM_GROW,               VIRTKEY, NOINVERT
+    "X",            IDM_EXIT,               VIRTKEY, CONTROL, NOINVERT
+END
+
+SCH_KEYACCEL ACCELERATORS 
+BEGIN
+    "N",            IDM_SCHED_NEW,          VIRTKEY, NOINVERT
+    "V",            IDC_SCHED_VIEWLOG,      VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_SCHED_DEL,          VIRTKEY, NOINVERT
+    VK_DELETE,      IDC_SCHED_CLEAR,        VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      IDC_SCHED_CANCEL,       VIRTKEY, NOINVERT
+    VK_RETURN,      IDC_SCHED_EDIT,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+1 VERSIONINFO
+ FILEVERSION 4,0,2,0
+ PRODUCTVERSION 4,0,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x2bL
+#else
+ FILEFLAGS 0x2aL
+#endif
+ FILEOS 0x10001L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Command Line Args", "-"
+            VALUE "Comments", "-"
+            VALUE "CompanyName", "Web Analysis Software for webservers"
+            VALUE "FileDescription", "web analysis"
+            VALUE "FileVersion", "2.0"
+            VALUE "InternalName", "iReporter"
+            VALUE "LegalCopyright", "Copyright © 2006"
+            VALUE "LegalTrademarks", "None"
+            VALUE "OriginalFilename", "iReporter.exe"
+            VALUE "PrivateBuild", "2.0"
+            VALUE "ProductName", "iReporter"
+            VALUE "ProductVersion", "2.0"
+            VALUE "SpecialBuild", "For latest updates try google."
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""application.h""\r\n"
+    "#include ""winver.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_COMMENTS            "Comments"
+    IDS_COMPRESSDONE        "Compressed %d Kb to %d Kb (%d%%) done."
+    IDS_COMPRESSED          "Your log file been compressed.\n\n"
+    IDS_COMPRESSING         "Compressing %d%% (%d Kb)..."
+    IDS_CONFIG              "Receiving config..."
+    IDS_CONNECT             "Connecting...."
+    IDS_CONNECTED           "Connected Ok."
+    IDS_CONNECTINGTO        "Connecting to ftp %s@%s..."
+    IDS_CONNECTTOREMOTE     "Connect to &remote iReporter ..."
+    IDS_COOKIEVAR           "Define a cookie variable to get the username or unique field from"
+    IDS_COPYINGFILE         "Coping file %s"
+    IDS_COUNTRIES           "Countries"
+    IDS_CUSTOM_DATA         "Which field to edit"
+    IDS_CUSTOM_DATE         "Format of the date field"
+    IDS_CUSTOM_INFO         "Custom Format summary"
+    IDS_CUSTOM_POS          "The field's position within the data, 1 to 25"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CUSTOM_SEP          "Seperator to use between fields   , or \\t or a space"
+    IDS_CUSTOM_TIME         "Format of the time field"
+    IDS_CUSTOM_USE          "Use custom format instead of autodetection"
+    IDS_DATEEND             "Report up to this date"
+    IDS_DATEFMT             "None,Fri  07 Mar 1997,DD/MMM/YYYY,MM/DD/YY,DD/MM/YY,YYYY-MM-DD,Thu Aug  1 10:32:18 1996,Unix Time,[06/Aug/2000:14:59:29 -0400]"
+    IDS_DATEFORMAT          "Auto,DD/MM/YY,MM/DD/YY,YY/MM/DD"
+    IDS_DATEOFFSET          "Adjust all times by this amount"
+    IDS_DATEOVERIDE         "If the date format cannot be detected, overide it with this"
+    IDS_DATES               "Specify Date,All dates,Today,Yesterday,This Week,Week Before,Last 7 days,Last 14 days,Last 21 days,Last 28 days,This Month,Month Before,This Quarter,Prev Quarter,This 6 months,Last 6 months,This Year,Year Before,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Last Complete 7 days,Last Complete 14 days,Last Complete 21 days,Last Complete 28 days"
+    IDS_DATESTART           "Report from this date onwards"
+    IDS_DATETOKENS          "Day of Month {DD},Month {MM},Month Name {MMM},Year {YYYY},Year {YY},Log Date Start {DD_BEG},Log Date Ending Year {YY_END}"
+    IDS_DEC                 "Dec"
+    IDS_DELETEFTP           "Deleting ftp file %s"
+    IDS_DISCONNECT          "Disconnected..."
+    IDS_DISCONREMOTE        "&Disconnect remote connection"
+    IDS_DNSCLEARED          "Your DNS cache has been cleared."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DNSCOMPLETE         "DNS Completed"
+    IDS_DONE                "Done."
+    IDS_DOWNLOADING         "Downloading %s ..."
+    IDS_DOWNLOADINGKB       "Downloading %s...%d KB (%.2f%%)"
+    IDS_DOWNLOADSTOP        "Download has been cancelled"
+    IDS_EDITPATH            "Virtual Host,Output Path"
+    IDS_EDITSCHEDULE        "Edit Schedule"
+    IDS_EDITSET             "Editing Settings"
+    IDS_EMAILNOTIFY         "Emailing notification message..."
+    IDS_ENDSERVICE          "Ending NTService... please wait"
+    IDS_ERR_BADLOG          "No valid data processed, because the log file is not recognized."
+    IDS_ERR_CANTOPENLOG     "Cannot open log file '%s'"
+    IDS_ERR_CANTSAVE        "Could not save the settings file\n%s"
+    IDS_ERR_CONNECTING      "Error connecting to ftp server (%s) as user (%s) because ..\n%s."
+    IDS_ERR_DATE1           "The start date is incorrectly formated\nCorrect format is MM/DD/YYYY"
+    IDS_ERR_DATE2           "The end date is incorrectly formated\nCorrect format is MM/DD/YYYY"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_DATE3           "The start date %s cannot be after the end date %s\nplease change"
+    IDS_ERR_DATERANGE       "No valid data processed,\nbecause the date range (%s - %s)\nignored all hits from (%s - %s).\n"
+    IDS_ERR_FILEFAILED      "Error, failed to open local file (%s)"
+    IDS_ERR_FTPREAD         "Can't open ftp file (%s)\nMaybe path does not exist?"
+    IDS_ERR_FTPWRITE        "Error, failed to open (%s) for writing.\nMaybe path does not exist?"
+    IDS_ERR_MAKEDIR         "Cannot find output path (%s)\nbecause %s\nWould you like to make the directory?"
+    IDS_ERR_NOFILTER        "No valid data processed, because the filter caused all hits to be ignored."
+    IDS_ERR_NOSETTINGS      "Settings file %s does not exist"
+    IDS_ERR_OUTPUT          "Cannot find output path (%s)\nbecause %s\n"
+    IDS_ERR_POSTPROC        "Your post processing output cannot be the same as the report output path"
+    IDS_ERR_PROCESS         "Cannot process %s because it is a %s file."
+    IDS_ERR_REGFAILED       "Registration failed, exiting iReporter"
+    IDS_ERR_SETTINGSBAD     "File is not an iReporter settings file"
+    IDS_ERR_SETTINGSFAILED  "Failed to load settings %s"
+    IDS_ERR_UPLOADFAIL      "Upload log failed\nError connecting to server (%s) as user (%s)"
+    IDS_ERR_ZEROBYTE        "No valid data processed, because ignore zero byte data ignored all."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTER_CHANGE       "Change pattern"
+    IDS_FILTER_REM          "Remove current selected pattern"
+    IDS_FILTER1             "Include,Exclude"
+    IDS_FILTER2             "File/URL,Visitor,Agent,Referral,Errors,VirtualHost,Cookie,Username,Method,1st Referral in Session"
+    IDS_FILTER3             "Contains,Starts with,Ends with,Is equal to"
+    IDS_FILTERIN_DATA       "File/URL pattern to be used (eg, *.html)"
+    IDS_FILTERS             "Rules,Type,Logic,Data"
+    IDS_FRAMEDHTML          "Make report in a framed html output"
+    IDS_GENERAL_LABELS      "General Labels"
+    IDS_GETURLTITLE         "Getting URL title..."
+    IDS_GLOB_PAGEADD        "Add a new page or download extension to the list"
+    IDS_GLOB_PAGECLR        "Reset all extensions to the default original list"
+    IDS_GLOB_PAGEREM        "Remove a page or download extension"
+    IDS_GROUPHEADER         "URL Pattern,Name"
+    IDS_HIDELIST            "Hiding list"
+    IDS_ICON_NAMES          "Pre Process,Report,Analysis,Filters,Statistics,Virtual,Post Process,Custom  Format,Debug"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ICON_NAMESENT       "Pre Process,Report,Analysis,Filters,Statistics,Tracking,Billing,Advertising,Virtual,Post Process,Custom  Format,Debug"
+    IDS_IMAGETYPE           "GIF,JPEG,PNG"
+    IDS_INFO                "Information"
+    IDS_INSTALLNTS          "Installing NTService..."
+    IDS_INSTALLNTSBOOT      "Installing NTService autostart..."
+    IDS_JAN                 "Jan"
+    IDS_JUL                 "Jul"
+    IDS_JUN                 "Jun"
+    IDS_LANG                "English,German,Italian,French,Spanish,Swedish,Norwegian,Danish,Dutch,Japanese"
+    IDS_LANGBUILDER_LISTTITLES "Text Category,English (Default),"
+    IDS_LANGTOKEN_EXIT      "Exits the Language Builder dialog."
+    IDS_LANGTOKEN_FIND      "Press to activate a search for the text."
+    IDS_LANGTOKEN_FINDTEXT  "Search text to find  (Press F3 or return to activate a search)."
+    IDS_LANGTOKEN_LANG      "List of languages currently available to edit."
+    IDS_LANGTOKEN_LIST      "Language strings, contains the default & currently selected language."
+    IDS_LANGTOKEN_SAVEAS    "Save current language string to a new file."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LANGTOKEN_TEXT      "Text of the current item. (Press return to update text). "
+    IDS_LANGTOKEN_UPDATE    "Updates the currently selected item in the list."
+    IDS_LITTLEDISKSPACE     "Low on disk space:There is possible not enough disk space free (%x Kb) for a report to be written to.\nProceed any way ?"
+    IDS_LOADDATABASE        "Loading database data..."
+    IDS_LOADSETFILE         "Reading settings file..."
+    IDS_LOADSKIN            "Loading new skin"
+    IDS_LOCATION            "Location (%d Kb Free)"
+    IDS_LOGLIST_COL1        "Server Logs (drag 'n' drop a log file to process)"
+    IDS_LOGLIST_COL2        "Size           "
+    IDS_LOGLIST_COL3        "Format         "
+    IDS_LOGLIST_COL4        "Start Date        "
+    IDS_MAILSENT            "email sent ok..."
+    IDS_MAKEDEFAULT         "Making default prefs"
+    IDS_MAKEDIR             "Makedir?"
+    IDS_MAKEFILEDIR         "Can not find the path ' %s ' . \r\rWould you like to create the directory?"
+    IDS_MAKEZIP             "Archiving zip..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MAR                 "Mar"
+    IDS_MAY                 "May"
+    IDS_MENU_ABOUT          "About iReporter..."
+    IDS_MENU_ACWWW          "Open browser to display Home web site"
+    IDS_MENU_BACKGROUNDGRAD "Toggle gradient backgrounds"
+    IDS_MENU_CHECKFORUPDATE "Check if a new update is available"
+    IDS_MENU_CLEARLIST      "Clear recent log files list"
+    IDS_MENU_ENDSERVICE     "Stop active Service"
+    IDS_MENU_EXIT           "Quit application"
+    IDS_MENU_FTPPROCESS     "Open remote log file on ftp server"
+    IDS_MENU_GROW           "Show recent log files list"
+    IDS_MENU_HELP           "Display manual via PDF"
+    IDS_MENU_INSTALLNTS     "Install as a Windows/NT Service"
+    IDS_MENU_MONITORFILE    "View log file in list"
+    IDS_MENU_NEW            "Open a new set of default settings as Untitled.fwp"
+    IDS_MENU_NEWAPP         "Run a new copy of this application"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTERSTRING_6_EXCLUDE "This report excludes all cookies that"
+    IDS_FILTERSTRING_6_INCLUDE "This report includes only cookies that"
+    IDS_FILTERSTRING_7_EXCLUDE "This report excludes all user names that"
+    IDS_FILTERSTRING_7_INCLUDE "This report includes only user names that"
+    IDS_FILTERSTRING_8_EXCLUDE "This report excludes all methods that"
+    IDS_FILTERSTRING_8_INCLUDE "This report includes only methods that"
+    IDS_FILTERSTRING_9_EXCLUDE "This makes no sense to use."
+    IDS_FILTERSTRING_9_INCLUDE "This makes no sense to use."
+    IDS_FILTERSTRING_EXACT_0_EXCLUDE "This report excludes all URLs titled"
+    IDS_FILTERSTRING_EXACT_0_INCLUDE "This report includes only URLs titled"
+    IDS_FILTERSTRING_EXACT_1_EXCLUDE 
+                            "This report excludes the site visitors whose host address is"
+    IDS_FILTERSTRING_EXACT_1_INCLUDE 
+                            "This report only includes the site visitors whose host address is"
+    IDS_FILTERSTRING_EXACT_2_EXCLUDE 
+                            "This report excludes all agent names equal to"
+    IDS_FILTERSTRING_EXACT_2_INCLUDE 
+                            "This report only includes any agent names equal to"
+    IDS_FILTERSTRING_EXACT_3_EXCLUDE "This report excludes all referals from"
+    IDS_FILTERSTRING_EXACT_3_INCLUDE "This report only includes referals from"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILTERSTRING_EXACT_4_EXCLUDE "This report excludes all errors of type"
+    IDS_FILTERSTRING_EXACT_4_INCLUDE 
+                            "This report only includes errors of type"
+    IDS_FILTERSTRING_EXACT_5_EXCLUDE 
+                            "This report excludes all virtual hosts equal to"
+    IDS_FILTERSTRING_EXACT_5_INCLUDE 
+                            "This report only includes virtual hosts equal to"
+    IDS_FILTERSTRING_EXACT_6_EXCLUDE 
+                            "This report excludes all cookies equal to"
+    IDS_FILTERSTRING_EXACT_6_INCLUDE 
+                            "This report only includes cookies equal to"
+    IDS_FILTERSTRING_EXACT_7_EXCLUDE 
+                            "This report excludes all user names equal to"
+    IDS_FILTERSTRING_EXACT_7_INCLUDE 
+                            "This report only includes user names equal to"
+    IDS_FILTERSTRING_EXACT_8_EXCLUDE 
+                            "This report excludes all URLs that were retrieved using the method"
+    IDS_FILTERSTRING_EXACT_8_INCLUDE 
+                            "This report only includes URLs that were retrieved using the method"
+    IDS_FILTERSTRING_EXACT_9 "This report's focus begins from the URL"
+    IDS_FILTERS_BELOW       "The filters used in the report are listed below"
+    IDS_KEYVISITORHEADER    "Key Visitors"
+    IDS_HELP_CARDS          "Report Descriptions"
+    IDS_ROUTETOKEYPAGE      "Key Page"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ROUTEFROMKEYPAGE    "Key Page"
+    IDS_TABREPORT2          "Output,Page,Style,Options"
+    IDS_TABROUTES           "Key Visitors,Route To Key Pages,Route From Key Pages"
+    IDS_ICON_NAMESFIREWALL  "Pre Process,Report,Analysis,Filters,Statistics,Tracking,Billing,Advertising,Virtual,Post Process,Custom  Format,Proxy/Firewalls,Debug"
+    IDS_MENU_CONVERT2W3C    "Convert log file to W3C Format"
+    IDS_STATSTYLES          "Web Servers, Proxies, Streaming Media, Firewalls"
+    IDS_LOGLIST_COL5        "End Date          "
+    IDS_LOGLIST_COL6        "Duration          "
+    IDS_CONFIRM_DB_DELETE   "All data contained within ""%s"" will be lost.\n\nDo you really wish to delete this database?"
+    IDS_DB_DELETED_OK       "Successfully deleted file ""%s""."
+    IDS_DB_DELETE_FAILED    "Could not delete file ""%s""."
+    IDS_DB_DOES_NOT_EXIST   "The file ""%s"" does not exist."
+    IDS_MENU_CONVERT2W3C_STATUS "Convert selected log file(s) to W3C format"
+    IDS_SELECT_EXTENDED_DATABASE 
+                            "Select existing or specify new extended database..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREFHTML_RGB3       "Default colors to use in each table list"
+    IDS_PREFHTML_RGB4       "Default colors to use in each table list"
+    IDS_PREFHTML_RGB5       "Default colors to use in each table list"
+    IDS_PREFHTML_RGB6       "Default colors to use in each table list"
+    IDS_PREFNOTIFY_ADD      "Add notify"
+    IDS_PREFNOTIFY_CLR      "Clear all notifys"
+    IDS_PREFNOTIFY_NAME     "New notify name"
+    IDS_PREFNOTIFY_REM      "Delete notify"
+    IDS_PREFORG_ADD         "Add organization"
+    IDS_PREFORG_CLR         "Remove all organizations"
+    IDS_PREFORG_DEFAULT     "Add default organizations"
+    IDS_PREFORG_NAME        "Organization name"
+    IDS_PREFORG_REM         "Delete organization"
+    IDS_PREFREF_ADD         "Add Referral"
+    IDS_PREFREF_CLR         "Remove all referrals"
+    IDS_PREFREF_NAME        "Referral name"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREFROUTER_ADD      "Add internal address"
+    IDS_PREFROUTER_CHANGE   "Change address"
+    IDS_PREFROUTER_CLR      "Remove all addresses"
+    IDS_PREFROUTER_NAME     "Internal address of network to be added (eg. 192.168.* )"
+    IDS_PREFROUTER_REM      "Delete internal address"
+    IDS_PREFSTAT_SESSIONTIME 
+                            "The amount of time that defines a new session between successive hits"
+    IDS_PREFVD_ADD          "Add virtual host map"
+    IDS_PREFVD_CLR          "Clear all virtual host names"
+    IDS_PREFVD_CLUSTER      "Enable multi-server clustering log processing"
+    IDS_PREFVD_COST         "Cost per megabyte of data"
+    IDS_PREFVD_MONTHLY      "Produce a report per month of a log file"
+    IDS_PREFVD_NAME         "New virtual host name"
+    IDS_PREFVD_REM          "Delete virtual host map"
+    IDS_PREFVD_SEQDIR       "Store Virtual Domains in sequential numbered directories instead"
+    IDS_PREFVD_WEEKLY       "Produce a report per week of a log file"
+    IDS_PREPROCESS          "Pre-Processing"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PROCESSCLIENTS      "Processing visitors..."
+    IDS_PROCESSFROMLIST     "Processing logs from history list"
+    IDS_PROCESSING          "Processing..."
+    IDS_PROCESSLOG          "Process user selected logs..."
+    IDS_QUIT                "Quit."
+    IDS_RECEIVELOGLIST      "Receiving logs list..."
+    IDS_REFERHEADER         "Referral Pattern,Name"
+    IDS_REG                 "&Register iReporter ..."
+    IDS_REGISTMSG1          "If you haven't registered your iReporter product, please do so now.\nBy registering, you can gain access to regular updates and technical support.\n\n"
+    IDS_REGISTMSG2          "You will also be eligible to receive product announcements, special offers,\nand information on upcoming events.\n\nRegister Now?\n"
+    IDS_REGISTONLINE        "Register Online Now?"
+    IDS_REGNOTCREATE        "Could not create Registry Value '%s' - '%s', retcode=%d"
+    IDS_REGONLINE           "Register iReporter &online..."
+    IDS_REMOTEADDLOG        "Remote add log..."
+    IDS_REMOTEDISCON        "Remote Disconnecting..."
+    IDS_REMOTEGETCONFG      "Remote get config..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REMOTELOG           "Processing remote Log %s"
+    IDS_REMOTEPROCESS       "Remote process..."
+    IDS_REMOTEPROCESSLIST   "Remote process list..."
+    IDS_REMOTESHOW          "Remote show loglist..."
+    IDS_REMOTESTOP          "Remote stopping..."
+    IDS_REMOVENTS           "Removing NTService..."
+    IDS_REPORT_CAT          "Report Categories"
+    IDS_REPORT_PDF_GRAPHFONT "Tiny,Small,Normal,Large"
+    IDS_REPORT_PDFFONT      "Times New Roman,Helvetica"
+    IDS_REPORT_PDFFONTSTYLES "Normal,Bold,Italic,Bold Italic"
+    IDS_REPORT_PDFPAGENUMBERINGPOS 
+                            "None,TopAndBottomMiddle,TopAndBottomRight,TopMiddle,TopRight,BottomMiddle,BottomRight"
+    IDS_REPORT_PDFPAGESIZES "USLetter,USLetter Landscape,A4,A4 Landscape,Custom"
+    IDS_REPORT_PDFSPACING   "After banner,After graph,After table"
+    IDS_REPORT_PDFTABLETEXTNAME "Table Title,Column Headings,Column Data"
+    IDS_REPORT_PDFTRUNCATETEXT "Left,Right,Left Ellipsis,Right Ellipsis"
+    IDS_REPORT_TITLES       "Report Titles"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUT               "About"
+    IDS_ADDCAMP_ADD         "Add Campaign Details"
+    IDS_ADDCAMP_COST        "Campaign Cost per month"
+    IDS_ADDCAMP_NAME        "Campaign name"
+    IDS_ADDCAMP_PATTERN     "Campaign View URL Pattern"
+    IDS_ADDCAMP_REM         "Delete Campaign Item"
+    IDS_ADDHEADER           "Description,File Name,Click String"
+    IDS_ADDHEADER2          "Description,Referral,Cost"
+    IDS_APPLY_ALL           "Apply All"
+    IDS_APPLY_GROUP         "Apply Group"
+    IDS_APPLYALL            "Apply settings to all of the statistics"
+    IDS_APR                 "Apr"
+    IDS_AUG                 "Aug"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BACKGROUND          "Graduated Background GUI"
+    IDS_BUILD               "Build"
+    IDS_BUILTON             "Built on"
+    IDS_CANCELFILEMAKER     "Cancelled creating FileMaker file.\r\rThe log file will not been saved to ' %s'"
+    IDS_CANCELLED           "Cancelled Processing."
+    IDS_CANNOTEDIT          "Cannot edit settings during a running schedule"
+    IDS_CLEAN               "Cleaning up..."
+    IDS_CLEARCACHE          "Clear the whole internal DNS cache from disk"
+    IDS_COLORSCHEME_BASIC   "Basic"
+    IDS_COLORSCHEME_BLAND   "Bland"
+    IDS_COLORSCHEME_BLUE    "Blue"
+    IDS_COLORSCHEME_DEFAULT "Default"
+    IDS_COLORSCHEME_GREY    "Grey"
+    IDS_COLORSCHEME_ICE     "Ice"
+    IDS_COLORSCHEME_RANDOM  "Random"
+    IDS_COLORSCHEME_WILD    "Wild"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REPORTFORMAT        "HTML,HTML Framed,Word (RTF),Comma Delimited,PDF,Excel"
+    IDS_SAVEDATABASE        "Saving database ..."
+    IDS_SCH_CANCEL          "Schedule is cancelled."
+    IDS_SCH_HEADERS         "#    ,Name        ,LogFile     ,Active,Start Date/Time  ,Repeat  ,Next Schedule    ,Settings File              "
+    IDS_SCH_NOEDIT          "Cannot edit schedule during active events"
+    IDS_SCH_NOEDIT2         "Cannot edit empty schedule"
+    IDS_SCH_NOSETTINGS      "No settings file can be found."
+    IDS_SCH_SAVED           "Schedule is saved."
+    IDS_SCHEDULEOFF         "Schedule List Inactive - NTService is handeling the schedules"
+    IDS_SELECT_COMPACT_DATABASE 
+                            "Select existing or specify new compact database..."
+    IDS_SELECTDOMAIN        "Select host output path/file..."
+    IDS_SELECTFOLDER        "Select folder for destination ..."
+    IDS_SELECTLOAD          "Select Settings File to open..."
+    IDS_SELECTLOADLOGLIST   "Load log list"
+    IDS_SELECTLOCATION      "Select a location to create the FileMaker file"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SELECTLOG           "Select Log or Database File(s) or enter HTTP/FTP URL"
+    IDS_SELECTOUTPUT        "Select output location and filename"
+    IDS_SELECTSAVE          "Select Settings file to save..."
+    IDS_SELECTSAVELOG       "Select log file name to save as..."
+    IDS_SELECTSAVELOGLIST   "Save log list"
+    IDS_SELECTSKIN          "Select Skins settings File to open..."
+    IDS_SENDMAILHEADER      "Sending mail headers..."
+    IDS_SENFCONFIG          "Sending config to server..."
+    IDS_SEP                 "Sep"
+    IDS_SERVER_ERRORS       "Server Errors"
+    IDS_SERVER_STATS        "Server Statistics"
+    IDS_SESSION_LIST        "Session Listing"
+    IDS_SET                 "Settings"
+    IDS_SETTINGSSAVED       "Settings saved to"
+    IDS_SHOWLIST            "Showing log list"
+    IDS_SORTING             "Name,Bytes Sent,Hits,Pages,Errors,Sessions,Visitors"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STARTUPSERVICE      "Starting NTService... please wait"
+    IDS_STAT_NEWVER         "New Version is available now"
+    IDS_STAT_NOUDPATES      "No updates available."
+    IDS_STAT_TABLE          "Activate the table list in the report"
+    IDS_STATEDIT            "This is a list of all statistics that can be turned on/off"
+    IDS_STATUST_CMPT        "Report Completed."
+    IDS_STOPPED             "Processing stopped."
+    IDS_STOREFILEINTEMP     "Storing file in temp location"
+    IDS_SYSTEM_INFO         "System Information"
+    IDS_TABADDS             "Impressions,Campaigns"
+    IDS_TABANALYSIS         "Options,Network,Extensions,Dynamic"
+    IDS_TABCUSTOM           "Custom"
+    IDS_TABBILLING          "Setup,Charges"
+    IDS_TABFILTERS          "Input Data"
+    IDS_TABPOSTPROC         "Compress,Upload,Email"
+    IDS_TABPREPROC          "Download,Options"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXT_AUDIO           "Audio"
+    IDS_EXT_DOWN            "Downloads"
+    IDS_EXT_PAGES           "Pages"
+    IDS_EXT_VIDEO           "Video"
+    IDS_EXTEDIT             "Page and Download extensions"
+    IDS_FAILED              "Failed..."
+    IDS_FAILEDCONNECT       "Failed to connect!"
+    IDS_FAILEDLISTEN        "failed to listen"
+    IDS_FAILEDMAKEDIR       "Failed to create directory ' %s '. \r\rCan not write log file to ' %s "
+    IDS_FAILEDREAD          "failed reading bytes..."
+    IDS_FAILEDSOCKET        "Cannot allocate socket"
+    IDS_FAILEDTODOWNLOAD    "Failed to download"
+    IDS_FAILEDWRITE         "failed writing bytes..."
+    IDS_FEB                 "Feb"
+    IDS_FIELDFMT            "Date,Time,Status,Visitor,Source,File,Agent,Bytes,BytesIn,Duration,Referral,UserName,VirtualHost,Method,Protocol,Port"
+    IDS_FILTER_ADD          "Add Pattern ..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TABREPORT           "Output,Page,Style"
+    IDS_TABPROXY            "Internal Network"
+    IDS_TABSIZE             "10 Rows,20 Rows,30 Rows,40 Rows,50 Rows,100 Rows,200 Rows,300 Rows,400 Rows,500 Rows,All Rows"
+    IDS_TABSTATS            "Statistics,Global,Organization Groups"
+    IDS_TABSTATSDEBUG       "Statistics,Global,Organization Groups,Content Groups,Referral Groups"
+    IDS_TABSTATSENT         "Statistics,Global,Organization Groups,Content Groups,Referral Groups"
+    IDS_TABVHOSTS           "Domains,Aggregation,Mapping,Clustering"
+    IDS_TABVHOSTS2          "Domains,Aggregation,Mapping"
+    IDS_TIME                "Time"
+    IDS_TIME_RELATED        "Time Related"
+    IDS_TIMEFMT             "None,HH:MM:SS,1:40 PM,Unix Time"
+    IDS_TIMER               "Minute(s),Hour(s),Day(s),Month(s),Year(s)"
+    IDS_TIPEDIT             "Edit Report Settings"
+    IDS_TIPAPPHELP          "Login to Support Zone"
+    IDS_TIPLISTVIEW         "'Drag and Drop' a log file or shortcut or URL shortcut from IE here to process it."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TIPOPEN             "Open a report settings file"
+    IDS_TIPPREFS2           "Report Settings"
+    IDS_TIPPROCESS          "Process LOG and generate report"
+    IDS_TIPPROCESS2         "Process LOG and generate report"
+    IDS_TIPSCHED            "Prepare and edit a schedule"
+    IDS_TIPSHOWLIST         "Show/Hide logs file list below"
+    IDS_TIPTABSIZE          "The amount of items listed in a stats table"
+    IDS_TIPVDREPORTBY       "Determine how to handle logs with virtual host"
+    IDS_TIPVDSORTBY         "Sort the virtual report list by this"
+    IDS_TIPVIEW             "Display Report output in your browser (use ALT-key to force IE)"
+    IDS_TOKENS              "These are some sample date tokens you can use to automatically place in filenames/URLs"
+    IDS_TOOLBARSERVICE      "NTService: Installed"
+    IDS_UPLOADED            "Your usage report has been uploaded to %S.\n\n"
+    IDS_UPLOADINGTO         "Uploading to %s..."
+    IDS_UPLOADLOGS          "Uploading log files..."
+    IDS_UPLOADREPORT        "Uploading report files..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USEGRAPH            "Activate the image graph in the report"
+    IDS_VDREPORTBY          "None,Log File,Virtual Host,Top Level Directory,Second Level Directory,Specific Directory,Visitor"
+    IDS_VDSORTBY            "Name,Bytes Sent,Hits,Pages,Date"
+    IDS_VMAPHEADER          "Old Host name,New Host name"
+    IDS_WARN_MANYFILES      "Continue Now ? :WARNING!, Processing using these settings may produce thousands of session history files."
+    IDS_WEB                 "Web &Admin Configuration..."
+    IDS_WIZARD              "&Begin Wizard..."
+    IDS_WRITEGRAPH          "Writing %s Graph..."
+    IDS_WRITEGRAPH_DONE     "Writing %s Graph done."
+    IDS_WRITEREPORT         "Writing %s ..."
+    IDS_WRITEREPORT_DONE    "Writing %s done."
+    IDS_WRITINGHOST         "Writing Virtualhosts"
+    IDS_WRITINGREPORT       "Writing report %d '%s'..."
+    IDS_ZIPFINISH           "Your usage report has been compressed. You can access it at %s\n\n"
+    IDS_LANG_SAVEAS         "Save language as"
+    IDS_ADDCAMP_CHANGE      "Change"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WIZARDGUIMSG        "Please specify a valid log file!"
+    IDS_NEXT                "Next."
+    IDS_STRING_REMOVETHIS   "No help available"
+    IDS_CLUSTERHEADER       "Name    ,IP Address,Path Pattern            "
+    IDS_FILTERSTRING_0_EXCLUDE "This report excludes all URLs that"
+    IDS_FILTERSTRING_0_INCLUDE "This report includes only URLs that"
+    IDS_FILTERSTRING_1_EXCLUDE 
+                            "This report excludes all site visitors whose host addresses"
+    IDS_FILTERSTRING_1_INCLUDE 
+                            "This report includes only site visitors whose host addresses"
+    IDS_FILTERSTRING_2_EXCLUDE "This report excludes all agents that"
+    IDS_FILTERSTRING_2_INCLUDE "This report includes only agents that"
+    IDS_FILTERSTRING_3_EXCLUDE 
+                            "This report excludes all referals whose host addresses"
+    IDS_FILTERSTRING_3_INCLUDE 
+                            "This report includes only referals whose host addresses"
+    IDS_FILTERSTRING_4_EXCLUDE "This report excludes all errors that"
+    IDS_FILTERSTRING_4_INCLUDE "This report includes only errors that"
+    IDS_FILTERSTRING_5_EXCLUDE "This report excludes all virtual hosts that"
+    IDS_FILTERSTRING_5_INCLUDE "This report includes only virtual hosts that"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_ONLINEMANUAL   "Online manual"
+    IDS_MENU_OPEN           "Open an existing Settings (.fwp) file"
+    IDS_MENU_ORDERWWW       "Order a copy online now"
+    IDS_MENU_PREFS          "Edit settings"
+    IDS_MENU_PROCESS        "Process selected log file(s)"
+    IDS_MENU_REGISTERNOW    "Register online for support"
+    IDS_MENU_REGISTERSERIAL "Register serial licence"
+    IDS_MENU_REMOTECONNECT  "Connect to remote copy..."
+    IDS_MENU_REMOTEDISCONNECT "Disconnect from remote connection..."
+    IDS_MENU_REMOVENTS      "Remove Service"
+    IDS_MENU_SAVE           "Save current settings"
+    IDS_MENU_SAVEAS         "Save current settings to file"
+    IDS_MENU_SCHEDULE       "Edit schedules"
+    IDS_MENU_SHOWNTSERVICES "Show Services"
+    IDS_MENU_SHRINK         "Hide recent log files list"
+    IDS_MENU_STARTUPSERVICE "Activate Service"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_STOP           "Stop Processing"
+    IDS_MENU_SUPPORTWWW     "Support website for help"
+    IDS_MENU_UPDATEONOFF    "Select me to toggle this on/off."
+    IDS_MENU_VIEWHTML       "View report"
+    IDS_MENU_WIZARD         "Run Wizard Configuration"
+    IDS_MSG_CLEARSCH        "Clear Schedule: Are you sure you wish to clear the schedule?"
+    IDS_MSG_NOREPORT        "No Report to view:No current report has been generated by this scheduled event!"
+    IDS_MSG_OPENYESNO       "Information:Are you sure you want to open %s?"
+    IDS_MSG_SAVESETTINGS    "Save Settings ?:Save changes to %s?"
+    IDS_NETINIT_ERR         "Net initilization error! You may want to switch DNS Lookups Off"
+    IDS_NEWSKIN             "Selecting new skin"
+    IDS_NODISKSPACE         "There is no diskspace left to write reports, only %ld Kb left"
+    IDS_NOSETTINGSFILE      "No Settings file can be found/opened"
+    IDS_NOTABLE             "Not any table in the database"
+    IDS_NOTENOUGH           "Not enough memory!!!"
+    IDS_NOV                 "Nov"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_OCT                 "Oct"
+    IDS_OK                  "Ok."
+    IDS_OPENFILEMAKER       "Please open FileMaker file '%s'  \r\rif it is not opened."
+    IDS_OPTIONS_OFF         "Options Off"
+    IDS_OPTIONS_ON          "Options ON"
+    IDS_ORDER               "&Order iReporter online..."
+    IDS_ORGANIZATIONS       "Organizations"
+    IDS_ORGHEADER           "Domain Pattern,Organization Name"
+    IDS_OUTDIR              "Output path of report"
+    IDS_PP_BROWSE           "Select a folder path to place the report"
+    IDS_PP_COMPRESSLOG      "Gzip compress the source log file"
+    IDS_PP_DELETEREPORT     "Delete report from hard disk after uploading"
+    IDS_PP_EMAIL            "Enter Email destination address"
+    IDS_PP_EMAILSMTP        "Outgoing SMTP Mail Server"
+    IDS_PP_EMAILSUB         "Enter Subject"
+    IDS_PP_FTP              "Select a remote path on ftp to place the report to"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PP_LOCATION         "Full Path location the report is copied to"
+    IDS_PP_LOGBROWSE        "Select a folder path to move the log to"
+    IDS_PP_MSG              "Enter your Email message here..."
+    IDS_PP_SENDTO           "Copy the report or zipped report to the location below"
+    IDS_PP_ZIPREPORT        "Compress the report into one zip file"
+    IDS_PRE_REG             "Re-register iReporter ..."
+    IDS_PREF_BANDWIDTH      "Write bandwidth summary information into the report"
+    IDS_PREF_HEADTITLE      "Include log names in report title"
+    IDS_PREF_LANG           "Language of the report generated"
+    IDS_PREF_LEFTSIDE       "Place all names on the right hand column first"
+    IDS_PREF_PDF_PAGESIZE   "Report output page size"
+    IDS_PREF_QINDEX         "On each page show quick links to each report page"
+    IDS_PREF_REMOTETITLE    "Request remote URL titles from pages in report"
+    IDS_PREF_TIMESTAT       "Write processing time information into the report"
+    IDS_PREFADD_ADD         "Add Banner Details"
+    IDS_PREFADD_CLR         "Remove all Banners"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREFADD_NAME        "Banner name"
+    IDS_PREFADD_PATTERN1    "Banner View URL Pattern"
+    IDS_PREFADD_PATTERN2    "Banner Click-through URL Pattern"
+    IDS_PREFADD_REM         "Delete Banner Item"
+    IDS_PREFGEN_DATESTYLE   "Select which date range applies"
+    IDS_PREFGEN_DNSCACHE    "Resolve IPs using the cache data only, no internet lookups"
+    IDS_PREFGEN_DNSNO       "Do not resolve IPs into names, use as is"
+    IDS_PREFGEN_DNSNUM      "Enter maximum simultaneous DNS lookups"
+    IDS_PREFGEN_DNSYES      "Resolve IPs into names using internet loookup(slow)"
+    IDS_PREFGEN_FILTERZERO  "Do not include ZERO length files"
+    IDS_PREFGEN_GTYPE       "Image format the reports contain"
+    IDS_PREFGEN_IGNOREBOOKMARK 
+                            "Ignore all bookmarks of file:// referrals in referral list"
+    IDS_PREFGEN_IGNORECASE  "Ignore case in all URLs"
+    IDS_PREFGEN_IGNORESELF  "Ignore all referrals from yourself"
+    IDS_PREFGEN_INDEXFILE   "Default served file ie index.html"
+    IDS_PREFGEN_OUT         "Choose Output path of report"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PREFGEN_SPLITDATE   "Normal,Per Week,Per Month"
+    IDS_PREFGEN_TYPE        "Report document data format"
+    IDS_PREFGEN_URL         "Prefix URL for links"
+    IDS_PREFGEN_USECGI      "Accept cgi parameters to URLs"
+    IDS_PREFGRAPH_3DBARS    "Use 3D bar graphs instead of 2D"
+    IDS_PREFGRAPH_CORP      "Use plain white background graphs for easy printing"
+    IDS_PREFGRAPH_WEBPAL    "Use Netscape 256 color palette for all graphs"
+    IDS_PREFGRAPH_WIDER     "Use 50% wider graphs"
+    IDS_PREFGRP_ADD         "Add Group"
+    IDS_PREFGRP_CLR         "Remove all groups"
+    IDS_PREFGRP_NAME        "Group name"
+    IDS_PREFGRP_REM         "Delete Group"
+    IDS_PREFHTML_FOOT       "HTML code for Report footers"
+    IDS_PREFHTML_HEAD       "HTML code for Report headers"
+    IDS_PREFHTML_RGB1       "Default colors to use in each table list"
+    IDS_PREFHTML_RGB2       "Default colors to use in each table list"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_VIEWSCHEDULETRANSCRIPT 
+                            "Displays the feedback from the scheduler in a new window."
+    IDS_MENU_REMOVESELECTEDLOGS "Remove the selected logs from the list."
+    IDS_MENU_EDITLOGS       "Edit the selected log file in the default editor."
+    IDS_MENU_COMPRESSLOGTOGZIP "Compress this log file using gzip."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_COMPRESSLOGTOBZIP2 "Compress this log file using bzip2."
+    IDS_MENU_SHOWLOGDURATION 
+                            "Calculate and show the duration of the selected log file."
+    IDS_MENU_ADDLOGSTOLIST  "Add log file the displayed list without automatically processing."
+    IDS_MENU_SAVELIST       "Save the current display list to a file.  This is the list only."
+    IDS_MENU_LOADLIST       "Load a previously saved display list."
+    IDS_MENU_WEBADMINCONFIG "Web Administrator Configuration."
+    IDS_MENU_SELECTNEWSKIN  "Select new skin file."
+    IDS_MENU_LANGUAGEBUILDER "Load up the language builder window."
+    IDS_MENU_INSTALLAUTOSTART 
+                            "Install iReporter as a Windows/NT Service and start it automatically."
+    IDS_MENU_FWCWEBSITE     "Launch to the support website."
+    IDS_BILLINGCHARGESLIST  "ID,Customer Name,URL"
+    IDS_BILLINGCHARGES_FIXED 
+                            "Kilobyte(s),Megabyte(s),Gigabyte(s),Terabyte(s),Billing Period"
+    IDS_BILLINGCHARGES_EXCESS 
+                            "Kilobyte(s),Megabyte(s),Gigabyte(s),Terabyte(s)"
+    IDS_BILLINGSETUP_PERIOD "Day(s),Week(s),Month(s),Quarter(s)"
+    IDS_BILLINGSETUP_OUTPUTFORMAT "Default,Excel,HTML"
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

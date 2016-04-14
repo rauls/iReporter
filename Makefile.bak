@@ -1,0 +1,96 @@
+##############-fno-strict-prototype -fcond-mismatch
+CC=gcc
+CPP=g++
+OPTIM=-O2
+CFLAGS1= -D__dest_os=6 -g
+C++FLAGS= $(CFLAGS1)
+INCLUDES1= -Isrc_common -Isrc_common/gif -Isrc_unix
+LIBS1=
+UNIXLIBS=-lm
+LFLAGS1=
+BROKEN_BPRINTF_FLAGS=
+RANLIB=true
+CFLAGS=$(OPTIM) $(CFLAGS1)
+LIBS=$(LIBS1)
+INCLUDES=$(INCLUDES1)
+LFLAGS=$(LFLAGS1)
+CSRC=src_common
+USRC=src_unix
+GSRC=$(CSRC)/gif
+
+COMMONOBJS	= $(CSRC)/engine.o $(CSRC)/macemu.o $(CSRC)/myansi.o $(CSRC)/ice.o
+UNIXOBJS	= $(USRC)/UnixMain.o $(USRC)/util.o $(USRC)/main.o
+WIN32OBJS	= $(USRC)/WinShellMain.o $(USRC)/util.o $(USRC)/main.o $(USRC)/reg.o
+GIFOBJS		= $(GSRC)/gd.o $(GSRC)/gdfontl.o $(GSRC)/gdfonts.o $(GSRC)/gdfontt.o
+
+UOBJECTS	= $(COMMONOBJS) $(UNIXOBJS) $(GIFOBJS)
+WOBJECTS	= $(COMMONOBJS) $(WIN32OBJS) $(GIFOBJS)
+
+COMMOMSRC	= $(CSRC)/engine.cpp $(CSRC)/macemu.c $(CSRC)/myansi.c $(CSRC)/ice.c
+UNIXSRC		= $(USRC)/UnixMain.c $(USRC)/util.c $(USRC)/main.c
+WIN32SRC	= $(USRC)/WinShellMain.c $(USRC)/util.c $(USRC)/main.c $(USRC)/reg.o
+GIFSRC		= $(GSRC)/gd.c $(GSRC)/gdfontl.c $(GSRC)/gdfonts.c $(GSRC)/gdfontt.c
+
+USOURCE	= $(COMMONSRC) $(UNIXSRC) $(GIFSRC)
+WSOURCE	= $(COMMONSRC) $(WIN32SRC) $(GIFSRC)
+
+WINBIN		= fweb-win.exe
+UNIXBIN		= fweb-unix
+
+.SUFFIXES:	.cpp
+
+.cpp.o:
+	$(CPP) -c $(INCLUDES) $(CFLAGS) $(SPACER) $<
+	@-cp `basename $@` $@
+	@-rm `basename $@`
+
+.c.o:
+	$(CC) -c $(INCLUDES) $(CFLAGS) $(SPACER) $<
+	@-cp `basename $@` $@
+	@-rm `basename $@`
+
+all: unixfweb
+
+winfweb: $(WOBJECTS)
+	$(CC) $(LFLAGS) -o $(WINBIN) $(WOBJECTS) $(LIBS)
+
+unixfweb: $(UOBJECTS)
+	$(CC) $(LFLAGS) -o $(UNIXBIN) $(UOBJECTS) $(UNIXLIBS)
+
+clean:
+	rm -f fweb-unix *.o core
+	rm $(CSRC)/*.o
+	rm $(GSRC)/*.o
+	rm $(USRC)/*.o
+
+installunix:
+	cp $UNIXBIN /usr/bin/
+
+installwin:
+	cp $WINBIN C:\Windows\command
+
+
+dist:
+	rm fweb-unix.tgz
+	tar zcfv fweb-unix.tgz *
+
+#Dependencies
+$(WOBJECTS): Makefile
+$(UOBJECTS): Makefile
+
+$(CSRC)/macemu.o: $(CSRC)/macemu.c $(CSRC)/macemu.h
+myansi.o: src_common/myansi.c src_common/myansi.h
+gd.o: src_common/gif/gd.c
+gdfontl.o: src_common/gif/gdfontl.c
+gdfonts.o: src_common/gif/gdfonts.c
+gdfontt.o: src_common/gif/gdfontt.c
+main.o: src_unix/main.c src_unix/UnixMain.h
+WinShellMain.o: src_unix/WinShellMain.c src_unix/UnixMain.h
+util.o: src_unix/util.c src_unix/util.h
+reg.o: src_unix/reg.c
+ice.o: src_common/ice.c
+src_common/engine.o: src_common/engine.cpp src_common/engine.h src_common/MacEmu.h src_common/myansi.c
+
+
+
+ 

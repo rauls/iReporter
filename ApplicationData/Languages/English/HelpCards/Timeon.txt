@@ -1,0 +1,34 @@
+
+# Help Card
+# Report: Time Online
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report shows the average amount of time spent on your web site. Assess this information in light of your site content. Certain types of content will require only a quick session, however, sites with pages that go extremely deep should be experiencing longer session times. This report will be affected by the session timeout (minimum length) value, specified in <i>Settings > Statistics > Global > Sessions</i>.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Time Online.
+The average amount of time visitors spent on your site.
+
+<b>Horizontal axis:</b>  Visitors (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, pages or visitors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Time Online:</b>
+The average amount of time visitors spent on your site.
+
+<b>Hits (%):</b>
+Number of hits to the site by visitors who visited your site for the corresponding time period. (Percentage as a proportion of hits from all time periods.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to the site by visitors who visited your site for the corresponding time period. (Percentage as a proportion of bytes transferred by hits from all time periods.)
+
+<b>Pages:</b>
+Number of pages viewed by visitors who visited your site for the corresponding time period.
+
+<b>Visitors:</b>
+Number of site visitors who visited your site for the corresponding time period.

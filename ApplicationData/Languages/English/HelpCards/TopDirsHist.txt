@@ -1,0 +1,33 @@
+
+# Help Card
+# Report: Top Level Directories History
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies the most popular top-level directories (folders) on your web server over time. Use this information to assess whether your most important content is consistently receiving its expected share of traffic. If certain directories are considered to be more important than others, then these should have more hits against them. If this is not the case, you may need to restructure your site. The information presented will be most meaningful if your site content is properly grouped into different directories (e.g. /support, /products, /contact, etc).
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Hits (default sorting). 
+Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits 
+
+<b>Horizontal axis:</b> Days.
+All days of the report period.
+
+<b>Depth (Z) axis:</b> Top Level Directory.
+The numbers along this axis correspond to the numbered entries in the table.
+
+<!--TABLE-->
+<b>Directory:</b>
+Name of the directory being analyzed.
+
+<b>Hits (%):</b>
+The number of hits to files within the corresponding directory and its sub-directories. (Percentage of hits as a proportion of all hits to files within the corresponding directory and its sub-directories.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to files within the correpsonding directory and its sub-directories. (Percentage as a proportion of all bytes transferred for hits to files within the corresponding directory and its sub-directories.)
+
+<b>Pages:</b>
+Number of pages hit within the corresponding directory and its sub-directories.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to files within the corresponding directory and its sub-directories.

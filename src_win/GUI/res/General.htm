@@ -1,0 +1,103 @@
+<html>
+	<HEAD>
+		<title>General</title>
+		<META NAME="Author" CONTENT="Windows Help Designer">
+		<META NAME="GENERATOR" CONTENT="Windows Help Designer (http://www.devgr.com)">
+	</HEAD>
+	<BODY BGCOLOR="#ffffff" LINK="#0000ff">
+		<BASEFONT FACE="" COLOR="#000000">
+			<p ALIGN="center"><FONT SIZE="2"></FONT><IMG SRC="Logo.JPG"></p>
+			<p ALIGN="center"><b>Users Guide Reference</p>
+			<p ALIGN="center"></B><IMG SRC="Filters.JPG"></p>
+			<p ALIGN="center"><b><FONT SIZE="3">Report</p>
+			<p></FONT></B><FONT SIZE="2">This application&nbsp;provides a number of general 
+					settings for processing Web log files. These include ana</FONT>lysis 
+				between a range of dates, filtering out zero byte files, DNS lookups, to 
+				resolve IP addresses and different levels of sorting. The various settings are 
+				described below.</p>
+			<p></p>
+			<p ALIGN="center"><IMG SRC="pref_report.JPG"></p>
+			<p></p>
+			<p><b>Dates</p>
+			<p></p>
+			<p></B>It is often useful to process log files on a month to month basis and make 
+				these statistics available on your Web site. However, most Web servers require 
+				the server to be stopped for the log file to be collected and processed. It is 
+				therefore difficult to ensure that a log file spans each month exactly (unless 
+				you have an automated procedure available). To ensure your your log statistics 
+				span an entire month&nbsp;we allow you to specify a range of dates to process. 
+				The default is to process all dates.</p>
+			<p></p>
+			<p>To specify a range of dates select "All dates" within the range box. You may now 
+				enter a start and end date to process. These dates are inclusive, so that log 
+				files will be processed on and between the dates specified.</p>
+			<p></p>
+			<p>The date format used is determined from the settings in the Regional Settings 
+				control panel.</p>
+			<p></p>
+			<p><b>DNS lookups</p>
+			<p></p>
+			<p></B>The DNS lookup feature allows you to resolve IP addresses into domain names 
+				during the analysis procedure. So an IP address such as 128.250.196.5 will 
+				return an appropriate domain name such as "www.mycomp.com", necessary for some 
+				of the statistical procedures. Note however that this feature significantly 
+				slows down log file processing and is normally not required for most log files.</p>
+			<p></p>
+			<p>This feature should be switched on for servers which do not automatically 
+				resolve IP addresses into domain names. Some servers have this feature switched 
+				off to increase server perfomance.</p>
+			<p></p>
+			<p><b>Filtering zero byte files</p>
+			<p></p>
+			<p></B>Turn this option on to remove zero length files (links to other locations) 
+				from the final report to give a more accurate representation of actual files 
+				served.</p>
+			<p></p>
+			<p><b>Ignore Self Referals</p>
+			<p></p>
+			<p></B>This will ignore all referals to your own site so you only get external 
+				referals in your list.</p>
+			<p></p>
+			<p><b>Sorting</p>
+			<p></p>
+			<p></B>Once the log file has been processed the report tables may be sorted by 
+				Name, Requests or Bytes sent. By default sorting is automatically performed on 
+				the name of the report statistic, such as the Country, Browser type, Operating 
+				System etc. This also affects the charting procedures. Note however that no 
+				sorting is performed on the Daily, Weekly or Hourly Statistics.</p>
+			<p></p>
+			<p></p>
+			<p ALIGN="center"><b><FONT SIZE="4">Report - Output</p>
+			<p ALIGN="center"></p>
+			<p></FONT></B><FONT SIZE="2"><IMG SRC="pref_report2.JPG"></p>
+			<p></p>
+			<p></FONT><b>Output file</p>
+			<p></p>
+			<p></B>This option allows you to specify the name and location of the output file. 
+				Clicking this button brings up the standard save file dialog to specify the 
+				output name and location.</p>
+			<p></p>
+			<p><b>URL</p>
+			<p></p>
+			<p></B>A number of reports produced&nbsp;provide hypertext links back to the 
+				original location of the file, which is important for review purposes, 
+				particularly when you need to refer back to the page in question. To produce 
+				viable links when your reports are not served from the same web site it is 
+				important to provide&nbsp;the Base URL of your web site. So, if the log file 
+				you are processing comes from "http://www.company.com", this is what you will 
+				need to enter in the URL field.</p>
+			<p></p>
+			<p><b>Language</p>
+			<p></p>
+			<p></B>If you wish to create a report in different languages then this option will 
+				do it for you... you can choose between 
+				English/German/Italian/French/Spanish/Danish/Japanese. If any of these require</p>
+			<p>special characters like Japanese, then you need to select a default font and 
+				Universal Alphabet in your browser. All these languages are defined in external 
+				files in the lang/ folder of the application</p>
+			<p>folder. All files are in text format and can be customized/modified to suite 
+				your own needs.</p>
+			<p></p>
+		</BASEFONT>
+	</BODY>
+</html>

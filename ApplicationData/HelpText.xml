@@ -1,0 +1,1158 @@
+<HelpTextDescriptions>
+<Description>
+    <Desc>Schedule/Button/Cancel</Desc>
+	<HelpText>Cancels all changes to Scheduler and closes this window.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/Save</Desc>
+	<HelpText>Saves any changes you have made to the scheduling options and closes the window.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/Transcript</Desc>
+	<HelpText>Displays  a transcript of activity completed by the scheduler.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/Properties</Desc>
+	<HelpText>Displays the properties of the selected event. You can edit the properties in this dialog.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/Runnow</Desc>
+	<HelpText>Runs the selected event.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/Remove</Desc>
+	<HelpText>Deletes the selected event.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Button/New</Desc>
+	<HelpText>Creates a new event. New items inherit the properties of the selected event. </HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Checkbox/Disable</Desc>
+	<HelpText>Turn all events on or off.</HelpText>
+</Description>
+<Description>
+    <Desc>Schedule/Listctrl/List</Desc>
+	<HelpText>Lists all events.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Name</Desc>
+	<HelpText>Type a name for the event.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Startdate</Desc>
+	<HelpText>Use the arrows to select the date you want the event to occur.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Starttime</Desc>
+	<HelpText>Use the arrows to select the time you want the event to start.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Every</Desc>
+	<HelpText>Type the number of times you want the event to be run.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Combo/Period</Desc>
+	<HelpText>From the menu, select the period in which you want the event to run.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Logs</Desc>
+	<HelpText>Lists the log files to be processed for the event. You can type the name and path of the log file or use the Add or Select buttons.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/Add</Desc>
+	<HelpText>Adds log files to the list. Existing entries in the list are retained.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/Select</Desc>
+	<HelpText>Adds log files to the list. Replaces existing log files in the list with the newly selected files.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Settings</Desc>
+	<HelpText>Type the name and path of the settings file to use with this event.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/Browse</Desc>
+	<HelpText>Select a settings file to use with this event.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/Editsettings</Desc>
+	<HelpText>Opens the Settings dialog so that you can edit the selected settings file.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/UploadURL</Desc>
+	<HelpText>Type the location to upload reports to. This overrides the upload option in the Post Process category in Settings.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Edit/Reportfile</Desc>
+	<HelpText>Displays the location of the report.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/View</Desc>
+	<HelpText>Displays the report if the event has run.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Checkbox/Enabled</Desc>
+	<HelpText>Activates the event. Will not run disabled events.</HelpText>
+</Description>
+<Description>
+    <Desc>ScheduleEdit/Button/Ok</Desc>
+	<HelpText>Saves changes and closes the dialog.</HelpText>
+</Description>
+<Description>
+    <Desc>Settings/Button/Cancel</Desc>
+	<HelpText>Cancels all changes to Settings and closes this window.</HelpText>
+</Description>
+<Description>
+    <Desc>Settings/Button/Ok</Desc>
+	<HelpText>Accepts all changes to Settings and closes this window.</HelpText>
+</Description>
+<Description>
+    <Desc>Settings/Button/Defaults</Desc>
+	<HelpText>Restores all settings to the default values.</HelpText>
+</Description>
+<Description>
+    <Desc>Settings/Button/Revert</Desc>
+	<HelpText>Cancels all changes to Settings since this window has been opened.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Download/Checkbox/Enabledownload</Desc>
+	<HelpText>Select this option to enable FTP downloading of log files from remote computers. You will need an FTP account for the computer you are logging on to.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Download/Edit/Hostname</Desc>
+    <HelpText>Name of the host system that holds the log files. Example: ftp.example.com.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Download/Edit/Username</Desc>
+    <HelpText>User account name. For example, anonymous. The account name may be case-sensitive depending on the FTP server.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Download/Edit/Password</Desc>
+    <HelpText>Password for the FTP Username.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Download/Edit/Path</Desc>
+    <HelpText>The path name to the file. For example, if the log file resides at ftp://ftp.example.com/logs/web.log, type "logs/web.log". To download multiple files, use the "*" (asterisk) character as a wild-card.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Options/Checkbox/Deletefile</Desc>
+    <HelpText>Select this option to automatically delete files from the remote system once they have been successfully downloaded.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Options/Edit/Download</Desc>
+    <HelpText>Type the path for the destination directory for downloaded log files.</HelpText>
+</Description>
+<Description>
+    <Desc>Preprocess/Options/Button/Browse</Desc>
+    <HelpText>Click here to browse your directories and select a download location.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Edit/Location</Desc>
+    <HelpText>Specifies the file name and directory path where the report output file will be placed. The file type will depend on the selected output format.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Edit/PathTokens</Desc>
+    <HelpText>List of available date tokens. Select a token, position the cursor at the appropriate place in the Location field, and click the "Insert" button.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Button/Saveas</Desc>
+    <HelpText>Click here to browse your directories and select a report output location.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Button/Insert</Desc>
+    <HelpText>Having selected a date token from the Path tokens list, position the cursor at the appropriate place in the Location field, and then click this button.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Radio/None</Desc>
+    <HelpText>Select this option if you are not going to use the internal database feature.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Radio/SelectCompact</Desc>
+    <HelpText>Select this option to select a compact database file (.db), to which processed statistics will be added.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Radio/SelectExtended</Desc>
+    <HelpText>Select this option to select an extended database file (.xdb), to which raw log entries will be added.  Extended databases offer richer reporting facilities than compact databases, including being able to utilise different settings.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Edit/Name</Desc>
+    <HelpText>Enter the file name (including path) of the database file (.db or .xdb) to use.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Button/Delete</Desc>
+    <HelpText>Click here to delete the selected database file (.db or .xdb).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Button/Browse</Desc>
+    <HelpText>Click here to browse your directories and select a database file (.db or .xdb).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Checkbox/ProduceReport</Desc>
+    <HelpText>Select this option to produce a report once data has been added to the database file (.db or .xdb).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Database/Checkbox/NewLogsOnly</Desc>
+    <HelpText>Select this option to report solely on the newly added data.  Any existing data within the database file (.db or .xdb) will be excluded from the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Combo/Language</Desc>
+    <HelpText>Select the language of the reports to be generated from the drop-down list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Combo/Format</Desc>
+    <HelpText>Select the report output format.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Output/Combo/Graphics</Desc>
+    <HelpText>Select the format for the graphic images that are embedded in the reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Bandwidth</Desc>
+    <HelpText>Include bandwidth summary information into the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Logname</Desc>
+    <HelpText>Include log file name in report title.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Timestamp</Desc>
+    <HelpText>Include date and time of report generation and throughput in the Summary report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Keyonleft</Desc>
+    <HelpText>Moves the report's key column from the right-hand side to the left-hand side of the tables.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/QuickLinks</Desc>
+    <HelpText>For HTML reports, on each page show quick links to all reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Reportshadows</Desc>
+    <HelpText>For HTML reports, place a shadow around graphs and tables for 3D effect.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Footerlabel</Desc>
+    <HelpText>For HTML, include table heading at bottom of table as well as top.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Checkbox/Trailinglabel</Desc>
+    <HelpText>Help text to be added</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Display/Edit/Reporttitle</Desc>
+    <HelpText>Display a Title on the front page of a PDF report.  This string will also be displayed in the title bar (<title> tag) of HTML reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Listbox/Theme</Desc>
+    <HelpText>Select a color theme for all tables within reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Title</Desc>
+    <HelpText>Default report title color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Headers</Desc>
+    <HelpText>Default header line color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Items</Desc>
+    <HelpText>Default item line color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Others</Desc>
+    <HelpText>Default Others/Subtotals line color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Average</Desc>
+    <HelpText>Default Average line color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Page/Colors/Button/Totals</Desc>
+    <HelpText>Default Totals line color to use in each table list.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Combo/Font</Desc>
+    <HelpText>Select the font to use for the tables in the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Combo/Numbers</Desc>
+    <HelpText>Sets location of page numbers</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Combo/Size</Desc>
+    <HelpText>Sets report output page size</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Width</Desc>
+    <HelpText>For Custom page size, sets the width in pixels.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Height</Desc>
+    <HelpText>For Custom page size, sets the height in pixels.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Left</Desc>
+    <HelpText>Set left margin size (from 0 to 100 pixels).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Right</Desc>
+    <HelpText>Set right margin size (from 0 to 80 pixels).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Top</Desc>
+    <HelpText>Set distance from header to text (from 20 to 40 pixels).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Bottom</Desc>
+    <HelpText>Set distance from text to footer (from 20 to 40 pixels).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Checkbox/Image</Desc>
+    <HelpText>Select graphic to place at top of every report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Edit/Filename</Desc>
+    <HelpText>Enter a JPG or JPEG file to include in your reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Page/Button/Browse</Desc>
+    <HelpText>Click here to browse your directories and select a JPG/JPEG graphic to include in your reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Checkbox/Wrapping</Desc>
+    <HelpText>Select this checkbox to have long text wrap across multiple lines in tables; leave field blank to expand the column width to fit all text.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Button/Advanced</Desc>
+    <HelpText>Click for further text alignment options.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Combo/Truncation</Desc>
+    <HelpText>Choose how text is truncated in tables, from left or right, and whether to include "..." when truncating.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Combo/Section</Desc>
+    <HelpText>Select report section for which you want to set size, color and style.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Combo/Size</Desc>
+    <HelpText>Set font size for selected section of report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Combo/Style</Desc>
+    <HelpText>Set highlighting style for selected section of report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Table/Combo/Color</Desc>
+    <HelpText>Set color for selected section of report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Spacing/Combo/Spacing</Desc>
+    <HelpText>Select part of report for which you want to set spacing.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Spacing/Edit/Pixels</Desc>
+    <HelpText>Set number of pixes spacing for selected part of report.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Graphtext/Combo/Name</Desc>
+    <HelpText>This field is ignored.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Pdf/Style/Graphtext/Combo/Size</Desc>
+    <HelpText>This field is ignored.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Button/BgColor</Desc>
+    <HelpText>Click to set the background color of the page.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Button/Text</Desc>
+    <HelpText>Click to set the color of table text.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Button/Link</Desc>
+    <HelpText>Click to set the color of unfollowed hyperlinks within the reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Button/ALink</Desc>
+    <HelpText>Click to set the color of the active hyperlink (the link currently being clicked).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Button/VLink</Desc>
+    <HelpText>Click to the set color of hyperlinks that have been followed (visited links).</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Edit/Header</Desc>
+    <HelpText>HTML code for report headers. If left blank, there will be no report headers.</HelpText>
+</Description>
+<Description>
+    <Desc>Report/Style/Edit/Footer</Desc>
+    <HelpText>HTML code for report footers. If left blank, there will be no report footers.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Combo/Option</Desc>
+    <HelpText>Sets the time period for which to report. If "All Dates" is selected, then all data in the log files is reported. To specify a start and end time, select "Specify Date".</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Edit/Start</Desc>
+    <HelpText>Enter the earliest date to report traffic (data from prior to this date is ignored). The format to be used is determined by the operating system regional settings.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Edit/End</Desc>
+    <HelpText>Enter the latest date to report traffic (data after this date is ignored). The format to be used is determined by the operating system regional settings.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Combo/Reports</Desc>
+    <HelpText>Use this option to divide reports up into monthly or weekly sub-reports. If Per Week or Per Month is selected, then a framed HTML report will be output with entries for each week or month.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Combo/Format</Desc>
+    <HelpText>Set the date format in the log files being processed. If Auto is selected, Analyzer automatically attempts to detect the date format in the log file.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Date/Edit/Adjust</Desc>
+    <HelpText>Adjust all times by this amount (up to +/- 23:59:59). This can be useful to account for time-zone differences.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Ignore/Checkbox/Zerobytes</Desc>
+    <HelpText>Select this option to remove zero length files (links to other locations) from the final report to give a more accurate representation of actual files served.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Ignore/Checkbox/Selfreferal</Desc>
+    <HelpText>Select this option to remove self-referrals from the Referral report, thereby providing an accurate statement of the number of external references to your site. You must also complete the Default Host field below.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Ignore/Checkbox/Urlcase</Desc>
+    <HelpText>Select this option to make all URLs case-insensitive. This means that, for example, "www.mysite.com/INDEX.html" and "www.mysite.com/index.html" are treated as the same file. Use of this option may depend on the web server used.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Ignore/Checkbox/Clientusernames</Desc>
+    <HelpText>If your web site allows users to log in, select this option to use their username, rather than their IP address, when generating reports. If left unchecked, lists all logged-on clients by their IP addresses.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Ignore/Checkbox/Bookmarks</Desc>
+    <HelpText>Select this option to ignore all hits that don't have a referral site. This can occur when a user enters your site through a bookmark, or when they type your URL directly into their web browser.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Url/Defaulthost</Desc>
+    <HelpText>Type the Host URL here to ensure report hyperlinks work correctly. This is required if your reports are not served from the same location as your web site.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Options/Url/Defaultpage</Desc>
+    <HelpText>Type the home page of your site. This will mean, for example, that Reports "wwww.mysite.com" as the same page as "www.mysite.com/index.html".</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/Dns/Radio/Lookupsoff</Desc>
+    <HelpText>Select this option if you do not want to resolve IP addresses into names via your DNS server.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/Dns/Radio/Lookupson</Desc>
+    <HelpText>Select this option to have your DNS server resolve IP addresses into names as part of the report generation process. This may not be required if your web server resolves IP addresses. This option may impact performance.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/Dns/Edit/Simultaneous</Desc>
+    <HelpText>Enter maximum simultaneous DNS lookups (limit of 10,000, or 256 on Windows 98). The slower your internet connection, the lower this figure should be.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/Dns/Radio/Cache</Desc>
+    <HelpText>Select this option to use cache of previously processed DNS data. There will be no access to the Internet DNS service.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/Dns/Button/Clearcache</Desc>
+    <HelpText>Clear the entire internal DNS cache from disk.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/General/Passiveftp</Desc>
+    <HelpText>Select this option if standard FTP transfers are not succeeding. This may be necessary when downloading log files from older mainframes or minicomputers.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Network/General/Retrievetitles</Desc>
+    <HelpText>Select this option to retrieve the <title> metatag from the live HTML page and use this title rather than the URL in its reports.  For example, "index.html" might be reported as "My Site Home Page".</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Extensions/Treeview/Extensions</Desc>
+    <HelpText>This table lists the various file extensions used to determine the file types identified in its reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Extensions/Button/Add</Desc>
+    <HelpText>To add a new file extension, highlight any existing extension in the desired section, then click the Add button. Overtype the ".newext" string with the desired file extension.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Extensions/Button/Delete</Desc>
+    <HelpText>To delete a file extension, highlight the desired extension, and click the Delete button.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Extensions/Button/Edit</Desc>
+    <HelpText>To modify a file extension, highlight the desired extension, click the Edit button, and then type the new text.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Extensions/Button/Defaults</Desc>
+    <HelpText>Click this button to reset all extensions to the default original list</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Dynamic/Url/Checkbox/Retainall</Desc>
+    <HelpText>Select this option to retain the full site and query string in the analysis, which allows you to analyze CGI parameters. This option is often used in tandem with Filters (to filter on CGI parameters of interest).</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Dynamic/Url/Checkbox/Retainvariables</Desc>
+    <HelpText>Use this option to retain only specific URL parameters (used in conjunction with the "Retain all URL parameters" option). The URL parameters to retain are listed in the next field.</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Dynamic/Url/Edit/Variables</Desc>
+    <HelpText>Enter the list of URL parameters to retain, seperated by commas. For example, if you enter "p1,p3" here, the hit "/cgi-bin/search.pl?p1=x?p2=y?p3=z" will be saved as "/cgi-bin/search.pl?p1=x?p3=z".</HelpText>
+</Description>
+<Description>
+    <Desc>Analysis/Dynamic/Analysis/Checkbox/Flushing</Desc>
+    <HelpText>Select this option to reduce processing time by not analyzing clients that infrequently visit the site.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Combo/Include</Desc>
+    <HelpText>Select whether this filter is to include or exclude hits matching the criteria. Selecting "Include" automatically excludes all non-matching hits except those specified by other Include rules. "Excludes" take precedence over "Includes".</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Combo/Type</Desc>
+    <HelpText>Select the data on which this filter is to be applied.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Combo/Contains</Desc>
+    <HelpText>Select the logic to be applied. "Contains" finds any instance of the string in the field; "Is equal to" requires an exact match; "Starts with" and "Ends with" looks for the string at the start or end of the field.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Edit/Data</Desc>
+    <HelpText>Type the pattern to search for. Use "*" (asterisk) as a wild card. For example, "2000*.html" will match "200001.html", "200002.html", etc.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Listctrl/Filters</Desc>
+    <HelpText>This table contains all your defined filters. You can switch filters on and off by selecting the checkboxes on the left.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Button/Add</Desc>
+    <HelpText>Complete the four fields at the top of the form, then click the Add button to add a filter. By default, the filter is switched on.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Button/Delete</Desc>
+    <HelpText>Permanently delete a filter by highlighting an entry and then clicking the Delete button. Select multiple filters by holding down the Ctrl or Shift keys and clicking. Disable a filter by deselecting the checkbox.</HelpText>
+</Description>
+<Description>
+    <Desc>Filters/Inputdata/Button/Change</Desc>
+    <HelpText>To modify a filter, highlight it, edit its definition in the four fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Treeview/All</Desc>
+    <HelpText>This is a hierarchical list of all reports that can be  generated. Select which reports you want generated. By default, all reports are activated.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Button/Expandall</Desc>
+    <HelpText>Click here to fully expand (or collapse) the report hierarchy.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Button/Defaults</Desc>
+    <HelpText>Click here to return to the default reports selection (all reports switched on with default options).</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Button/Applyall</Desc>
+    <HelpText>Click here to apply the selected set of options to either all reports, or if a report group is highlighted, all reports in that group.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Checkbox/Table</Desc>
+    <HelpText>Select this checkbox to include a tabular list in the highlighted report.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Combo/Rows</Desc>
+    <HelpText>Select the maximum number of lines to be written to the tabular list in the highlighted report.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Checkbox/Graph</Desc>
+    <HelpText>Select this checkbox to include a graph in the highlighted report.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Combo/Sorting</Desc>
+    <HelpText>Select the field on which tabular data is to be sorted. (Note: Do not choose a field that does not appear in the selected report, otherwise the sort order will be undefined.)</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Checkbox/HelpCard</Desc>
+    <HelpText>Select this option to turn on help cards for this report.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Statistics/Button/EditCard</Desc>
+    <HelpText>Opens the help card in your default text editor for editing.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Graph/Checkbox/3d</Desc>
+    <HelpText>Select this option to display three-dimensional bar graphs, rather than the default of two-dimensional.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Graph/Checkbox/Wide</Desc>
+    <HelpText>Select this option to produce graph tables that are 50% wider than the default.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Graph/Checkbox/Webpallet</Desc>
+    <HelpText>Select this option to use the Web-safe 256 palette for generating graphs.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Graph/Checkbox/Paperprintable</Desc>
+    <HelpText>Select this option to use plain white background graphs for improved printout quality.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Sessions/Edit/Cost</Desc>
+    <HelpText>If a value is entered here, Calculates the cost per megabyte of downloading information. This can be useful for billing purposes.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Sessions/Edit/Timeout</Desc>
+    <HelpText>Type the time in minutes that must elapse between two hits from the same visitor to determine that a new session has commenced, Generally, a timeout period of 10 minutes is adequate.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Sessions/Edit/Cookie</Desc>
+    <HelpText>If your web server uses cookies, you can enter the variable that is used to identify individual users. For example, on pages generated by Cold Fusion, you would enter "CFTOKEN=".</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Global/Sessions/Edit/Urlparameter</Desc>
+    <HelpText>Use this option if your dynamic server pages contain a user ID parameter for each user. For example, if the database field containing user information was named "userinfo", you could use this as the URL parameter.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Edit/Pattern</Desc>
+    <HelpText>Enter the pattern to match within the visitor string. You can include "*" as a wildcard. For example, "*apple*" groups all visitors containing the string "apple".</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Edit/Name</Desc>
+    <HelpText>Enter the free format name of the organization group. This name can be entered for multiple patterns, and the resulting matched visitors will be grouped under that name.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Listctrl/List</Desc>
+    <HelpText>This table lists all organizational group patterns that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Button/Add</Desc>
+    <HelpText>Complete the two fields at the top of the form, then click the Add button to add the organization group.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Button/Delete</Desc>
+    <HelpText>To delete an organization group, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Button/Change</Desc>
+    <HelpText>To modify an organization group, highlight it, edit its definition in the two fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Organizational/Button/Defaults</Desc>
+    <HelpText>Click this button to revert to the default set of organization groups.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Edit/Name</Desc>
+    <HelpText>Type the address of the visitor you want to track.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Listctrl/List</Desc>
+    <HelpText>Lists the key visitors that will be tracked next time you process log files.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Button/Add</Desc>
+    <HelpText>Type the address of the visitor you want to track then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Button/Delete</Desc>
+    <HelpText>To delete an entry, select the visitor you want to delete from the Key Visitors list then click Delete button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Button/Change</Desc>
+    <HelpText>To modify a key visitor entry, select the key visitor from the list, make your changes in the first field then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keyvisitors/Button/Defaults</Desc>
+    <HelpText>Help tip to be added.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Edit/Page</Desc>
+    <HelpText>Type the URL of the key page you want to track.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Edit/Traceback</Desc>
+    <HelpText>Type the number of previous pages in the session that you want included in the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Edit/Number</Desc>
+    <HelpText>Type the number of alternate routes you want included in the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Listctrl/List</Desc>
+    <HelpText>Lists the key pages that will be tracked the next time you process a log file. </HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Button/Add</Desc>
+    <HelpText>Type the URL of the page you want to track in the top field then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Button/Delete</Desc>
+    <HelpText>To delete an entry, select a page from the Key Page list then click the Delete button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Button/Change</Desc>
+    <HelpText>To modify a key page, select the key page from the list, make your changes in the top field and then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesto/Button/Defaults</Desc>
+    <HelpText>Help tip to be added.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Edit/Pattern</Desc>
+    <HelpText>Enter the pattern to match within the URL string. You can include "*" as a wildcard. For example, "*/images/*" will group all visitors containing the string "/images/".</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Edit/Name</Desc>
+    <HelpText>Enter the free format name of the content group. The same name can be entered for multiple patterns, and the resulting matched URL's will all be grouped under that name.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Listctrl/List</Desc>
+    <HelpText>This table lists all content group patterns that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Button/Add</Desc>
+    <HelpText>Complete the two fields at the top of the form, then click the Add button to add the content group.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Button/Delete</Desc>
+    <HelpText>To delete a content group, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl  or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Contentgroups/Button/Change</Desc>
+    <HelpText>To modify a content group, highlight it, edit its definition in the two fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Edit/Pattern</Desc>
+    <HelpText>Enter the pattern to match within the referral string. You can include "*" as a wildcard. For example, "*yoursite.com*" will group all referral URL's containing the string "yoursite.com".</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Edit/Name</Desc>
+    <HelpText>Enter the free format name of the referral group. The same name can be entered for multiple patterns, and the resulting matched referrals will all be grouped under that name.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Listctrl/List</Desc>
+    <HelpText>This table lists all referral group patterns that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Button/Add</Desc>
+    <HelpText>Complete the two fields at the top of the form, then click the Add button to add the referral group.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Button/Delete</Desc>
+    <HelpText>To delete a referral group, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl  or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Statistics/Referalgroups/Button/Change</Desc>
+    <HelpText>To modify a content group, highlight it, edit its definition in the two fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Edit/Description</Desc>
+    <HelpText>Type a name for the advertisement, for display on the report. For example, "Banner Ad".</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Edit/Filename</Desc>
+    <HelpText>Type the name of the file that represents the display of the advertisement. For example, "banner.gif".</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Edit/Clickstring</Desc>
+    <HelpText>Type the clickthrough target URL of the advertisement. For example, "www.mysite.com/ads/banner.html".</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Listctrl/List</Desc>
+    <HelpText>Lists all impressions that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Button/Add</Desc>
+    <HelpText>To add an impression, complete the three fields at the top of the form, then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Button/Delete</Desc>
+    <HelpText>To delete an impression, highlight the desired entry, and click the Delete button. Select multiple impressions by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Impressions/Button/Change</Desc>
+    <HelpText>To modify an impression, highlight it, edit its definition in the three fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Edit/Description</Desc>
+    <HelpText>Type a name for the campaign, for display on the report. For example, "Funnel Web Ad Yahoo".</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Edit/Referal</Desc>
+    <HelpText>Type the location of the clickthrough in the Referral Pattern field. For example, "www.mysite.com/ads/iReporter.html".</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Edit/Costmonth</Desc>
+    <HelpText>Type the cost per month of the advertisement.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Listctrl/List</Desc>
+    <HelpText>Lists all campaigns that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Button/Add</Desc>
+    <HelpText>To add a new campaign, complete the three fields at the top of the form, then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Button/Delete</Desc>
+    <HelpText>To delete a campaign, highlight the desired entry, and click the Delete button. Select multiple campaigns by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Advertising/Campaigns/Button/Change</Desc>
+    <HelpText>To modify a campaign, highlight it, edit its definition in the three fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Domains/Combo/Identify</Desc>
+    <HelpText>Select the mechanism to identify the different virtual domains represented in the log files.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Domains/Edit/Directory</Desc>
+    <HelpText>No help available</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Domains/Combo/Sorting</Desc>
+    <HelpText>Select how you want the virutal domains sorted in the reports.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Domains/Combo/Numberdomains</Desc>
+    <HelpText>Store Virtual Domain reports in sequentially numbered (rather than named) directories.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Edit/Host</Desc>
+    <HelpText>Type the domain name of the host to be aggregated. You can include "*" as a wildcard character. For example, "*mysite*".</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Edit/Name</Desc>
+    <HelpText>Type a name for this group of domains. For example, "My Site". The same name is used for all domains to be aggregated together.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Listctrl/List</Desc>
+    <HelpText>Lists all aggregration entries that have been defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Button/Add</Desc>
+    <HelpText>To add an aggregation group, complete the two fields at the top of the form, then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Button/Delete</Desc>
+    <HelpText>To delete an aggregation group, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Aggregation/Button/Change</Desc>
+    <HelpText>To modify an aggregation group, highlight it, edit its definition in the two fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Edit/Host</Desc>
+    <HelpText>Type the exact domain name of the host to be mapped. For example "www.mysite.com". Do not use wild-card characters. After you have made entries into this table, domains not listed here will not be reported.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Edit/Path</Desc>
+    <HelpText>Type the directory path where the reports for this domain are to be placed. For example, "C:\Traffic\mysitereports\".</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Button/Browse</Desc>
+    <HelpText>Click here to browse your disk and select a report directory.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Listctrl/List</Desc>
+    <HelpText>Lists all domain mappings that have been defined. Domains that are not in this list will not be reported. No domain should appear more than once in this list.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Button/Add</Desc>
+    <HelpText>To add domain mapping, complete the two fields at the top of the form, then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Button/Delete</Desc>
+    <HelpText>To delete domain mapping, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Mapping/Button/Change</Desc>
+    <HelpText>To modify domain mapping, highlight it, edit its definition in the two fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Checkbox/Enabled</Desc>
+    <HelpText>Select this option to enable Cluster analysis.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Edit/Enabledfor</Desc>
+    <HelpText>This read-only field indicates the maximum number of clustered servers whose log files you can process. It is determined by the cluster license that has been installed.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Edit/Clusters</Desc>
+    <HelpText>Type the number of clustered servers that you want to process. The number must be less than or equal to the number of clusters you are licensed for.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Edit/Name</Desc>
+    <HelpText>Enter the name of the clustered server as you would like it to appear within the load balancing report.  It can be any arbitrary text string.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Edit/Ip</Desc>
+    <HelpText>This is the IP address of the clustered server.  If you enter a value here then it will be used to associate log entries with the server for the load balancing report.  The s-ip field must exist within the log entries for this to work.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Edit/Path</Desc>
+    <HelpText>This is a wildcard path pattern that may be used to associate entire log files with the clustered server for the load balancing report.  You may enter a value here if the server logs to its own exclusive log file(s).</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Listctrl/List</Desc>
+    <HelpText>Lists the clusters you have defined.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Button/Add</Desc>
+    <HelpText>To add a cluster, complete the fields at the top of the form and then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Button/Delete</Desc>
+    <HelpText>To delete a cluster, highlight the desired entry, and click the Delete button. Select multiple groups by holding down the Ctrl or Shift key and clicking.</HelpText>
+</Description>
+<Description>
+    <Desc>Virtual/Clustering/Button/Change</Desc>
+    <HelpText>To modify a clustering entry, highlight it, edit its definition in the fields at the top of the form, then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Compress/Checkbox/Compressgzip</Desc>
+    <HelpText>Select this option to compress (using Gzip) the source log files after they have been processed. This will save disk space. Note that you will need to select the compressed log files if you want to re-process this data.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Compress/Checkbox/Deleteoriginallog</Desc>
+    <HelpText>Select this option to delete the source log files after they have been processed.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Compress/Checkbox/Archivezip</Desc>
+    <HelpText>Select this option to compress your reports into a single zip file (index.zip), which is placed in the Reports directory (as specified in the Reports tab).</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Compress/Checkbox/Deleteoriginalreport</Desc>
+    <HelpText>Select this option to delete the report from the Reports directory after it has been uploaded to a remote location (used in conjunction with the Reports upload option in the Upload tab).</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Log/Checkbox/Enable</Desc>
+    <HelpText>Select this option to enable FTP uploading of log files to remote computers, after processing has completed. You will need an FTP account for the computer you are logging on to.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Log/Edit/Hostname</Desc>
+    <HelpText>Name of the host system to receive the log files. For example, ftp.example.com.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Log/Edit/Username</Desc>
+    <HelpText>User account name. For example, anonymous. The account name may be case-sensitive depending on your FTP server.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Log/Edit/Password</Desc>
+    <HelpText>Type the password for the FTP account name.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Log/Edit/Path</Desc>
+    <HelpText>The path name for the files to be uploaded to. For example, to upload to ftp://ftp.example.com/logs/, you would type "logs/". </HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Checkbox/Enable</Desc>
+    <HelpText>Select this option to enable FTP uploading of report files to remote computers, after processing has completed. You will need an FTP account for the computer you are logging on to.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Edit/Hostname</Desc>
+    <HelpText>Name of the host system to receive the report files. For example, ftp.example.com.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Edit/Username</Desc>
+    <HelpText>User account name. For example, anonymous. The account name may be case-sensitive depending on your FTP server.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Edit/Password</Desc>
+    <HelpText>Password for the FTP account name.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Edit/Path</Desc>
+    <HelpText>The path name the report files are uploaded to. The path name can contain date tokens. For example, "logs/{MM}{DD}-reports", </HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Upload/Reports/Checkbox/UploadWhole</Desc>
+    <HelpText>Upload the whole folder after processing.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Checkbox/Send</Desc>
+    <HelpText>Select this option to enable the sending of email upon completion of processing.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Button/Test</Desc>
+    <HelpText>Click here to send a test email.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Edit/To</Desc>
+    <HelpText>Type the email destination address.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Edit/From</Desc>
+    <HelpText>Type the address from which you are sending. This becomes the "Reply-To" field in the resulting email.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Edit/Subject</Desc>
+    <HelpText>Type the subject line for your email. The default is "iReporter Notification".</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Edit/Host</Desc>
+    <HelpText>Type the IP address of the outgoing SMTP mail server.</HelpText>
+</Description>
+<Description>
+    <Desc>Postprocess/Email/Edit/Message</Desc>
+    <HelpText>Type your email message here.</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Checkbox/Usecustom</Desc>
+    <HelpText>Select this option to use custom format defined here, rather than have it auto-detect the format of the log file.</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Edit/Separator</Desc>
+    <HelpText>Type the separator that is used between fields in your log file. You can enter a single character, decimal value in the ASCII table (for example, "9" for tab), or the keywords "tab" or "space".</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Combo/Datafield</Desc>
+    <HelpText>Select the data field that you want to define.</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Slider/Index</Desc>
+    <HelpText>Select the position of the data field in the log file entry. For example, if the data field is the fifth field in the line, select an index of 5 with the slider.</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Combo/Dateformat</Desc>
+    <HelpText>Select the format of the date field.</HelpText>
+</Description>
+<Description>
+    <Desc>Customformat/Logfile/Combo/Timeformat</Desc>
+    <HelpText>Select the format of the time field.</HelpText>
+</Description>
+<Description>
+    <Desc>Remotecontrol/Checkbox/Enable</Desc>
+    <HelpText>No help available</HelpText>
+</Description>
+<Description>
+    <Desc>Remotecontrol/Edit/Password</Desc>
+    <HelpText>No help available</HelpText>
+</Description>
+<Description>
+    <Desc>Remotecontrol/Edit/Tcpport</Desc>
+    <HelpText>No help available</HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/Edit/Ip</Desc>
+    <HelpText>Internal address of network to be added (eg. 192.168.* )</HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/List</Desc>
+    <HelpText></HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/Button/Add</Desc>
+    <HelpText>Add internal address</HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/Button/Change</Desc>
+    <HelpText>Change address</HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/Button/Remove</Desc>
+    <HelpText>Delete internal address</HelpText>
+</Description>
+<Description>
+    <Desc>Routerfirewall/Internalnetwork/Button/Clear</Desc>
+    <HelpText>Remove all addresses</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Combo/Language</Desc>
+    <HelpText>Language in which reports to be displayed</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Edit/Text</Desc>
+    <HelpText>Enter new text for highlighted entry</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Button/Update</Desc>
+    <HelpText>Click here to apply the updated text</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Listctrl/List</Desc>
+    <HelpText>Default English text and translated text</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Edit/Findtext</Desc>
+    <HelpText>Enter string to search for</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Button/Next</Desc>
+    <HelpText>Click here to search again for entered text</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Button/Previous</Desc>
+    <HelpText>Not in GUI</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Button/Saveas</Desc>
+    <HelpText>Save to language file</HelpText>
+</Description>
+<Description>
+    <Desc>LanguageBuilder/Button/Exit</Desc>
+    <HelpText>Exit the Language Builder</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/Settings</Desc>
+    <HelpText>Edit report settings</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/Schedule</Desc>
+    <HelpText>Prepare and edit a schedule</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/Process</Desc>
+    <HelpText>Process log files and generate reports</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/View</Desc>
+    <HelpText>Display report (launches appropriate viewer). Use the ALT key to launch a new browser window</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/Help</Desc>
+    <HelpText>Display Manual</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/About</Desc>
+    <HelpText>About Screen</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Button/Showhide</Desc>
+    <HelpText>Show/Hide logs file list below</HelpText>
+</Description>
+<Description>
+    <Desc>Main/Listctrl/List</Desc>
+    <HelpText>'Drag and Drop' a log file or shortcut or URL shortcut here to process it.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Edit/Page</Desc>
+    <HelpText>Type the URL of the key page you want to track.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Edit/Traceback</Desc>
+    <HelpText>Type the number of pages visited after the key page that you want included in the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Edit/Number</Desc>
+    <HelpText>Type the number of alternate routes you want included in the report.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Listctrl/List</Desc>
+    <HelpText>Lists the key pages that will be tracked the next time you process a log file.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Button/Add</Desc>
+    <HelpText>Type the URL of the page you want to track in the top field then click the Add button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Button/Delete</Desc>
+    <HelpText>To delete an entry, select a page from the Key Page list then click the Delete button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Button/Change</Desc>
+    <HelpText>To modify a key page, select the key page from the list, make your changes in the top field and then click the Change button.</HelpText>
+</Description>
+<Description>
+    <Desc>Routes/Keypagesfrom/Button/Defaults</Desc>
+    <HelpText>No help available</HelpText>
+</Description>
+</HelpTextDescriptions>

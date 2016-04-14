@@ -1,0 +1,708 @@
+// Finnish Template File
+//  4 code base
+// Version 4.5, 21/01/02
+// All Extended characters should be input using HTML codes
+
+// Translation Hans Vallden
+
+// Server Statistics = {ssNN}
+
+{ss01},Palvelimen kuormitustilastot
+{ss02},Yksityiskohtaiset raportit
+{ss03},Pyynn&ouml;t
+{ss04},Kesto
+{ss05},Ajanjaksolla alkaen
+{ss06},p&auml;&auml;ttyen
+{ss07},Pyynt&ouml;j&auml;
+{ss08},Pyynt&ouml;j&auml; v&auml;limuistista
+{ss09},Hyl&auml;ttyj&auml; pyynt&ouml;j&auml;
+{ss10},Mit&auml;t&ouml;ityj&auml; lokimerkint&ouml;j&auml;
+{ss11},Pyynt&ouml;j&auml;/p&auml;iv&auml; keskim&auml;&auml;rin
+{ss12},Pyynt&ouml;j&auml;/tunti keskim&auml;&auml;rin
+{ss13},K&auml;vij&auml;tiedot
+{ss14},K&auml;yntej&auml;
+{ss15},K&auml;vij&ouml;it&auml;
+{ss16},Toistuvia k&auml;vij&ouml;it&auml;
+{ss17},Kertak&auml;vij&ouml;it&auml;
+{ss18},K&auml;yntej&auml;/p&auml;iv&auml;
+{ss19},Keskim&auml;&auml;r&auml;inen k&auml;ynnin kesto
+{ss20},Sivuja/k&auml;ynti keskim&auml;&auml;rin
+{ss21},Pyynt&ouml;j&auml;/k&auml;ynti keskim&auml;&auml;rin
+{ss22},Tietoja sivuista
+{ss23},Sivuja
+{ss24},Sivuja/p&auml;iv&auml; keskim&auml;&auml;rin
+{ss25},Haettuja tiedostoja
+{ss26},Tiedostosiirtojen yhteism&auml;&auml;r&auml;
+{ss27},Kaistaleveys palvelimelta
+{ss28},Megatavuja
+{ss29},Megatavuja/p&auml;iv&auml;
+{ss30},Bittej&auml;/sekunti
+{ss31},Prosentteina
+{ss32},kilotavusta
+{ss33},Kaistaleveys palvelimelle
+{ss34},Kilotavuja
+{ss35},Kilotavuja/p&auml;iv&auml;
+{ss36},K&auml;vij&auml;tilastot p&auml;iv&auml;n jaksolle
+{ss37},Lokin k&auml;sittelyyn kulunut aika
+{ss38},rivi&auml;/min
+//{ss39},Time Period
+
+// Report Categories = {rcNN}
+
+{rc01},Tilastot
+{rc02},Liikenn&ouml;inti
+{rc03},Diagnostiset
+{rc04},Palvelin
+{rc05},Demograafiset
+{rc06},Viittaukset
+{rc07},Mediavirtaus
+{rc08},K&auml;ytt&ouml;j&auml;rjestelm&auml;t
+{rc09},Mainonta
+{rc10},Markkinointi
+{rc11},Palomuuri
+//{rc12},Clustering
+
+// Report title (Long) = {rlNN}
+
+{rl01},Yhteenveto
+{rl02},Tunneittain
+{rl03},Historia tunneittain
+{rl04},P&auml;ivitt&auml;in
+{rl05},Viime p&auml;iv&auml;t
+{rl06},Viikottain
+{rl07},Kuukausittain
+{rl08},Palvelinvirheet
+{rl09},Palvelinvirhehistoria
+{rl10},Hyl&auml;tyt URL:t
+{rl11},Hyl&auml;tyt URL:t -historia
+{rl12},Sivut
+{rl13},Sivuhistoria
+{rl14},Saapumissivut
+{rl15},Saapumissivuhistoria
+{rl16},Poistumissivut
+{rl17},Poistumissivuhistoria
+{rl18},Hakemistot
+{rl19},Juuritason hakemistot
+{rl20},Juuritason hakemistohistoria
+{rl21},URL:t
+{rl22},Selailupolut
+{rl23},Sis&auml;lt&ouml;ryhm&auml;t
+{rl24},Sis&auml;lt&ouml;ryhm&auml;historia
+{rl25},Tiedostojen haut
+{rl26},Tiedostojen haut -historia
+{rl27},Tiedostotyypit
+{rl28},K&auml;vij&auml;t
+{rl29},K&auml;vij&auml;klikkausten virta
+{rl30},K&auml;vij&auml;historia
+{rl31},Tunnistetut k&auml;vij&auml;t
+{rl32},Tunnistetut k&auml;vij&auml;t -historia
+{rl33},Domainit
+{rl34},Maat
+{rl35},Maanosat
+{rl36},Organisaatiot
+{rl37},K&auml;yntijakauma
+{rl38},Robotit
+{rl39},Viittaukset
+{rl40},Viittaussivustot
+{rl41},Viittaussivustot -historia
+{rl42},Hakukoneet
+{rl43},Hakutermit
+{rl44},Selainohjelmat
+{rl45},Selainohjelmat/K&auml;ytt&ouml;j&auml;rjestelm&auml;t
+{rl46},K&auml;ytt&ouml;j&auml;rjestelm&auml;t
+{rl47},Lojaliteetti
+{rl48},K&auml;ynnin kesto
+{rl49},Vaikutelmat
+{rl50},Vaikutelmahistoria
+{rl51},Kampanjat
+{rl52},Kampanjahistoria
+{rl53},Kierron tiheys
+{rl54},Mediaohjelmat
+{rl55},&Auml;&auml;nisis&auml;lt&ouml;
+{rl56},Videosis&auml;lt&ouml;
+{rl57},Mediatyypit
+{rl58},L&auml;hteiden osoitteet
+{rl59},Protokollat
+{rl60},Sunnuntain l&auml;hetykset
+{rl61},Maanantain l&auml;hetykset
+{rl62},Tiistain l&auml;hetykset
+{rl63},Keskiviikon l&auml;hetykset
+{rl64},Torstain l&auml;hetykset
+{rl65},Perjantain l&auml;hetykset
+{rl66},Lauantain l&auml;hetykset
+{rl67},Virtuaaliset palvelimet
+{rl68},Virtuaaliset palvelimet -historia
+{rl69},Protokolla - HTTP
+{rl70},Protokolla - HTTPS
+{rl71},Protokolla - S&auml;hk&ouml;posti
+{rl72},Protokolla - FTP
+{rl73},Protokolla - Telnet
+{rl74},Protokolla - DNS
+{rl75},Protokolla - POP3
+{rl76},Protokolla - Real
+{rl77},L&auml;hteiden osoitteet
+{rl78},in raportti
+//{rl79},Protocol - Others
+//{rl80},Pages Least Visited
+//{rl81},Pages Viewed by Key Visitors
+//{rl82},Routes to Key Pages
+//{rl83},Pages Containing Broken Links
+//{rl84},Search Engines History
+//{rl85},Search Terms History
+//{rl86},Browsers History
+//{rl87},Operating Systems History
+//{rl88},Robots History
+//{rl89},Media Players History
+//{rl90},Audio Content History
+//{rl91},Video Content History
+//{rl92},Load Balancing
+//{rl93},Load Balancing History
+//{rl94},Unrecognized Agents
+//{rl95}, Analyzer Virtual Domain Report
+//{rl96},Routes from Key Pages
+//{rl97},External Pages Containing Broken Links
+//{rl98},Internal Pages Containing Broken Links
+//{rl99},Authenticated Users Click Stream
+//{rl100},Keys Visitors' Traffic Summary
+//{rl101},Key Page Traffic Summary
+//{rl102},Key Page Traffic Summary
+	
+// General Labels = {glNN}
+	
+{gl01},Pyynn&ouml;t
+{gl02},K&auml;ynnit
+{gl03},Tiedosto
+{gl04},Tiedostot
+{gl05},Liikenn&ouml;inti
+{gl06},Keskiarvo
+{gl07},Virheet
+{gl08},Yksikk&ouml;&auml;
+{gl09},$
+{gl10},&Auml;skett&auml;inen
+{gl11},&Auml;skett&auml;iset yhteens&auml;
+{gl12},Hakemisto
+{gl13},Muut
+{gl14},Tiedostoa ei l&ouml;ytynyt
+{gl15},Ylin
+{gl16},Alin
+{gl17},K&auml;vij&auml;
+{gl18},K&auml;vij&auml;t
+{gl19},Kierto
+{gl20},Taajuus
+{gl21},K&auml;ynti
+{gl22},K&auml;ynnit
+{gl23},K&auml;vij&auml;t
+{gl24},Tavut
+{gl25},Sivu
+{gl26},Sivut
+{gl27},Muut
+{gl28},Yhteens&auml;
+{gl29},V&auml;lisummat
+{gl30},Viittaus
+{gl31},Maa
+{gl32},Alue
+{gl33},Polku
+{gl34},Domain
+{gl35},Organisaatio
+{gl36},Hae tiedosto
+{gl37},Kustannukset
+{gl38},Prosenttia
+{gl39},Juurihakemisto
+{gl40},Tiedoston tyyppi
+{gl41},Palvelinvirhe
+{gl42},Hyl&auml;tty URL
+{gl43},Virtuaalinen palvelin
+{gl44},URL
+{gl45},Selainohjelma
+{gl46},K&auml;ytt&ouml;j&auml;rjestelm&auml;
+{gl47},Keskiarvopolku
+{gl48},Robotti
+{gl49},Hakutermi
+{gl50},Hakukone
+{gl51},Mediaohjelma
+{gl52},&Auml;&auml;nisis&auml;lt&ouml;
+{gl53},Videosis&auml;lt&ouml;
+{gl54},Mediatyyppi
+{gl55},K&auml;ynnit
+{gl56},Klikkaukset
+{gl57},Kustannus/kuukausi
+{gl58},Ensik&auml;ynnit
+{gl59},Viimeiset k&auml;ynnit
+{gl60},Klikkaukset
+{gl61},Kustannus/klikkaus
+{gl62},Kustannus
+{gl63},Haut
+{gl64},Tavut
+{gl65},K&auml;ynnin kesto
+{gl66},Sis&auml;lt&ouml;ryhm&auml;
+{gl67},Tunnistettu k&auml;vij&auml;
+{gl68},Mainoksen nimi
+{gl69},Protokolla - HTTP
+{gl70},Protokolla - HTTPS
+{gl71},Protokolla - S&auml;hk&ouml;posti
+{gl72},Protokolla - FTP
+{gl73},Protokolla - Telnet
+{gl74},Protokolla - DNS
+{gl75},Protokolla - POP3
+{gl76},Protokolla - Real
+{gl77},L&auml;hteen osoite
+{gl78},miljoonaa
+{gl79},kt
+{gl80},Mt
+{gl81},Gt
+{gl82},bps
+{gl83},kbps
+{gl84},Mbps
+{gl85},Gbps
+{gl86},%
+//{gl87},Protocols
+//{gl88},Bytes delivered
+//{gl89},Other Connections
+//{gl90},Pages Least Visited
+//{gl91},Key Visitors
+//{gl92},Key Pages
+//{gl93},Broken Links
+//{gl94},Route
+//{gl95},Times Accessed
+//{gl96},% of routes taken
+//{gl97},Routes taken to %s
+//{gl98},All Other Routes
+//{gl99},Server Name
+//{gl100},Unrecognized Agent
+//{gl101},Broken Link Hits
+//{gl102},Broken Link
+//{gl103},Cached Hits
+//{gl104},Key Pages
+//{gl105},Routes taken from %s
+//{gl106},Hits Referred
+//{gl107},Top Referrals of
+//{gl108},of
+
+// Time-related = {tiNN}
+
+{ti01},Sunnuntai
+{ti02},Maanantai
+{ti03},Tiistai
+{ti04},Keskiviikko
+{ti05},Torstai
+{ti06},Perjantai
+{ti07},Lauantai
+{ti08},Su
+{ti09},Ma
+{ti10},Ti
+{ti11},Ke
+{ti12},To
+{ti13},Pe
+{ti14},La
+{ti15},Tammikuu
+{ti16},Helmikuu
+{ti17},Maaliskuu
+{ti18},Huhtikuu
+{ti19},Toukokuu
+{ti20},Kes&auml;kuu
+{ti21},Hein&auml;kuu
+{ti22},Elokuu
+{ti23},Syyskuu
+{ti24},Lokakuu
+{ti25},Marraskuu
+{ti26},Joulukuu
+{ti27},Tammi
+{ti28},Helmi
+{ti29},Maalis
+{ti30},Huhti
+{ti31},Touko
+{ti32},Kes&auml;
+{ti33},Hein&auml;
+{ti34},Elo
+{ti35},Syys
+{ti36},Loka
+{ti37},Marras
+{ti38},Joulu
+{ti39},Aika
+{ti40},Kesto
+{ti41},s
+{ti42},min
+{ti43},h
+{ti44},p&auml;iv&auml;
+{ti45},P&auml;iv&auml;
+{ti46},P&auml;iv&auml;&auml;
+{ti47},P&auml;iv&auml;ys
+{ti48},Kuukausi
+{ti49},Kuukautta
+{ti50},P&auml;iv&auml;n tunnit
+{ti51},Viikonp&auml;iv&auml;t
+{ti52},Keskiarvoaika
+{ti53},Aika yhteens&auml;
+{ti54},Kesto (min)
+{ti55},Monta kertaa p&auml;iv&auml;ss&auml;
+{ti56},2 kertaa p&auml;iv&auml;ss&auml;
+{ti57},Kerran p&auml;iv&auml;ss&auml;
+{ti58},2 kertaa viikossa
+{ti59},Kerran viikossa
+{ti60},2 kertaa kuukaudessa
+{ti61},Kerran kuukaudessa
+{ti62},Harvoin
+{ti63},Ensik&auml;ynti
+//{ti64},mins
+//{ti65},Week %d %b %Y
+
+// Session Listing = {seNN}
+
+{se01},K&auml;yntilistaus
+{se02},K&auml;ynnin keskim&auml;&auml;r&auml;inen kesto
+{se03},K&auml;yntilistaus
+{se04},P&auml;ivi&auml; yhteens&auml;
+{se05},Tavuja k&auml;ytetty
+{se06},Tavuja l&auml;hetetty
+{se07},Tavuja/p&auml;iv&auml;
+{se08},K&auml;ynnin kesto
+{se09},K&auml;ynnin kesto/p&auml;iv&auml;
+{se10},Arvioitu k&auml;ynnin kesto
+{se11},K&auml;ynti
+{se12},Tavuja k&auml;ytetty
+{se13},Sivuja/k&auml;ynti keskim&auml;&auml;rin
+//{se14},Attempted Downloads
+//{se15},Total Attempted Downloads
+//{se16},Browser used
+//{se17},Operating System used
+
+// Comments = {cmNN}
+
+{cm01},HUOM! Klikkaa k&auml;vij&auml;&auml; n&auml;hd&auml;ksesi t&auml;m&auml;n k&auml;yntihistorian
+{cm02},HUOM! Klikkaa k&auml;vij&auml;&auml; n&auml;hd&auml;ksesi t&auml;m&auml;n k&auml;ytt&ouml;historian
+{cm03},T&auml;m&auml;n k&auml;ynnin aikana ei ole selattu sivuja
+{cm04},Tuntematon IP-osoite
+{cm05},Mit&auml;t&ouml;n
+{cm06},Paikallinen verkko
+{cm07},Palvelimen virheet
+{cm08},Tuntematon nimi
+{cm09},OK
+{cm10},VIRHE
+{cm11},Ei viittaajaa
+{cm12},Kirjanmerkitty
+{cm13},Muut
+{cm14},Tuntematon
+{cm15},Jatkuu seuraavalla sivulla ...
+{cm16},... jatkoa edelliselt&auml; sivulta.
+
+// Server Errors = {erNN}
+
+{er01},Vaillinainen/M&auml;&auml;rittelem&auml;t&ouml;n (0)
+{er02},Luotu (201)
+{er03},Hyv&auml;ksytty (202)
+{er04},Ei sis&auml;lt&ouml;&auml; (204)
+{er05},Osittainen sis&auml;lt&ouml; (206)
+{er06},Siirretty pysyv&auml;sti (301)
+{er07},Uudelleenohjaus (302)
+{er08},Ei muutettu (304)
+{er09},Virheellinen pyynt&ouml; (400)
+{er10},Tunnistus vaadittu (401)
+{er11},Kielletty (403)
+{er12},Tiedostoa ei l&ouml;ytynyt (404)
+{er13},Menetelm&auml; ei sallittu (405)
+{er14},Ei hyv&auml;ksytty (406)
+{er15},V&auml;lityspalvelimen tunniste vaadittu (407)
+{er16},Pyynn&ouml;n aikarajoitus ylittynyt (408)
+{er17},Palvelinvirhe (500)
+{er18},Ei toimeenpantu (501)
+{er19},Virheellinen k&auml;yt&auml;v&auml; (502)
+{er20},Palvelu ei ole saatavilla (503)
+{er21},Salasana pakollinen (331)		// FTP errors
+{er22},K&auml;ytt&auml;j&auml;tili pakollinen (332)
+{er23},Toimenpide avoimena (350)
+{er24},Palvelu ei ole saatavilla (421)
+{er25},Yhteytt&auml; ei voitu avata (425)
+{er26},Yhteys suljettu (426)
+{er27},Tiedosto ei ole saatavilla (450)
+{er28},Toimenpide keskeytetty (451)
+{er29},Toimenpide hyl&auml;tty (452)
+{er30},Ei toimeenpantu (504)
+{er31},Ei sis&auml;&auml;nkirjoittauduttu (530)
+{er32},K&auml;ytt&auml;j&auml;tili pakollinen (532)
+{er33},Tiedosto ei ole saatavilla (550)
+{er34},Toimenpide keskeytetty (451)
+{er35},Tallennusm&auml;&auml;r&auml; ylitetty (552)
+{er36},Kielletty nimi (553)
+
+// System Information = {syNN}
+
+{sy01},ISO-8859-1		// charset for browser
+{sy02},Default			// font name for graphs
+
+// Countries = {coNN}
+
+//{co01},Andorra
+//{co02},United Arab Emirates
+//{co03},Afghanistan
+//{co04},Antigua
+//{co05},Anguilla
+//{co06},Albania
+//{co07},Armenia
+//{co08},Netherlands
+//{co09},Angola
+//{co10},Antarctica
+//{co11},Argentina
+//{co12},Adv Proj Res Agency
+//{co13},American Samoa
+//{co14},Austria
+//{co15},Australia
+//{co16},Aruba
+//{co17},Azerbaijan
+//{co18},Bosnia Herzegovina
+//{co19},Barbados
+//{co20},Bangladesh
+//{co21},Belgium
+//{co22},Burkina Faso
+//{co23},Bulgaria
+//{co24},Bahrain
+//{co25},Burundi
+//{co26},Benin
+//{co27},Bermuda
+//{co28},Brunei
+//{co29},Bolivia
+//{co30},Brazil
+//{co31},Bahamas
+//{co32},Bhutan
+//{co33},Bouvet Island
+//{co34},Botswana
+//{co35},Belarus
+//{co36},Byelorussian
+//{co37},Belize
+//{co38},Canada
+//{co39},Cocos Islands
+//{co40},Congo
+//{co41},Central African Republic
+//{co42},Switzerland
+//{co43},Cote d'Ivoire
+//{co44},Cook Islands
+//{co45},Chile
+//{co46},Cameroon
+//{co47},China
+//{co48},Colombia
+//{co49},Costa Rica
+//{co50},Czechoslovakia
+//{co51},Cuba
+//{co52},Cape Verde
+//{co53},Christmas Island
+//{co54},Cyprus
+//{co55},Czech Republic
+//{co56},Germany
+//{co57},Djibouti
+//{co58},Denmark
+//{co59},Dominica
+//{co60},Dominican Republic
+//{co61},Algeria
+//{co62},Ecuador
+//{co63},US Educational
+//{co64},Estonia
+//{co65},Egypt
+//{co66},Western Sahara
+//{co67},Eritrea
+//{co68},Spain
+//{co69},Ethiopia
+//{co70},Finland
+//{co71},Fiji
+//{co72},Falkland Islands
+//{co73},Micronesia
+//{co74},Faroe Islands
+//{co75},France
+//{co76},France Metropolitan
+//{co77},Gabon
+//{co78},United Kingdom
+//{co79},Grenada
+//{co80},Georgia
+//{co81},French Guiana
+//{co82},Ghana
+//{co83},Gibraltar
+//{co84},Greenland
+//{co85},Gambia
+//{co86},Guinea
+//{co87},US Government
+//{co88},Guadeloupe
+//{co89},Equatorial Guinea
+//{co90},Greece
+//{co91},South Georgia & Sandwich Islands
+//{co92},Guatemala
+//{co93},Guam
+//{co94},Guinea-Bissau
+//{co95},Guyana
+//{co96},Hong Kong
+//{co97},Heard & McDonald Is
+//{co98},Honduras
+//{co99},Croatia
+//{co100},Haiti
+//{co101},Hungary
+//{co102},Indonesia
+//{co103},Ireland
+//{co104},Israel
+//{co105},India
+//{co106},International
+//{co107},British Indian Ocean Terr
+//{co108},Iraq
+//{co109},Iran
+//{co110},Iceland
+//{co111},Italy
+//{co112},Jamaica
+//{co113},Jordan
+//{co114},Japan
+//{co115},Kenya
+//{co116},Kyrgyzstan
+//{co117},Cambodia
+//{co118},Kiribati
+//{co119},Comoros
+//{co120},Saint Kitts and Nevis
+//{co121},Korea
+//{co122},Kuwait
+//{co123},Cayman Islands
+//{co124},Kazakhstan
+//{co125},Laos
+//{co126},Lebanon
+//{co127},Saint Lucia
+//{co128},Liechtenstein
+//{co129},Sri Lanka
+//{co130},Liberia
+//{co131},Lesotho
+//{co132},Lithuania
+//{co133},Luxembourg
+//{co134},Latvia
+//{co135},Libya
+//{co136},Morocco
+//{co137},Monaco
+//{co138},Moldova
+//{co139},Madagascar
+//{co140},Marshall Is
+//{co141},Macedonia
+//{co142},Mali
+//{co143},Myanmar
+//{co144},Mongolia
+//{co145},Macau
+//{co146},Northern Mariana Is
+//{co147},Martinique
+//{co148},Mauritania
+//{co149},Montserrat
+//{co150},Malta
+//{co151},Mauritius
+//{co152},Maldives
+//{co153},Malawi
+//{co154},Mexico
+//{co155},Malaysia
+//{co156},Mozambique
+//{co157},Namibia
+//{co158},NATO
+//{co159},New Caledonia
+//{co160},Niger
+//{co161},Norfolk Island
+//{co162},Nigeria
+//{co163},Nicaragua
+//{co164},Netherlands
+//{co165},Norway
+//{co166},Nepal
+//{co167},Nauru
+//{co168},Neutral Zone
+//{co169},Niue
+//{co170},New Zealand
+//{co171},Oman
+//{co172},US Organization
+//{co173},Panama
+//{co174},Peru
+//{co175},French Polynesia
+//{co176},Papua New Guinea
+//{co177},Philippines
+//{co178},Pakistan
+//{co179},Poland
+//{co180},St Pierre and Miquelon
+//{co181},Pitcairn
+//{co182},Puerto Rico
+//{co183},Portugal
+//{co184},Palau
+//{co185},Paraguay
+//{co186},Qatar
+//{co187},Reunion
+//{co188},Romania
+//{co189},Russia
+//{co190},Rwanda
+//{co191},Saudi Arabia
+//{co192},Solomon Islands
+//{co193},Seychelles
+//{co194},Sudan
+//{co195},Sweden
+//{co196},Singapore
+//{co197},St Helena
+//{co198},Slovenia
+//{co199},Svalbard
+//{co200},Slovakia
+//{co201},Sierra Leone
+//{co202},San Marino
+//{co203},Senegal
+//{co204},Somalia
+//{co205},Suriname
+//{co206},Sao Tome and Principe
+//{co207},Soviet Union
+//{co208},El Salvador
+//{co209},Syria
+//{co210},Swaziland
+//{co211},Turks and Caicos Islands
+//{co212},Chad
+//{co213},French Southern Territories
+//{co214},Togo
+//{co215},Thailand
+//{co216},Tajikistan
+//{co217},Tokelau
+//{co218},Turkmenistan
+//{co219},Tunisia
+//{co220},Tonga
+//{co221},East Timor
+//{co222},Turkey
+//{co223},Trinidad and Tobago
+//{co224},Tuvalu
+//{co225},Taiwan
+//{co226},Tanzania
+//{co227},Ukraine
+//{co228},Uganda
+//{co229},US Minor Outlying Islands
+//{co230},USA
+//{co231},Uruguay
+//{co232},Uzbekistan
+//{co233},Vatican City
+//{co234},Saint Vincent & Grenadines
+//{co235},Venezuela
+//{co236},Virgin Islands (Br)
+//{co237},Virgin Islands (US)
+//{co238},Vietnam
+//{co239},Vanuatu
+//{co240},Wallis and Futuna Islands
+//{co241},Samoa
+//{co242},Yemen
+//{co243},Mayotte
+//{co244},South Africa
+//{co245},Zambia
+//{co246},Zaire
+//{co247},Zimbabwe
+//{co248},US Commercial
+//{co249},US Dept of Defense
+//{co250},Network
+//{co251},Yugoslavia
+//{co252},Business Organizations 
+//{co253},Personal
+//{co254},Museums
+//{co255},Professionals
+//{co256},Aviation
+//{co257},Cooperatives
+//{co258},General Information
+
+// Organisations = {orNN}
+
+//{or01},US Organizations
+//{or02},Organizations
+//{or03},US Educational
+//{or04},Educational
+//{or05},US Dept of Defense
+//{or06},Military
+//{or07},US Government
+//{or08},Government
+//{or09},US Commercial
+//{or10},Commercial
+//{or11},US Network
+//{or12},Network
+//{or13},Proxy Server
+//{or14},Search Bots

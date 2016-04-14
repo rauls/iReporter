@@ -1,0 +1,158 @@
+<html>
+
+<body bgcolor="white">
+<form method="post" action="saveconfig.cgi" name="save">
+<p>&nbsp;</p>
+  <table width="368" border="0" cellspacing="0" cellpadding="0" height="214">
+    <tr height="14"> 
+    <td width="504" height="14" valign="TOP"><b><font color="#000051"><u>Report</u></font></b></td>
+  </tr>
+  <tr height="33"> 
+      <td height="33" valign="TOP" width="504"> 
+        <p><b>Output path </b><br>
+          <b> 
+          <input type="text" name="out" value="[OUT]" maxlength="256" size="50">
+          </b><b><br>
+          <br>
+          </b><b>Report format<br>
+          </b><b> 
+          <input type="radio" name="[reportformat]" value=0 unchecked>
+          <b>HTML</b> </b> 
+          <input type="radio" name="[reportformat]" value=1 unchecked>
+          <b>RTF/DOC</b> 
+          <input type="radio" name="[reportformat]" value=2 unchecked>
+          <b>Comma Delim 
+          <input type="radio" name="[reportformat]" value=3 unchecked>
+          <b>PDF</b></b></p>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+  <tr height="33"> 
+    <td height="33" valign="TOP" width="504"> 
+      <p><b>Site URL</b><br>
+        Enter the URL of the site for correct page links<br>
+          <input type="text" name="siteurl" value="[SITEURL]" maxlength="128" size="50">
+        <br>
+        default served file (index.html)<br>
+          <input type="text" name="default" value="[DEFAULT]" maxlength="128" size="50">
+      </p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+  <tr height="33">
+    <td height="33" valign="TOP" width="504">
+      <p><b>Language<br>
+        </b>Select the native language for your report 
+        <select name="language">
+          <option value="SELECTED">English</option>
+          <option>French</option>
+        </select>
+      </p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="277" border="0" cellspacing="0" cellpadding="0" height="125">
+  <tr> 
+    <td width="121" height="21" valign="TOP"> 
+      <p><b><font color="#000051"><u>Date Range</u></font></b> </p>
+      <p> 
+        <select name=daterange>
+          <option value="alldates" selected>All Dates 
+          <option value="specify" >Specify Date 
+          <option value="today" >Today 
+          <option value="thisweek" >This Week 
+          <option value="thismonth" >This month 
+          <option value="last7days" >Last 7days 
+          <option value="last14days" >Last 14days 
+          <option value="last21days" >Last 21days 
+          <option value="last30days" >Last 30days 
+          <option value="thisquart" >This Quarter 
+          <option value="this6m"  >This 6 months 
+          <option value="thisyear" >This Year 
+        </select>
+        <br>
+        Start<br>
+        <input type="text" name="sdate" value=[SDATE] size="12">
+        <br>
+        End <br>
+        <input type="text" name="edate" value=[EDATE] size="12">
+      </p>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="277" border="0" cellspacing="0" cellpadding="0" height="259">
+  <tr height="14"> 
+    <td width="121" height="14" valign="TOP"><b><font color="#000051"><u>Options</u></font></b></td>
+  </tr>
+  <tr height="19"> 
+    <td height="106" valign="TOP"> 
+      <p> 
+        <input type="radio" name="[DNR]" value=0 unchecked>
+        <b>DNS Off<br>
+        </b> 
+        <input type="radio" name="[DNR]" value=1 unchecked>
+        <b>Resolve IPs (slower)<br>
+        </b> 
+        <input type="radio" name="[DNR]" value=2 unchecked>
+        <b>Resolve IPs (cached only)<br>
+        </b> 
+        <input type="text" name="dnsnum" value="[DNSNUM]" maxlength="10">
+        <b> Number of lookups</b></p>
+      </td>
+  </tr>
+  <tr height="19"> 
+      <td height="148" valign="TOP"> 
+        <p> 
+        <input type="checkbox" name="[streaming]" value="on" unchecked>
+        <b>Streaming<br>
+        </b> 
+        <input type="checkbox" name="[ignoreself]" value="on" unchecked>
+        <b>Ignore self referals<br>
+        </b> 
+        <input type="checkbox" name="[ignorebookmark]" value="on" unchecked>
+        <b>Ignore bookmarks and file://<br>
+        </b> 
+        <input type="checkbox" name="[filterzero]" value="on" unchecked>
+        <b>Ignore zero byte transfers<br>
+        </b> 
+        <input type="checkbox" name="[ignorecase]" value="on" unchecked>
+        <b>Ignore case on URLs<br>
+        </b> 
+        <input type="checkbox" name="[usecgi]" value="on" unchecked>
+        <b> Accept CGI parameters</b></p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+  <table width="277" border="0" cellspacing="0" cellpadding="0" height="108">
+    <tr height="14"> 
+    <td width="138" height="14"><b><font color="#000051"><u>Sort type</u></font></b></td>
+  </tr>
+    <tr height="19" valign="top"> 
+      <td width="138" height="88"> 
+        <p> 
+          <input type="radio" name="[sort]" value="0" unchecked>
+          <b>Name<br>
+          <input type="radio" name="[sort]" value="1" unchecked>
+          Bytes <br>
+          <input type="radio" name="[sort]" value="2" unchecked>
+          Requests <br>
+          <input type="radio" name="[sort]" value="3" unchecked>
+          Pages if possible</b></p>
+    </td>
+  </tr>
+</table>
+<p>
+  <input type="submit" name="Submit" value="Save Config">
+</p>
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>

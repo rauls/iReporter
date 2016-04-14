@@ -1,0 +1,30 @@
+
+#  Help Card
+# Report: Search Strings
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows the most popular search terms (keywords) used to find your site. Use this information to validate your existing set of META keywords. The more popular keywords should be analyzed, as they can help plan future content or special initiatives.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Search Term.
+Actual search term used to find your site.
+
+<b>Horizontal axis:</b>  Hits (default sorting). 
+Hits to the site as a result of the corresponding search terms. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Search Term:</b>
+Actual search term used to find your site.
+
+<b>Searches (%):</b>
+Number of times the corresponding search term was used to find your site. (Percentage as a proportion of all terms used to find your site.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits from search engines that were queried with the corresponding search term. (Percentage as a proportion of hits from all search engine queries.)
+
+<b>Errors</b>
+Number of server errors generated as a result of hits to the site from search engines queried with the corresponding search term.

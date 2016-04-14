@@ -1,0 +1,37 @@
+
+# Help Card
+# Report: Server Errors
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+
+<!--OVERVIEW-->
+This report identifies the different errors occurring on your web site, along with the pages that caused each type of error. Use this information to diagnose and eradicate these errors, a large number of which can heavily compromise your site's usability and reputation.  
+
+<!--GRAPH-->
+<b>Pie Chart: Server Errors</b>
+Each portion of the graph represents a different error, corresponding to the key in the top-left corner.  It has an associated percentage value for clarity and is graphed by hits.  This graph cannot be customized.
+
+<!--TABLE-->
+<b>Main Table: Server Errors</b>
+
+<b>Server Error:</b>
+Shows the type of error being encountered on your site and its corresponding status code (such as "404"). See Chapter 3 <i>Exploring Settings > Diagnostic Statistics</i> in the User Guide for a listing of common error codes.
+
+<b>Hits (%):</b>
+Number of hits that resulted in the corresponding error. (Percentage as a proportion of all hits resulting in errors.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of the error. (Percentage as a proportion of all bytes transferred for hits resulting in server errors.)
+
+<b>Sub-tables: Error Referrals</b>
+<i>Note: the maximum number of items shown will match the maximum rows selected for the main table.</i>
+
+<b>Page:</b>
+URL of the page that caused the corresponding error.
+
+<b>Hits Referred (%):</b>
+Number of times the page caused a hit that resulted in the corrseponding error.
+
+<b>Visitors:</b>
+Number of unique visitors affected by the error.
+

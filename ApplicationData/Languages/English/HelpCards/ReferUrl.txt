@@ -1,0 +1,45 @@
+
+# Help Card
+# Report: Referrals
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report identifies where your users came from, by highlighting the most popular referring URLs. A referring URL is any document on the Internet that contains a link to your site. You can use this information to gauge the effectiveness of external links, and assess user behaviour trends (i.e. certain types of sites may be generating more traffic than others). These findings can then be used to influence future marketing campaigns.
+
+You may see many referrals from your own site. This occurs because most referrals in any given visitor session will in fact be internal (one page on your site will be the referral to the next page).  However, this is rarely useful, as it is generally more important to identify external referrals.  To exclude your internal referrals, check the "Self referrals" box in <i>Settings > Options > Ignore.</i> You will also need to enter your default site URL in <i>Settings > Analysis > URL > Default Host</i>.
+
+Referrals from search engines and advertising campaigns appear in their own reports.  Please refer to the User Guide for more details.
+
+"[NO REFERRAL]" entries refer to when visitors manually type your site URL into a browser, or when your site is referenced in an email.
+
+If the only entry you see is "[NO REFERRAL]", then it is likely that your web server is not logging referral information. Please refer to your web server documentation for more information about log customization.
+
+"[BOOKMARKS]" entries refer to URLs that were bookmarked (favorites list in Internet Explorer) by the visitor.
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Referral URL.
+Name of the URL that is referring visitors to your site.
+
+<b>Horizontal axis:</b> Hits (default). Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages or errors.
+
+<b>Red lines:</b> 
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<B>URL:</B>
+The URL that is referring visitors to a page on your site. Click the hyperlink to visit the corresponding referral URL.
+
+<B>Hits (%):</B>
+Hits generated within sessions that were initiated by the corresponding referral URL. (Percentage of hits as a proportion of all hits that have a referral URL.)
+
+<B>Bytes (%):</B>
+Raw bytes transferred as a result of hits within sessions that were initiated by the corresponding referral URL. (Percentage as a proportion of the total bytes transferred.)
+
+<B>Sessions</B>
+Sessions that were initiated by each referral.
+
+<B>Pages</B>
+Pages that were hit as a result of sessions initiated by the corresponding referral URL. This includes failed page hits.
+
+<B>Errors</B>
+Errors generated on your site as a result of failed hits within sessions that were initiated by the corresponding referral URL.

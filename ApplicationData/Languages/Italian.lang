@@ -1,0 +1,708 @@
+// Italian Template File
+// Application code base
+// Version 4.5, 21/01/02
+
+
+
+
+// Server Statistics = {ssNN}
+
+{ss01},Statistiche sul Carico del Server
+{ss02},Rapportini Dettagliati
+{ss03},Richieste
+{ss04},Durata
+{ss05},Data di Inizio Elaborazione
+{ss06},A
+{ss07},Totali Richieste
+{ss08},Totali Richieste Cache
+{ss09},Totali Richieste Fallite
+{ss10},Richieste Invalide
+{ss11},Media Richieste / Giorno
+{ss12},Media Richieste / Ora
+{ss13},Informazioni sulle Sessioni
+{ss14},Totale Sessioni
+{ss15},Totale Visitatori Unici
+{ss16},Totale Visitatori Ripetitivi
+{ss17},Totale Visitatori Non Ripetitivi
+{ss18},Media Sessioni / Giorno
+{ss19},Media Durata Sessioni
+{ss20},Media Pagine per Sessione
+{ss21},Media Richieste per Sessione
+{ss22},Informazione sulle Pagine
+{ss23},Totale Pagine
+{ss24},Media Pagine / Giorno
+{ss25},Totale File Scaricati
+{ss26},Totale Scaricato
+{ss27},Banda in Uscita
+{ss28},Totale Megabyte
+{ss29},Media Megabyte / Giorno
+{ss30},Media Bit / Secondo
+{ss31},Percentuale di
+{ss32},Kbps
+{ss33},Banda in Entrata
+{ss34},Totale Kilobyte
+{ss35},Media Kilobyte / Giorno
+{ss36},Statistiche degli Accessi per il Periodo
+{ss37},Durata Processamento dei Dati
+{ss38},Linee / Minuto
+//{ss39},Time Period
+
+// Report Categories = {rcNN}
+
+{rc01},Statistiche
+{rc02},Traffico
+{rc03},Diagnosi
+{rc04},Server
+{rc05},Profilo Demografico
+{rc06},Segnalazioni
+{rc07},Streaming
+{rc08},Sistemi
+{rc09},Pubblicit&agrave;
+{rc10},Marketing
+{rc11},Firewall
+//{rc12},Clustering
+
+// Report title (Long) = {rlNN}
+
+{rl01},Riassunto
+{rl02},Orario
+{rl03},Storico Orario
+{rl04},Giornaliero
+{rl05},Giorni Recenti
+{rl06},Settimanale
+{rl07},Mensile
+{rl08},Errori del Server
+{rl09},Storico degli Errori del Server
+{rl10},URL Errate
+{rl11},Storico delle URL Errate
+{rl12},Pagine
+{rl13},Storico delle Pagine
+{rl14},Pagine di Entrata
+{rl15},Storico delle Pagine di Entrata
+{rl16},Pagine di Uscita
+{rl17},Storico delle Pagine di Uscita
+{rl18},Directories
+{rl19},Directories di Massimo Livello
+{rl20},Storico delle Directories di Massimo Livello
+{rl21},URL
+{rl22},Percorsi Medi
+{rl23},Gruppi
+{rl24},Storico dei Gruppi
+{rl25},File Scaricati
+{rl26},Storico dei File Scaricati
+{rl27},Tipi di File
+{rl28},Clienti
+{rl29},Click Stream dei Clienti
+{rl30},Storico dei Clienti
+{rl31},Utenti Autentificati
+{rl32},Storico degli Utenti Autentificati
+{rl33},Domini
+{rl34},Nazioni
+{rl35},Regioni del Mondo
+{rl36},Organizzazioni
+{rl37},Distribuzione della Sessione
+{rl38},Robot
+{rl39},Segnalazioni
+{rl40},Siti di Segnalazione
+{rl41},Storico dei Siti di Segnalazione
+{rl42},Motori di Ricerca
+{rl43},Termini - Vocaboli Ricercati
+{rl44},Browser
+{rl45},Browser / Sistemi Operativi
+{rl46},Sistemi Operativi
+{rl47},Fedelt&agrave;
+{rl48},Tempo On-Line
+{rl49},Impressions
+{rl50},Storico delle Impression
+{rl51},Campagne Pubblicitarie
+{rl52},Storico delle Campagne
+{rl53},Frequenza della Circolazione
+{rl54},Media Player
+{rl55},Contenuto Audio
+{rl56},Contenuto Video
+{rl57},Tipi di Media
+{rl58},Indirizzo delle Fonti
+{rl59},Protocolli
+{rl60},Trasmissioni della Domenica
+{rl61},Trasmissioni del Luned&igrave;
+{rl62},Trasmissioni del Marted&igrave;
+{rl63},Trasmissioni del Mercoled&igrave;
+{rl64},Trasmissioni del Gioved&igrave;
+{rl65},Trasmissioni del Venerd&igrave;
+{rl66},Trasmissioni del Sabato
+{rl67},Host Virtuali
+{rl68},Storico degli Host Virtuali
+{rl69},Protocol - HTTP
+{rl70},Protocol - HTTPS
+{rl71},Protocol - Mail
+{rl72},Protocol - FTP
+{rl73},Protocol - Telnet
+{rl74},Protocol - DNS
+{rl75},Protocol - POP3
+{rl76},Protocol - Real
+{rl77},Fonte degli Indirizzi
+{rl78},Report
+//{rl79},Protocol - Others
+//{rl80},Pages Least Visited
+//{rl81},Pages Viewed by Key Visitors
+//{rl82},Routes to Key Pages
+//{rl83},Pages Containing Broken Links
+//{rl84},Search Engines History
+//{rl85},Search Terms History
+//{rl86},Browsers History
+//{rl87},Operating Systems History
+//{rl88},Robots History
+//{rl89},Media Players History
+//{rl90},Audio Content History
+//{rl91},Video Content History
+//{rl92},Load Balancing
+//{rl93},Load Balancing History
+//{rl94},Unrecognized Agents
+//{rl95},iReporter Virtual Domain Report
+//{rl96},Routes from Key Pages
+//{rl97},External Pages Containing Broken Links
+//{rl98},Internal Pages Containing Broken Links
+//{rl99},Authenticated Users Click Stream
+//{rl100},Keys Visitors' Traffic Summary
+//{rl101},Key Page Traffic Summary
+//{rl102},Key Page Traffic Summary
+	
+// General Labels = {glNN}
+	
+{gl01},Richieste
+{gl02},Sessioni
+{gl03},File
+{gl04},File
+{gl05},Traffico
+{gl06},Media
+{gl07},Errori
+{gl08},Totale Unit&agrave;
+{gl09},$
+{gl10},Recente
+{gl11},Totali Recenti
+{gl12},Directory
+{gl13},Altro
+{gl14},File Non Trovato
+{gl15},Alto
+{gl16},Basso
+{gl17},Cliente
+{gl18},Clienti
+{gl19},Attivit&agrave;
+{gl20},Frequenza
+{gl21},Visita
+{gl22},Visite
+{gl23},Visitatori
+{gl24},Byte
+{gl25},Pagina
+{gl26},Pagine
+{gl27},Altri
+{gl28},Totali
+{gl29},Sub-Totali
+{gl30},Segnalazioni
+{gl31},Nazione
+{gl32},Regione
+{gl33},Percorso
+{gl34},Dominio
+{gl35},Organizzazione
+{gl36},Scarica File
+{gl37},Costo Totale
+{gl38},Percentuale Di
+{gl39},Directory di Massimo Livello
+{gl40},Tipo File
+{gl41},Errore del Server
+{gl42},URL Errata
+{gl43},Host Virtuale
+{gl44},Url
+{gl45},Browser
+{gl46},Sistema Operativo
+{gl47},Percorso Medio
+{gl48},Robot
+{gl49},Ricerca Vocabolo
+{gl50},Motore di Ricerca
+{gl51},Media Player
+{gl52},Contenuto Audio
+{gl53},Contenuto Video
+{gl54},Tipo Media
+{gl55},Totale Sessioni
+{gl56},Click-Through (Banner Cliccati)
+{gl57},Costo/Mese
+{gl58},Prima Sessione
+{gl59},Ultima Sessione
+{gl60},Totale Click
+{gl61},Costo/Click
+{gl62},Costo
+{gl63},Ricerche
+{gl64},Byte Spediti
+{gl65},Tempo Speso On-Line
+{gl66},Gruppo
+{gl67},Utente Autentificato
+{gl68},Nome della Pubblicit&agrave;
+{gl69},Protocollo - HTTP
+{gl70},Protocollo - HTTPS
+{gl71},Protocollo - Mail
+{gl72},Protocollo - FTP
+{gl73},Protocollo - Telnet
+{gl74},Protocollo - DNS
+{gl75},Protocollo - POP3
+{gl76},Protocollo - Real
+{gl77},Fonte Indirizzo
+{gl78},Milioni
+{gl79},kB
+{gl80},MB
+{gl81},GB
+{gl82},bps (Byte per Secondo)
+{gl83},kbps (Kilobyte per Secondo)
+{gl84},Mbps (Megabyte per Secondo)
+{gl85},Gbps (Gigabyte per Secondo)
+{gl86},%
+//{gl87},Protocols
+//{gl88},Bytes delivered
+//{gl89},Other Connections
+//{gl90},Pages Least Visited
+//{gl91},Key Visitors
+//{gl92},Key Pages
+//{gl93},Broken Links
+//{gl94},Route
+//{gl95},Times Accessed
+//{gl96},% of routes taken
+//{gl97},Routes taken to %s
+//{gl98},All Other Routes
+//{gl99},Server Name
+//{gl100},Unrecognized Agent
+//{gl101},Broken Link Hits
+//{gl102},Broken Link
+//{gl103},Cached Hits
+//{gl104},Key Pages
+//{gl105},Routes taken from %s
+//{gl106},Hits Referred
+//{gl107},Top Referrals of
+//{gl108},of
+
+// Time-related = {tiNN}
+
+{ti01},Domenica
+{ti02},Luned&igrave;
+{ti03},Marted&igrave;
+{ti04},Mercoled&igrave;
+{ti05},Gioved&igrave;
+{ti06},Venerd&igrave;
+{ti07},Sabato
+{ti08},Dom.
+{ti09},Lun.
+{ti10},Mar.
+{ti11},Mer.
+{ti12},Gio.
+{ti13},Ven.
+{ti14},Sab.
+{ti15},Gennaio
+{ti16},Febbraio
+{ti17},Marzo
+{ti18},Aprile
+{ti19},Maggio
+{ti20},Giugno
+{ti21},Luglio
+{ti22},Agosto
+{ti23},Settembre
+{ti24},Ottobre
+{ti25},Novembre
+{ti26},Dicembre
+{ti27},Gen.
+{ti28},Feb.
+{ti29},Mar.
+{ti30},Apr.
+{ti31},Mag.
+{ti32},Giu.
+{ti33},Lug.
+{ti34},Ago.
+{ti35},Set.
+{ti36},Ott.
+{ti37},Nov.
+{ti38},Dic.
+{ti39},Orario
+{ti40},Durata
+{ti41},Sec.
+{ti42},Min.
+{ti43},Ora
+{ti44},Giorno
+{ti45},Giorno
+{ti46},Giorni
+{ti47},Data
+{ti48},Mese
+{ti49},Mesi
+{ti50},Ore della Giornata
+{ti51},Giorni della Settimana
+{ti52},Tempo Medio
+{ti53},Tempo Totale
+{ti54},Durata (Min.)
+{ti55},Pi&ugrave; Volte Al Giorno
+{ti56},Due Volte Al Giorno
+{ti57},Una Volta Al Giorno
+{ti58},Due Volte Alla Settimana
+{ti59},Una Volta Alla Settimana
+{ti60},Due Volte Al Mese
+{ti61},Una Volta Al Mese
+{ti62},Raramente
+{ti63},Prima Visita
+//{ti64},mins
+//{ti65},Week %d %b %Y
+
+// Session Listing = {seNN}
+
+{se01},Elenco delle Sessioni per
+{se02},Durata Media delle Sessioni
+{se03},Elenco delle Sessioni
+{se04},Totale Giorni
+{se05},Totale Byte di Dati Usati
+{se06},Totale Byte di Dati Spediti
+{se07},Media Byte di Dati / Giorno
+{se08},Totale Tempo Speso On-Line
+{se09},Tempo Medio Speso On-Line / Giorno
+{se10},Stima della Durata della Sessione
+{se11},Sessione
+{se12},Data Bite Usati
+{se13},Media Pagine per Sessione
+//{se14},Attempted Downloads
+//{se15},Total Attempted Downloads
+//{se16},Browser used
+//{se17},Operating System used
+
+// Comments = {cmNN}
+
+{cm01},Nota: Clicca il Link del Cliente per Vedere lo Storico delle Sessioni Individuali
+{cm02},Nota: Clicca il Link del Cliente per Vedere lo Storico Individuale dell'Utente
+{cm03},Nessuna Pagina Visualizzata Durante Questa Sessione
+{cm04},IP Non Risolto
+{cm05},Invalido
+{cm06},Rete Locale
+{cm07},Errore del Server
+{cm08},Host Sconosciuto
+{cm09},Ok
+{cm10},Err.
+{cm11},Nessun Riferimento
+{cm12},Inserito nei Bookmark
+{cm13},Altri
+{cm14},Sconosciuto
+{cm15},Continua nella Pagina Seguente
+{cm16},É Continua dalla Pagina Precedente
+
+// Server Errors = {erNN}
+
+{er01},Incompleto/Indefinito (0)
+{er02},Creato (201)
+{er03},Accettato (202)
+{er04},Senza Contenuto (204)
+{er05},Contenuto Parziale (206)
+{er06},Trasferito Definitavamente (301)
+{er07},Re-Diretto (302)
+{er08},Non Modificato (304)
+{er09},Richiesta Errata (400)
+{er10},Autorizzazione Richiesta (403)
+{er11},Vietato (403)
+{er12},File Non Trovato (404)
+{er13},Metodo Non Ammesso (405)
+{er14},Non Accettabile (406)
+{er15},Autentificazione del Proxy Richiesta (407)
+{er16},Richieste di Pausa (408)
+{er17},Errore Interno del Server (500)
+{er18},Non Implementato (501)
+{er19},Gateway Errata (502)
+{er20},Servizio Non Disponibile (503)
+{er21},Password Richiesta (331)		// FTP errors
+{er22},Account Richiesto (332)
+{er23},Azione in Attesa (350)
+{er24},Servizio Non Disponibile (421)
+{er25},Non Riesco ad Aprire la Connessione (425)
+{er26},Connessione Terminata (426)
+{er27},File Non Disponibile (450)
+{er28},Operazione Non Terminata (451)
+{er29},Operazione Non Eseguita (452)
+{er30},Non Implementato (504)
+{er31},Non Loggato (530)
+{er32},Account Richiesto (532)
+{er33},File Non Disponibile (550)
+{er34},Operazione Non Terminata (451)
+{er35},Spazio Superato (552)
+{er36},Nome Non Ammesso (553)
+
+// System Information = {syNN}
+
+{sy01},ISO-8859-1		// charset for browser
+{sy02},Default			// font name for graphs
+
+// Countries = {coNN}
+
+//{co01},Andorra
+//{co02},United Arab Emirates
+//{co03},Afghanistan
+//{co04},Antigua
+//{co05},Anguilla
+//{co06},Albania
+//{co07},Armenia
+//{co08},Netherlands
+//{co09},Angola
+//{co10},Antarctica
+//{co11},Argentina
+//{co12},Adv Proj Res Agency
+//{co13},American Samoa
+//{co14},Austria
+//{co15},Australia
+//{co16},Aruba
+//{co17},Azerbaijan
+//{co18},Bosnia Herzegovina
+//{co19},Barbados
+//{co20},Bangladesh
+//{co21},Belgium
+//{co22},Burkina Faso
+//{co23},Bulgaria
+//{co24},Bahrain
+//{co25},Burundi
+//{co26},Benin
+//{co27},Bermuda
+//{co28},Brunei
+//{co29},Bolivia
+//{co30},Brazil
+//{co31},Bahamas
+//{co32},Bhutan
+//{co33},Bouvet Island
+//{co34},Botswana
+//{co35},Belarus
+//{co36},Byelorussian
+//{co37},Belize
+//{co38},Canada
+//{co39},Cocos Islands
+//{co40},Congo
+//{co41},Central African Republic
+//{co42},Switzerland
+//{co43},Cote d'Ivoire
+//{co44},Cook Islands
+//{co45},Chile
+//{co46},Cameroon
+//{co47},China
+//{co48},Colombia
+//{co49},Costa Rica
+//{co50},Czechoslovakia
+//{co51},Cuba
+//{co52},Cape Verde
+//{co53},Christmas Island
+//{co54},Cyprus
+//{co55},Czech Republic
+//{co56},Germany
+//{co57},Djibouti
+//{co58},Denmark
+//{co59},Dominica
+//{co60},Dominican Republic
+//{co61},Algeria
+//{co62},Ecuador
+//{co63},US Educational
+//{co64},Estonia
+//{co65},Egypt
+//{co66},Western Sahara
+//{co67},Eritrea
+//{co68},Spain
+//{co69},Ethiopia
+//{co70},Finland
+//{co71},Fiji
+//{co72},Falkland Islands
+//{co73},Micronesia
+//{co74},Faroe Islands
+//{co75},France
+//{co76},France Metropolitan
+//{co77},Gabon
+//{co78},United Kingdom
+//{co79},Grenada
+//{co80},Georgia
+//{co81},French Guiana
+//{co82},Ghana
+//{co83},Gibraltar
+//{co84},Greenland
+//{co85},Gambia
+//{co86},Guinea
+//{co87},US Government
+//{co88},Guadeloupe
+//{co89},Equatorial Guinea
+//{co90},Greece
+//{co91},South Georgia & Sandwich Islands
+//{co92},Guatemala
+//{co93},Guam
+//{co94},Guinea-Bissau
+//{co95},Guyana
+//{co96},Hong Kong
+//{co97},Heard & McDonald Is
+//{co98},Honduras
+//{co99},Croatia
+//{co100},Haiti
+//{co101},Hungary
+//{co102},Indonesia
+//{co103},Ireland
+//{co104},Israel
+//{co105},India
+//{co106},International
+//{co107},British Indian Ocean Terr
+//{co108},Iraq
+//{co109},Iran
+//{co110},Iceland
+//{co111},Italy
+//{co112},Jamaica
+//{co113},Jordan
+//{co114},Japan
+//{co115},Kenya
+//{co116},Kyrgyzstan
+//{co117},Cambodia
+//{co118},Kiribati
+//{co119},Comoros
+//{co120},Saint Kitts and Nevis
+//{co121},Korea
+//{co122},Kuwait
+//{co123},Cayman Islands
+//{co124},Kazakhstan
+//{co125},Laos
+//{co126},Lebanon
+//{co127},Saint Lucia
+//{co128},Liechtenstein
+//{co129},Sri Lanka
+//{co130},Liberia
+//{co131},Lesotho
+//{co132},Lithuania
+//{co133},Luxembourg
+//{co134},Latvia
+//{co135},Libya
+//{co136},Morocco
+//{co137},Monaco
+//{co138},Moldova
+//{co139},Madagascar
+//{co140},Marshall Is
+//{co141},Macedonia
+//{co142},Mali
+//{co143},Myanmar
+//{co144},Mongolia
+//{co145},Macau
+//{co146},Northern Mariana Is
+//{co147},Martinique
+//{co148},Mauritania
+//{co149},Montserrat
+//{co150},Malta
+//{co151},Mauritius
+//{co152},Maldives
+//{co153},Malawi
+//{co154},Mexico
+//{co155},Malaysia
+//{co156},Mozambique
+//{co157},Namibia
+//{co158},NATO
+//{co159},New Caledonia
+//{co160},Niger
+//{co161},Norfolk Island
+//{co162},Nigeria
+//{co163},Nicaragua
+//{co164},Netherlands
+//{co165},Norway
+//{co166},Nepal
+//{co167},Nauru
+//{co168},Neutral Zone
+//{co169},Niue
+//{co170},New Zealand
+//{co171},Oman
+//{co172},US Organization
+//{co173},Panama
+//{co174},Peru
+//{co175},French Polynesia
+//{co176},Papua New Guinea
+//{co177},Philippines
+//{co178},Pakistan
+//{co179},Poland
+//{co180},St Pierre and Miquelon
+//{co181},Pitcairn
+//{co182},Puerto Rico
+//{co183},Portugal
+//{co184},Palau
+//{co185},Paraguay
+//{co186},Qatar
+//{co187},Reunion
+//{co188},Romania
+//{co189},Russia
+//{co190},Rwanda
+//{co191},Saudi Arabia
+//{co192},Solomon Islands
+//{co193},Seychelles
+//{co194},Sudan
+//{co195},Sweden
+//{co196},Singapore
+//{co197},St Helena
+//{co198},Slovenia
+//{co199},Svalbard
+//{co200},Slovakia
+//{co201},Sierra Leone
+//{co202},San Marino
+//{co203},Senegal
+//{co204},Somalia
+//{co205},Suriname
+//{co206},Sao Tome and Principe
+//{co207},Soviet Union
+//{co208},El Salvador
+//{co209},Syria
+//{co210},Swaziland
+//{co211},Turks and Caicos Islands
+//{co212},Chad
+//{co213},French Southern Territories
+//{co214},Togo
+//{co215},Thailand
+//{co216},Tajikistan
+//{co217},Tokelau
+//{co218},Turkmenistan
+//{co219},Tunisia
+//{co220},Tonga
+//{co221},East Timor
+//{co222},Turkey
+//{co223},Trinidad and Tobago
+//{co224},Tuvalu
+//{co225},Taiwan
+//{co226},Tanzania
+//{co227},Ukraine
+//{co228},Uganda
+//{co229},US Minor Outlying Islands
+//{co230},USA
+//{co231},Uruguay
+//{co232},Uzbekistan
+//{co233},Vatican City
+//{co234},Saint Vincent & Grenadines
+//{co235},Venezuela
+//{co236},Virgin Islands (Br)
+//{co237},Virgin Islands (US)
+//{co238},Vietnam
+//{co239},Vanuatu
+//{co240},Wallis and Futuna Islands
+//{co241},Samoa
+//{co242},Yemen
+//{co243},Mayotte
+//{co244},South Africa
+//{co245},Zambia
+//{co246},Zaire
+//{co247},Zimbabwe
+//{co248},US Commercial
+//{co249},US Dept of Defense
+//{co250},Network
+//{co251},Yugoslavia
+//{co252},Business Organizations 
+//{co253},Personal
+//{co254},Museums
+//{co255},Professionals
+//{co256},Aviation
+//{co257},Cooperatives
+//{co258},General Information
+
+// Organisations = {orNN}
+
+//{or01},US Organizations
+//{or02},Organizations
+//{or03},US Educational
+//{or04},Educational
+//{or05},US Dept of Defense
+//{or06},Military
+//{or07},US Government
+//{or08},Government
+//{or09},US Commercial
+//{or10},Commercial
+//{or11},US Network
+//{or12},Network
+//{or13},Proxy Server
+//{or14},Search Bots

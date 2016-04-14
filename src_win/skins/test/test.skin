@@ -1,0 +1,16 @@
+# Funnelweb SKIN!
+toolbarimagenorm = panel.bmp
+toolbarimageroll = roll.bmp
+toolbarimagehit = hit.bmp
+
+button_coord = 0,15,11,50,60
+button_coord = 1,75,11,50,60
+button_coord = 2,125,11,50,60
+button_coord = 3,180,11,50,60
+button_coord = 4,238,11,50,60
+
+toolbar_infopos = 78
+toolbar_infocolor = 000000
+toolbar_width = 650
+toolbar_mainheight = 182
+toolbar_listviewtop = 112

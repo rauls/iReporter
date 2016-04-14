@@ -1,0 +1,10 @@
+PKG="iReporter2"
+NAME="iReporter"
+VERSION="2.0"
+ARCH="sparc"
+CLASSES="none"
+CATEGORY="web"
+VENDOR="Software (C)"
+PSTAMP="10thJul14"
+EMAIL="rauls@github"
+BASEDIR=/opt

@@ -1,0 +1,1334 @@
+<!-- #define link1=<a href="%s.html">%s Report</a> -->
+<!-- #define link2=<a href="%s.html"> %s </a> -->
+<!-- #define link3=<a href="%s.html">-->
+<!-- #define thumblink2=<img src="%s_t.jpg" alt="%s report thumbnail" border="0"></a> -->
+
+
+<html>
+<head>
+<title>Streaming Analysis Report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Expires" content="0">
+<style type="text/css">
+
+body
+{
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+a
+{
+color: #000000;
+}
+
+table
+{
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: top;
+}
+
+td {	vertical-align: top;	}
+
+table.defaultTable
+{
+	width: 606;
+	color: #009999;
+	vertical-align: top;
+}
+
+table.catTable
+{
+	width: 596;
+	vertical-align: top;
+}
+
+td.catLinkHead
+{
+	text-align: right;
+	font-weight: bold;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.topLink
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.summHeader
+{
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: left;
+}
+
+th.default
+{
+	text-align: left;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0.2em;
+	color: #000033;
+}
+
+th.summTH
+{
+	text-align: left;
+	vertical-align: top;
+	text-decoration: none;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0.1em;
+	color: #000033;
+}
+
+td.catHeadLeft
+{
+	width: 580;
+	text-align: left;
+	background-color: #0099CC;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+td.catHeadRight
+{
+	width: 20;
+	background-color: #0099CC;
+	text-align: right;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+}
+
+table.catBoxShell
+{
+	width: 600;
+	border-style: solid;
+	border-top-width: 1;
+	border-bottom-width: 3;
+	border-left-width: 1;
+	border-right-width: 3;
+	border-color: #000066;
+	margin: 0px 0px;
+	vertical-align: top;
+}
+
+table.catBoxHead
+{
+	width: 596;
+	border-style: solid;
+	border-top-width: 0;
+	border-bottom-width: 1;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-color: #000033;
+	margin: 0em;
+	background-color: #99EECC;
+}
+
+td.summBoxTitle
+{
+	width: 596;
+	text-align: left;
+	font-size: 17px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+td.catBoxTitle_A
+{
+	width: 496;
+	text-align: left;
+	font-size: 17px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+
+td.catBoxTitle_B
+{
+	width: 100;
+	text-align: right;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table.catBox
+{
+	width: 596;
+	border-style: solid;
+	/* border-width: 1, 3, 3, 1; */
+	border-top-width: 0;
+	border-bottom-width: 1;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-color: #000066;
+	margin: 0em;
+	vertical-align: top;
+}
+
+table.catBox2
+{
+	width: 596;
+	border-style: solid;
+	border-top-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-color: #000066;
+	margin: 0em;
+	vertical-align: top;
+}
+
+td.cat_A
+{
+	width: 210;
+	text-align: left;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000066;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+td.cat_B
+{
+	width: 396;
+	text-align: left;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000066;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+table.summMain
+{
+	width: 450;
+	padding: 0.0em;
+}
+
+table.summCatLink
+{
+	width: 130;
+	padding: 0.0em;
+}
+
+td.summ1
+{
+	width: 210;
+	text-align: left;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000066;
+	background-color: #EEFFFF;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+td.summ2
+{
+	width: 240;
+	text-align: right;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000066;
+	background-color: #EEFFFF;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+td.catLink
+{
+	width: 130;
+	text-align: right;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000033;
+	padding: 0.2em;
+	vertical-align: top;
+}
+
+
+</style>
+</head>
+
+<body><div align="center">
+<a name="top"><img src="SummaryLogo.gif" width="606" height="47" alt="[$PROCESSTIME]"></a> <br>
+<br>
+
+<table class="defaultTable">
+  <tr>
+    <td>
+      <div align="center"><b>Report Period: [$STARTDATE] - [$ENDDATE]</b></div>
+  </tr>
+</table>
+
+<br>
+
+<table class="catBoxShell">
+<tr><td>
+
+	<table class="catBoxHead">
+
+		<tr>
+
+            <td class="summBoxTitle">Streaming Analysis of [$DOMAINNAME]</td>
+
+		</tr>
+
+	</table>
+
+	<table class="catbox2">
+
+	<tr>
+          <td>
+           	
+              <table class="summMain" cellspacing="1">
+                <th class="summTH">Summary Statistics<br>
+                  </th>
+                
+                <tr>
+                  <td class="summTH">[$THUMBLINK2_DAILY] </td>
+                  <td class="summTH">[$THUMBLINK2_HOURLYHISTORY] </td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Duration (hh:mm:ss)</td>
+                  <td class="summ2">[$TOTALTIME] [$TOTALDAYS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Total Views</td>
+                  <td class="summ2">[$TOTALHITS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Total Cached Views</td>
+                  <td class="summ2">[$TOTALCACHE]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Unique Visitors</td>
+                  <td class="summ2">[$TOTAL_CLIENTS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Visitor Sessions</td>
+                  <td class="summ2">[$TOTALSESSIONS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Average Visitors Per Hour</td>
+                  <td class="summ2">[$VISITORSPERHOUR]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Clips Played</td>
+                  <td class="summ2">[$TOTALHITS_CLIPS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">MB Transferred</td>
+                  <td class="summ2">[$BYTES_TOTALMB]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Most Popular Search Term(s)</td>
+                  <td class="summ2">[$TOPHITS_SEARCHTERMS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Clips Containing Errors</td>
+                  <td class="summ2">[$TOTALPAGEERRORS]</td>
+                </tr>
+                <tr> 
+                  <td class="summ1">Invalid Log File Lines</td>
+                  <td class="summ2">[$TOTALINVALID]</td>
+                </tr>
+              </table>
+
+		  	<td valign="top">
+
+			<table class="summCatLink" cellspacing="1">
+                <th class="summTH"><div align="right">Categories</div></th>
+
+                   <!--#if groupReported=Clustering-->
+                  <tr><td class="catLink">
+				  <a href="#Clusters">Clusters</a></td></tr>
+                  <!--#endgroup -->
+
+				  <!--#if groupReported=Clip Access Information-->
+				  <tr><td class="catLink">
+				  <a href="#Server">Clip Access Information</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Live Clip Access Information-->
+				  <tr><td class="catLink">
+				  <a href="#Server">Live Clip Access Information</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Demographics-->
+				  <tr><td class="catLink">
+				  <a href="#Demographics">Demographics</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Diagnostic-->
+				  <tr><td class="catLink">
+				  <a href="#Diagnostic">Diagnostic</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Marketing-->
+				  <tr><td class="catLink">
+				  <a href="#Marketing">Marketing</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Traffic-->
+				  <tr><td class="catLink">
+				  <a href="#Traffic">Traffic</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Referrals-->
+				  <tr><td class="catLink">
+				  <a href="#Referrals">Referrals</a></td></tr>
+				  <!--#endgroup -->
+
+				  <!--#if groupReported=Systems-->
+				  <tr><td class="catLink">
+				  <a href="#Systems">Systems</a></td></tr>
+				  <!--#endgroup -->
+
+                 <!--#if groupReported=Advertising-->
+				  <tr><td class="catLink">
+                  <a href="#Advertising">Advertising</a></td></tr>
+                  <!--#endgroup -->
+
+
+            </table>
+          </td>
+          </tr>
+
+
+	</table>
+
+</table>
+
+<br>
+  <br>
+  <br>
+
+<!--#endgroup-->
+<!-- END CLUSTERS SECTION -->
+
+
+<!--#if groupReported=Clip Access Information-->
+<!-- START SERVER SECTION -->
+
+<!-- START SERVER CATEGORY "SHELL" TABLE -->
+
+<table class="catBoxShell">
+<tr><td>
+
+	<!-- START SERVER CATEGORY HEADER SECTION -->
+
+	<table class="catBoxHead">
+
+		<tr>
+
+			
+            <td class="catBoxTitle_A"><a name="Clip Access Information">Clip Access Information</a></td>
+			<td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+
+		</tr>
+
+	</table>
+
+	<!-- END SERVER CATEGORY HEADER SECTION -->
+
+	<!-- START SERVER SNAPSHOT/DESCRIPTION SECTION -->
+
+	<table class="catBox">
+
+		    <th class="default">Preview - [$LINK2_CLIPS]
+            <th class="default">Category Description &nbsp;
+
+		<tr>
+
+
+            <td class="cat_A">[$LINK3_CLIPS] [$thumblink2_CLIPS]</td>
+          <td class="cat_B">These reports highlight the popularity of different clips and files, and also where visitors entered and exited your site.
+            You can also use this set of reports to identify typical paths through
+            your site and to/from particular clips. </td>
+
+		</tr>
+
+	</table>
+
+	<!-- END SERVER SNAPSHOT/DESCRIPTION SECTION -->
+
+	<!-- START VITAL SERVER STATISTICS SECTION -->
+
+	<table class="catBox">
+
+		  <th class="default">Clip Access Information Statistics &nbsp;
+        <tr>
+          <td class="cat_A">Total number of clips viewed:</td>
+          <td class="cat_B">[$TOTALHITS_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Most popular clip:</td>
+          <td class="cat_B">[$TOPHITS_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Least popular clip:</td>
+          <td class="cat_B">[$LOWEST_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Most accessed clip type:</td>
+          <td class="cat_B">[$TOPHITS_MEDIATYPES]</td>
+		</tr>
+
+
+	<!-- END VITAL SERVER STATISTICS SECTION -->
+	</table>
+
+	<!-- START DETAILED SERVER REPORTS SECTION -->
+
+	<table class="catBox2">
+
+		  <th class="default">Server Reports &nbsp;
+        <tr>
+
+          <td class="cat_A">
+			<i>video clips</i><br>
+            [$LINK2_CLIPSVIDEO]<br>
+            [$LINK2_CLIPSVIDEOHISTORY]<br>
+            [$LINK2_CLIPSVIDEOVIEWING]<br>
+            [$LINK2_CLIPSVIDEORATES]<br>
+			<i>audio clips</i><br>
+            [$LINK2_CLIPSAUDIO]<br>
+            [$LINK2_CLIPSAUDIOHISTORY]<br>
+            [$LINK2_CLIPSAUDIOVIEWING]<br>
+            [$LINK2_CLIPSAUDIORATES]<br>
+
+			<i>all clips</i><br>
+		    [$LINK2_CLIPS]<br>
+            [$LINK2_CLIPSHISTORY]<br>
+            [$LINK2_CLIPSLEAST]<br>
+            [$LINK2_CLIPSPERCENT]<br>
+            [$LINK2_CLIPSFORWARDS]<br>
+            [$LINK2_CLIPSREWINDS]<br>
+            [$LINK2_CLIPSCOMPLETED]<br>
+            [$LINK2_CLIPSMAXCONCURRENT]<br>
+			<br>
+			[$LINK2_MEDIATYPES]<br>
+			[$LINK2_PROTOCOLS]<br>
+			[$LINK2_VIDEOCODECS]<br>
+			[$LINK2_AUDIOCODECS]<br>
+            </td>
+
+            <td class="cat_B">
+		    [$LINK2_PAGES]<br>
+			[$LINK2_FILE]<br>
+            [$LINK2_TOPDIR]<br>
+            [$LINK2_TOPDIRHISTORY]<br>
+            [$LINK2_GROUPS]<br>
+            [$LINK2_GROUPSHISTORY]<br>
+            [$LINK2_DIR]<br>
+			[$LINK2_FILETYPE]<br>
+			</td>
+		</tr>
+
+
+	<!-- END DETAILED SERVER REPORTS SECTION -->
+	</table>
+
+<!-- END SERVER CATEGORY "SHELL" TABLE -->
+</tr>
+</table>
+  <br>
+  <br>
+  <!--#endgroup-->
+
+
+
+<!--#if groupReported=Clip Access Information-->
+<!-- START SERVER SECTION -->
+
+<!-- START SERVER CATEGORY "SHELL" TABLE -->
+
+<table class="catBoxShell">
+<tr><td>
+
+	<!-- START SERVER CATEGORY HEADER SECTION -->
+
+	<table class="catBoxHead">
+
+		<tr>
+
+			
+            <td class="catBoxTitle_A"><a name="Live Clip Access Information">Live Clip Access Information</a></td>
+			<td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+
+		</tr>
+
+	</table>
+
+	<!-- END SERVER CATEGORY HEADER SECTION -->
+
+	<!-- START SERVER SNAPSHOT/DESCRIPTION SECTION -->
+
+	<table class="catBox">
+
+		    <th class="default">Preview - [$LINK2_CLIPS]
+            <th class="default">Category Description &nbsp;
+
+		<tr>
+
+
+            <td class="cat_A">[$LINK3_CLIPS] [$THUMBLINK2_CLIPS]</td>
+          <td class="cat_B">These reports highlight the popularity of different clips and files, and also where visitors entered and exited your site.
+            You can also use this set of reports to identify typical paths through
+            your site and to/from particular clips. </td>
+
+		</tr>
+
+	</table>
+
+	<!-- END SERVER SNAPSHOT/DESCRIPTION SECTION -->
+
+	<!-- START VITAL SERVER STATISTICS SECTION -->
+
+	<table class="catBox">
+
+		  <th class="default">Live Clip Access Information Statistics &nbsp;
+        <tr>
+          <td class="cat_A">Total number of clips viewed:</td>
+          <td class="cat_B">[$TOTALHITS_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Most popular clip:</td>
+          <td class="cat_B">[$TOPHITS_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Least popular clip:</td>
+          <td class="cat_B">[$LOWEST_CLIPS]</td>
+		</tr>
+
+		<tr>
+          <td class="cat_A">Most accessed clip type:</td>
+          <td class="cat_B">[$TOPHITS_MEDIATYPES]</td>
+		</tr>
+
+
+	<!-- END VITAL SERVER STATISTICS SECTION -->
+	</table>
+
+	<!-- START DETAILED SERVER REPORTS SECTION -->
+
+	<table class="catBox2">
+
+		  <th class="default">Server Reports &nbsp;
+        <tr>
+
+          <td class="cat_A"> 
+            [$LINK2_LIVEVIDEO]<br>
+            [$LINK2_LIVEVIDEOHISTORY]<br>
+            [$LINK2_LIVEVIDEOVIEWING]<br>
+            [$LINK2_LIVEVIDEORATES]<br>
+            [$LINK2_LIVEAUDIO]<br>
+            [$LINK2_LIVEAUDIOHISTORY]<br>
+            [$LINK2_LIVEAUDIOVIEWING]<br>
+            [$LINK2_LIVEAUDIORATES]<br>
+            </td>
+		</tr>
+	<!-- END DETAILED SERVER REPORTS SECTION -->
+	</table>
+<!-- END SERVER CATEGORY "SHELL" TABLE -->
+</tr>
+</table>
+  <br>
+  <br>
+  <!--#endgroup-->
+
+
+
+  <!--#if groupReported=Diagnostic-->
+  <!-- START DIAGNOSTIC SECTION --> <!-- START DIAGNOSTIC CATEGORY "SHELL" TABLE -->
+  <table class="catBoxShell">
+    <tr>
+      <td> <!-- START DIAGNOSTIC CATEGORY HEADER SECTION -->
+        <table class="catBoxHead">
+          <tr>
+            <td class="catBoxTitle_A"><a name="Diagnostic">Diagnostic</a></td>
+            <td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+          </tr>
+        </table>
+        <!-- END DIAGNOSTIC CATEGORY HEADER SECTION --> <!-- START DIAGNOSTIC SNAPSHOT/DESCRIPTION SECTION -->
+        <table class="catBox">
+          <th class="default">Preview: [$LINK2_ERRORS]
+          <th class="default">Category Description &nbsp;
+          <tr>
+            <td class="cat_A">[$LINK3_ERRORS] [$THUMBLINK2_ERRORS]</td>
+            <td class="cat_B">These reports highlight areas of your site that
+              are causing errors and require checking. Use this information to
+              rectify broken links and any other errors which may be compromising
+              your site's integrity.</td>
+          </tr>
+        </table>
+        <!-- END DIAGNOSTIC SNAPSHOT/DESCRIPTION SECTION --> <!-- START VITAL DIAGNOSTIC STATISTICS SECTION -->
+        <table class="catBox">
+          <th class="default">Diagnostic Statistics &nbsp;
+          <tr>
+            <td class="cat_A">Total number of broken clips:</td>
+            <td class="cat_B">[$TOTAL_BROKENCLIPS]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most common error:</td>
+            <td class="cat_B">[$TOPHITS_ERRORS]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Total server errors:</td>
+            <td class="cat_B">[$TOTALHITS_ERRORS]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Page with most broken clips:</td>
+            <td class="cat_B">[$TOPPAGES_BROKENCLIPS]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Visitors affected by errors:</td>
+            <td class="cat_B">[$ERRORITEMS_CLIENT]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most common clip not found:</td>
+            <td class="cat_B">[$TOPHITS_CLIPSFAILED]</td>
+          </tr>
+          <!-- END VITAL DIAGNOSTIC STATISTICS SECTION -->
+        </table>
+        <!-- START DETAILED DIAGNOSTIC REPORTS SECTION -->
+        <table class="catBox2">
+          <th class="default">Diagnostic Reports &nbsp;
+          <tr>
+            <td class="cat_A"> 
+			  [$LINK2_CLIPSERRORS]<br>
+			  [$LINK2_CLIPSFAILED]<br>
+              [$LINK2_CLIPSFAILEDHISTORY] <br>
+              [$LINK2_BROKENCLIPS]<br>
+              [$LINK2_CLIPSPACKETLOSS]<br>
+              [$LINK2_CLIPSLOSSVSRATE]<br>
+              [$LINK2_CLIPSSECSBUFFERED]<br>
+              [$LINK2_CLIPSHIGHQUALITY]<br>
+              [$LINK2_CLIPSLOWQUALITY]<br>
+		   </td>
+            <td class="cat_B"> 
+			  [$LINK2_ERRORS]<br>
+              [$LINK2_ERRORSHISTORY]<br>
+			  [$LINK2_ERRORURL]<br>
+              [$LINK2_ERRORURLHISTORY] <br>
+            </td>
+          </tr>
+          <!-- END DETAILED DIAGNOSTIC REPORTS SECTION -->
+        </table>
+        <!-- END DIAGNOSTIC CATEGORY "SHELL" TABLE -->
+    </tr>
+  </table>
+  <p><br>
+
+<!--#endgroup-->
+<!-- END SERVER SECTION -->
+
+
+<!--#if groupReported=Demographic-->
+<!-- START DEMOGRAPHIC SECTION -->
+
+<!-- START DEMOGRAPHIC CATEGORY "SHELL" TABLE -->
+
+</p><table class="catBoxShell">
+<tr><td>
+
+	<!-- START DEMOGRAPHIC CATEGORY HEADER SECTION -->
+
+	<table class="catBoxHead">
+
+		<tr>
+
+
+          <td class="catBoxTitle_A"><a name="Demographics">Demographics</a></td>
+			<td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+
+		</tr>
+
+	</table>
+
+	<!-- END DEMOGRAPHIC CATEGORY HEADER SECTION -->
+
+	<!-- START DEMOGRAPHIC SNAPSHOT/DESCRIPTION SECTION -->
+
+	<table class="catBox">
+
+		    <th class="default">Preview - [$LINK2_REGION]
+            <th class="default">Category Description
+        <tr>
+
+
+          <td class="cat_A">[$LINK3_REGION] [$THUMBLINK2_REGION]</td>
+            <td class="cat_B">This set of reports show the origin and behavior
+              of your site visitors. Track individual visitors' usage over time,
+              and assess the depth of sessions undertaken on your site. The Click
+              Stream report can be used to assess the exact usage patterns of
+              key visitors, or, in an intranet environment, to enforce company
+              policies on banned content. Note that for the best results, DNS
+              Lookups must be switched on.</td>
+
+		</tr>
+
+	</table>
+
+	<!-- END DEMOGRAPHIC SNAPSHOT/DESCRIPTION SECTION -->
+
+	<!-- START VITAL DEMOGRAPHIC STATISTICS SECTION -->
+
+	<table class="catBox">
+
+		  <th class="default">Demographic Statistics &nbsp;
+        <tr>
+
+
+          <td class="cat_A">Country with most visitors:</td>
+
+          <td class="cat_B"> [$TOPHITS_COUNTRY]</td>
+
+		</tr>
+
+		<tr>
+
+
+          <td class="cat_A">World region with most visitors:</td>
+
+          <td class="cat_B"> [$TOPVISITORS_REGION]</td>
+
+		</tr>
+
+		<tr>
+
+
+          <td class="cat_A">Domain generating most traffic:</td>
+
+          <td class="cat_B">[$TOPHITS_SECONDDOMAIN]</td>
+
+		</tr>
+
+		<tr>
+
+
+          <td class="cat_A">Traffic by .com visitors:</td>
+
+          <td class="cat_B">[$CLIENTPERCENT_*.COM]</td>
+
+		</tr>
+
+		<tr>
+
+
+          <td class="cat_A">Visitor with most sessions:</td>
+
+          <td class="cat_B">[$TOPSESSIONS_CLIENT]</td>
+
+		</tr>
+
+	<!-- END VITAL DEMOGRAPHIC STATISTICS SECTION -->
+	</table>
+
+	<!-- START DETAILED DEMOGRAPHIC REPORTS SECTION -->
+
+	<table class="catBox2">
+
+		  <th class="default">Demographic Reports &nbsp;
+        <tr>
+
+          <td class="cat_A">
+		    [$LINK2_CLIENT]<br>
+			[$LINK2_CLIENTHISTORY]<br>
+			[$LINK2_CLIENTSTREAM]<br>
+			[$LINK2_USERS]<br>
+			[$LINK2_USERSHISTORY]<br>
+			[$LINK2_USERSSTREAM]<br>
+			[$LINK2_SESSIONDIST]<br>
+			[$LINK2_KEYVISITORS]<br></td>
+          <td class="cat_B">
+            [$LINK2_COUNTRY]<br>
+			[$LINK2_REGION]<br>
+			[$LINK2_SECONDDOMAIN]<br>
+			[$LINK2_ORGS]<br>
+			</td>
+		</tr>
+
+
+	<!-- END DETAILED DEMOGRAPHIC REPORTS SECTION -->
+	</table>
+
+<!-- END DEMOGRAPHIC CATEGORY "SHELL" TABLE -->
+</tr>
+</table>
+  <br>
+  <!--#endgroup--> <!--#if groupReported=Systems--> <!-- START SYSTEMS SECTION -->
+  <!-- START SYSTEMS CATEGORY "SHELL" TABLE -->
+  <table class="catBoxShell">
+    <tr>
+      <td> <!-- START SYSTEMS CATEGORY HEADER SECTION -->
+        <table class="catBoxHead">
+          <tr>
+            <td class="catBoxTitle_A"><a name="Systems">Visitor Systems</a></td>
+            <td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+          </tr>
+        </table>
+        <!-- END SYSTEMS CATEGORY HEADER SECTION --> <!-- START SYSTEMS SNAPSHOT/DESCRIPTION SECTION -->
+        <table class="catBox">
+          <th class="default">Preview: [$LINK3_BROWSERSVSOS]Browser vs. OS
+          <th class="default">Category Description &nbsp;
+          <tr>
+            <td class="cat_A">[$LINK3_BROWSERSVSOS] [$THUMBLINK2_BROWSERSVSOS]</td>
+            <td class="cat_B">These reports show which browsers and operating
+              systems are being used by your site visitors. This information can
+              be used to ensure that your site is designed to be viewable by the
+              majority of visitors. </td>
+          </tr>
+        </table>
+        <!-- END SYSTEMS SNAPSHOT/DESCRIPTION SECTION --> <!-- START VITAL SYSTEMS STATISTICS SECTION -->
+        <table class="catBox">
+          <th class="default">System Statistics
+          <tr>
+            <td class="cat_A">Most popular players:</td>
+            <td class="cat_B">[$TOPHITS_MPLAYERS]</td>
+          </tr>
+          <tr>
+          <tr>
+            <td class="cat_A">Most popular browser:</td>
+            <td class="cat_B">[$TOPHITS_BROWSERS]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most popular operating system:</td>
+            <td class="cat_B">[$TOPHITS_OPERSYS]</td>
+          </tr>
+          <!-- END VITAL SYSTEMS STATISTICS SECTION -->
+        </table>
+        <!-- START DETAILED SYSTEMS REPORTS SECTION -->
+        <table class="catBox2">
+          <th class="default">System Reports &nbsp;
+          <tr>
+            <td class="cat_A">
+				[$LINK2_MPLAYERS]<br>
+				[$LINK2_MPLAYERSHISTORY]<br>
+				[$LINK2_MPLAYERSVSOS]<br>
+				[$LINK2_CPUS]<br>
+				[$LINK2_LANGS]<br>
+				[$LINK2_BROWSER]<br>
+				[$LINK2_BROWSERHISTORY]<br>
+				[$LINK2_BROWSERSVSOS]<br>
+			</td>
+            <td class="cat_B">
+				[$LINK2_OPERSYS]<br>
+				[$LINK2_OPERSYSHISTORY]<br>
+				[$LINK2_UNRECOGNIZEDAGENTS]
+			 </td>
+          </tr>
+          <!-- END DETAILED SYSTEMS REPORTS SECTION -->
+        </table>
+        <!-- END SYSTEMS CATEGORY "SHELL" TABLE -->
+    </tr>
+  </table>
+  <br>
+  <br>
+
+<!--#endgroup-->
+<!-- END MARKETING SECTION -->
+
+
+<!--#if groupReported=Traffic-->
+<!-- START TRAFFIC SECTION -->
+
+<!-- START TRAFFIC CATEGORY "SHELL" TABLE -->
+
+<table class="catBoxShell">
+<tr><td>
+
+<!-- START TRAFFIC CATEGORY HEADER SECTION -->
+
+<table class="catBoxHead">
+
+	<tr>
+
+		<td class="catBoxTitle_A"><a name="Traffic">Traffic</a></td>
+	    <td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+
+	</tr>
+
+</table>
+
+<!-- END TRAFFIC CATEGORY HEADER SECTION -->
+
+<!-- START TRAFFIC SNAPSHOT/DESCRIPTION SECTION -->
+
+<table class="catBox">
+
+            <th class="default">Preview: [$LINK2_HOURLY]
+            <th class="default">Category Description &nbsp;
+
+	<tr>
+
+		    
+            <td class="cat_A">[$LINK3_HOURLYHISTORY] [$THUMBLINK2_HOURLYHISTORY]</td>
+		<td class="cat_B">These reports illustrate the amount of traffic being generated
+			by visitors to your site. Use this information to assess bandwidth requirements and locate the hours where maintenance downtime will have the least impact on visitors.</td>
+
+	</tr>
+
+</table>
+
+<!-- END TRAFFIC SNAPSHOT/DESCRIPTION SECTION -->
+
+<!-- START VITAL TRAFFIC STATISTICS SECTION -->
+
+<table class="catBox">
+
+<th class="default">Traffic Statistics &nbsp;
+    <tr>
+
+		<td class="cat_A">Hour with most sessions:</td>
+		<td class="cat_B">[$TOPSESSIONS_HOURLY]:00 - [$TOPSESSIONS_HOURLY]:59</td>
+
+	</tr>
+
+	<tr>
+
+		  <td class="cat_A">Most popular day:</td>
+		<td class="cat_B">[$TOPSESSIONS_WEEKLY]</td>
+
+	</tr>
+
+	<tr>
+
+		  <td class="cat_A">Most popular month:</td>
+		<td class="cat_B">[$TOPSESSIONS_MONTHLY]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Most popular date:</td>
+		<td class="cat_B">[$TOPSESSIONS_DAILY]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Repeat visitors:</td>
+		<td class="cat_B">[$REPEATVISITORS]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">One-time visitors:</td>
+		<td class="cat_B">[$ONCEVISITORS]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Average session length (secs):</td>
+		<td class="cat_B">[$AVGVISITLEN]</td>
+
+	</tr>
+
+
+	<tr>
+
+		<td class="cat_A">Average clips per session:</td>
+		<td class="cat_B">[$AVGPAGESVISIT]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Average hits per session:</td>
+		<td class="cat_B">[$AVGHITSVISIT]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Average clips viewed per day:</td>
+		<td class="cat_B">[$TOTALPAGEHITSPERDAY]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Megabytes downloaded as clips:</td>
+		<td class="cat_B">[$TOTALPAGEMB]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Average daily megabytes served:</td>
+		<td class="cat_B">[$BYTES_DAILY]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Average bits/sec served:</td>
+		<td class="cat_B">[$BYTES_BPS]</td>
+
+	</tr>
+
+	<tr>
+
+		<td class="cat_A">Usage of [$BYTES_SPEED] connection:</td>
+		<td class="cat_B">[$BYTES_PERCENT]</td>
+
+	</tr>
+
+
+</table>
+<!-- END VITAL TRAFFIC STATISTICS SECTION -->
+
+<!-- START DETAILED TRAFFIC REPORTS SECTION -->
+
+<table class="catBox2">
+
+          <th class="default">Traffic Reports &nbsp;
+        <tr>
+
+            <td class="cat_A">
+			  [$LINK2_HOURLY] <BR>
+              [$LINK2_HOURLYHISTORY] <BR>
+              [$LINK2_DAILY] <BR>
+		</td>
+
+    	    <td class="cat_B">
+			  [$LINK2_WEEKLY] <BR>
+              [$LINK2_MONTHLY] <BR>
+              [$LINK2_RECENTDAILY] <BR>
+		</td>
+
+	</tr>
+
+
+<!-- END DETAILED TRAFFIC REPORTS SECTION -->
+
+</table>
+
+</tr>
+
+<!-- END CATEGORY "SHELL" TABLE -->
+
+</table><br>
+
+<!--#endgroup-->
+<!-- END TRAFFIC SECTION -->
+
+
+<!--#if groupReported=Referrals-->
+<!-- START REFERRALS SECTION -->
+
+<!-- START REFERRALS CATEGORY "SHELL" TABLE -->
+
+<table class="catBoxShell">
+<tr><td>
+
+	<!-- START REFERRALS CATEGORY HEADER SECTION -->
+
+	<table class="catBoxHead">
+
+		<tr>
+
+			<td class="catBoxTitle_A"><a name="Referrals">Referrals</a></td>
+			<td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+
+		</tr>
+
+	</table>
+
+	<!-- END REFERRALS CATEGORY HEADER SECTION -->
+
+	<!-- START REFERRALS SNAPSHOT/DESCRIPTION SECTION -->
+
+	<table class="catBox">
+
+		    <th class="default">Preview: [$link2_refersite]
+            <th class="default">Category Description
+        <tr>
+
+
+            <td class="cat_A">[$link3_refersite] [$thumblink2_refersite]</td>
+          <td class="cat_B">These reports show where your site visitors came from.
+            You can also find out the search engines that referred your site,
+            including the actual search terms being used by web surfers to find
+            your site. Use this information to make sure your META tags are appropriate,
+            and to assess the value of potential advertising on different search
+            engines.</td>
+
+		</tr>
+
+	</table>
+
+	<!-- END REFERRALS SNAPSHOT/DESCRIPTION SECTION -->
+
+	<!-- START VITAL REFERRALS STATISTICS SECTION -->
+
+	<table class="catBox">
+          <th class="default">Referral Statistics
+          <tr>
+            <td class="cat_A">Most popular referral:</td>
+            <td class="cat_B">[$TOPHITS_REFER]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most popular referral site:</td>
+            <td class="cat_B">[$TOPHITS_REFERSITE]</td>
+          </tr>
+          <!-- END VITAL REFERRALS STATISTICS SECTION -->
+        </table>
+
+	<!-- START DETAILED REFERRALS REPORTS SECTION -->
+
+	<table class="catBox2">
+
+		  <th class="default">Referral Reports
+        <tr>
+
+            <td class="cat_A">
+			  [$LINK2_REFER]<br>
+              [$LINK2_REFERSITE]<br>
+              [$LINK2_REFERSITEhistory]</td>
+            <td class="cat_B">&nbsp; </td>
+		</tr>
+
+
+	<!-- END DETAILED REFERRALS REPORTS SECTION -->
+	</table>
+
+<!-- END REFERRALS CATEGORY "SHELL" TABLE -->
+</tr>
+</table>
+  <br>
+  <!--#endgroup--> <!-- END DIAGNOSTIC SECTION --> <!--#if groupReported=Marketing-->
+  <!-- START MARKETING SECTION --> <!-- START MARKETING CATEGORY "SHELL" TABLE -->
+  <table class="catBoxShell">
+    <tr>
+      <td> <!-- START MARKETING CATEGORY HEADER SECTION -->
+        <table class="catBoxHead">
+          <tr>
+            <td class="catBoxTitle_A"><a name="Marketing">Marketing</a></td>
+            <td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+          </tr>
+        </table>
+        <!-- END MARKETING CATEGORY HEADER SECTION --> <!-- START MARKETING SNAPSHOT/DESCRIPTION SECTION -->
+        <table class="catBox">
+          <th class="default">Preview: [$link2_timeonline]
+          <th class="default">Category Description &nbsp;
+          <tr>
+            <td class="cat_A">[$link3_timeonline] [$thumblink2_timeonline]</td>
+            <td class="cat_B">These reports detail visitor loyalty, approximate
+              time spent online and the frequency at which visitors return to
+              your site. Use this information to assess the appropriateness of
+              site content and structure. These results can be affected by the
+              session timeout value. Refer to the User Guide for more information.</td>
+          </tr>
+        </table>
+        <!-- END MARKETING SNAPSHOT/DESCRIPTION SECTION --> <!-- START VITAL MARKETING STATISTICS SECTION -->
+        <table class="catBox">
+          <th class="default">Marketing Statistics &nbsp;
+          <tr>
+            <td class="cat_A">Most common session duration: </td>
+            <td class="cat_B">[$TOPHITS_TIMEONLINE] minutes</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most common visitor frequency:</td>
+            <td class="cat_B">[$TOPHITS_CIRCULATION]</td>
+          </tr>
+          <tr>
+            <td class="cat_A">Most common level of loyalty:</td>
+            <td class="cat_B">[$TOPHITS_LOYALTY] sessions</td>
+          </tr>
+          <!-- END VITAL MARKETING STATISTICS SECTION -->
+        </table>
+        <!-- START DETAILED MARKETING REPORTS SECTION -->
+        <table class="catBox2">
+          <th class="default">Marketing Reports &nbsp;
+          <tr>
+            <td class="cat_A">
+			  [$LINK2_TIMEONLINE]<br>
+              [$LINK2_CIRCULATION]<br>
+              [$LINK2_LOYALTY]</td>
+            <td class="cat_B"> <br>
+            </td>
+          </tr>
+          <!-- END DETAILED MARKETING REPORTS SECTION -->
+        </table>
+        <!-- END MARKETING CATEGORY "SHELL" TABLE -->
+    </tr>
+  </table>
+  <!--#endgroup-->
+  <p><!--#if groupReported=Advertising--> <!-- START ADVERTISING SECTION --> <!-- START ADVERTISING CATEGORY "SHELL" TABLE --> 
+  </p>
+  <table class="catBoxShell">
+    <tr>
+      <td> <!-- START ADVERTISING CATEGORY HEADER SECTION -->
+        <table class="catBoxHead">
+          <tr>
+            <td class="catBoxTitle_A"><a name="Advertising">Advertising</a></td>
+            <td class="catBoxTitle_B"><a href="#top" class="topLink">back to top</a></td>
+          </tr>
+        </table>
+        <!-- END ADVERTISING CATEGORY HEADER SECTION --> <!-- START ADVERTISING SNAPSHOT/DESCRIPTION SECTION -->
+        <table class="catBox">
+          <th class="default">Preview: [$link2_campaigns]
+          <th class="default">Category Description &nbsp;
+          <tr>
+            <td class="cat_A"> [$link3_campaigns] [$thumblink2_campaigns]
+              <!-- If you'd like to see a graphic of impressions rather than
+		  	   campaigns, enable the portion of code below, and disable
+			   the above code.
+
+			   [$link3_advert] [$thumblink2_advert] --> </td>
+            <td class="cat_B">These reports highlight the effectiveness of internally
+              hosted advertising and to determine the ROI on external advertising
+              campaigns. Please refer to the manual for detailed setup instructions.</td>
+          </tr>
+        </table>
+        <!-- END ADVERTISING SNAPSHOT/DESCRIPTION SECTION --> <!-- START DETAILED ADVERTISING REPORTS SECTION -->
+        <table class="catBox2">
+          <th class="default">Advertising Reports &nbsp;
+          <tr>
+            <td class="cat_A">
+			  [$LINK2_campaigns] <br>
+              [$LINK2_advert] <br>
+            </td>
+            <td class="cat_B">
+			  [$LINK2_campaignshistory] <br>
+              [$LINK2_adverthistory] <br>
+            </td>
+          </tr>
+          <!-- END DETAILED ADVERTISING REPORTS SECTION -->
+        </table>
+        <!-- END ADVERTISING CATEGORY "SHELL" TABLE -->
+    </tr>
+  </table>
+  <p> <!--#endgroup--></p>
+  <p> <!-- END MEDIA SECTION -->  </p>
+</div>
+
+</body>
+</html>
+

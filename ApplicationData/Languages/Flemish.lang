@@ -1,0 +1,708 @@
+// Flemish Template File
+// Application code base
+// Version 4.5, 21/01/02
+// All Extended characters should be input using HTML codes
+
+// Translation by Deepak Mehta
+
+// Server Statistics = {ssNN}
+
+{ss01},Server Belasting statistieken
+{ss02},Uitgebreide verslagen
+{ss03},Aanvragen
+{ss04},Termijn
+{ss05},Periode van
+{ss06},tot
+{ss07},Totale aanvragen
+{ss08},Totale gecachte aanvragen
+{ss09},Totale gefaalde aanvragen
+{ss10},Foutieve log lijnen
+{ss11},Gemiddelde dagelijkse aanvragen
+{ss12},Gemiddelde aanvragen per uur
+{ss13},Sessies informatie
+{ss14},Totale sessies
+{ss15},Totale unieke bezoekers
+{ss16},Totale wederkerende bezoekerd
+{ss17},Totale eenmalige bezoekers
+{ss18},Gemiddelde dagelijke sessies
+{ss19},Gemiddelde sessie lengte
+{ss20},Gemiddelde paginas per sessie
+{ss21},Gemiddelde Aanvragen per sessie
+{ss22},Paginas informatie
+{ss23},Totale paginas
+{ss24},Gemiddelde paginas per dag
+{ss25},Totaal gedownloadde bestanden
+{ss26},Totale downloads
+{ss27},uitgaande bandbreedte
+{ss28},Totale megabytes
+{ss29},Gemiddelde dagelijkse Megabytes
+{ss30},Gemiddelde bits/sec
+{ss31},Percentage van
+{ss32},Kbps
+{ss33},inkomende bandbreedte
+{ss34},Totale Kilobytes
+{ss35},Gemiddelde dagelijkse Kilobytes
+{ss36},Toegangsstatistieken voor periode
+{ss37},Logs verwerkingstijd
+{ss38},lijnen/min
+//{ss39},Time Period
+
+// Report Categories = {rcNN}
+
+{rc01},Statistieken
+{rc02},Traffiek
+{rc03},Diagnostiek
+{rc04},Server
+{rc05},Demografie
+{rc06},Verwijzingen
+{rc07},Streaming
+{rc08},Systemen
+{rc09},Advertentie
+{rc10},Marketing
+{rc11},Firewall
+//{rc12},Clustering
+
+// Report title (Long) = {rlNN}
+
+{rl01},Samenvatting
+{rl02},Uurlijk
+{rl03},Uurlijk historiek
+{rl04},Dagelijks
+{rl05},Recente Dagen
+{rl06},Wekelijks
+{rl07},Maandelijks
+{rl08},Server Fouten
+{rl09},Server Fouten Historiek
+{rl10},gefaalde URLs
+{rl11},gefaalde URLs Historiek
+{rl12},Paginas
+{rl13},Paginas Historiek
+{rl14},Inkompaginas
+{rl15},Inkompaginas Historiek
+{rl16},Vertrekpaginas
+{rl17},Vertrekpaginas Historiek
+{rl18},Mappen
+{rl19},Top niveau mappen
+{rl20},Top niveau mappen Historiek
+{rl21},URLs
+{rl22},Gemiddelde paden
+{rl23},Inhoudsgroepen
+{rl24},Inhoudsgroepen Historiek
+{rl25},Bestand Downloads
+{rl26},Bestand Downloads Historiek
+{rl27},Bestandstypes
+{rl28},Clienten
+{rl29},Clienten Click Stream
+{rl30},Clienten Historiek
+{rl31},Geauthenticeerde bezoekers
+{rl32},Geauthenticeerde bezoekers Historiek
+{rl33},Domeinen
+{rl34},Landen
+{rl35},Wereld regionen
+{rl36},Organisaties
+{rl37},Sessie verdeling
+{rl38},Robotten
+{rl39},Referenties
+{rl40},Referentie sites
+{rl41},Referentie sites Historiek
+{rl42},Zoekmotoren
+{rl43},Zoektermen
+{rl44},Browsers
+{rl45},Browsers / Operating Systems
+{rl46},Operating Systems
+{rl47},Loyaliteit
+{rl48},Tijd Online
+{rl49},Impressies
+{rl50},Impressies Historiek
+{rl51},Campagne
+{rl52},Campagne Historiek
+{rl53},Circulatie Frequentie
+{rl54},Media spelers
+{rl55},Audio inhoud
+{rl56},Video inhoud
+{rl57},Mediatypes
+{rl58},Source Addressen
+{rl59},Protocolen
+{rl60},Sunday Transmissies
+{rl61},Monday Transmissies
+{rl62},Tuesday Transmissies
+{rl63},Wednesday Transmissies
+{rl64},Thursday Transmissies
+{rl65},Friday Transmissies
+{rl66},Saturday Transmissies
+{rl67},Virtuele Hosts
+{rl68},Virtuele Hosts Historiek
+{rl69},Protocol - HTTP
+{rl70},Protocol - HTTPS
+{rl71},Protocol - Mail
+{rl72},Protocol - FTP
+{rl73},Protocol - Telnet
+{rl74},Protocol - DNS
+{rl75},Protocol - POP3
+{rl76},Protocol - Real
+{rl77},Bron Addressen
+{rl78},iReporter Verslag
+//{rl79},Protocol - Others
+//{rl80},Pages Least Visited
+//{rl81},Pages Viewed by Key Visitors
+//{rl82},Routes to Key Pages
+//{rl83},Pages Containing Broken Links
+//{rl84},Search Engines History
+//{rl85},Search Terms History
+//{rl86},Browsers History
+//{rl87},Operating Systems History
+//{rl88},Robots History
+//{rl89},Media Players History
+//{rl90},Audio Content History
+//{rl91},Video Content History
+//{rl92},Load Balancing
+//{rl93},Load Balancing History
+//{rl94},Unrecognized Agents
+//{rl95},iReporter Virtual Domain Report
+//{rl96},Routes from Key Pages
+//{rl97},External Pages Containing Broken Links
+//{rl98},Internal Pages Containing Broken Links
+//{rl99},Authenticated Users Click Stream
+//{rl100},Keys Visitors' Traffic Summary
+//{rl101},Key Page Traffic Summary
+//{rl102},Key Page Traffic Summary
+	
+// General Labels = {glNN}
+	
+{gl01},Aanvragen
+{gl02},Sessies
+{gl03},Bestand
+{gl04},Bestanden
+{gl05},Trafiek
+{gl06},Gemiddeld
+{gl07},Errors
+{gl08},Totale eenheden
+{gl09},$
+{gl10},Recente
+{gl11},Recente Totalen
+{gl12},Mappen
+{gl13},Andere
+{gl14},bestand niet gevonden
+{gl15},Hoog
+{gl16},Laag
+{gl17},Client
+{gl18},Clienten
+{gl19},Circulatie
+{gl20},Frequentie
+{gl21},Bezoek
+{gl22},Bezoeken
+{gl23},Bezoekers
+{gl24},Bytes
+{gl25},Pagina
+{gl26},Paginas
+{gl27},Overige
+{gl28},Totalen
+{gl29},Subtotalen
+{gl30},Referentie
+{gl31},Land
+{gl32},regio
+{gl33},Pad
+{gl34},Domein
+{gl35},Organisatie
+{gl36},Download Bestand
+{gl37},Totale kost
+{gl38},Percentage van
+{gl39},Top niveau map
+{gl40},Bestandstype
+{gl41},Server Error
+{gl42},gefaalde URL
+{gl43},Virtuele Host
+{gl44},URL
+{gl45},Browser
+{gl46},Operating System
+{gl47},Gemiddeld pad
+{gl48},Robot
+{gl49},Zoekterm
+{gl50},Zoekmotor
+{gl51},Media Speler
+{gl52},Audio Inhoud
+{gl53},Video Inhoud
+{gl54},Media Type
+{gl55},Totale Sessies
+{gl56},Click-throughs
+{gl57},Kost per maand
+{gl58},Eerste sessies
+{gl59},Laatste sessies
+{gl60},Clicks
+{gl61},Kost per Click
+{gl62},Kost
+{gl63},Zoektochten
+{gl64},Bytes verstuurd
+{gl65},Tijd Online
+{gl66},Inhoudsgroep
+{gl67},Geauthenticeerde gebruiker
+{gl68},Advertentie Naam
+{gl69},Protocol - HTTP
+{gl70},Protocol - HTTPS
+{gl71},Protocol - Mail
+{gl72},Protocol - FTP
+{gl73},Protocol - Telnet
+{gl74},Protocol - DNS
+{gl75},Protocol - POP3
+{gl76},Protocol - Real
+{gl77},Bron Adres
+{gl78},milljoenen
+{gl79},kB
+{gl80},MB
+{gl81},GB
+{gl82},bps
+{gl83},kbps
+{gl84},Mbps
+{gl85},Gbps
+{gl86},%
+//{gl87},Protocols
+//{gl88},Bytes delivered
+//{gl89},Other Connections
+//{gl90},Pages Least Visited
+//{gl91},Key Visitors
+//{gl92},Key Pages
+//{gl93},Broken Links
+//{gl94},Route
+//{gl95},Times Accessed
+//{gl96},% of routes taken
+//{gl97},Routes taken to %s
+//{gl98},All Other Routes
+//{gl99},Server Name
+//{gl100},Unrecognized Agent
+//{gl101},Broken Link Hits
+//{gl102},Broken Link
+//{gl103},Cached Hits
+//{gl104},Key Pages
+//{gl105},Routes taken from %s
+//{gl106},Hits Referred
+//{gl107},Top Referrals of
+//{gl108},of
+
+// Time-related = {tiNN}
+
+{ti01},Zondag
+{ti02},Maandag
+{ti03},Dinsdag
+{ti04},Woensdag
+{ti05},Donderdag
+{ti06},vrijdag
+{ti07},Zaterdag
+{ti08},Zon
+{ti09},Maa
+{ti10},Din
+{ti11},Woe
+{ti12},Don
+{ti13},Vri
+{ti14},Zat
+{ti15},Januarie
+{ti16},Februarie
+{ti17},Maart
+{ti18},April
+{ti19},Mei
+{ti20},Juni
+{ti21},Juli
+{ti22},Augustus
+{ti23},September
+{ti24},October
+{ti25},November
+{ti26},December
+{ti27},Jan
+{ti28},Feb
+{ti29},Mar
+{ti30},Apr
+{ti31},Mei
+{ti32},Jun
+{ti33},Jul
+{ti34},Aug
+{ti35},Sep
+{ti36},Oct
+{ti37},Nov
+{ti38},Dec
+{ti39},Tijd
+{ti40},Duratie
+{ti41},s
+{ti42},min
+{ti43},u
+{ti44},dag
+{ti45},Dag
+{ti46},Dagen
+{ti47},Datum
+{ti48},Maand
+{ti49},Maanden
+{ti50},Uren van de Dag
+{ti51},Dagen van de Week
+{ti52},Gemiddelde tijd
+{ti53},Totale tijd
+{ti54},Duratie (min)
+{ti55},Meerdere keren per dag
+{ti56},Tweemaal daags
+{ti57},Dagelijks
+{ti58},Tweemaal per week
+{ti59},Wekelijks
+{ti60},Tweemaal per maand
+{ti61},Maandelijks
+{ti62},Soms
+{ti63},Eerste bezoek
+//{ti64},mins
+//{ti65},Week %d %b %Y
+
+// Session Listing = {seNN}
+
+{se01},Sessie lijst voor
+{se02},Gemiddelde sessielengte
+{se03},Sessie lijst
+{se04},Totale dagen
+{se05},Totale Data bytes gebruikt
+{se06},Totale Data bytes verzonden
+{se07},Gemiddelde Data bytes/Dag
+{se08},Totale Tijd Online
+{se09},Gemiddelde Tijd Online/Dag
+{se10},geschatte Sessie lengte
+{se11},Sessie
+{se12},Data bytes gebruikt
+{se13},Gemiddelde Paginas/Sessie
+//{se14},Attempted Downloads
+//{se15},Total Attempted Downloads
+//{se16},Browser used
+//{se17},Operating System used
+
+// Comments = {cmNN}
+
+{cm01},NOTITIE: Klik op de clienten om de individuele sessie historiek te zien
+{cm02}, NOTITIE: Klik op de clienten om de individuele gebruikers historiek te zien
+{cm03},Geen paginas bezien gedurende deze sessie
+{cm04},niet opgeloste IP
+{cm05},Foutief
+{cm06},Lokaal Netwerk
+{cm07},Server Fouten
+{cm08},Niet gekende Host
+{cm09},OK
+{cm10},ERR
+{cm11},Geen referentie
+{cm12},Geboekmerkte site
+{cm13},Andere
+{cm14},Ongekend
+{cm15},Vervolg op volgende pagina ...
+{cm16},... Vervolgd van vorige pagina.
+
+// Server Errors = {erNN}
+
+{er01},incompleet/niet gedefineerd (0)
+{er02},Gecreerd (201)
+{er03},Geaccepteerd (202)
+{er04},Geen inhoud (204)
+{er05},Gedeeltelijke inhoud (206)
+{er06},Permanent verschoven (301)
+{er07},Doorverwezen (302)
+{er08},Niet veranderd (304)
+{er09},Slechte aanvraag (400)
+{er10},Auth vereist (401)
+{er11},Verboden (403)
+{er12},bestand niet gevonden (404)
+{er13},Methode niet toegstaan (405)
+{er14},Niet acceptabel (406)
+{er15},Proxy Authenticatie Vereist (407)
+{er16},Aanvraag timeout (408)
+{er17},Interne Server Fout (500)
+{er18},Niet geimplementeerd (501)
+{er19},Foute Gateway (502)
+{er20},Dienst niet bereikbaar (503)
+{er21},Passwoord Vereist (331)		// FTP errors
+{er22},Rekening nodig (332)
+{er23},Actie bezig (350)
+{er24},Dienst niet bereikbaar (421)
+{er25},Connectie niet geopend (425)
+{er26},Connectie gesloten (426)
+{er27},Bestand niet bereikbaar (450)
+{er28},Actie geaborteerd (451)
+{er29},Actie niet genomen (452)
+{er30},Niet geimplementeerd (504)
+{er31},Niet ingelogd (530)
+{er32},Rekening nodig (532)
+{er33},Bestand niet bereikbaar (550)
+{er34},Actie geaborteerd (451)
+{er35},Opslagruimte overschreden (552)
+{er36},Naam niet toegelaten (553)
+
+// System Information = {syNN}
+
+{sy01},ISO-8859-1		// charset for browser
+{sy02},Default			// font name for graphs
+
+// Countries = {coNN}
+
+//{co01},Andorra
+//{co02},United Arab Emirates
+//{co03},Afghanistan
+//{co04},Antigua
+//{co05},Anguilla
+//{co06},Albania
+//{co07},Armenia
+//{co08},Netherlands
+//{co09},Angola
+//{co10},Antarctica
+//{co11},Argentina
+//{co12},Adv Proj Res Agency
+//{co13},American Samoa
+//{co14},Austria
+//{co15},Australia
+//{co16},Aruba
+//{co17},Azerbaijan
+//{co18},Bosnia Herzegovina
+//{co19},Barbados
+//{co20},Bangladesh
+//{co21},Belgium
+//{co22},Burkina Faso
+//{co23},Bulgaria
+//{co24},Bahrain
+//{co25},Burundi
+//{co26},Benin
+//{co27},Bermuda
+//{co28},Brunei
+//{co29},Bolivia
+//{co30},Brazil
+//{co31},Bahamas
+//{co32},Bhutan
+//{co33},Bouvet Island
+//{co34},Botswana
+//{co35},Belarus
+//{co36},Byelorussian
+//{co37},Belize
+//{co38},Canada
+//{co39},Cocos Islands
+//{co40},Congo
+//{co41},Central African Republic
+//{co42},Switzerland
+//{co43},Cote d'Ivoire
+//{co44},Cook Islands
+//{co45},Chile
+//{co46},Cameroon
+//{co47},China
+//{co48},Colombia
+//{co49},Costa Rica
+//{co50},Czechoslovakia
+//{co51},Cuba
+//{co52},Cape Verde
+//{co53},Christmas Island
+//{co54},Cyprus
+//{co55},Czech Republic
+//{co56},Germany
+//{co57},Djibouti
+//{co58},Denmark
+//{co59},Dominica
+//{co60},Dominican Republic
+//{co61},Algeria
+//{co62},Ecuador
+//{co63},US Educational
+//{co64},Estonia
+//{co65},Egypt
+//{co66},Western Sahara
+//{co67},Eritrea
+//{co68},Spain
+//{co69},Ethiopia
+//{co70},Finland
+//{co71},Fiji
+//{co72},Falkland Islands
+//{co73},Micronesia
+//{co74},Faroe Islands
+//{co75},France
+//{co76},France Metropolitan
+//{co77},Gabon
+//{co78},United Kingdom
+//{co79},Grenada
+//{co80},Georgia
+//{co81},French Guiana
+//{co82},Ghana
+//{co83},Gibraltar
+//{co84},Greenland
+//{co85},Gambia
+//{co86},Guinea
+//{co87},US Government
+//{co88},Guadeloupe
+//{co89},Equatorial Guinea
+//{co90},Greece
+//{co91},South Georgia & Sandwich Islands
+//{co92},Guatemala
+//{co93},Guam
+//{co94},Guinea-Bissau
+//{co95},Guyana
+//{co96},Hong Kong
+//{co97},Heard & McDonald Is
+//{co98},Honduras
+//{co99},Croatia
+//{co100},Haiti
+//{co101},Hungary
+//{co102},Indonesia
+//{co103},Ireland
+//{co104},Israel
+//{co105},India
+//{co106},International
+//{co107},British Indian Ocean Terr
+//{co108},Iraq
+//{co109},Iran
+//{co110},Iceland
+//{co111},Italy
+//{co112},Jamaica
+//{co113},Jordan
+//{co114},Japan
+//{co115},Kenya
+//{co116},Kyrgyzstan
+//{co117},Cambodia
+//{co118},Kiribati
+//{co119},Comoros
+//{co120},Saint Kitts and Nevis
+//{co121},Korea
+//{co122},Kuwait
+//{co123},Cayman Islands
+//{co124},Kazakhstan
+//{co125},Laos
+//{co126},Lebanon
+//{co127},Saint Lucia
+//{co128},Liechtenstein
+//{co129},Sri Lanka
+//{co130},Liberia
+//{co131},Lesotho
+//{co132},Lithuania
+//{co133},Luxembourg
+//{co134},Latvia
+//{co135},Libya
+//{co136},Morocco
+//{co137},Monaco
+//{co138},Moldova
+//{co139},Madagascar
+//{co140},Marshall Is
+//{co141},Macedonia
+//{co142},Mali
+//{co143},Myanmar
+//{co144},Mongolia
+//{co145},Macau
+//{co146},Northern Mariana Is
+//{co147},Martinique
+//{co148},Mauritania
+//{co149},Montserrat
+//{co150},Malta
+//{co151},Mauritius
+//{co152},Maldives
+//{co153},Malawi
+//{co154},Mexico
+//{co155},Malaysia
+//{co156},Mozambique
+//{co157},Namibia
+//{co158},NATO
+//{co159},New Caledonia
+//{co160},Niger
+//{co161},Norfolk Island
+//{co162},Nigeria
+//{co163},Nicaragua
+//{co164},Netherlands
+//{co165},Norway
+//{co166},Nepal
+//{co167},Nauru
+//{co168},Neutral Zone
+//{co169},Niue
+//{co170},New Zealand
+//{co171},Oman
+//{co172},US Organization
+//{co173},Panama
+//{co174},Peru
+//{co175},French Polynesia
+//{co176},Papua New Guinea
+//{co177},Philippines
+//{co178},Pakistan
+//{co179},Poland
+//{co180},St Pierre and Miquelon
+//{co181},Pitcairn
+//{co182},Puerto Rico
+//{co183},Portugal
+//{co184},Palau
+//{co185},Paraguay
+//{co186},Qatar
+//{co187},Reunion
+//{co188},Romania
+//{co189},Russia
+//{co190},Rwanda
+//{co191},Saudi Arabia
+//{co192},Solomon Islands
+//{co193},Seychelles
+//{co194},Sudan
+//{co195},Sweden
+//{co196},Singapore
+//{co197},St Helena
+//{co198},Slovenia
+//{co199},Svalbard
+//{co200},Slovakia
+//{co201},Sierra Leone
+//{co202},San Marino
+//{co203},Senegal
+//{co204},Somalia
+//{co205},Suriname
+//{co206},Sao Tome and Principe
+//{co207},Soviet Union
+//{co208},El Salvador
+//{co209},Syria
+//{co210},Swaziland
+//{co211},Turks and Caicos Islands
+//{co212},Chad
+//{co213},French Southern Territories
+//{co214},Togo
+//{co215},Thailand
+//{co216},Tajikistan
+//{co217},Tokelau
+//{co218},Turkmenistan
+//{co219},Tunisia
+//{co220},Tonga
+//{co221},East Timor
+//{co222},Turkey
+//{co223},Trinidad and Tobago
+//{co224},Tuvalu
+//{co225},Taiwan
+//{co226},Tanzania
+//{co227},Ukraine
+//{co228},Uganda
+//{co229},US Minor Outlying Islands
+//{co230},USA
+//{co231},Uruguay
+//{co232},Uzbekistan
+//{co233},Vatican City
+//{co234},Saint Vincent & Grenadines
+//{co235},Venezuela
+//{co236},Virgin Islands (Br)
+//{co237},Virgin Islands (US)
+//{co238},Vietnam
+//{co239},Vanuatu
+//{co240},Wallis and Futuna Islands
+//{co241},Samoa
+//{co242},Yemen
+//{co243},Mayotte
+//{co244},South Africa
+//{co245},Zambia
+//{co246},Zaire
+//{co247},Zimbabwe
+//{co248},US Commercial
+//{co249},US Dept of Defense
+//{co250},Network
+//{co251},Yugoslavia
+//{co252},Business Organizations 
+//{co253},Personal
+//{co254},Museums
+//{co255},Professionals
+//{co256},Aviation
+//{co257},Cooperatives
+//{co258},General Information
+
+// Organisations = {orNN}
+
+//{or01},US Organizations
+//{or02},Organizations
+//{or03},US Educational
+//{or04},Educational
+//{or05},US Dept of Defense
+//{or06},Military
+//{or07},US Government
+//{or08},Government
+//{or09},US Commercial
+//{or10},Commercial
+//{or11},US Network
+//{or12},Network
+//{or13},Proxy Server
+//{or14},Search Bots

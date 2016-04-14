@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "!search /usr/local/iReporter,/usr/local/iReporter/bin,/usr/local/iReporter/Languages,/usr/local/iReporter/Languages/English,/usr/local/iReporter/Languages/English/HelpCards,/usr/local/iReporter/manual" > prototype
+echo "i pkginfo=./pkginfo" >> prototype
+find /usr/local/iReporter/ -print | pkgproto >> prototype
+
+pkgmk -o -d /root/ -f ./prototype

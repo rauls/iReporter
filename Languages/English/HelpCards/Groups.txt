@@ -1,0 +1,33 @@
+
+#  Help Card
+# Report: Content Groups
+# Please see Languages\English\Help Cards\Readme.txt for instructions.
+
+<!--OVERVIEW-->
+This report shows grouped sets of files and/or pages which share a common characteristic. Examples of these may include "product pages", or "authorized users only" content. Use this information to assess the impact of different content groups, and whether or not their performance is in line with business expectations. 
+
+<!--GRAPH-->
+<b>Vertical axis:</b> Content Group.
+Name given to the set of files designated as a content group in <i>Settings > Statistics > Content Groups</i>
+
+<b>Horizontal axis:</b> Hits (default sorting). 
+Hits to the corresponding content group. Changing the sorting options in <i>Settings > Statistics</i> will alter the horizontal axis to the new sort method. This report can be sorted/graphed by hits, bytes pages or errors.
+
+<b>Red lines (if present):</b>
+HTTP errors (Page not found, server error, etc)
+
+<!--TABLE-->
+<b>Content Group:</b>
+Name assigned to the corresponding content group. 
+
+<b>Hits (%):</b>
+The number of hits to files assigned to the corresponding content group. (Percentage as a proportion of hits to all content groups.)
+
+<b>Bytes (%):</b>
+Raw bytes transferred as a result of hits to files assigned to the corresponding content group. (Percentage as a proportion of all bytes transferred for files within the corresponding content group.)
+
+<b>Pages:</b>
+Number of hits to files within the content group that are regarded as pages. Page types are defined in <i>Settings > Analysis > Extensions > Pages</i>.
+
+<b>Errors:</b>
+Number of server errors generated as a result of hits to files within the corresponding content group.

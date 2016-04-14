@@ -1,0 +1,65 @@
+<html>
+
+<body bgcolor="white">
+<form method="post" action="saveconfig.cgi" name="save">
+  <p>&nbsp;</p>
+  <table width="332" border="0" cellspacing="0" cellpadding="0" height="214">
+    <tr height="14"> 
+      <td width="332" height="14" valign="TOP"><b><font color="#000051"><u>Statistics 
+        Options History</u></font></b></td>
+    </tr>
+    <tr height="14"> 
+      <td width="332" height="14" valign="TOP"> 
+        <p> 
+          <input type="checkbox" name="[streaming]228" value="on" unchecked>
+          <b> Archive report to zip file</b><br>
+          <input type="checkbox" name="[streaming]2224" value="on" unchecked>
+          <b> Compress log file using gzip</b><br>
+          <input type="checkbox" name="[streaming]2234" value="on" unchecked>
+          <b> Delete report from disk</b><br>
+          <input type="checkbox" name="[streaming]22344" value="on" unchecked>
+          <b> Send report to ... (path/file location or ftp://host.com/path/)</b><br>
+          <b> 
+          <input type="text" name="tabsize4" size="50" maxlength="128">
+          Location</b></p>
+        <p><font size="1">(You can also transfer your report to a new location 
+          using the send option. If you didn't choose to archive the report then 
+          every file will be copied to the new location specified in the path 
+          field. )</font><br>
+        </p>
+      </td>
+    </tr>
+    <tr height="14"> 
+      <td width="332" height="14" valign="TOP"> 
+        <p><b><font color="#000051"><u>Email Notification</u></font></b><br>
+          <b>To</b>: <b> 
+          <input type="text" name="tabsize" size="50" maxlength="128" value="20">
+          <br>
+          Sub: <b> <b> 
+          <input type="text" name="tabsize5" size="35" maxlength="128" value="20">
+          <br>
+          smtp: </b><b> 
+          <input type="text" name="tabsize52" size="35" maxlength="128" value="20">
+          <br>
+          Message: </b></b> <br>
+          <b> 
+          <textarea name="tabsize6" cols="50" rows="16">20</textarea>
+          </b> <br>
+          <br>
+          </b></p>
+      </td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+<p>
+  <input type="submit" name="Submit" value="Save Config">
+</p>
+</form>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+
+</html>
