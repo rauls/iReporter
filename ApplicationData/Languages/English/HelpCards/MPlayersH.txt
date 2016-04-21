@@ -1,30 +1,17 @@
 
-# Help Card
-# Media Players History
+#  Help Card
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
+
 <!--OVERVIEW-->
-This report shows the most popular programs being used to access media files on your server over time. Use this information to ensure future media content development is for the more popular media players.
+
+
 
 <!--GRAPH-->
-<b>Vertical axis:</b> Hits (default sorting). 
-Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes, visitors and pages.
 
-<b>Horizontal axis:</b> Days.
-All days of the report period.
 
-<b>Depth (Z) axis:</b> Media Players.
-The numbers along this axis correspond to the numbered entries in the table.
 
 <!--TABLE-->
-<b>Player:</b>
-Name of the media player being analyzed.
 
-<b>Hits (%):</b>
-Number of hits to the site by visitors using the corresponding media player. (Percentage as a proportion of hits from all media players.)
 
-<b>Bytes (%):</b>
-Raw bytes transferred as a result of hits to the site by visitors using the corresponding media player. (Percentage as a proportion of bytes transferred from all media players.)
 
-<b>Visitors:</b>
-Number of site visitors who used the corresponding media player. This figure includes repeat visitors, so the total amount may appear higher than expected. 

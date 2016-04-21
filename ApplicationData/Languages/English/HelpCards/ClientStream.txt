@@ -1,12 +1,12 @@
 
-# Help Card
+#  Help Card
 # Report: Visitors Click Stream
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
 <!--OVERVIEW-->
 This extremely powerful report allows you to drill down through every page viewed within every session undertaken by your site visitors. It can be particularly useful in assessing the behavioral trends of key visitors, and can help in the planning of new site content. This report can also assist in the enforcement of acceptable use policies in an Intranet environment (allowing administrators to hone in on individual users).
 
-If only IP addresses (such as 192.168.10.12) are showing in the report, then you may need to enable DNS lookups, in <i>Settings > Analysis > Network > DNS</i>. Bear in mind that not all IP addresses on the Internet have a name associated with them.
+If only IP addresses (such as 192.77.210.55) are showing in the report, then you may need to enable DNS lookups, in <i>Settings > Analysis > Network > DNS</i>. Bear in mind that not all IP addresses on the Internet have a name associated with them.
 
 Note: one visitor address or hostname may actually represent multiple visitors, and at times, hundreds or even thousands of visitors. This is due to the widespread usage of proxy servers, which store web sites to enable faster and cheaper access for those utilizing it. This problem can be overcome through the use of authenticating procedures (visitors logging in to the site with a username and password), or, in part, through the use of cookies.
 

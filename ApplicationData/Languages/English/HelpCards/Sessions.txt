@@ -1,5 +1,5 @@
 
-# Help Card
+#  Help Card
 # Report: Session Distribution
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 

@@ -1,5 +1,5 @@
 // Norwegian Template File
-// Application code base
+//  4 code base
 // Version 4.5, 21/01/02
 // All Extended characters should be input using HTML codes
 
@@ -141,7 +141,7 @@
 {rl75},Protokoll - POP3
 {rl76},Protokoll - Real
 {rl77},Kildeadresse
-{rl78},iReporter Rapport
+{rl78}, Rapport
 //{rl79},Protocol - Others
 //{rl80},Pages Least Visited
 //{rl81},Pages Viewed by Key Visitors
@@ -158,7 +158,7 @@
 //{rl92},Load Balancing
 //{rl93},Load Balancing History
 //{rl94},Unrecognized Agents
-//{rl95},iReporter Virtual Domain Report
+//{rl95}, Analyzer Virtual Domain Report
 //{rl96},Routes from Key Pages
 //{rl97},External Pages Containing Broken Links
 //{rl98},Internal Pages Containing Broken Links

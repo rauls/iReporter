@@ -1,36 +1,17 @@
 
-# Help Card
-# Report: Load Balancing History
+#  Help Card
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
+
 <!--OVERVIEW-->
-This report shows whether or not the servers in your clustered environment are consistently performing as expected. If there are major differences in the different items on the graph, there may be a problem with your load balancer. 
+
+
 
 <!--GRAPH-->
-<b>Vertical axis:</b> Hits (default sorting). 
-Changing the sorting options in <i>Settings > Statistics</i> will alter the vertical axis to the new sort method. This report can be sorted/graphed by hits, bytes, sessions, pages or errors.
 
-<b>Horizontal axis:</b> Days.
-All days of the report period.
 
-<b>Depth (Z) axis:</b> Servers.
-The numbers along this axis correspond to the numbered entries in the table.
 
 <!--TABLE-->
-<b>Server Name:</b>
-Name given to the server, as specified in <i>Settings > Virtual > Clustering > Options > Server name</i>.
 
-<b>Hits (%):</b>
-Number of hits to files on the site that were accessed from the corresponding server. (Percentage as a proportion of files accessed from all servers in your web cluster.)
 
-<b>Bytes (%):</b>
-Bytes transferred as a result of hits by the corresponding visitor. (Percentage as a proportion of the   bytes transferred as a result of files accessed from all servers in your web cluster.)
 
-<b>Cached Hits (%):</b>
-Number of cached hits to files on the site that were accessed from the corresponding server. (Percentage as a proportion of files accessed from all servers in your web cluster.)
-
-<b>Pages:</b>
-Number of pages that were accessed from the corresponding server.
-
-<b>Errors:</b>
-Errors generated as a result of hits to files being accessed from the corresponding server.

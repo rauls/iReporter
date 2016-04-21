@@ -1,4 +1,4 @@
-# Web Help Card
+#  Help Card
 # Report: Authenticated Users
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 

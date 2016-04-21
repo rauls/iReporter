@@ -1,5 +1,5 @@
 
-# Help Card
+#  Help Card
 # Report: Organizations
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
@@ -10,7 +10,7 @@ Knowing where large groups of visitors originate may help to tailor your site co
 
 It is extremely important to note to that organization types such as "Proxy Server" may also belong to another organization type, such as "US Commercial". As a result, there may be a larger than expected number of sessions and pages in this report. You may also see an unexpected number of errors (such as 50 of 45), owing to the same reason mentioned above.
 
-Note: All machines on the Internet have a unique IP address (192.168.10.12) associated with them.  Several machines also have named addresses (www.quest.com) against their IP addresses for ease of use.  Many machines do NOT have a name associated with them, and these display as [UNRESOLVED IP] in this report.
+Note: All machines on the Internet have a unique IP address (192.77.210.55) associated with them.  Several machines also have named addresses (www.quest.com) against their IP addresses for ease of use.  Many machines do NOT have a name associated with them, and these display as [UNRESOLVED IP] in this report.
 
 If the only entry in this report is [UNRESOLVED IP], then you need to enable DNS Lookups, in <i>Settings > Analysis > Network > DNS</i>.
 

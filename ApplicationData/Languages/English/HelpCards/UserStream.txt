@@ -1,4 +1,4 @@
-# Help Card
+#  Help Card
 # Report: Authenticated Users' Click Stream
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 

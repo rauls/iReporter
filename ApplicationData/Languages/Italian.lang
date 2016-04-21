@@ -1,5 +1,5 @@
 // Italian Template File
-// Application code base
+//  4 code base
 // Version 4.5, 21/01/02
 
 
@@ -158,7 +158,7 @@
 //{rl92},Load Balancing
 //{rl93},Load Balancing History
 //{rl94},Unrecognized Agents
-//{rl95},iReporter Virtual Domain Report
+//{rl95}, Analyzer Virtual Domain Report
 //{rl96},Routes from Key Pages
 //{rl97},External Pages Containing Broken Links
 //{rl98},Internal Pages Containing Broken Links

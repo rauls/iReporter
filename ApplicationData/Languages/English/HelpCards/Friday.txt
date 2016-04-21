@@ -1,5 +1,5 @@
 
-# Help Card
+#  Help Card
 # Report: Friday Traffic
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 

@@ -1,12 +1,12 @@
 
-# Help Card
+#  Help Card
 # Report: Visitors
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
 <!--OVERVIEW-->
 This report shows the IP addresses and/or hostnames of visitors to your site, along with their site usage statistics. Use this information to assess the usage of certain known site visitors, such as a prospective customer who has been interested in your organization. Every session undertaken and all pages viewed by each of the visitors in this report can be seen in the Visitors Click Stream report.
 
-If only IP addresses (such as 192.168.10.12) are showing in the report, then you may need to enable DNS lookups, in <i>Settings > Analysis > Network > DNS</i>. Bear in mind that not all IP addresses on the Internet have a name associated with them.
+If only IP addresses (such as 192.77.210.55) are showing in the report, then you may need to enable DNS lookups, in <i>Settings > Analysis > Network > DNS</i>. Bear in mind that not all IP addresses on the Internet have a name associated with them.
 
 Note: one visitor address or hostname may actually represent multiple visitors, and at times, hundreds or even thousands of visitors. This is due to the widespread usage of proxy servers, which store web sites to enable faster and cheaper access for those utilizing it. This problem can be overcome through the use of authenticating procedures (visitors logging in to the site with a username and password), or, in part, through the use of cookies.
 

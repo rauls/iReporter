@@ -1,4 +1,5 @@
-iReporter 
+Quest Software, Inc.
+ (FWA)
 Help Card Usage Instructions
 
 
@@ -32,3 +33,11 @@ how it may be used to improve site structure and/or performance.
 - The <!--GRAPH--> section explains graph axis information.
 
 - The <!--TABLE--> section details report table headers for greater understanding of the report.
+
+
+< TECHNICAL SUPPORT >
+
+Email: support@quest.com
+Web: http://www.quest.com/support/
+FAQ: http://www.quest.com/funnel_web/analyzer/tech.asp
+

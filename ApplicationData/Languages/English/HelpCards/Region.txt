@@ -1,5 +1,5 @@
 
-# Help Card
+#  Help Card
 # Report: World Regions
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
@@ -8,7 +8,7 @@ This report shows the most popular world regions in which your site visitors are
 
 Knowing where large groups of visitors originate may help to tailor your site content and/or structure to better serve these majorities.  If visitors from particular world regions are of interest to your organization, yet only represent a small amount of overall traffic, it may highlight a need to more effectively advertise and promote your site to these regions.
 
-Note: All machines on the Internet have a unique IP address (192.168.10.12) associated with them.  Several machines also have named addresses (www.quest.com) against their IP addresses for ease of use.  Many machines do NOT have a name associated with them, and these display as [UNRESOLVED IP] in this report.
+Note: All machines on the Internet have a unique IP address (192.77.210.55) associated with them.  Several machines also have named addresses (www.quest.com) against their IP addresses for ease of use.  Many machines do NOT have a name associated with them, and these display as [UNRESOLVED IP] in this report.
 
 If the only entry in this report is [UNRESOLVED IP], then you need to enable DNS Lookups, in <i>Settings > Analysis > Network > DNS</i>.
 

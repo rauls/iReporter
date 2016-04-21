@@ -1,10 +1,6 @@
 // English Template File
-// Application code base
-// Version 4.5, 21/01/02
 // All Extended characters should be input using HTML codes
-
-
-
+// Version 4.5, 21/01/02
 // Server Statistics = {ssNN}
 
 {ss01},Server Load Statistics
@@ -61,6 +57,8 @@
 {rc10},Marketing
 {rc11},Firewall
 {rc12},Clustering
+{rc??},Clip Access Information
+{rc??},Live Clip Access Information
 
 // Report title (Long) = {rlNN}
 
@@ -141,7 +139,7 @@
 {rl75},Protocol - POP3
 {rl76},Protocol - Real
 {rl77},Source Addresses
-{rl78},Report
+{rl78},Main Report
 {rl79},Protocol - Others
 {rl80},Pages Least Visited
 {rl81},Pages Viewed by Key Visitors
@@ -158,14 +156,66 @@
 {rl92},Load Balancing
 {rl93},Load Balancing History
 {rl94},Unrecognized Agents
-{rl95},iReporter Virtual Domain Report
+{rl95},Virtual Domain Report
 {rl96},Routes from Key Pages
 {rl97},External Pages Containing Broken Links
 {rl98},Internal Pages Containing Broken Links
 {rl99},Authenticated Users Click Stream
-{rl100},Keys Visitors' Traffic Summary
+{rl100},Key Visitors' Traffic Summary
 {rl101},Key Page Traffic Summary
 {rl102},Key Page Traffic Summary
+
+{rl???},Top Error Codes Per Clip
+{rl???},Failed Clips
+{rl???},Failed Clips History
+{rl???},Pages Referencing Invalid Clips
+{rl???},Average Packet Loss Per Clip
+{rl???},Packet Loss vs Transfer Rate
+{rl???},Average Seconds Buffered Per Clip
+{rl???},Highest Quality Clips
+{rl???},Lowest Quality Clips
+
+{rl???},Most Popular Video Clips
+{rl???},Most Popular Video Clips History
+{rl???},Video Clip Viewing Times
+{rl???},Video Clip Transfer Rates
+{rl???},Most Popular Audio Clips
+{rl???},Most Popular Audio Clips History
+{rl???},Audio Clip Listening Times
+{rl???},Audio Clip Transfer Rates
+
+{rl???},Most Popular Live Video
+{rl???},Most Popular Live Video History
+{rl???},Live Video Viewing Times
+{rl???},Live Video Transfer Rates
+{rl???},Most Popular Live Audio Clips
+{rl???},Most Popular Live Audio Clips History
+{rl???},Live Audio Clip Listening Times
+{rl???},Live Audio Clip Transfer Rates
+
+{rl???},Most Popular Clips
+{rl???},Most Popular Clips History
+{rl???},Least Played Clips
+{rl???},Percentage Streamed Per Clip
+{rl???},Max Concurrent Connections Per Clip
+{rl???},Average Forwards per Clip
+{rl???},Average Rewinds per Clip
+{rl???},Uninterrupted Plays Per Clip
+{rl???},Protocols Used To Transfer Clips
+{rl???},Most Utilized Video Codecs
+{rl???},Most Utilized Audio Codecs
+
+{rl???},Media Players vs Operating Systems
+
+{rl???},Most Popular CPU Types
+{rl???},Most Popular Languages
+{rl???},Customer Billing Statement
+{rl???},Files Uploaded
+
+
+
+
+
 
 // General Labels = {glNN}
 	
@@ -277,6 +327,48 @@
 {gl106},Hits Referred
 {gl107},Top Referrals of
 {gl108},of
+{gl???},Video Clip
+{gl???},Audio Clip
+{gl???},Clip
+{gl???},Clips
+{gl???},Average Time Spent Viewing
+{gl???},Actual Clip Duration
+{gl???},Average Percentage Played
+{gl???},Average Percentage Streamed
+{gl???},Number of Plays
+{gl???},Average Time Spent Listening
+{gl???},Average Transfer Rate
+{gl???},Average Packet Loss
+{gl???},Average Seconds Buffered
+{gl???},Packets Sent
+{gl???},Packets Recieved
+{gl???},Total MB Streamed
+{gl???},Expected MB Streamed
+{gl???},Most Common Error
+{gl???},Max. Concurrent Connections
+{gl???},Time Stamp
+{gl???},Audio Codec
+{gl???},Video Codec
+{gl???},CPU Type
+{gl???},Langage
+{gl???},Num of Fast Forwards
+{gl???},Num of Rewinds
+{gl???},Average Fast Forwards
+{gl???},Average Rewinds
+{gl???},Transfer Quality
+{gl???},Attempted Plays
+{gl???},Plays
+{gl???},Uninterrupted Plays
+{gl???},Total Plays
+{gl???},n/a
+{gl???},Billing
+{gl???},Customer Name
+{gl???},Customer ID
+{gl???},Bytes Transferred
+{gl???},Byte ALlowance
+{gl???},Excess Charge
+{gl???},Total Charge
+
 
 // Time-related = {tiNN}
 

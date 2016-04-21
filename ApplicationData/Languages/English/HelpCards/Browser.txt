@@ -1,12 +1,12 @@
 
-# Help Card
+#  Help Card
 # Report: Browsers
 # Please see Languages\English\Help Cards\Readme.txt for instructions.
 
 <!--OVERVIEW-->
 This report shows the web browsers (and their version number) being used by site visitors to make hits to your site. By knowing the most popular browser types, you can determine the feasibility and appropriateness of using browser-specific features in your web content, such as frames, javascript or cascading style sheets.
 
-If you're seeing this report, your log file will contain an "agent" field, containing data that identifies the browser being used to access your site. These agents are decoded by iReporter into web browsers according to entries specified in the <i>Settings</i> file. Where it cannot find a suitable match from the <i>Settings</i> file, it will place them in the Unrecognized Agents report. Refer to the <i>Settings</i> file for instructions on how to add new browsers.
+If you're seeing this report, your log file will contain an "agent" field, containing data that identifies the browser being used to access your site. These agents are decoded by  (FWA) into web browsers according to entries specified in the <i>FWASettings</i> file. Where FWA cannot find a suitable match from the <i>FWASettings</i> file, it will place them in the Unrecognized Agents report. Refer to the <i>FWASettings</i> file for instructions on how to add new browsers.
 
 <!--GRAPH-->
 <b>Vertical axis:</b> Browser.
