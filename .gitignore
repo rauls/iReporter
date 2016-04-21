@@ -6,6 +6,7 @@ tags
 *.pyc
 doc/api.xml
 tmp/
+obj/
 node
 node_g
 *.swp
@@ -20,7 +21,7 @@ node_g
 bin/
 LangVal/
 Report/
-Analyzer*.exe
+A*.exe
 #
 User Documentation/
 /out
