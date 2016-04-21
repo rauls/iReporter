@@ -141,8 +141,7 @@ local linkedlist_datablock_internal* allocate_new_datablock()
     return ldi;
 }
 
-local void free_datablock(ldi)
-    linkedlist_datablock_internal* ldi;
+local void free_datablock(linkedlist_datablock_internal* ldi)
 {
     while (ldi!=NULL)
     {
@@ -152,24 +151,19 @@ local void free_datablock(ldi)
     }
 }
 
-local void init_linkedlist(ll)
-    linkedlist_data* ll;
+local void init_linkedlist(linkedlist_data* ll)
 {
     ll->first_block = ll->last_block = NULL;
 }
 
-local void free_linkedlist(ll)
-    linkedlist_data* ll;
+local void free_linkedlist(linkedlist_data* ll)
 {
     free_datablock(ll->first_block);
     ll->first_block = ll->last_block = NULL;
 }
 
 
-local int add_data_in_datablock(ll,buf,len)
-    linkedlist_data* ll;    
-    const void* buf;
-    uLong len;
+local int add_data_in_datablock(linkedlist_data* ll,const void* buf,uLong len)
 {
     linkedlist_datablock_internal* ldi;
     const unsigned char* from_copy;

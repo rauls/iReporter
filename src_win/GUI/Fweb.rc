@@ -66,7 +66,6 @@ IDB_BIGTOOLBAR24B       BITMAP                  "res\\bigtoolbar24b.bmp"
 IDB_PROGRESSBAR1        BITMAP                  "res\\progress.bmp"
 IDB_PROGRESSBAR2        BITMAP                  "res\\progress2.bmp"
 IDB_BULLET              BITMAP                  "res\\bullet2.bmp"
-IDB_BIGTOOLBAR24R       BITMAP                  "res\\bigtoolbar24r.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //

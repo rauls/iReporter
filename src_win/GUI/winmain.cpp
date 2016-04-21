@@ -12,7 +12,7 @@ dwResult = ExpandEnvironmentStrings(
  
 
 
-Changes 3.1
+Changes
 * All ftp downloads are now absolute paths, so if its unix, you must include /usr/home/ or what ever your system is.
 * Ftp downloads support wildcards, so ftp://user:pass@host.com/usr/home/logs/99*.log will work.
 * Ftp uploads via post processing or Schedule upload is user directory relative, /usr/home need not be entered.
@@ -46,42 +46,6 @@ Changes 3.1
 * Added links to the country report page that links back to CIAs website about each country.
 * Demo version now has a Button to start as a demo instead of asking for a demo serial.
 
-
-
-  
-Sub IncResVersion()
-        'DESCRIPTION: Build active project and increase version counter in rc script. Map it to F7 for ease of use. (c)'98 Th. Mahler
-
-        ' open the project's resource script:
-        Documents.Open ("..\src_win\gui\application.rc"), "Text"
-        'Windows("application.rc").Active = True
-
-        ' find line with FileVersion Information:
-        ActiveDocument.Selection.FindText "VALUE ""FileVersion"",", dsMatchForward + dsMatchFromStart + dsMatchCase  
-
-        ' move to eol and then to end of build number:
-        ActiveDocument.Selection.EndOfLine
-        ActiveDocument.Selection.CharLeft dsMove, 3 
-
-        ' mark Build Number and store in strVersion
-        ActiveDocument.Selection.WordLeft 1  'dsExtend does not work in my VisualStudio???
-        Dim strVersion
-        strVersion = ActiveDocument.Selection.Text 
-
-        ' Increase Version and write back to file: 
-        ActiveDocument.Selection.ReplaceText strVersion , strVersion+1 
-
-        'close RC file
-        ActiveDocument.Close() 
-
-        'build active project
-        ExecuteCommand "BuildToggleBuild"
-        Documents.SaveAll True  
-
-End Sub 
-
-
-http://www.mircx.com/cgi-bin/jirc.cgi?AllowSound=false&AllowURL=false&BorderHsp=0&BorderVsp=0&Channel1=application&DisplayAbout=false&DisplayConfigChannel=false&DisplayConfigChannelPass=false&DisplayConfigMisc=false&DisplayConfigNickPass=false&DisplayConfigPort=false&DisplayConfigRealName=false&DisplayConfigServer=false&DisplayConfigServerPass=false&DisplaySoundControl=false&IgnoreChannelChangeMsg=true&IgnoreModeChange=true&IgnoreMOTD=true&IgnoreServerMsg=true&NoConfig=true&NOS=false&ServerName1=jirc.mircx.com&ServerPort=6667&TextScreenColor=white&TitleBackgroundColor=lightGray
 
 
 */
@@ -1041,9 +1005,9 @@ BOOL InitApplication(HINSTANCE hInstance)
     // format for the 'Help' menu, lets put this in the alternate menu like this:
     wc.lpszClassName = szAppName;
 	if ( bWinNT )
-		wc.lpszMenuName  = "APPNT";
+		wc.lpszMenuName  = "IREPORTERNT";
 	else
-		wc.lpszMenuName  = "APP";
+		wc.lpszMenuName  = "IREPORTER";
 
     // Register the window class and return success/failure code.
     if (IS_WIN95) {

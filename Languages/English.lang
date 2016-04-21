@@ -1,6 +1,6 @@
 // English Template File
 // All Extended characters should be input using HTML codes
-
+// Version 4.5, 21/01/02
 // Server Statistics = {ssNN}
 
 {ss01},Server Load Statistics

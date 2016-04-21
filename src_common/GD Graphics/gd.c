@@ -23,7 +23,6 @@
 
 #if (!DEF_UNIX)
 #define	USEJPEG
-#define USEPNG
 #endif
 
 #ifndef RGB_RED
