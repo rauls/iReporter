@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Enterprise Itanium|Win32">
+      <Configuration>Release Enterprise Itanium</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Enterprise|Win32">
+      <Configuration>Release Enterprise</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>"$/iReporter/iReporter VC++", SAAAAAAA</SccProjectName>
+    <SccAuxPath />
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Microsoft Visual SourceSafe</SccProvider>
+    <ProjectGuid>{D61D969E-B994-4B34-9D22-FC628D079776}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">
+    <OutDir>.\../../obj/Release4Ent64\</OutDir>
+    <IntDir>.\../../obj/Release4Ent64\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\../../obj/Debug4\</OutDir>
+    <IntDir>.\../../obj/Debug4\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">
+    <OutDir>.\../../obj/Release4Ent\</OutDir>
+    <IntDir>.\../../obj/Release4Ent\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\../../obj/Release4\</OutDir>
+    <IntDir>.\../../obj/Release4\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm1000 /machine:ia64  %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\src_common\Images;..\src_common\xml;..\src_common\gui;..\src_common;..\src_common\Translate;..\src_common\Engine;..\src_common\GD Graphics;..\src_common\Reports;..\src_common\Reports\PDF;..\src_common\Serial Registration;..\src_common\Networking;..\src_win;..\src_win\libs;..\src_win\gui;..\src_win\ODBC;..\src_win\NTService;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;DEF_ENTERPRISE;WIN64;_USE_INTEL_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeaderOutputFile>.\../../obj/Release4Ent64/iReporter.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../obj/Release4Ent64/</AssemblerListingLocation>
+      <ObjectFileName>.\../../obj/Release4Ent64/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../obj/Release4Ent64/</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+      <UndefinePreprocessorDefinitions>_DEBUG;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;winmm.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\bin\AnalyzerEnt64.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\../../obj/Release4Ent64/AnalyzerEnt64.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../../obj/Release4Ent64/iReporter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;DEF_WINDOWS;DEF_ENTERPRISE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c09</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\src_common\Images;..\src_common\Encryption;..\src_common\xml;..\src_common\gui;..\src_common;..\src_common\Translate;..\src_common\Engine\Database;..\src_common\Engine;..\src_common\GD Graphics;..\src_common\Reports;..\src_common\Reports\PDF;..\src_common\Serial Registration;..\src_common\Networking;..\src_win;..\src_win\libs;..\src_win\gui;..\src_win\ODBC;..\src_win\NTService;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;DEF_ENTERPRISE;DEF_FIREWALL;DEF_FULLVERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\../../obj/Debug4/iReporter.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../obj/Debug4/</AssemblerListingLocation>
+      <ObjectFileName>.\../../obj/Debug4/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../obj/Debug4/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>wsock32.lib;comctl32.lib;winmm.lib;wininet.lib;msvcmrt.lib;OLDNAMES.LIB;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\ApplicationData\iReporterDebug.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;libc.lib;libcmt.lib;libcd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\../../obj/Debug4/AnalyzerDebug.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <Version>5</Version>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../../obj/Debug4/iReporter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;DEF_DEBUG;DEF_WINDOWS;DEF_ENTERPRISE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c09</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm1000  %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\src_common\Encryption\;..\src_common\Images;..\src_common\xml;..\src_common\gui;..\src_common;..\src_common\Translate;..\src_common\Engine;..\src_common\Engine\Database\;..\src_common\GD Graphics;..\src_common\Reports;..\src_common\Reports\PDF;..\src_common\Serial Registration;..\src_common\Networking;..\src_win;..\src_win\libs;..\src_win\gui;..\src_win\ODBC;..\src_win\NTService;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;DEF_ENTERPRISE;DEF_FIREWALL;DEF_FULLVERSION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\../../obj/Release4Ent/iReporter.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../obj/Release4Ent/</AssemblerListingLocation>
+      <ObjectFileName>.\../../obj/Release4Ent/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../obj/Release4Ent/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>ws2_32.lib;comctl32.lib;winmm.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\ApplicationData\iReporter.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\../../obj/Release4Ent/AnalyzerEnt.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../../obj/Release4Ent/iReporter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;DEF_WINDOWS;DEF_ENTERPRISE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c09</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Zm200  %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>..\src_common\Images;..\src_common\Encryption;..\src_common\xml;..\src_common\gui;..\src_common;..\src_common\Translate;..\src_common\Engine\Database;..\src_common\Engine;..\src_common\GD Graphics;..\src_common\Reports;..\src_common\Reports\PDF;..\src_common\Serial Registration;..\src_common\Networking;..\src_win;..\src_win\libs;..\src_win\gui;..\src_win\ODBC;..\src_win\NTService;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderOutputFile>.\../../obj/Release4/iReporter.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../obj/Release4/</AssemblerListingLocation>
+      <ObjectFileName>.\../../obj/Release4/</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../obj/Release4/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>wsock32.lib;comctl32.lib;winmm.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\ApplicationData\iReporter.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <IgnoreSpecificDefaultLibraries>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>.\../../obj/Release4/release.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../../obj/Release4/iReporter.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;DEF_WINDOWS;DEF_STANDARD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c09</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src_common\compiler.h" />
+    <ClInclude Include="..\src_common\DateFixFileName.h" />
+    <ClInclude Include="..\src_common\datetime.h" />
+    <ClInclude Include="..\src_common\FWA.h" />
+    <ClInclude Include="..\src_common\GlobalPaths.h" />
+    <ClInclude Include="..\src_common\GUI\HelpTextMap.h" />
+    <ClInclude Include="..\src_common\Myansi.h" />
+    <ClInclude Include="..\src_common\OSInfo.h" />
+    <ClInclude Include="..\src_common\PrefsIO.h" />
+    <ClInclude Include="..\src_common\ResDefs.h" />
+    <ClInclude Include="..\src_common\schedule.h" />
+    <ClInclude Include="..\src_common\unzip.h" />
+    <ClInclude Include="..\src_common\unzip_layer.h" />
+    <ClInclude Include="..\src_common\Utilities.h" />
+    <ClInclude Include="..\src_common\version.h" />
+    <ClInclude Include="..\src_common\weburls.h" />
+    <ClInclude Include="..\src_common\Translate\translate.h" />
+    <ClInclude Include="..\src_common\Translate\translateids.h" />
+    <ClInclude Include="..\src_common\Reports\blackline.h" />
+    <ClInclude Include="..\src_common\FilterString.h" />
+    <ClInclude Include="..\src_common\Reports\fwprogif3.h" />
+    <ClInclude Include="..\src_common\Reports\fwstdgif3.h" />
+    <ClInclude Include="..\src_common\HelpCard.h" />
+    <ClInclude Include="..\src_common\Reports\html_decodetemplate.h" />
+    <ClInclude Include="..\src_common\Reports\HTMLFormat.h" />
+    <ClInclude Include="..\src_common\reports\PDFPlot.h" />
+    <ClInclude Include="..\src_common\Reports\Report.h" />
+    <ClInclude Include="..\src_common\Reports\report_keypages.h" />
+    <ClInclude Include="..\src_common\Reports\ReportClass.h" />
+    <ClInclude Include="..\src_common\Reports\ReportComma.h" />
+    <ClInclude Include="..\src_common\Reports\ReportExcel.h" />
+    <ClInclude Include="..\src_common\Reports\ReportFuncs.h" />
+    <ClInclude Include="..\src_common\Reports\ReportHTML.h" />
+    <ClInclude Include="..\src_common\Reports\ReportHTMLSessions.h" />
+    <ClInclude Include="..\src_common\Reports\ReportInterface.h" />
+    <ClInclude Include="..\src_common\Reports\ReportPDF.h" />
+    <ClInclude Include="..\src_common\Reports\ReportPDFSessions.h" />
+    <ClInclude Include="..\src_common\Reports\ReportRTF.h" />
+    <ClInclude Include="..\src_common\Reports\ReportSessions.h" />
+    <ClInclude Include="..\src_common\reports\StandardPlot.h" />
+    <ClInclude Include="..\src_common\Reports\virtual4.h" />
+    <ClInclude Include="..\src_common\Reports\virtualE.h" />
+    <ClInclude Include="..\src_common\Reports\worldmap_gif.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFBase.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFColors.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFCore.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFElements.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFFile.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFFont.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFImages.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFSettings.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFSettingsC.h" />
+    <ClInclude Include="..\src_common\Reports\PDF\PDFTableData.h" />
+    <ClInclude Include="..\src_common\Engine\config.h" />
+    <ClInclude Include="..\src_common\Engine\config_struct.h" />
+    <ClInclude Include="..\src_common\Engine\defaults.h" />
+    <ClInclude Include="..\src_common\engine\DNSCache.h" />
+    <ClInclude Include="..\src_common\Engine\editpath.h" />
+    <ClInclude Include="..\src_common\Engine\Database\engine_dbio.h" />
+    <ClInclude Include="..\src_common\Engine\engine_drill.h" />
+    <ClInclude Include="..\src_common\Engine\engine_notify.h" />
+    <ClInclude Include="..\src_common\Engine\engine_proc.h" />
+    <ClInclude Include="..\src_common\Engine\engine_proc_firewall.h" />
+    <ClInclude Include="..\src_common\Engine\engine_proc_streaming.h" />
+    <ClInclude Include="..\src_common\engine\engine_process.h" />
+    <ClInclude Include="..\src_common\Engine\engine_process_firewall.h" />
+    <ClInclude Include="..\src_common\engine\EngineAddStats.h" />
+    <ClInclude Include="..\src_common\engine\EngineBuff.h" />
+    <ClInclude Include="..\src_common\engine\EngineClientDNR.h" />
+    <ClInclude Include="..\src_common\engine\EngineCluster.h" />
+    <ClInclude Include="..\src_common\engine\EngineMeanPath.h" />
+    <ClInclude Include="..\src_common\engine\EngineParse.h" />
+    <ClInclude Include="..\src_common\engine\EngineRegion.h" />
+    <ClInclude Include="..\src_common\engine\EngineRestoreStat.h" />
+    <ClInclude Include="..\src_common\engine\EngineStatus.h" />
+    <ClInclude Include="..\src_common\engine\EngineVirtualDomain.h" />
+    <ClInclude Include="..\src_common\engine\FailedRequestInfo.h" />
+    <ClInclude Include="..\src_common\Engine\FileTypes.h" />
+    <ClInclude Include="..\src_common\engine\Hash.h" />
+    <ClInclude Include="..\src_common\Engine\HitData.h" />
+    <ClInclude Include="..\src_common\Engine\log_io.h" />
+    <ClInclude Include="..\src_common\Engine\postproc.h" />
+    <ClInclude Include="..\src_common\Engine\SettingsAppWide.h" />
+    <ClInclude Include="..\src_common\Engine\SettingsRobotsBrowsers.h" />
+    <ClInclude Include="..\src_common\Engine\SettingsSearchEngines.h" />
+    <ClInclude Include="..\src_common\engine\StatCmp.h" />
+    <ClInclude Include="..\src_common\engine\StatDefs.h" />
+    <ClInclude Include="..\src_common\engine\StatList.h" />
+    <ClInclude Include="..\src_common\Engine\Stats.h" />
+    <ClInclude Include="..\src_common\Engine\Database\V5Database.h" />
+    <ClInclude Include="..\src_common\Engine\VirtDomInfo.h" />
+    <ClInclude Include="..\src_common\Networking\asyncdnr.h" />
+    <ClInclude Include="..\src_common\Networking\http_query.h" />
+    <ClInclude Include="..\src_common\Networking\httpinterface.h" />
+    <ClInclude Include="..\src_common\Networking\net_io.h" />
+    <ClInclude Include="..\src_common\networking\OutputMessages.h" />
+    <ClInclude Include="..\src_common\networking\smtp.h" />
+    <ClInclude Include="..\src_common\GD Graphics\gd.h" />
+    <ClInclude Include="..\src_common\GD Graphics\gdfont_Arial.h" />
+    <ClInclude Include="..\src_common\GD Graphics\gdfont_Geneva.h" />
+    <ClInclude Include="..\src_common\GD Graphics\gdfonts.h" />
+    <ClInclude Include="..\src_common\GD Graphics\gdfontt.h" />
+    <ClInclude Include="..\src_common\gd graphics\webpalette.h" />
+    <ClInclude Include="..\src_common\Encryption\ice.h" />
+    <ClInclude Include="..\src_common\serial registration\Registration.h" />
+    <ClInclude Include="..\src_common\Serial Registration\serialReg.h" />
+    <ClInclude Include="..\src_common\xml\qsxml.h" />
+    <ClInclude Include="..\src_common\Images\Icons.h" />
+    <ClInclude Include="..\src_common\zip.h" />
+    <ClInclude Include="..\src_win\GraphDrawStr.h" />
+    <ClInclude Include="..\src_win\Registry.h" />
+    <ClInclude Include="..\src_win\remotecontrol.h" />
+    <ClInclude Include="..\src_win\Windnr.h" />
+    <ClInclude Include="..\src_win\winnet_io.h" />
+    <ClInclude Include="..\src_win\NTservice\myservice.h" />
+    <ClInclude Include="..\src_win\NTservice\NTServApp.h" />
+    <ClInclude Include="..\src_win\NTservice\NTService.h" />
+    <ClInclude Include="..\src_win\NTservice\ntservmsg.h" />
+    <ClInclude Include="..\src_win\GUI\createshortcuts.h" />
+    <ClInclude Include="..\src_win\GUI\FileViewGUI.h" />
+    <ClInclude Include="..\src_win\GUI\LangBuilderGUI.h" />
+    <ClInclude Include="..\src_win\GUI\Prefsgui.h" />
+    <ClInclude Include="..\src_win\GUI\resource.h" />
+    <ClInclude Include="..\src_win\GUI\Schedulegui.h" />
+    <ClInclude Include="..\src_win\StringLoader.h" />
+    <ClInclude Include="..\src_win\GUI\Winmain.h" />
+    <ClInclude Include="..\src_win\GUI\WinserialReg.h" />
+    <ClInclude Include="..\src_win\GUI\Winutil.h" />
+    <ClInclude Include="..\src_win\Libs\jconfig.h" />
+    <ClInclude Include="..\src_win\Libs\jmorecfg.h" />
+    <ClInclude Include="..\src_win\Libs\jpeglib.h" />
+    <ClInclude Include="..\src_win\Libs\zconf.h" />
+    <ClInclude Include="..\src_win\Libs\zlib.h" />
+    <ClInclude Include="..\src_unix\ftp_client.h" />
+    <ClInclude Include="..\src_unix\main.h" />
+    <ClInclude Include="..\src_unix\remotecontrol.h" />
+    <ClInclude Include="..\src_unix\unixnet_io.h" />
+    <ClInclude Include="..\src_unix\unixreg.h" />
+    <ClInclude Include="..\src_unix\util.h" />
+    <ClInclude Include="..\src_unix\gtk\gtkfiledialog.h" />
+    <ClInclude Include="..\src_unix\gtk\gtkwin.h" />
+    <ClInclude Include="..\src_unix\gtk\resourceid.h" />
+    <ClInclude Include="..\src_unix\gtk\XSchedule.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src_common\DateFixFileName.cpp" />
+    <ClCompile Include="..\src_common\datetime.c" />
+    <ClCompile Include="..\src_common\GlobalPaths.cpp" />
+    <ClCompile Include="..\src_common\GUI\HelpTextMap.cpp" />
+    <ClCompile Include="..\src_common\Myansi.c" />
+    <ClCompile Include="..\src_common\OSInfo.cpp" />
+    <ClCompile Include="..\src_common\PrefsIO.cpp" />
+    <ClCompile Include="..\src_common\schedule.cpp" />
+    <ClCompile Include="..\src_common\unzip.c" />
+    <ClCompile Include="..\src_common\unzip_layer.cpp" />
+    <ClCompile Include="..\src_common\Utilities.c" />
+    <ClCompile Include="..\src_common\version.c" />
+    <ClCompile Include="..\src_common\Translate\translate.cpp" />
+    <ClCompile Include="..\src_common\Reports\country_data.c" />
+    <ClCompile Include="..\src_common\FilterString.cpp" />
+    <ClCompile Include="..\src_common\HelpCard.cpp" />
+    <ClCompile Include="..\src_common\Reports\html_decodetemplate.cpp" />
+    <ClCompile Include="..\src_common\Reports\HTMLFormat.cpp" />
+    <ClCompile Include="..\src_common\reports\PDFPlot.cpp" />
+    <ClCompile Include="..\src_common\Reports\Report.cpp" />
+    <ClCompile Include="..\src_common\Reports\report_keypages.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportBase.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportComma.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportExcel.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportFuncs.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportHTML.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportHTMLSessions.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportInterface.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportPDF.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportPDFSessions.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportRTF.cpp" />
+    <ClCompile Include="..\src_common\Reports\ReportSessions.cpp" />
+    <ClCompile Include="..\src_common\reports\StandardPlot.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFCore.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFElements.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFFile.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFFont.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFImages.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFSettings.cpp" />
+    <ClCompile Include="..\src_common\Reports\PDF\PDFTableData.cpp" />
+    <ClCompile Include="..\src_common\Engine\config.cpp" />
+    <ClCompile Include="..\src_common\engine\DNSCache.cpp" />
+    <ClCompile Include="..\src_common\Engine\editpath.c" />
+    <ClCompile Include="..\src_common\Engine\Database\engine_dbio.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_drill.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_notify.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_proc.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_proc_firewall.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_proc_streaming.cpp" />
+    <ClCompile Include="..\src_common\engine\engine_process.cpp" />
+    <ClCompile Include="..\src_common\Engine\engine_process_firewall.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineAddStats.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineBuff.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineClientDNR.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineCluster.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineMeanPath.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineParse.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineRegion.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineRestoreStat.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineStatus.cpp" />
+    <ClCompile Include="..\src_common\engine\EngineVirtualDomain.cpp" />
+    <ClCompile Include="..\src_common\engine\FailedRequestInfo.cpp" />
+    <ClCompile Include="..\src_common\Engine\FileTypes.cpp" />
+    <ClCompile Include="..\src_common\engine\Hash.cpp" />
+    <ClCompile Include="..\src_common\Engine\log_io.cpp" />
+    <ClCompile Include="..\src_common\Engine\LogFileHistory.cpp" />
+    <ClCompile Include="..\src_common\engine\postproc.cpp" />
+    <ClCompile Include="..\src_common\Engine\SettingsAppWide.cpp" />
+    <ClCompile Include="..\src_common\Engine\SettingsRobotsBrowsers.cpp" />
+    <ClCompile Include="..\src_common\Engine\SettingsSearchEngines.cpp" />
+    <ClCompile Include="..\src_common\engine\StatCmp.cpp" />
+    <ClCompile Include="..\src_common\engine\StatList.cpp" />
+    <ClCompile Include="..\src_common\engine\Stats.cpp" />
+    <ClCompile Include="..\src_common\Engine\Database\V5Database.cpp" />
+    <ClCompile Include="..\src_common\Networking\asyncdnr.c" />
+    <ClCompile Include="..\src_common\Networking\http_query.cpp" />
+    <ClCompile Include="..\src_common\Networking\httpinterface.cpp" />
+    <ClCompile Include="..\src_common\networking\OutputMessages.cpp" />
+    <ClCompile Include="..\src_common\Networking\smtp.c" />
+    <ClCompile Include="..\src_common\GD Graphics\gd.c" />
+    <ClCompile Include="..\src_common\GD Graphics\gdfont_Arial.c" />
+    <ClCompile Include="..\src_common\GD Graphics\gdfont_Geneva.c" />
+    <ClCompile Include="..\src_common\GD Graphics\gdfonts.c" />
+    <ClCompile Include="..\src_common\GD Graphics\gdfontt.c" />
+    <ClCompile Include="..\src_common\GD Graphics\mtables.c" />
+    <ClCompile Include="..\src_common\GD Graphics\webpalette.c" />
+    <ClCompile Include="..\src_common\Encryption\ice.c" />
+    <ClCompile Include="..\src_common\Encryption\IceStr.cpp" />
+    <ClCompile Include="..\src_common\Serial Registration\serialReg.c" />
+    <ClCompile Include="..\src_common\xml\qsxml.cpp" />
+    <ClCompile Include="..\src_common\Images\Icons.cpp" />
+    <ClCompile Include="..\src_common\zip.c" />
+    <ClCompile Include="..\src_win\GraphDrawStr.cpp" />
+    <ClCompile Include="..\src_win\Registry.c" />
+    <ClCompile Include="..\src_win\Windnr.c" />
+    <ClCompile Include="..\src_win\winnet_io.cpp" />
+    <ClCompile Include="..\src_win\NTservice\myservice.cpp" />
+    <ClCompile Include="..\src_win\NTservice\NTServApp.cpp" />
+    <ClCompile Include="..\src_win\NTservice\NTService.cpp" />
+    <ClCompile Include="..\src_win\GUI\createshortcuts.cpp" />
+    <ClCompile Include="..\src_win\GUI\FileViewGUI.cpp" />
+    <ClCompile Include="..\src_win\GUI\LangBuilderGUI.cpp" />
+    <ClCompile Include="..\src_win\gui\prefsgui.cpp" />
+    <ClCompile Include="..\src_win\GUI\Schedulegui.cpp" />
+    <ClCompile Include="..\src_win\StringLoader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src_win\gui\winmain.cpp" />
+    <ClCompile Include="..\src_win\GUI\WinserialReg.c" />
+    <ClCompile Include="..\src_win\GUI\Winutil.cpp" />
+    <ClCompile Include="..\src_win\GUI\WizardGUI.c" />
+    <ClCompile Include="..\src_unix\demorecord.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\dnr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\ftp_client.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\main.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\remotecontrol.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\unixnet_io.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\unixreg.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\util.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\Xmain.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\gtkfiledialog.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\gtkwin.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\resource.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\xfweb.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\XPrefsGUI.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\XSchedule.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Languages\English.lang">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\bin\bin2c %(FullPath) 1 ..\src_common\translate\%(Filename).h
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\src_common\translate\%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">Building %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">..\bin\bin2c %(FullPath) 1 ..\src_common\translate\%(Filename).h
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">..\src_common\translate\%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">Building %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">..\bin\bin2c %(FullPath) 1 ..\src_common\translate\%(Filename).h
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">..\src_common\translate\%(Filename).h;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building %(Filename).h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\bin\bin2c %(FullPath) 1 ..\src_common\translate\%(Filename).h
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\src_common\translate\%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="..\src_win\GUI\res\General.htm" />
+    <None Include="..\Makefile" />
+    <None Include="..\src_unix\gtk\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src_win\NTservice\ntservmsg.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Projects\iReporter\src_win\NTservice</AdditionalIncludeDirectories>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">\Projects\iReporter\src_win\NTservice</AdditionalIncludeDirectories>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">\Projects\iReporter\src_win\NTservice</AdditionalIncludeDirectories>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Projects\iReporter\src_win\NTservice</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ResourceCompile Include="..\src_win\GUI\Fweb.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">\Projects\iReporter\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\FWAnal\DEV\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\Projects\iReporter\src4.1\src_win\GUI</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">\Projects\iReporter\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\FWAnal\DEV\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\Projects\iReporter\src4.1\src_win\GUI</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">\Projects\iReporter\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\FWAnal\DEV\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\Projects\iReporter\src4.1\src_win\GUI</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">\Projects\iReporter\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\FWAnal\DEV\src_win\GUI;\Projects\iReporter\DEV\src_win\GUI;\Projects\iReporter\src4.1\src_win\GUI</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src_win\GUI\res\advert.ico" />
+    <Image Include="..\src_win\GUI\res\afunnelw.ico" />
+    <Image Include="..\src_win\GUI\res\AFweb.ico" />
+    <Image Include="..\src_win\GUI\res\analysis.ico" />
+    <Image Include="..\src_win\GUI\res\BigToolbar24.bmp" />
+    <Image Include="..\src_win\GUI\res\bigtoolbar24b.bmp" />
+    <Image Include="..\src_win\GUI\res\bullet2.bmp" />
+    <Image Include="..\src_win\GUI\res\checkoff.ico" />
+    <Image Include="..\src_win\GUI\res\checkon.ico" />
+    <Image Include="..\src_win\GUI\res\checkon1.ico" />
+    <Image Include="..\src_win\GUI\res\customic.ico" />
+    <Image Include="..\src_win\GUI\res\expand1.ico" />
+    <Image Include="..\src_win\GUI\res\expand2.ico" />
+    <Image Include="..\src_win\GUI\res\filters.ico" />
+    <Image Include="..\src_win\GUI\res\general.ico" />
+    <Image Include="..\src_win\GUI\res\graphs.ico" />
+    <Image Include="..\src_win\GUI\res\help.bmp" />
+    <Image Include="..\src_win\GUI\res\help.ico" />
+    <Image Include="..\src_win\GUI\res\htmlfoot.ico" />
+    <Image Include="..\src_win\GUI\res\htmlhead.ico" />
+    <Image Include="..\src_win\GUI\res\ico00001.ico" />
+    <Image Include="..\src_win\GUI\res\ico00002.ico" />
+    <Image Include="..\src_win\GUI\res\ico00003.ico" />
+    <Image Include="..\src_win\GUI\res\log_icon.ico" />
+    <Image Include="..\src_win\GUI\res\notifyic.ico" />
+    <Image Include="..\src_win\GUI\res\preproc.ico" />
+    <Image Include="..\src_win\GUI\res\progress.bmp" />
+    <Image Include="..\src_win\GUI\res\progress2.bmp" />
+    <Image Include="..\src_win\gui\res\progress_d.bmp" />
+    <Image Include="..\src_win\gui\res\progress_i.bmp" />
+    <Image Include="..\src_win\GUI\res\routeric.ico" />
+    <Image Include="..\src_win\GUI\res\schdule.ico" />
+    <Image Include="..\src_win\GUI\res\stats.ico" />
+    <Image Include="..\src_win\GUI\res\vdomains.ico" />
+    <Image Include="..\src_win\Gui\res\application.ico" />
+    <Image Include="..\src_win\Gui\res\application_about.bmp" />
+    <Image Include="..\src_win\Gui\res\billingicon.ico" />
+    <Image Include="..\src_win\Gui\res\icon1.ico" />
+    <Image Include="..\src_win\Gui\res\routesic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\src_win\GUI\res\loop.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src_win\Libs\Debug\zlibd.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise Itanium|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Enterprise|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="..\src_win\Libs\Release\zlib.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\src_win\Libs\libjpeg.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common Core">
+      <UniqueIdentifier>{aacacd6f-4d33-4c3a-b5b3-cb92aec0a351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Translate">
+      <UniqueIdentifier>{0d480ca8-7c6b-408d-b429-58c6c3f8b9c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Reports">
+      <UniqueIdentifier>{2e013f6f-e678-4fdb-ba2e-c52cf67682b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Reports\PDF">
+      <UniqueIdentifier>{493e4999-68b4-45fe-a57b-62689f723810}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Networking">
+      <UniqueIdentifier>{03311542-fbea-41f8-861f-1d9a06b598fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\GD Graphics">
+      <UniqueIdentifier>{61df0c59-f698-476a-83d1-aa548ba58c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Serial Registration">
+      <UniqueIdentifier>{b867b9fc-19e4-4e23-9bef-215364b384dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Languages">
+      <UniqueIdentifier>{e70d230f-d8af-44dd-9ae4-53665b7e5a04}</UniqueIdentifier>
+      <Extensions>*.lang</Extensions>
+    </Filter>
+    <Filter Include="Common Core\Xml">
+      <UniqueIdentifier>{8c27818a-c235-4d45-aa32-8584239bcbf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Images">
+      <UniqueIdentifier>{c36fd03a-ff48-4ba1-b18e-d0e9cfb0ec37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source">
+      <UniqueIdentifier>{e224615f-b9a1-4eb0-81e5-9fe677e42231}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\NTService">
+      <UniqueIdentifier>{1ac1d6bd-7bfb-4308-b635-86f2f096b931}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\GUI">
+      <UniqueIdentifier>{88835396-c007-4a43-9fe1-24f150ae43ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\GUI\Resource Files">
+      <UniqueIdentifier>{2c2f4aad-4587-45ab-9633-97d490e479ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\Libs">
+      <UniqueIdentifier>{efdb33e4-8d48-4afd-bf11-bea2f76a0801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\Libs\Debug">
+      <UniqueIdentifier>{3a55cd4b-4048-48aa-8f6d-c768a2d89564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows Source\Libs\Release">
+      <UniqueIdentifier>{314e2295-9e3a-4e71-b521-d4e4915fec3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unix Source">
+      <UniqueIdentifier>{db72f88a-4be9-4f57-b247-ffdbeaf38714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unix Source\gtk">
+      <UniqueIdentifier>{26b9e874-7798-4645-bf67-aff85f19b5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Macintosh Source">
+      <UniqueIdentifier>{6d582117-1ff7-41ad-aae4-c7a341cfee09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Core\Engine">
+      <UniqueIdentifier>{e9c83bf4-392e-4eaa-a0f1-70a9386aa9a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src_common\compiler.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\DateFixFileName.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\datetime.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\FWA.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GlobalPaths.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GUI\HelpTextMap.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Myansi.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\OSInfo.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\PrefsIO.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\ResDefs.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\schedule.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\unzip.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\unzip_layer.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Utilities.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\version.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\weburls.h">
+      <Filter>Common Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Translate\translate.h">
+      <Filter>Common Core\Translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Translate\translateids.h">
+      <Filter>Common Core\Translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\blackline.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\FilterString.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\fwprogif3.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\fwstdgif3.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\HelpCard.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\html_decodetemplate.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\HTMLFormat.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\reports\PDFPlot.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\Report.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\report_keypages.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportClass.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportComma.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportExcel.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportFuncs.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportHTML.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportHTMLSessions.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportInterface.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportPDF.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportPDFSessions.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportRTF.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\ReportSessions.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\reports\StandardPlot.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\virtual4.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\virtualE.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\worldmap_gif.h">
+      <Filter>Common Core\Reports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFBase.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFColors.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFCore.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFElements.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFFile.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFFont.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFImages.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFSettings.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFSettingsC.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Reports\PDF\PDFTableData.h">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\config.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\config_struct.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\defaults.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\DNSCache.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\editpath.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\Database\engine_dbio.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_drill.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_notify.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_proc.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_proc_firewall.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_proc_streaming.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\engine_process.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\engine_process_firewall.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineAddStats.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineBuff.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineClientDNR.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineCluster.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineMeanPath.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineParse.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineRegion.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineRestoreStat.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineStatus.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\EngineVirtualDomain.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\FailedRequestInfo.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\FileTypes.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\Hash.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\HitData.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\log_io.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\postproc.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\SettingsAppWide.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\SettingsRobotsBrowsers.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\SettingsSearchEngines.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\StatCmp.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\StatDefs.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\engine\StatList.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\Stats.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\Database\V5Database.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Engine\VirtDomInfo.h">
+      <Filter>Common Core\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Networking\asyncdnr.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Networking\http_query.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Networking\httpinterface.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Networking\net_io.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\networking\OutputMessages.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\networking\smtp.h">
+      <Filter>Common Core\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GD Graphics\gd.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GD Graphics\gdfont_Arial.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GD Graphics\gdfont_Geneva.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GD Graphics\gdfonts.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\GD Graphics\gdfontt.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\gd graphics\webpalette.h">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Encryption\ice.h">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\serial registration\Registration.h">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Serial Registration\serialReg.h">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\xml\qsxml.h">
+      <Filter>Common Core\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\Images\Icons.h">
+      <Filter>Common Core\Images</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GraphDrawStr.h">
+      <Filter>Windows Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Registry.h">
+      <Filter>Windows Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\remotecontrol.h">
+      <Filter>Windows Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Windnr.h">
+      <Filter>Windows Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\winnet_io.h">
+      <Filter>Windows Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\NTservice\myservice.h">
+      <Filter>Windows Source\NTService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\NTservice\NTServApp.h">
+      <Filter>Windows Source\NTService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\NTservice\NTService.h">
+      <Filter>Windows Source\NTService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\NTservice\ntservmsg.h">
+      <Filter>Windows Source\NTService</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\createshortcuts.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\FileViewGUI.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\LangBuilderGUI.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\Prefsgui.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\resource.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\Schedulegui.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\StringLoader.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\Winmain.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\WinserialReg.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\GUI\Winutil.h">
+      <Filter>Windows Source\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Libs\jconfig.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Libs\jmorecfg.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Libs\jpeglib.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Libs\zconf.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_win\Libs\zlib.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\ftp_client.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\main.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\remotecontrol.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\unixnet_io.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\unixreg.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\util.h">
+      <Filter>Unix Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\gtk\gtkfiledialog.h">
+      <Filter>Unix Source\gtk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\gtk\gtkwin.h">
+      <Filter>Unix Source\gtk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\gtk\resourceid.h">
+      <Filter>Unix Source\gtk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_unix\gtk\XSchedule.h">
+      <Filter>Unix Source\gtk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src_common\zip.h">
+      <Filter>Windows Source\Libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src_common\DateFixFileName.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\datetime.c">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GlobalPaths.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GUI\HelpTextMap.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Myansi.c">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\OSInfo.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\PrefsIO.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\schedule.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\unzip.c">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\unzip_layer.cpp">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Utilities.c">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\version.c">
+      <Filter>Common Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Translate\translate.cpp">
+      <Filter>Common Core\Translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\country_data.c">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\FilterString.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\HelpCard.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\html_decodetemplate.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\HTMLFormat.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\reports\PDFPlot.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\Report.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\report_keypages.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportBase.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportComma.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportExcel.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportFuncs.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportHTML.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportHTMLSessions.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportInterface.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportPDF.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportPDFSessions.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportRTF.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\ReportSessions.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\reports\StandardPlot.cpp">
+      <Filter>Common Core\Reports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFCore.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFElements.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFFile.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFFont.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFImages.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFSettings.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Reports\PDF\PDFTableData.cpp">
+      <Filter>Common Core\Reports\PDF</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\config.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\DNSCache.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\editpath.c">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\Database\engine_dbio.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_drill.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_notify.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_proc.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_proc_firewall.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_proc_streaming.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\engine_process.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\engine_process_firewall.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineAddStats.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineBuff.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineClientDNR.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineCluster.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineMeanPath.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineParse.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineRegion.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineRestoreStat.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineStatus.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\EngineVirtualDomain.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\FailedRequestInfo.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\FileTypes.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\Hash.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\log_io.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\LogFileHistory.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\postproc.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\SettingsAppWide.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\SettingsRobotsBrowsers.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\SettingsSearchEngines.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\StatCmp.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\StatList.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\engine\Stats.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Engine\Database\V5Database.cpp">
+      <Filter>Common Core\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Networking\asyncdnr.c">
+      <Filter>Common Core\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Networking\http_query.cpp">
+      <Filter>Common Core\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Networking\httpinterface.cpp">
+      <Filter>Common Core\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\networking\OutputMessages.cpp">
+      <Filter>Common Core\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Networking\smtp.c">
+      <Filter>Common Core\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\gd.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\gdfont_Arial.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\gdfont_Geneva.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\gdfonts.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\gdfontt.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\mtables.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\GD Graphics\webpalette.c">
+      <Filter>Common Core\GD Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Encryption\ice.c">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Encryption\IceStr.cpp">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Serial Registration\serialReg.c">
+      <Filter>Common Core\Serial Registration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\xml\qsxml.cpp">
+      <Filter>Common Core\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\Images\Icons.cpp">
+      <Filter>Common Core\Images</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GraphDrawStr.cpp">
+      <Filter>Windows Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\Registry.c">
+      <Filter>Windows Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\Windnr.c">
+      <Filter>Windows Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\winnet_io.cpp">
+      <Filter>Windows Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\NTservice\myservice.cpp">
+      <Filter>Windows Source\NTService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\NTservice\NTServApp.cpp">
+      <Filter>Windows Source\NTService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\NTservice\NTService.cpp">
+      <Filter>Windows Source\NTService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\createshortcuts.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\FileViewGUI.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\LangBuilderGUI.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\gui\prefsgui.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\Schedulegui.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\StringLoader.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\gui\winmain.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\WinserialReg.c">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\Winutil.cpp">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_win\GUI\WizardGUI.c">
+      <Filter>Windows Source\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\demorecord.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\dnr.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\ftp_client.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\main.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\remotecontrol.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\unixnet_io.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\unixreg.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\util.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\Xmain.c">
+      <Filter>Unix Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\gtkfiledialog.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\gtkwin.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\resource.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\xfweb.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\XPrefsGUI.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_unix\gtk\XSchedule.c">
+      <Filter>Unix Source\gtk</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src_common\zip.c">
+      <Filter>Windows Source\Libs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src_win\GUI\res\General.htm">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </None>
+    <None Include="..\Makefile">
+      <Filter>Unix Source</Filter>
+    </None>
+    <None Include="..\src_unix\gtk\Makefile">
+      <Filter>Unix Source\gtk</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src_win\NTservice\ntservmsg.rc">
+      <Filter>Windows Source\NTService</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\src_win\GUI\Fweb.rc">
+      <Filter>Windows Source\GUI</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src_win\GUI\res\advert.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\afunnelw.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\AFweb.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\analysis.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\BigToolbar24.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\bigtoolbar24b.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\bullet2.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\checkoff.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\checkon.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\checkon1.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\customic.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\expand1.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\expand2.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\filters.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\general.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\graphs.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\help.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\help.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\htmlfoot.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\htmlhead.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\ico00001.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\ico00002.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\ico00003.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\log_icon.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\notifyic.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\preproc.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\progress.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\progress2.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\gui\res\progress_d.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\gui\res\progress_i.bmp">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\routeric.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\schdule.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\stats.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\GUI\res\vdomains.ico">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Image>
+    <Image Include="..\src_win\Gui\res\application.ico" />
+    <Image Include="..\src_win\Gui\res\application_about.bmp" />
+    <Image Include="..\src_win\Gui\res\billingicon.ico" />
+    <Image Include="..\src_win\Gui\res\icon1.ico" />
+    <Image Include="..\src_win\Gui\res\routesic.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\src_win\GUI\res\loop.wav">
+      <Filter>Windows Source\GUI\Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Languages\English.lang">
+      <Filter>Common Core\Languages</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src_win\Libs\Debug\zlibd.lib">
+      <Filter>Windows Source\Libs\Debug</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\src_win\Libs\Release\zlib.lib">
+      <Filter>Windows Source\Libs\Release</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\src_win\Libs\libjpeg.lib">
+      <Filter>Windows Source\Libs</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
