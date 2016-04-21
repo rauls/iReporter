@@ -29,16 +29,8 @@ User Documentation/
 Debug/
 Release/
 !doc/blog/**
-*.sln
-!nodemsi.sln
-*.suo
-*.vcproj
-*.vcxproj
-*.vcxproj.user
-*.vcxproj.filters
 UpgradeLog*.XML
 _UpgradeReport_Files/
 ipch/
-*.sdf
 *.opensdf
  
